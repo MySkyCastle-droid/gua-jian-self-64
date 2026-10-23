@@ -1,0 +1,3595 @@
+{
+  "note": "Preserved for audit; these rows are not invented as new original items.",
+  "rows": [
+    {
+      "text": "Believe laws should be strictly enforced.",
+      "scaleKey": {
+        "instrument": "16PF",
+        "label": "Dutifulness",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe that people seldom tell you the whole truth.",
+      "scaleKey": {
+        "instrument": "16PF",
+        "label": "Distrust",
+        "key": 1,
+        "alpha": "0.8",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe appearances are important.",
+      "scaleKey": {
+        "instrument": "6FPQ",
+        "label": "Independence",
+        "key": -1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Do things men traditionally do.",
+      "scaleKey": {
+        "instrument": "6FPQ",
+        "label": "Self-Sufficiency",
+        "key": 1,
+        "alpha": "0.59",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Feel it's OK that some people don't like me.",
+      "scaleKey": {
+        "instrument": "6FPQ",
+        "label": "Independence",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe laws should be strictly enforced.",
+      "scaleKey": {
+        "instrument": "7FACTOR",
+        "label": "Conscientiousness",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Never at a loss for words.",
+      "scaleKey": {
+        "instrument": "7FACTOR",
+        "label": "Extraversion",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Quick to understand things.",
+      "scaleKey": {
+        "instrument": "7FACTOR",
+        "label": "Intellect",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe crying helps me feel better.",
+      "scaleKey": {
+        "instrument": "AB5C",
+        "label": "Tenderness",
+        "key": 1,
+        "alpha": "0.74",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe people should fend for themselves.",
+      "scaleKey": {
+        "instrument": "AB5C",
+        "label": "Sympathy",
+        "key": -1,
+        "alpha": "0.74",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Do things I later regret.",
+      "scaleKey": {
+        "instrument": "AB5C",
+        "label": "Moderation",
+        "key": -1,
+        "alpha": "0.76",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Don't fall for sob stories.",
+      "scaleKey": {
+        "instrument": "AB5C",
+        "label": "Sympathy",
+        "key": -1,
+        "alpha": "0.74",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Don't think laws apply to me.",
+      "scaleKey": {
+        "instrument": "AB5C",
+        "label": "Dutifulness",
+        "key": -1,
+        "alpha": "0.78",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Never at a loss for words.",
+      "scaleKey": {
+        "instrument": "AB5C",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe emotions give direction to life.",
+      "scaleKey": {
+        "instrument": "Barchard2001",
+        "label": "Emotion-based Decision-making",
+        "key": 1,
+        "alpha": "0.73,0.67",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe important decisions should be based on logical reasoning.",
+      "scaleKey": {
+        "instrument": "Barchard2001",
+        "label": "Emotion-based Decision-making",
+        "key": -1,
+        "alpha": "0.73,0.67",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Do not have an assertive personality.",
+      "scaleKey": {
+        "instrument": "BFAS",
+        "label": "Assertiveness",
+        "key": -1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Rarely put people under pressure.",
+      "scaleKey": {
+        "instrument": "BFAS",
+        "label": "Positive Expressivity",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe there is never an excuse for lying.",
+      "scaleKey": {
+        "instrument": "BIDR",
+        "label": "Impression-Management",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Would never go hang gliding or bungee jumping.",
+      "scaleKey": {
+        "instrument": "BIS_BAS",
+        "label": "Risk-taking/Sensation-Seeking/Thrill-Seeking",
+        "key": -1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Feel comortable with myself.",
+      "scaleKey": {
+        "instrument": "Buss1980",
+        "label": "Public Self-consciousness",
+        "key": -1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Look for hidden meaning in things.",
+      "scaleKey": {
+        "instrument": "Buss1980",
+        "label": "Introspection/Private Self-Consciousness",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Feel my anxiety overwhelms me.",
+      "scaleKey": {
+        "instrument": "CAT-PD",
+        "label": "Anxiety",
+        "key": 1,
+        "alpha": "0.83,0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Have a good memory for things I've done throughout the day.",
+      "scaleKey": {
+        "instrument": "CAT-PD",
+        "label": "Cognitive Problems",
+        "key": -1,
+        "alpha": "0.82,0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "I am known for saying offensive things.",
+      "scaleKey": {
+        "instrument": "CAT-PD",
+        "label": "Rudeness",
+        "key": 1,
+        "alpha": "0.81,0.80",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "I feel as if my body, or a part of it, has disappeared.",
+      "scaleKey": {
+        "instrument": "CAT-PD",
+        "label": "Unusual Experiences",
+        "key": 1,
+        "alpha": "0.84,0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "I have intentionally done myself physical harm.",
+      "scaleKey": {
+        "instrument": "CAT-PD",
+        "label": "Self-harm",
+        "key": 1,
+        "alpha": "0.87,0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "I have no will to live.",
+      "scaleKey": {
+        "instrument": "CAT-PD",
+        "label": "Self-harm",
+        "key": 1,
+        "alpha": "0.87,0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe laws should be strictly enforced.",
+      "scaleKey": {
+        "instrument": "CPI",
+        "label": "Liberalism",
+        "key": -1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Would never go hang gliding or bungee jumping.",
+      "scaleKey": {
+        "instrument": "CPI",
+        "label": "Timidity",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Find it difficult to touch an object that has been touched by other",
+      "scaleKey": {
+        "instrument": "Foa2002",
+        "label": "Obsessive-Compulsive Symptoms",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Find that I sometimes sit staring off into space, thinking of nothing, and am not aware of the passage of time.",
+      "scaleKey": {
+        "instrument": "Goldberg1999",
+        "label": "Dissociation",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Find that in one situation I act so differently from when I'm in another situation that I feel almost as if I were two different people.",
+      "scaleKey": {
+        "instrument": "Goldberg1999",
+        "label": "Dissociation",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Am unpredictable, people never know what I am going to say.",
+      "scaleKey": {
+        "instrument": "Hoyle2002",
+        "label": "Risk-taking/Sensation-Seeking/Thrill-Seeking",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Quick to understand things.",
+      "scaleKey": {
+        "instrument": "HPI",
+        "label": "Quickness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe appearances are important.",
+      "scaleKey": {
+        "instrument": "HPI-HIC",
+        "label": "Appearance-Consciousness",
+        "key": 1,
+        "alpha": "0.68",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Do things I later regret.",
+      "scaleKey": {
+        "instrument": "HPI-HIC",
+        "label": "Self-acceptance",
+        "key": -1,
+        "alpha": "0.71",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Willing to try anything once.",
+      "scaleKey": {
+        "instrument": "HPI-HIC",
+        "label": "Risk-taking/Sensation-Seeking/Thrill-Seeking",
+        "key": 1,
+        "alpha": "0.72",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe people should fend for themselves.",
+      "scaleKey": {
+        "instrument": "IPIP-IPC",
+        "label": "Callousness",
+        "key": 1,
+        "alpha": ".",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Don't fall for sob stories.",
+      "scaleKey": {
+        "instrument": "IPIP-IPC",
+        "label": "Callousness",
+        "key": 1,
+        "alpha": ".",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Don't think laws apply to me.",
+      "scaleKey": {
+        "instrument": "JPI",
+        "label": "Responsibility",
+        "key": -1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Feel it's OK that some people don't like me.",
+      "scaleKey": {
+        "instrument": "JPI",
+        "label": "Conformity/Dependence/Need for approval",
+        "key": -1,
+        "alpha": "0.71",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Feel spiritally connected to other people.",
+      "scaleKey": {
+        "instrument": "JPI",
+        "label": "Empathy",
+        "key": 1,
+        "alpha": "0.8",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Would never make a high risk investment.",
+      "scaleKey": {
+        "instrument": "JPI",
+        "label": "Risk-taking/Sensation-Seeking/Thrill-Seeking",
+        "key": -1,
+        "alpha": "0.78",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe some people are born lucky.",
+      "scaleKey": {
+        "instrument": "Levenson1981",
+        "label": "Locus of Control,Rational",
+        "key": -1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe some people are born lucky.",
+      "scaleKey": {
+        "instrument": "Levenson1981",
+        "label": "Locus of Control,Chance",
+        "key": 1,
+        "alpha": "0.72",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe some people are born lucky.",
+      "scaleKey": {
+        "instrument": "Levenson1981",
+        "label": "Locus of Control",
+        "key": -1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe laws should be strictly enforced.",
+      "scaleKey": {
+        "instrument": "MPQ",
+        "label": "Conservatism",
+        "key": 1,
+        "alpha": "0.83",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe there is never an excuse for lying.",
+      "scaleKey": {
+        "instrument": "MPQ",
+        "label": "Unlikely Virtues",
+        "key": 1,
+        "alpha": "0.76",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Would never go hang gliding or bungee jumping.",
+      "scaleKey": {
+        "instrument": "MPQ",
+        "label": "Risk-avoidance",
+        "key": 1,
+        "alpha": "0.8",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe that there is no absolute right or wrong.",
+      "scaleKey": {
+        "instrument": "NEO",
+        "label": "Liberalism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Do things I later regret.",
+      "scaleKey": {
+        "instrument": "NEO",
+        "label": "Immoderation",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Interested in many things.",
+      "scaleKey": {
+        "instrument": "NEO",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Willing to try anything once.",
+      "scaleKey": {
+        "instrument": "NEO",
+        "label": "Excitement-seeking",
+        "key": 1,
+        "alpha": "0.78",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Would never go hang gliding or bungee jumping.",
+      "scaleKey": {
+        "instrument": "NEO",
+        "label": "Excitement-seeking",
+        "key": -1,
+        "alpha": "0.78",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Acted in a play.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Ate candy.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Food",
+        "key": 1,
+        "alpha": "0.64",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Ate dinner alone.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Reclusiveness",
+        "key": 1,
+        "alpha": "0.73",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Ate food while walking or working.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Food",
+        "key": 1,
+        "alpha": "0.64",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Ate in a restaurant.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Food",
+        "key": 1,
+        "alpha": "0.64",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Ate or drank while driving.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Food",
+        "key": 1,
+        "alpha": "0.64",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Ate too much.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Food",
+        "key": 1,
+        "alpha": "0.64",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Attended a ballet performance.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Culture",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Attended a church or religious service.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Spirituality/Religiousness",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Attended a formal dance.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Romance",
+        "key": 1,
+        "alpha": "0.56999999999999995",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Attended a public lecture.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Culture",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Attended a rally or demonstration.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Political Activism",
+        "key": 1,
+        "alpha": "0.7",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Attended a stage play or musical.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Culture",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Attended a town meeting.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Political Activism",
+        "key": 1,
+        "alpha": "0.7",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Attended an athletic event.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Sports",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Attended an opera or a concert.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Culture",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Baked a cake, pie, cookies, or bread.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Home-Making",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bathed or groomed a pet animal.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Pets",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Became intoxicated.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Drinking",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bet money on a sports event.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gambling",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought a book about the things that I collect.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Collecting",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought a book.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Reading",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought a car, truck or motorcycle.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Vehicles",
+        "key": 1,
+        "alpha": "0.5",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought a fashionable item of clothing.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Appearance-Consciousness",
+        "key": 1,
+        "alpha": "0.76",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought a self-help book.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Self-Improvement",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought or picked flowers.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gardening",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought or sold real estate.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Money",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought or sold stocks or bonds.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Money",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought plants for a garden or yard.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gardening",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought something for my collection.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Collecting",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Bought something other than groceries.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Shopping",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Cared for a pet animal.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Pets",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Cared for a potted plant.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gardening",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Changed a habit to have less impact on the environment.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Environmentalism",
+        "key": 1,
+        "alpha": "0.52",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Checked the sales ads in a newspaper.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Shopping",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Chewed gum.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Food",
+        "key": 1,
+        "alpha": "0.64",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Chose to spend a day by myself.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Reclusiveness",
+        "key": 1,
+        "alpha": "0.73",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Cleaned the house.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Home-Making",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Composted food scraps or yard waste.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Environmentalism",
+        "key": 1,
+        "alpha": "0.52",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Cooked a meal.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Home-Making",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Did aerobic exercise.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Exercise",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Did yard work.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gardening",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Did yoga or other movement exercises.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Exercise",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Dined by candle light.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Romance",
+        "key": 1,
+        "alpha": "0.56999999999999995",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Discussed religion or spirituality.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Spirituality/Religiousness",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Discussed sports.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Sports",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Donated money to a political campaign or cause.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Political Activism",
+        "key": 1,
+        "alpha": "0.7",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Donated money to charity.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Political Activism",
+        "key": 1,
+        "alpha": "0.7",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Downloaded music from the Internet.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Music",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Drank beer or wine.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Drinking",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Drank in a bar or night club.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Drinking",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Drank whiskey, vodka, gin, or other hard liquor.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Drinking",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Enrolled in a course of study.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Self-Improvement",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Entertained six or more people.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Pets",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Exercised for 40 minutes or longer.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Exercise",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Fed a pet animal.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Pets",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Gambled on a slot machine or video poker game.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gambling",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Gambled with cards or dice.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gambling",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Gardened.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gardening",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Gave a blessing at a meal.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Spirituality/Religiousness",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Had a hangover.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Drinking",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Had someone over for dinner.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Gregariousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Ironed linens or clothes.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Home-Making",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Knitted, quilted, sewed, or crocheted.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Home-Making",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Learned a new board or card game.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Game-Playing",
+        "key": 1,
+        "alpha": "0.65",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Learned a new skill.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Self-Improvement",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Let a child win a game.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Children",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Lifted weights.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Exercise",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Listened to a religious program on the radio or TV.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Spirituality/Religiousness",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Listened to music on the radio.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Music",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Listened to music while working.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Music",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Looked something up in an encyclopedia.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Learning",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Looked up a word in a dictionary.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Learning",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Looked up information on the Internet.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Computing",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Made a bed.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Home-Making",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Made an entry in a diary or journal.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Journaling",
+        "key": 1,
+        "alpha": "0.6",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Made an entry on a personal web-page.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Social Media",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Obtained stock market prices.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Money",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Ordered food to be delivered.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Food",
+        "key": 1,
+        "alpha": "0.64",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Painted a picture.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Participated in an exercise program.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Exercise",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Participated in an online discussion group.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Social Media",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Picked up litter.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Environmentalism",
+        "key": 1,
+        "alpha": "0.52",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Planned a party.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Gregariousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Planted or transplanted a plant.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gardening",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played a board game.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Game-Playing",
+        "key": 1,
+        "alpha": "0.65",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played a computer game.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Computing",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played a musical instrument.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played a team sport.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Sports",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played basketball.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Sports",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played bingo for money.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gambling",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played cards.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Game-Playing",
+        "key": 1,
+        "alpha": "0.65",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played chess or checkers.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Game-Playing",
+        "key": 1,
+        "alpha": "0.65",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played tennis or golf.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Sports",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played with a child.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Children",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Played with a pet animal.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Pets",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Prayed (not including blessings at meals).",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Spirituality/Religiousness",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Produced a work of art.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Purchased a commodity as an investment.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Money",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Purchased a musical album.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Music",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Purchased a pet animal.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Pets",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Purchased a scratch ticket.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gambling",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Put pictures in a photo album.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Journaling",
+        "key": 1,
+        "alpha": "0.6",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Raced a car, truck or motorcycle.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Vehicles",
+        "key": 1,
+        "alpha": "0.5",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read a book about religion or spirituality.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Spirituality/Religiousness",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read a book about the things that I collect.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Collecting",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read a book on a financial topic.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Money",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read a book.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Reading",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read a car magazine or book.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Vehicles",
+        "key": 1,
+        "alpha": "0.5",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read a fashion-related book.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Appearance-Consciousness",
+        "key": 1,
+        "alpha": "0.76",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read a fashion-related magazine.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Appearance-Consciousness",
+        "key": 1,
+        "alpha": "0.76",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read a news magazine.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Learning",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read a self-help book.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Self-Improvement",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read a story to a child.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Children",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read an entire book in one sitting.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Reading",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read in bed before going to sleep.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Reading",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read music-related news.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Music",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read news on the Internet.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Computing",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read newspaper ads for non-grocery items.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Shopping",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read poetry.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Learning",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read someone’s personal web-page.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Social Media",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read the Bible or other sacred text.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Spirituality/Religiousness",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read the comics to a child.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Children",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read the editorial page of a newspaper.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Learning",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Recorded a television program.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Watching Television",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Recycled one or more items.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Environmentalism",
+        "key": 1,
+        "alpha": "0.52",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Rode a motorcycle.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Vehicles",
+        "key": 1,
+        "alpha": "0.5",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Sang or played an instrument in public.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Sent a message by electronic mail (e-mail).",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Computing",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Served as a baby sitter.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Children",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Shopped in a music store.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Music",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Shopped on the web.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Shopping",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Signed a petition.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Political Activism",
+        "key": 1,
+        "alpha": "0.7",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Spent 10 minutes or more in a non-grocery store.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Shopping",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Spent an entire vacation by myself.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Reclusiveness",
+        "key": 1,
+        "alpha": "0.73",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Spent an hour or more in a non-grocery store.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Shopping",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Spent more than 10 minutes thinking about what to wear.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Appearance-Consciousness",
+        "key": 1,
+        "alpha": "0.76",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Spent more than an hour thinking about what to wear.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Appearance-Consciousness",
+        "key": 1,
+        "alpha": "0.76",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Stayed in a hotel, motel, or resort.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Travel",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Studied some subject.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Self-Improvement",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Surfed the Internet.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Computing",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Took a child on an outing.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Children",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Took a trip.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Travel",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Took travel photographs.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Travel",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Traded music with a friend.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Music",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Traded something in my collection.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Collecting",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Traveled by train or plane.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Travel",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Tried something completely new.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Used a computer for social networking.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Social Media",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Used a computer.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Computing",
+        "key": 1,
+        "alpha": "0.89",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Used an exercise machine.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Exercise",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Used an mp3 player or Ipod.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Music",
+        "key": 1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Used both sides of a piece of paper before discarding it.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Environmentalism",
+        "key": 1,
+        "alpha": "0.52",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Used eBay to buy or sell something.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Shopping",
+        "key": 1,
+        "alpha": "0.66",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Used instant messaging to chat online.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Social Media",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Used public transportation.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Environmentalism",
+        "key": 1,
+        "alpha": "0.52",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Visited a museum.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Culture",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Visited a public library.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Reading",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Visited an art exhibition.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Culture",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Volunteered for a club or organization.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Political Activism",
+        "key": 1,
+        "alpha": "0.7",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Walked on a beach.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Outdoor Activities",
+        "key": 1,
+        "alpha": "0.74",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Walked or rode a bicycle to work.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Environmentalism",
+        "key": 1,
+        "alpha": "0.52",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Washed dishes.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Home-Making",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Watched a televised sports event.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Sports",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Watched a television reality show.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Watching Television",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Watched a television soap opera.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Watching Television",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Watched a television talk show.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Watching Television",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Watched an educational channel on TV.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Love of Learning",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Watched television news.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Watching Television",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Watched television.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Watching Television",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Watched too much television.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Watching Television",
+        "key": 1,
+        "alpha": "0.61",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went backpacking or camping.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Outdoor Activities",
+        "key": 1,
+        "alpha": "0.74",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went boating or rafting.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Outdoor Activities",
+        "key": 1,
+        "alpha": "0.74",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went dancing.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Romance",
+        "key": 1,
+        "alpha": "0.56999999999999995",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went fishing or hunting.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Outdoor Activities",
+        "key": 1,
+        "alpha": "0.74",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went on a cruise or tour.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Travel",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went on a date.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Romance",
+        "key": 1,
+        "alpha": "0.56999999999999995",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went on a hike.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Outdoor Activities",
+        "key": 1,
+        "alpha": "0.74",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went on a picnic.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Outdoor Activities",
+        "key": 1,
+        "alpha": "0.74",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went on a trip by myself.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Reclusiveness",
+        "key": 1,
+        "alpha": "0.73",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went running or jogging.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Exercise",
+        "key": 1,
+        "alpha": "0.85",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went sightseeing.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Travel",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went swimming.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Outdoor Activities",
+        "key": 1,
+        "alpha": "0.74",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went to a casino.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Gambling",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went to a concert or theater alone.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Reclusiveness",
+        "key": 1,
+        "alpha": "0.73",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went to a large party.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Gregariousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went to a small party.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Gregariousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Went to the movies alone.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Reclusiveness",
+        "key": 1,
+        "alpha": "0.73",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Wore formal clothing.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Romance",
+        "key": 1,
+        "alpha": "0.56999999999999995",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Worked on a jigsaw puzzle.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Game-Playing",
+        "key": 1,
+        "alpha": "0.65",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Worked on a retirement plan.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Money",
+        "key": 1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Worked on a scrap book.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Journaling",
+        "key": 1,
+        "alpha": "0.6",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Worked on my collection.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Collecting",
+        "key": 1,
+        "alpha": "0.84",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Wrote a handwritten letter.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Journaling",
+        "key": 1,
+        "alpha": "0.6",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Wrote a letter to a newspaper or politician.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Political Activism",
+        "key": 1,
+        "alpha": "0.7",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Wrote a love letter.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Romance",
+        "key": 1,
+        "alpha": "0.56999999999999995",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Wrote a postcard.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Journaling",
+        "key": 1,
+        "alpha": "0.6",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Wrote a thank-you note.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Journaling",
+        "key": 1,
+        "alpha": "0.6",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Wrote poetry.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Interest in Journaling",
+        "key": 1,
+        "alpha": "0.6",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Wrote poetry.",
+      "scaleKey": {
+        "instrument": "ORAIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.69",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Act in a play.",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a bounty hunter",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a chemist",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Science Interest",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a counselor or therapist",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a doctor or nurse",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a farmer",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Construction/Mechanical Interests",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a foreign correspondent",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Language Mastery",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a forest ranger",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Construction/Mechanical Interests",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a librarian",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Language Mastery",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a long-distance bicycle rider",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a mathematician",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Science Interest",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a military officer",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a minister, priest, rabbi or other religious teacher",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a physical therapist",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a physicist",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Science Interest",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a police officer",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a professional athlete",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a professional dancer",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a professor of English",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Language Mastery",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a purchasing agent",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a racing car driver",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a sales or marketing director",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a scientific reporter",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Science Interest",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a social worker",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a state governor or senator",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a statistician",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Science Interest",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be a translator or interpreter",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Language Mastery",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be an actor or actress",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be an artist or architect",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be an elementary-school teacher",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be an office manager",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be the chief executive of a large company",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be the financial officer for a company",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Be the master of ceremonies at a meeting",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Care for cattle or horses",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Construction/Mechanical Interests",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Care for sick people",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Carry out medical research",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Science Interest",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Compete in athletic events",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Construct new buildings",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Construction/Mechanical Interests",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Counsel persons who need help",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Create new fashion designs",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Create works of art",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Cultivate plants",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Construction/Mechanical Interests",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Debate topics in a public meeting",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Design a laboratory experiment",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Science Interest",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Design Internet web pages",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Develop a computer program",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Science Interest",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Develop an office filing system",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Do woodworking",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Construction/Mechanical Interests",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Edit a newspaper",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Language Mastery",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Engage in exciting adventures",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Establish time schedules",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Explain scientific concepts to others",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Science Interest",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Face physical danger",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Go on nature walks",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Construction/Mechanical Interests",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Help others learn new ideas",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Help people make career decisions",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Instruct parents on child care",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Keep a diary or journal",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Language Mastery",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Keep detailed records",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Keep track of a company’s inventory",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Know many languages",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Language Mastery",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Lead other people",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Make decisions that affect a lot of people",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Make important things happen",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Make up word puzzles",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Language Mastery",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Manage a computer data base",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Monitor business expenses",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Organize a political campaign",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Paint or draw",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Participate in charity events",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Persuade others to change their views",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Plan an advertising campaign",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Plan budgets",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Plan investment strategies",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Play an instrument in a symphony",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Prepare financial contracts",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Provide comfort and support to others",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Altruism",
+        "key": 1,
+        "alpha": "0.86",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Raise flowers",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Construction/Mechanical Interests",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Read many books",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Language Mastery",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Redecorate one’s house",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Repair cars or trucks",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Construction/Mechanical Interests",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Run for political office",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Leadership",
+        "key": 1,
+        "alpha": "0.87",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Select art works for a museum",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Sing professionally",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Solve complex puzzles",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Science Interest",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Speak fluently on any subject",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Language Mastery",
+        "key": 1,
+        "alpha": "0.79",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Supervise the work of others",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Organization",
+        "key": 1,
+        "alpha": "0.9",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Survive in the wilderness",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Adventurousness",
+        "key": 1,
+        "alpha": "0.82",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Work with tools and machinery",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Construction/Mechanical Interests",
+        "key": 1,
+        "alpha": "0.81",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Write short stories or novels",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Write songs",
+      "scaleKey": {
+        "instrument": "ORVIS",
+        "label": "Creativity/Originality",
+        "key": 1,
+        "alpha": "0.88",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Thought my life had been a failure.",
+      "scaleKey": {
+        "instrument": "Radloff1977",
+        "label": "Depression",
+        "key": 1,
+        "alpha": "0.93",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe kids need tough love.",
+      "scaleKey": {
+        "instrument": "TCI",
+        "label": "Conservatism",
+        "key": 1,
+        "alpha": "0.71",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe that there is no absolute right or wrong.",
+      "scaleKey": {
+        "instrument": "TCI",
+        "label": "Conservatism",
+        "key": -1,
+        "alpha": "0.71",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Believe there are many sides to most issues.",
+      "scaleKey": {
+        "instrument": "TCI",
+        "label": "Tolerance",
+        "key": 1,
+        "alpha": "0.72",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Do things I later regret.",
+      "scaleKey": {
+        "instrument": "TCI",
+        "label": "Impulse-Control",
+        "key": -1,
+        "alpha": "0.78",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Feel that people have a hard time understanding",
+      "scaleKey": {
+        "instrument": "TCI",
+        "label": "Satisfaction",
+        "key": -1,
+        "alpha": "0.72",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Willing to try anything once.",
+      "scaleKey": {
+        "instrument": "TCI",
+        "label": "Harm-Avoidance",
+        "key": -1,
+        "alpha": "0.78",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Would never go hang gliding or bungee jumping.",
+      "scaleKey": {
+        "instrument": "TCI",
+        "label": "Harm-Avoidance",
+        "key": 1,
+        "alpha": "0.78",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Would never make a high risk investment.",
+      "scaleKey": {
+        "instrument": "TCI",
+        "label": "Harm-Avoidance",
+        "key": 1,
+        "alpha": "0.78",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Avoid dealing with awkward situations.",
+      "scaleKey": {
+        "instrument": "VIA",
+        "label": "Bravery/Courage/Valor",
+        "key": -1,
+        "alpha": "0.75",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Can't wait to get started on a project.",
+      "scaleKey": {
+        "instrument": "VIA",
+        "label": "Vitality/Enthusiasm/Zest",
+        "key": 1,
+        "alpha": "0.78",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    },
+    {
+      "text": "Fail to notice beauty until others comment on it.",
+      "scaleKey": {
+        "instrument": "VIA",
+        "label": "Aesthetic Appreciation/Artistic Interests",
+        "key": -1,
+        "alpha": "0.77",
+        "source": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx"
+      }
+    }
+  ]
+}

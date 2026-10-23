@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "seed-energy-p01",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我在短暫閒聊之後，通常比較有精神繼續做事。",
+    "family": "family-energy-p01",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "短聊補充精神",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p01"
+  },
+  {
+    "id": "seed-energy-p02",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我參加輕鬆聚會後，往往還有精神投入下一件事。",
+    "family": "family-energy-p02",
+    "sourceIds": [
+      "ipip-H78"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "聚會後續航",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p02"
+  },
+  {
+    "id": "seed-energy-p03",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我獨自忙了一段時間後，會靠與人交流恢復精神。",
+    "family": "family-energy-p03",
+    "sourceIds": [
+      "ipip-H965"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "獨作後轉向交流",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p03"
+  },
+  {
+    "id": "seed-energy-p04",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我需要休息時，會選擇能和人互動的活動。",
+    "family": "family-energy-p04",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "休息時選互動",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p04"
+  },
+  {
+    "id": "seed-energy-p05",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我感到精神沉悶時，接觸外界的人聲會讓我重新有活力。",
+    "family": "family-energy-p05",
+    "sourceIds": [
+      "ipip-E56"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "人聲刺激恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p05"
+  },
+  {
+    "id": "seed-energy-p06",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我用腦過後，和人聊些日常會使精神鬆開。",
+    "family": "family-energy-p06",
+    "sourceIds": [
+      "ipip-E47"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "腦力工作後閒聊",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p06"
+  },
+  {
+    "id": "seed-energy-p07",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我透過一通輕鬆的電話，重新找回做事的精神。",
+    "family": "family-energy-p07",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "通話恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p07"
+  },
+  {
+    "id": "seed-energy-p08",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我和幾個人一起活動時，會逐漸找回精神。",
+    "family": "family-energy-p08",
+    "sourceIds": [
+      "ipip-H78"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "群體活動恢復過程",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p08"
+  },
+  {
+    "id": "seed-energy-p09",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我覺得當面聊天比安靜坐著更能補充精神。",
+    "family": "family-energy-p09",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "面談與靜坐比較",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p09"
+  },
+  {
+    "id": "seed-energy-p10",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我外出接觸不同的人後，精神通常比出門前充足。",
+    "family": "family-energy-p10",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "外出互動前後變化",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p10"
+  },
+  {
+    "id": "seed-energy-p11",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我精神疲乏時，會想靠一段對話重新啟動自己。",
+    "family": "family-energy-p11",
+    "sourceIds": [
+      "ipip-H16"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "疲乏時想開始對話",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p11"
+  },
+  {
+    "id": "seed-energy-p12",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我在休息空檔與熟人聊幾句，會比較有精神回去忙。",
+    "family": "family-energy-p12",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "工作空檔短聊",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p12"
+  },
+  {
+    "id": "seed-energy-p13",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我會在休假安排共同活動，讓自己恢復下一週的精神。",
+    "family": "family-energy-p13",
+    "sourceIds": [
+      "ipip-H78"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "休假共同活動補能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p13"
+  },
+  {
+    "id": "seed-energy-p14",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我在人們輕鬆交談的環境裡休息，精神較容易恢復。",
+    "family": "family-energy-p14",
+    "sourceIds": [
+      "ipip-E56"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "交談環境休息",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p14"
+  },
+  {
+    "id": "seed-energy-p15",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我和別人一起玩過之後，常覺得精神獲得補充。",
+    "family": "family-energy-p15",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "共同玩樂後補能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p15"
+  },
+  {
+    "id": "seed-energy-p16",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我連續獨處半天後，與人說話會讓我重新有精神。",
+    "family": "family-energy-p16",
+    "sourceIds": [
+      "ipip-R61"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "長段獨處後互動",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p16"
+  },
+  {
+    "id": "seed-energy-p17",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我忙完一件耗神的事，會想找人交換經驗來恢復精神。",
+    "family": "family-energy-p17",
+    "sourceIds": [
+      "ipip-E47"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "耗神後交換經驗",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p17"
+  },
+  {
+    "id": "seed-energy-p18",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我聽見別人分享近況時，常覺得精神重新活絡起來。",
+    "family": "family-energy-p18",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "接收近況恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p18"
+  },
+  {
+    "id": "seed-energy-p19",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我吃飯休息時與人聊聊，通常能補回做事的精神。",
+    "family": "family-energy-p19",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "adjacent：原題描述與人相處的樂趣，鄰近本題餐時交流行為，但不直接測精神恢復；本題是本案對最近三個月恢復偏好的原創改寫，非翻譯，不移植原量表效度。",
+    "concept": "用餐交流補能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p19"
+  },
+  {
+    "id": "seed-energy-p20",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我跟著團體互動的節奏，會漸漸從疲倦中恢復。",
+    "family": "family-energy-p20",
+    "sourceIds": [
+      "ipip-E56"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "互動節奏恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p20"
+  },
+  {
+    "id": "seed-energy-p21",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我在輕鬆認識新人的過程中，通常會感到精神增加。",
+    "family": "family-energy-p21",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "新互動精神變化",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p21"
+  },
+  {
+    "id": "seed-energy-p22",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我忙完後參與一段群組聊天，會感到精神得到舒展。",
+    "family": "family-energy-p22",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "文字群聊恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p22"
+  },
+  {
+    "id": "seed-energy-p23",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我和人一起走動說話，比獨自休息更能恢復精神。",
+    "family": "family-energy-p23",
+    "sourceIds": [
+      "ipip-H14"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "共同走動交流比較",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p23"
+  },
+  {
+    "id": "seed-energy-p24",
+    "axis": "energy",
+    "direction": 1,
+    "text": "我休息時若完全沒有交流，精神恢復得比較慢。",
+    "family": "family-energy-p24",
+    "sourceIds": [
+      "ipip-H965"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "無交流休息恢復較慢",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-p24"
+  },
+  {
+    "id": "seed-energy-n01",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我獨自待一會兒之後，通常比較有精神繼續做事。",
+    "family": "family-energy-n01",
+    "sourceIds": [
+      "ipip-X88"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "短暫獨處補能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n01"
+  },
+  {
+    "id": "seed-energy-n02",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我參加聚會後，需要一段安靜時間才能恢復精神。",
+    "family": "family-energy-n02",
+    "sourceIds": [
+      "ipip-H602"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "聚會後安靜恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n02"
+  },
+  {
+    "id": "seed-energy-n03",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我忙完後會先暫停回覆訊息，讓精神慢慢恢復。",
+    "family": "family-energy-n03",
+    "sourceIds": [
+      "ipip-V183"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "忙後停止訊息補能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n03"
+  },
+  {
+    "id": "seed-energy-n04",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我聽了許多人輪流說話後，獨自休息才會恢復精神。",
+    "family": "family-energy-n04",
+    "sourceIds": [
+      "ipip-H602"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "多聲交流後獨處",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n04"
+  },
+  {
+    "id": "seed-energy-n05",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我獨自散步時，比與人交談更容易補充精神。",
+    "family": "family-energy-n05",
+    "sourceIds": [
+      "ipip-X88"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "獨走與交談比較",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n05"
+  },
+  {
+    "id": "seed-energy-n06",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我安靜閱讀一段時間，會找回做其他事的精神。",
+    "family": "family-energy-n06",
+    "sourceIds": [
+      "ipip-H602"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "獨讀恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n06"
+  },
+  {
+    "id": "seed-energy-n07",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我會在休假留下無人打擾的時段，恢復自己的精神。",
+    "family": "family-energy-n07",
+    "sourceIds": [
+      "ipip-H1092"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "休假留白補能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n07"
+  },
+  {
+    "id": "seed-energy-n08",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我午間獨自休息時，比邊休息邊聊天更能恢復精神。",
+    "family": "family-energy-n08",
+    "sourceIds": [
+      "ipip-E72"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "午間獨休比較",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n08"
+  },
+  {
+    "id": "seed-energy-n09",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我把周圍的交談聲隔開後，精神較容易恢復。",
+    "family": "family-energy-n09",
+    "sourceIds": [
+      "ipip-H602"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "隔開人聲補能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n09"
+  },
+  {
+    "id": "seed-energy-n10",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我獨自坐著整理思緒，通常會逐漸恢復精神。",
+    "family": "family-energy-n10",
+    "sourceIds": [
+      "ipip-X88"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "獨坐整理恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n10"
+  },
+  {
+    "id": "seed-energy-n11",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我結束一段長通話後，需要暫停互動才能恢復精神。",
+    "family": "family-energy-n11",
+    "sourceIds": [
+      "ipip-V183"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "長通話後停互動",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n11"
+  },
+  {
+    "id": "seed-energy-n12",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我在熱鬧活動的隔天，會想獨處來補回精神。",
+    "family": "family-energy-n12",
+    "sourceIds": [
+      "ipip-H587"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "熱鬧隔日恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n12"
+  },
+  {
+    "id": "seed-energy-n13",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我短暫離開人群，就能比較快找回自己的精神。",
+    "family": "family-energy-n13",
+    "sourceIds": [
+      "ipip-H602"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "暫離人群補能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n13"
+  },
+  {
+    "id": "seed-energy-n14",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我自己做喜歡的事時，精神會比與人同樂時恢復得快。",
+    "family": "family-energy-n14",
+    "sourceIds": [
+      "ipip-X88"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "個人興趣恢復比較",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n14"
+  },
+  {
+    "id": "seed-energy-n15",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我精神疲乏時，會縮短交談來保留恢復的空間。",
+    "family": "family-energy-n15",
+    "sourceIds": [
+      "ipip-H1081"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "疲乏縮短互動",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n15"
+  },
+  {
+    "id": "seed-energy-n16",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我需要先有一段不用回應任何人的時間，才能恢復精神。",
+    "family": "family-energy-n16",
+    "sourceIds": [
+      "ipip-H660"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "免回應時段恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n16"
+  },
+  {
+    "id": "seed-energy-n17",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我接收許多零碎訊息後，離線獨處能幫我恢復精神。",
+    "family": "family-energy-n17",
+    "sourceIds": [
+      "ipip-V183"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "訊息後離線補能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n17"
+  },
+  {
+    "id": "seed-energy-n18",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我連續參與討論後，會靠安靜獨處補回精神。",
+    "family": "family-energy-n18",
+    "sourceIds": [
+      "ipip-H602"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "連續討論後恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n18"
+  },
+  {
+    "id": "seed-energy-n19",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我休息時寧可獨自待著，精神通常比繼續聚在一起充足。",
+    "family": "family-energy-n19",
+    "sourceIds": [
+      "ipip-H587"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "休息方式恢復比較",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n19"
+  },
+  {
+    "id": "seed-energy-n20",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我早上先獨處一陣子，當天較有精神投入互動。",
+    "family": "family-energy-n20",
+    "sourceIds": [
+      "ipip-X88"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "早晨獨處備能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n20"
+  },
+  {
+    "id": "seed-energy-n21",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我和人一起出遊後，需要自己的時間來恢復精神。",
+    "family": "family-energy-n21",
+    "sourceIds": [
+      "ipip-H1092"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "共同出遊後恢復",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n21"
+  },
+  {
+    "id": "seed-energy-n22",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我獨自整理手邊物品，會比找人聊天更能恢復精神。",
+    "family": "family-energy-n22",
+    "sourceIds": [
+      "ipip-X88"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "獨自整理補能",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n22"
+  },
+  {
+    "id": "seed-energy-n23",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我停止說話、自己待著之後，才感覺精神開始回來。",
+    "family": "family-energy-n23",
+    "sourceIds": [
+      "ipip-H602"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "停止交談後恢復起點",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n23"
+  },
+  {
+    "id": "seed-energy-n24",
+    "axis": "energy",
+    "direction": -1,
+    "text": "我即使很享受相聚，事後仍要獨處才能補回精神。",
+    "family": "family-energy-n24",
+    "sourceIds": [
+      "ipip-X88"
+    ],
+    "adaptationNote": "參考所列公開原題的社交／獨處概念，改寫成最近三個月的精神恢復偏好；這是本案原創衍生，非原量表翻譯，亦不移植原量表效度。",
+    "concept": "享受社交但需獨充",
+    "review": "project-authored",
+    "semanticCluster": "family-energy-n24"
+  },
+  {
+    "id": "seed-information-p01",
+    "axis": "information",
+    "direction": 1,
+    "text": "我接觸新資訊時，會先找可以直接對照的實際例子。",
+    "family": "family-information-p01",
+    "sourceIds": [
+      "ipip-H372"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "實例先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p01"
+  },
+  {
+    "id": "seed-information-p02",
+    "axis": "information",
+    "direction": 1,
+    "text": "我理解一件事時，會先留意現場實際發生了什麼。",
+    "family": "family-information-p02",
+    "sourceIds": [
+      "ipip-Q38"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "現場觀察先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p02"
+  },
+  {
+    "id": "seed-information-p03",
+    "axis": "information",
+    "direction": 1,
+    "text": "我閱讀說明時，會先看具體數字再想它的涵義。",
+    "family": "family-information-p03",
+    "sourceIds": [
+      "ipip-H1362"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "數字先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p03"
+  },
+  {
+    "id": "seed-information-p04",
+    "axis": "information",
+    "direction": 1,
+    "text": "我學新做法時，會先注意每個操作步驟。",
+    "family": "family-information-p04",
+    "sourceIds": [
+      "ipip-H1356"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "操作步驟先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p04"
+  },
+  {
+    "id": "seed-information-p05",
+    "axis": "information",
+    "direction": 1,
+    "text": "我認識新物品時，會先看它有哪些實際用途。",
+    "family": "family-information-p05",
+    "sourceIds": [
+      "ipip-H1308"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "用途先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p05"
+  },
+  {
+    "id": "seed-information-p06",
+    "axis": "information",
+    "direction": 1,
+    "text": "我聽人談變化時，會先問已經發生了哪些事情。",
+    "family": "family-information-p06",
+    "sourceIds": [
+      "ipip-H372"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "已發生事件先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p06"
+  },
+  {
+    "id": "seed-information-p07",
+    "axis": "information",
+    "direction": 1,
+    "text": "我理解一段對話時，會先注意對方明確說出的內容。",
+    "family": "family-information-p07",
+    "sourceIds": [
+      "ipip-Q38"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "明說內容先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p07"
+  },
+  {
+    "id": "seed-information-p08",
+    "axis": "information",
+    "direction": 1,
+    "text": "我接觸新空間時，會先留意看得見的配置與位置。",
+    "family": "family-information-p08",
+    "sourceIds": [
+      "ipip-D9"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "空間配置先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p08"
+  },
+  {
+    "id": "seed-information-p09",
+    "axis": "information",
+    "direction": 1,
+    "text": "我拿到一份資料時，會先看各個項目的具體內容。",
+    "family": "family-information-p09",
+    "sourceIds": [
+      "ipip-H1362"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "逐項內容先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p09"
+  },
+  {
+    "id": "seed-information-p10",
+    "axis": "information",
+    "direction": 1,
+    "text": "我了解事件時，會先釐清事情發生的先後順序。",
+    "family": "family-information-p10",
+    "sourceIds": [
+      "ipip-Q38"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "事件順序先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p10"
+  },
+  {
+    "id": "seed-information-p11",
+    "axis": "information",
+    "direction": 1,
+    "text": "我接觸新概念時，會先問它在日常中如何使用。",
+    "family": "family-information-p11",
+    "sourceIds": [
+      "ipip-H1308"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "概念使用先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p11"
+  },
+  {
+    "id": "seed-information-p12",
+    "axis": "information",
+    "direction": 1,
+    "text": "我聽到一種說法時，會先找支持它的實際記錄。",
+    "family": "family-information-p12",
+    "sourceIds": [
+      "ipip-H372"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "實際紀錄先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p12"
+  },
+  {
+    "id": "seed-information-p13",
+    "axis": "information",
+    "direction": 1,
+    "text": "我了解新活動時，會先看要做哪些具體事情。",
+    "family": "family-information-p13",
+    "sourceIds": [
+      "ipip-Q227"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "活動內容先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p13"
+  },
+  {
+    "id": "seed-information-p14",
+    "axis": "information",
+    "direction": 1,
+    "text": "我收到描述時，會先把注意力放在可觀察的特徵上。",
+    "family": "family-information-p14",
+    "sourceIds": [
+      "ipip-H1356"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "可觀察特徵先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p14"
+  },
+  {
+    "id": "seed-information-p15",
+    "axis": "information",
+    "direction": 1,
+    "text": "我比較幾個選項時，會先看它們各自的實際條件。",
+    "family": "family-information-p15",
+    "sourceIds": [
+      "ipip-M15"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "選項條件先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p15"
+  },
+  {
+    "id": "seed-information-p16",
+    "axis": "information",
+    "direction": 1,
+    "text": "我聽人分享經驗時，會先想知道當時的具體情境。",
+    "family": "family-information-p16",
+    "sourceIds": [
+      "ipip-H372"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "具體情境先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p16"
+  },
+  {
+    "id": "seed-information-p17",
+    "axis": "information",
+    "direction": 1,
+    "text": "我開始閱讀時，會先理解文中各段明確說了什麼。",
+    "family": "family-information-p17",
+    "sourceIds": [
+      "ipip-Q38"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "明確段意先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p17"
+  },
+  {
+    "id": "seed-information-p18",
+    "axis": "information",
+    "direction": 1,
+    "text": "我接觸新工具時，會先觀察它實際運作的樣子。",
+    "family": "family-information-p18",
+    "sourceIds": [
+      "ipip-H1308"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "實際運作先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p18"
+  },
+  {
+    "id": "seed-information-p19",
+    "axis": "information",
+    "direction": 1,
+    "text": "我記住一件事時，會先抓住具體的人物與場景。",
+    "family": "family-information-p19",
+    "sourceIds": [
+      "ipip-D9"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "人物場景先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p19"
+  },
+  {
+    "id": "seed-information-p20",
+    "axis": "information",
+    "direction": 1,
+    "text": "我看一份計畫時，會先留意它目前有哪些現成資源。",
+    "family": "family-information-p20",
+    "sourceIds": [
+      "ipip-Q227"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "現成資源先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p20"
+  },
+  {
+    "id": "seed-information-p21",
+    "axis": "information",
+    "direction": 1,
+    "text": "我聽到抽象描述時，會先想找一個能親眼看到的例子。",
+    "family": "family-information-p21",
+    "sourceIds": [
+      "ipip-X228"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "抽象轉可見例",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p21"
+  },
+  {
+    "id": "seed-information-p22",
+    "axis": "information",
+    "direction": 1,
+    "text": "我認識一項服務時，會先問實際包含哪些內容。",
+    "family": "family-information-p22",
+    "sourceIds": [
+      "ipip-M15"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "服務內容先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p22"
+  },
+  {
+    "id": "seed-information-p23",
+    "axis": "information",
+    "direction": 1,
+    "text": "我面對陌生資訊時，會先從熟悉的具體經驗理解它。",
+    "family": "family-information-p23",
+    "sourceIds": [
+      "ipip-H372"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "熟悉經驗對照",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p23"
+  },
+  {
+    "id": "seed-information-p24",
+    "axis": "information",
+    "direction": 1,
+    "text": "我接觸一個整體說法時，會先拆看它由哪些細節構成。",
+    "family": "family-information-p24",
+    "sourceIds": [
+      "ipip-H1362"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "拆細節理解整體",
+    "review": "project-authored",
+    "semanticCluster": "family-information-p24"
+  },
+  {
+    "id": "seed-information-n01",
+    "axis": "information",
+    "direction": -1,
+    "text": "我接觸新資訊時，會先想它可能連到哪些其他想法。",
+    "family": "family-information-n01",
+    "sourceIds": [
+      "ipip-H1321"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "跨想法連結先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n01"
+  },
+  {
+    "id": "seed-information-n02",
+    "axis": "information",
+    "direction": -1,
+    "text": "我理解一件事時，會先看它在整體脈絡中的位置。",
+    "family": "family-information-n02",
+    "sourceIds": [
+      "ipip-W281"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "整體脈絡先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n02"
+  },
+  {
+    "id": "seed-information-n03",
+    "axis": "information",
+    "direction": -1,
+    "text": "我閱讀說明時，會先想這些內容還能延伸到哪裡。",
+    "family": "family-information-n03",
+    "sourceIds": [
+      "ipip-H473"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "說明延伸先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n03"
+  },
+  {
+    "id": "seed-information-n04",
+    "axis": "information",
+    "direction": -1,
+    "text": "我學新做法時，會先想它背後的整體概念。",
+    "family": "family-information-n04",
+    "sourceIds": [
+      "ipip-X239"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "概念先於操作",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n04"
+  },
+  {
+    "id": "seed-information-n05",
+    "axis": "information",
+    "direction": -1,
+    "text": "我認識新物品時，會先想它還可能有哪些不同用法。",
+    "family": "family-information-n05",
+    "sourceIds": [
+      "ipip-H60"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "替代用途先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n05"
+  },
+  {
+    "id": "seed-information-n06",
+    "axis": "information",
+    "direction": -1,
+    "text": "我聽人談變化時，會先想接下來可能出現什麼。",
+    "family": "family-information-n06",
+    "sourceIds": [
+      "ipip-H473"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "未來走向先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n06"
+  },
+  {
+    "id": "seed-information-n07",
+    "axis": "information",
+    "direction": -1,
+    "text": "我理解一段對話時，會先想對方話語背後的整體意思。",
+    "family": "family-information-n07",
+    "sourceIds": [
+      "ipip-W281"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "整體含意先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n07"
+  },
+  {
+    "id": "seed-information-n08",
+    "axis": "information",
+    "direction": -1,
+    "text": "我接觸新空間時，會先想像它可能呈現的不同樣貌。",
+    "family": "family-information-n08",
+    "sourceIds": [
+      "ipip-X14"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "空間可能樣貌先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n08"
+  },
+  {
+    "id": "seed-information-n09",
+    "axis": "information",
+    "direction": -1,
+    "text": "我拿到一份資料時，會先找各項內容之間的關聯。",
+    "family": "family-information-n09",
+    "sourceIds": [
+      "ipip-H1321"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "資料關聯先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n09"
+  },
+  {
+    "id": "seed-information-n10",
+    "axis": "information",
+    "direction": -1,
+    "text": "我了解事件時，會先想其中反覆出現的共同模式。",
+    "family": "family-information-n10",
+    "sourceIds": [
+      "ipip-H1321"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "共同模式先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n10"
+  },
+  {
+    "id": "seed-information-n11",
+    "axis": "information",
+    "direction": -1,
+    "text": "我接觸新概念時，會先想它能解釋哪些不同現象。",
+    "family": "family-information-n11",
+    "sourceIds": [
+      "ipip-X239"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "概念解釋範圍先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n11"
+  },
+  {
+    "id": "seed-information-n12",
+    "axis": "information",
+    "direction": -1,
+    "text": "我聽到一種說法時，會先想它連結的整體觀點。",
+    "family": "family-information-n12",
+    "sourceIds": [
+      "ipip-W281"
+    ],
+    "adaptationNote": "adjacent：原題為看見大局的能力自評，本題移除能力比較，改寫成最近三個月先關注整體觀點的偏好；非翻譯，不把能力或原量表效度移植到本案。",
+    "concept": "說法整體觀點先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n12"
+  },
+  {
+    "id": "seed-information-n13",
+    "axis": "information",
+    "direction": -1,
+    "text": "我了解新活動時，會先想參與後可能產生的不同經驗。",
+    "family": "family-information-n13",
+    "sourceIds": [
+      "ipip-W265"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "活動可能經驗先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n13"
+  },
+  {
+    "id": "seed-information-n14",
+    "axis": "information",
+    "direction": -1,
+    "text": "我收到描述時，會先在心裡形成一幅整體圖像。",
+    "family": "family-information-n14",
+    "sourceIds": [
+      "ipip-W281"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "整體圖像先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n14"
+  },
+  {
+    "id": "seed-information-n15",
+    "axis": "information",
+    "direction": -1,
+    "text": "我比較幾個選項時，會先想每個選項能開出哪些可能。",
+    "family": "family-information-n15",
+    "sourceIds": [
+      "ipip-H473"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "選項可能先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n15"
+  },
+  {
+    "id": "seed-information-n16",
+    "axis": "information",
+    "direction": -1,
+    "text": "我聽人分享經驗時，會先想這段經驗代表的更大意義。",
+    "family": "family-information-n16",
+    "sourceIds": [
+      "ipip-W281"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "經驗意義先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n16"
+  },
+  {
+    "id": "seed-information-n17",
+    "axis": "information",
+    "direction": -1,
+    "text": "我開始閱讀時，會先猜想全文想串起的核心想法。",
+    "family": "family-information-n17",
+    "sourceIds": [
+      "ipip-W281"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "核心主題先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n17"
+  },
+  {
+    "id": "seed-information-n18",
+    "axis": "information",
+    "direction": -1,
+    "text": "我接觸新工具時，會先想它能與哪些事情重新組合。",
+    "family": "family-information-n18",
+    "sourceIds": [
+      "ipip-H60"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "工具新組合先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n18"
+  },
+  {
+    "id": "seed-information-n19",
+    "axis": "information",
+    "direction": -1,
+    "text": "我記住一件事時，會先抓住它帶給我的整體印象。",
+    "family": "family-information-n19",
+    "sourceIds": [
+      "ipip-W281"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "整體印象先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n19"
+  },
+  {
+    "id": "seed-information-n20",
+    "axis": "information",
+    "direction": -1,
+    "text": "我看一份計畫時，會先想它能發展成哪些不同方向。",
+    "family": "family-information-n20",
+    "sourceIds": [
+      "ipip-H473"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "計畫發展先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n20"
+  },
+  {
+    "id": "seed-information-n21",
+    "axis": "information",
+    "direction": -1,
+    "text": "我聽到具體事例時，會先想它能代表什麼普遍概念。",
+    "family": "family-information-n21",
+    "sourceIds": [
+      "ipip-X239"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "事例轉概念先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n21"
+  },
+  {
+    "id": "seed-information-n22",
+    "axis": "information",
+    "direction": -1,
+    "text": "我認識一項服務時，會先想它還可能改變哪些生活方式。",
+    "family": "family-information-n22",
+    "sourceIds": [
+      "ipip-X14"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "生活延伸先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n22"
+  },
+  {
+    "id": "seed-information-n23",
+    "axis": "information",
+    "direction": -1,
+    "text": "我面對陌生資訊時，會先想像幾種可能成立的解釋。",
+    "family": "family-information-n23",
+    "sourceIds": [
+      "ipip-H473"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "多解釋先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n23"
+  },
+  {
+    "id": "seed-information-n24",
+    "axis": "information",
+    "direction": -1,
+    "text": "我接觸許多細節時，會先找能把它們串起來的整體想法。",
+    "family": "family-information-n24",
+    "sourceIds": [
+      "ipip-H1321"
+    ],
+    "adaptationNote": "參考所列公開原題的具體資訊／整體與可能性概念，改寫成最近三個月先關注什麼的行為；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "統整細節先行",
+    "review": "project-authored",
+    "semanticCluster": "family-information-n24"
+  },
+  {
+    "id": "seed-decision-p01",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我做取捨時，會先檢查選擇是否符合相同的原則。",
+    "family": "family-decision-p01",
+    "sourceIds": [
+      "ipip-A6"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "一致原則先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p01"
+  },
+  {
+    "id": "seed-decision-p02",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我分配有限資源時，會先訂出適用於每個人的標準。",
+    "family": "family-decision-p02",
+    "sourceIds": [
+      "ipip-W81"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "資源標準先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p02"
+  },
+  {
+    "id": "seed-decision-p03",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我回應請求時，會先看同類情況應採用什麼規則。",
+    "family": "family-decision-p03",
+    "sourceIds": [
+      "ipip-W78"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "同類規則先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p03"
+  },
+  {
+    "id": "seed-decision-p04",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我決定是否破例時，會先檢查理由能否同樣適用於別人。",
+    "family": "family-decision-p04",
+    "sourceIds": [
+      "ipip-V202"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "破例普遍化先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p04"
+  },
+  {
+    "id": "seed-decision-p05",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我比較方案時，會先衡量各自理由是否前後一致。",
+    "family": "family-decision-p05",
+    "sourceIds": [
+      "ipip-H1223"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "理由一致先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p05"
+  },
+  {
+    "id": "seed-decision-p06",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我處理分歧時，會先找雙方都能使用的判斷依據。",
+    "family": "family-decision-p06",
+    "sourceIds": [
+      "ipip-V154"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "共同依據先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p06"
+  },
+  {
+    "id": "seed-decision-p07",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我評估一項提議時，會先把提出者身分放在一旁看理由。",
+    "family": "family-decision-p07",
+    "sourceIds": [
+      "ipip-V154"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "身分中立先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p07"
+  },
+  {
+    "id": "seed-decision-p08",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我作出重要決定前，會先整理支持結論的理由。",
+    "family": "family-decision-p08",
+    "sourceIds": [
+      "ipip-V292"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "結論理由先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p08"
+  },
+  {
+    "id": "seed-decision-p09",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我處理熟人的要求時，會先沿用對其他人相同的標準。",
+    "family": "family-decision-p09",
+    "sourceIds": [
+      "ipip-W78"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "熟人同標準先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p09"
+  },
+  {
+    "id": "seed-decision-p10",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我決定如何回饋時，會先依照已約定的評估準則。",
+    "family": "family-decision-p10",
+    "sourceIds": [
+      "ipip-A6"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "回饋準則先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p10"
+  },
+  {
+    "id": "seed-decision-p11",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我面對衝突時，會先分清哪些主張有可共同檢查的依據。",
+    "family": "family-decision-p11",
+    "sourceIds": [
+      "ipip-H1223"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "衝突依據先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p11"
+  },
+  {
+    "id": "seed-decision-p12",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我考慮例外安排時，會先想它是否改變原本的公平標準。",
+    "family": "family-decision-p12",
+    "sourceIds": [
+      "ipip-V202"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "例外標準先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p12"
+  },
+  {
+    "id": "seed-decision-p13",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我選擇做法時，會先檢查它與先前決定是否矛盾。",
+    "family": "family-decision-p13",
+    "sourceIds": [
+      "ipip-H1223"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "前後決策一致先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p13"
+  },
+  {
+    "id": "seed-decision-p14",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我協調不同要求時，會先提出一套共同適用的排序方式。",
+    "family": "family-decision-p14",
+    "sourceIds": [
+      "ipip-W81"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "共同排序先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p14"
+  },
+  {
+    "id": "seed-decision-p15",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我判斷責任時，會先看各方原先承擔的約定。",
+    "family": "family-decision-p15",
+    "sourceIds": [
+      "ipip-V292"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "責任約定先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p15"
+  },
+  {
+    "id": "seed-decision-p16",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我答應幫忙前，會先確認自己採用的判準是否一致。",
+    "family": "family-decision-p16",
+    "sourceIds": [
+      "ipip-A6"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "協助判準先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p16"
+  },
+  {
+    "id": "seed-decision-p17",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我審視一個決定時，會先問換成另一人是否仍應採用相同標準。",
+    "family": "family-decision-p17",
+    "sourceIds": [
+      "ipip-W78"
+    ],
+    "adaptationNote": "adjacent：原題描述不同情況下公平行事，本題改寫為更換當事人仍採相同判準的優先考量；為本案最近三個月行為母題，非翻譯，不移植原量表效度。",
+    "concept": "換位一致標準先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p17"
+  },
+  {
+    "id": "seed-decision-p18",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我在意見相近的人之間選擇時，會先比較主張的理由。",
+    "family": "family-decision-p18",
+    "sourceIds": [
+      "ipip-H1223"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "比較論證先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p18"
+  },
+  {
+    "id": "seed-decision-p19",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我決定如何處理錯誤時，會先對照事先說明的原則。",
+    "family": "family-decision-p19",
+    "sourceIds": [
+      "ipip-V202"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "錯誤處理原則先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p19"
+  },
+  {
+    "id": "seed-decision-p20",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我決定改變安排時，會先確認理由能否對所有人說明。",
+    "family": "family-decision-p20",
+    "sourceIds": [
+      "ipip-V154"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "改變理由可公開先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p20"
+  },
+  {
+    "id": "seed-decision-p21",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我面對兩難時，會先釐清自己要遵循的共同準則。",
+    "family": "family-decision-p21",
+    "sourceIds": [
+      "ipip-A6"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "兩難準則先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p21"
+  },
+  {
+    "id": "seed-decision-p22",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我為別人作建議時，會先讓推論與結論彼此對得起來。",
+    "family": "family-decision-p22",
+    "sourceIds": [
+      "ipip-H1223"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "建議推論一致先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p22"
+  },
+  {
+    "id": "seed-decision-p23",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我回應不同立場時，會先用相同問題檢查各方理由。",
+    "family": "family-decision-p23",
+    "sourceIds": [
+      "ipip-V154"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "對稱檢查先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p23"
+  },
+  {
+    "id": "seed-decision-p24",
+    "axis": "decision",
+    "direction": 1,
+    "text": "我決定如何分工時，會先依照事先共同接受的分配原則。",
+    "family": "family-decision-p24",
+    "sourceIds": [
+      "ipip-W81"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "分工原則先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-p24"
+  },
+  {
+    "id": "seed-decision-n01",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我做取捨時，會先衡量這個選擇對當事人的意義。",
+    "family": "family-decision-n01",
+    "sourceIds": [
+      "ipip-H159"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "個人意義先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n01"
+  },
+  {
+    "id": "seed-decision-n02",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我分配有限資源時，會先了解每個人目前面臨的難處。",
+    "family": "family-decision-n02",
+    "sourceIds": [
+      "ipip-W283"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "資源處境先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n02"
+  },
+  {
+    "id": "seed-decision-n03",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我回應請求時，會先聽對方這次具體遇到了什麼。",
+    "family": "family-decision-n03",
+    "sourceIds": [
+      "ipip-H1130"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "請求處境先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n03"
+  },
+  {
+    "id": "seed-decision-n04",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我決定是否破例時，會先考慮當事人的特殊情況。",
+    "family": "family-decision-n04",
+    "sourceIds": [
+      "ipip-W283"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "破例個別處境先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n04"
+  },
+  {
+    "id": "seed-decision-n05",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我比較方案時，會先想各方實際承受的影響。",
+    "family": "family-decision-n05",
+    "sourceIds": [
+      "ipip-H159"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "方案人本影響先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n05"
+  },
+  {
+    "id": "seed-decision-n06",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我處理分歧時，會先理解雙方最在意的是什麼。",
+    "family": "family-decision-n06",
+    "sourceIds": [
+      "ipip-H175"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "分歧價值先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n06"
+  },
+  {
+    "id": "seed-decision-n07",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我評估一項提議時，會先了解提出者希望回應哪種需要。",
+    "family": "family-decision-n07",
+    "sourceIds": [
+      "ipip-W283"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "提議需要先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n07"
+  },
+  {
+    "id": "seed-decision-n08",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我作出重要決定前，會先想相關的人將如何經歷它。",
+    "family": "family-decision-n08",
+    "sourceIds": [
+      "ipip-H1130"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "決定個人經歷先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n08"
+  },
+  {
+    "id": "seed-decision-n09",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我處理熟人的要求時，會先了解他目前的生活處境。",
+    "family": "family-decision-n09",
+    "sourceIds": [
+      "ipip-W283"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "熟人當下處境先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n09"
+  },
+  {
+    "id": "seed-decision-n10",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我決定如何回饋時，會先考慮對方此刻能怎樣接收。",
+    "family": "family-decision-n10",
+    "sourceIds": [
+      "ipip-H159"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "回饋接收處境先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n10"
+  },
+  {
+    "id": "seed-decision-n11",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我面對衝突時，會先聽見各方被影響的經驗。",
+    "family": "family-decision-n11",
+    "sourceIds": [
+      "ipip-H1130"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "衝突個人經驗先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n11"
+  },
+  {
+    "id": "seed-decision-n12",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我考慮例外安排時，會先想誰有目前難以承受的負擔。",
+    "family": "family-decision-n12",
+    "sourceIds": [
+      "ipip-E115"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "例外負擔先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n12"
+  },
+  {
+    "id": "seed-decision-n13",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我選擇做法時，會先看相關的人有哪些不同需要。",
+    "family": "family-decision-n13",
+    "sourceIds": [
+      "ipip-W283"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "需要差異先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n13"
+  },
+  {
+    "id": "seed-decision-n14",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我協調不同要求時，會先問每個人最難放下的是什麼。",
+    "family": "family-decision-n14",
+    "sourceIds": [
+      "ipip-H175"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "協調個人重視先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n14"
+  },
+  {
+    "id": "seed-decision-n15",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我判斷責任時，會先了解各方當時能運用的條件。",
+    "family": "family-decision-n15",
+    "sourceIds": [
+      "ipip-W283"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "責任當時條件先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n15"
+  },
+  {
+    "id": "seed-decision-n16",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我答應幫忙前，會先理解對方最希望得到哪種支持。",
+    "family": "family-decision-n16",
+    "sourceIds": [
+      "ipip-H159"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "支持需要先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n16"
+  },
+  {
+    "id": "seed-decision-n17",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我審視一個決定時，會先考慮當事人希望被怎樣對待。",
+    "family": "family-decision-n17",
+    "sourceIds": [
+      "ipip-H159"
+    ],
+    "adaptationNote": "adjacent：原題為尊重他人感受，本題改成決策時先考慮個別的待人方式期待，移除尊嚴的普遍道德評價；為最近三個月的本案原創母題，非翻譯，不移植原量表效度。",
+    "concept": "個別待人期待先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n17"
+  },
+  {
+    "id": "seed-decision-n18",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我在意見相近的人之間選擇時，會先了解各自看重的價值。",
+    "family": "family-decision-n18",
+    "sourceIds": [
+      "ipip-H175"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "個別價值先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n18"
+  },
+  {
+    "id": "seed-decision-n19",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我決定如何處理錯誤時，會先了解當事人當時的困境。",
+    "family": "family-decision-n19",
+    "sourceIds": [
+      "ipip-W283"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "錯誤處境先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n19"
+  },
+  {
+    "id": "seed-decision-n20",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我決定改變安排時，會先留意誰需要時間適應。",
+    "family": "family-decision-n20",
+    "sourceIds": [
+      "ipip-H1130"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "改變適應先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n20"
+  },
+  {
+    "id": "seed-decision-n21",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我面對兩難時，會先想哪種需要對當事人最重要。",
+    "family": "family-decision-n21",
+    "sourceIds": [
+      "ipip-H159"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "兩難需要先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n21"
+  },
+  {
+    "id": "seed-decision-n22",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我為別人作建議時，會先考慮他的生活方式與重視的事。",
+    "family": "family-decision-n22",
+    "sourceIds": [
+      "ipip-H175"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "建議生活價值先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n22"
+  },
+  {
+    "id": "seed-decision-n23",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我回應不同立場時，會先理解各方形成看法的經歷。",
+    "family": "family-decision-n23",
+    "sourceIds": [
+      "ipip-W283"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "立場經歷先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n23"
+  },
+  {
+    "id": "seed-decision-n24",
+    "axis": "decision",
+    "direction": -1,
+    "text": "我決定如何分工時，會先了解每個人的實際負荷。",
+    "family": "family-decision-n24",
+    "sourceIds": [
+      "ipip-H1130"
+    ],
+    "adaptationNote": "參考所列公開原題的邏輯、公平或體諒概念，改寫成最近三個月作決定的優先考量；非原量表翻譯，亦不移植原量表效度。",
+    "concept": "分工個人負荷先行",
+    "review": "project-authored",
+    "semanticCluster": "family-decision-n24"
+  }
+]

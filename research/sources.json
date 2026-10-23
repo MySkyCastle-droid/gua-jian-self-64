@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "1.0.0",
+  "collectedAt": "2026-10-23T10:20:55.613306+00:00",
+  "summary": {
+    "originalSourceRows": 3370,
+    "uniqueOriginalItems": 3370,
+    "sourceCounts": {
+      "ipip-ori": 3320,
+      "tipi-gosling": 10,
+      "minimarkers-saucier": 40
+    },
+    "ipipUniqueOriginalItems": 3320,
+    "additionalNonIpipOriginalItems": 50,
+    "normalizedDuplicateRowsCollapsed": 0,
+    "originalIdReferences": 3439,
+    "scaleKeyAssignments": 3457,
+    "itemsWithScaleKeys": 1609,
+    "unmatchedScaleKeyRows": 359,
+    "clinicalOriginOrScaleExcluded": 740,
+    "nonClinicalCandidatesPendingReview": 2630,
+    "gapTo5000Originals": 1630,
+    "gapTo10000Originals": 6630,
+    "countingRule": "One normalized original English wording counts once; multiple ids, scale reuse, translations, and derived situations do not increase original count."
+  },
+  "sources": [
+    {
+      "id": "ipip-ori",
+      "title": "International Personality Item Pool official alphabetical list",
+      "url": "https://ipip.ori.org/AlphabeticalItemList.htm",
+      "license": "public-domain",
+      "licenseSource": "https://ipip.ori.org/newPermission.htm",
+      "licenseEvidenceFile": "research/raw/ipip-permission.html",
+      "status": "downloaded-and-deduplicated",
+      "uniqueOriginalItems": 3320,
+      "notes": "Includes all archived IPIP origins; clinical-origin items are flagged and are not approved for the website."
+    },
+    {
+      "id": "tipi-gosling",
+      "title": "Ten-Item Personality Inventory, Gosling author-hosted original",
+      "url": "https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/ten-item-personality-inventory-tipi/",
+      "license": "author-permission-any-purpose",
+      "licenseSource": "https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/",
+      "licenseEvidenceFile": "research/raw/tipi-permission.html",
+      "status": "downloaded-and-deduplicated",
+      "uniqueOriginalItems": 10,
+      "notes": "Ten paired-adjective self-rating items, counted as ten questions rather than twenty adjectives; Big Five keys are retained without remapping to the project's six axes."
+    },
+    {
+      "id": "minimarkers-saucier",
+      "title": "Mini-Markers, Gerard Saucier author-hosted original",
+      "url": "https://pages.uoregon.edu/gsaucier/gsau41oldversion.htm",
+      "license": "public-domain",
+      "licenseSource": "https://pages.uoregon.edu/gsaucier/gsau4a.html",
+      "licenseEvidenceFile": "research/raw/minimarkers-permission.html",
+      "status": "downloaded-and-deduplicated",
+      "uniqueOriginalItems": 40,
+      "notes": "Forty adjective self-ratings; distinct original wordings, not forty additional independent constructs. Original Big Five signed scoring keys retained."
+    },
+    {
+      "id": "ipip-assignments",
+      "title": "Thomas Tedone item assignment table hosted by IPIP",
+      "url": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx",
+      "license": "public-domain IPIP items and scales",
+      "status": "downloaded-and-linked",
+      "notes": "An item's signed key is scale-specific; the archive does not pretend it is a validated key for this project's six original axes."
+    },
+    {
+      "id": "sapa-master",
+      "title": "SAPA Master Item List",
+      "url": "https://www.sapa-project.org/research/masteritemlist.html",
+      "status": "not-downloadable-from-official-list",
+      "uniqueOriginalItemsAdded": 0,
+      "notes": "Official page describes about 6000 mixed constructs but says the CSV has been temporarily offline since 19 January 2018. Includes clinical/health content and approximately 2500 IPIP overlaps, so its headline count cannot be added to IPIP."
+    },
+    {
+      "id": "oejts",
+      "title": "Open Extended Jungian Type Scales development item pool",
+      "url": "https://openpsychometrics.org/tests/OJTS/development/",
+      "license": "CC-BY-NC-SA-4.0",
+      "status": "excluded-license",
+      "uniqueOriginalItemsAdded": 0,
+      "notes": "Official Appendix B applies a non-commercial share-alike license to the items and page; not included in this public-domain/MIT/Apache collection."
+    },
+    {
+      "id": "ambi",
+      "title": "Analog to Multiple Broadband Inventories",
+      "url": "https://openpsychometrics.org/tests/AMBI/",
+      "license": "public-domain IPIP subset",
+      "status": "not-counted-as-new-originals",
+      "uniqueOriginalItemsAdded": 0,
+      "notes": "181 items from IPIP; the 2019 respondent dataset does not create additional original items."
+    },
+    {
+      "id": "github-ipip-neo-data",
+      "title": "NeuroQuestAi IPIP-NEO Data",
+      "url": "https://github.com/NeuroQuestAi/ipip-neo-data",
+      "license": "references IPIP public-domain permission",
+      "status": "not-counted-as-new-originals",
+      "uniqueOriginalItemsAdded": 0,
+      "notes": "120/300 item subsets plus participant response records and calculated scores; dataset row counts are not independent question counts."
+    },
+    {
+      "id": "hf-ipip-scores",
+      "title": "Hugging Face IPIP-120/300 scores",
+      "url": "https://huggingface.co/datasets/ecorbari/IPIP120-SCORES",
+      "license": "MIT dataset card; underlying IPIP public domain",
+      "status": "not-counted-as-new-originals",
+      "uniqueOriginalItemsAdded": 0,
+      "notes": "Response records, not a new pool of hundreds of thousands of questions. No participant records downloaded for this project."
+    },
+    {
+      "id": "bim-2008",
+      "title": "Basic Interest Markers current author permission",
+      "url": "https://labs.wsu.edu/caw/scales/",
+      "license": "current author page restricts to noncommercial use",
+      "status": "excluded-license-conflict",
+      "uniqueOriginalItemsAdded": 0,
+      "notes": "The original paper title calls these public-domain, but the current author-hosted scale page expressly says copyright and noncommercial permission. No items imported pending clear reusable terms."
+    },
+    {
+      "id": "riasec-markers",
+      "title": "RIASEC Markers current author permission",
+      "url": "https://jrounds.weebly.com/riasec-markers-scalesitems.html",
+      "license": "current author page restricts to noncommercial use",
+      "status": "excluded-license-conflict",
+      "uniqueOriginalItemsAdded": 0,
+      "notes": "Paper title says public-domain; current author page expressly restricts free permission to noncommercial use. No items imported."
+    },
+    {
+      "id": "onet-interest-profiler",
+      "title": "O*NET Career Exploration Tools license",
+      "url": "https://www.onetcenter.org/license_tools.html",
+      "license": "CC-BY-ND-4.0 or separate O*NET Tools Developer License",
+      "status": "excluded-adaptation-restriction",
+      "uniqueOriginalItemsAdded": 0,
+      "notes": "Do not conflate the tools license with the O*NET database license. The verbatim-copy license does not permit derived questionnaire items; the separate developer terms need a future deliberate integration."
+    }
+  ],
+  "rawFiles": [
+    {
+      "url": "https://ipip.ori.org/",
+      "file": "research/raw/ipip-home.html",
+      "bytes": 8558,
+      "sha256": "45d41652bdf7a434973b8501051272e2e8b764f588629fed96f22116d184cd0e"
+    },
+    {
+      "url": "https://ipip.ori.org/newPermission.htm",
+      "file": "research/raw/ipip-permission.html",
+      "bytes": 1046,
+      "sha256": "15e3d162504ce920c1da2476941b2a538f2d06075b514324de8cbeab874cc198"
+    },
+    {
+      "url": "https://ipip.ori.org/AlphabeticalItemList.htm",
+      "file": "research/raw/ipip-alphabetical-items.html",
+      "bytes": 849217,
+      "sha256": "df326e934612066a1ec9ccdd356e48238fdb809b4e2aa7f9076d6b3195a012ba"
+    },
+    {
+      "url": "https://ipip.ori.org/ItemAssignmentTable.htm",
+      "file": "research/raw/ipip-item-assignment.html",
+      "bytes": 3759,
+      "sha256": "c879f27c296cd7e40c1cdea71129c768d36550413361ba36bb84352778cba9f3"
+    },
+    {
+      "url": "https://www.sapa-project.org/research/masteritemlist.html",
+      "file": "research/raw/sapa-master-item-list.html",
+      "bytes": 6153,
+      "sha256": "d0188e7650eae777c752ddbb1b7f90e4d0e4609fa28d2089996abb024151643b"
+    },
+    {
+      "url": "https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/",
+      "file": "research/raw/tipi-permission.html",
+      "bytes": 56152,
+      "sha256": "138f1ed2c6eb96587d1f829fe739f561db27f3f02898ccd47c59818f5fae8bc3"
+    },
+    {
+      "url": "https://gosling.psy.utexas.edu/scales-weve-developed/ten-item-personality-measure-tipi/ten-item-personality-inventory-tipi/",
+      "file": "research/raw/tipi-items.html",
+      "bytes": 26920,
+      "sha256": "d5ccd57cfef64cde2628e1aba21a10c9a303eda1a2fa8d1e42c43623c915da61"
+    },
+    {
+      "url": "https://pages.uoregon.edu/gsaucier/gsau4a.html",
+      "file": "research/raw/minimarkers-permission.html",
+      "bytes": 2630,
+      "sha256": "05936e3d2ca6c243b8271e3768b225a9697c829138bd96d44c6d576cc4a7e77d"
+    },
+    {
+      "url": "https://pages.uoregon.edu/gsaucier/gsau41oldversion.htm",
+      "file": "research/raw/minimarkers-items.html",
+      "bytes": 6967,
+      "sha256": "389179c6ceaf14f45b1c70cdb87afabab5d13ae9f03b06db82e691e654410cc3"
+    },
+    {
+      "url": "https://labs.wsu.edu/caw/scales/",
+      "file": "research/raw/bim-permission.html",
+      "bytes": 39131,
+      "sha256": "985f5925bad169b1e55dcace15ec9696266b000b4da76ca0e3c87a7027727a5f"
+    },
+    {
+      "url": "https://jrounds.weebly.com/riasec-markers-scalesitems.html",
+      "file": "research/raw/riasec-permission.html",
+      "bytes": 45842,
+      "sha256": "e0555a714343d052785c29c618b0df46b3053a6f38f2dfde8e507aed5620f0b5"
+    },
+    {
+      "url": "https://www.onetcenter.org/license_tools.html",
+      "file": "research/raw/onet-tool-license.html",
+      "bytes": 41205,
+      "sha256": "5f5a273152ae96e4e3fb5cb23c4871dd96b6762b73eeeda1546408f26e1655db"
+    },
+    {
+      "url": "https://ipip.ori.org/TedoneItemAssignmentTable30APR21.xlsx",
+      "file": "research/raw/ipip-item-assignment.xlsx",
+      "bytes": 143847,
+      "sha256": "f509f4c5b8704e28a9d38ce10a12fa83f10dc488383658ffa934efb12af51ad6"
+    }
+  ]
+}

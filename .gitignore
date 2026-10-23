@@ -1,0 +1,24 @@
+.openai/local/
+.openai/source-credential*
+artifacts/
+test-output/
+*.log
+*.stop
+node_modules/
+question-bank/derived-items.jsonl
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+
+# Public exports exclude private deployment settings and full upstream snapshots.
+.openai/
+research/raw/
+
+# Restored by scripts/prepare-source.py from tracked checksum-verified .gz files.
+research/source-items.json
+question-bank/original-items.jsonl
+dist/vendor/surveyjs/3.2.2/survey.core.min.js
+dist/vendor/surveyjs/3.2.2/survey-core.min.css
+*.prepare.partial

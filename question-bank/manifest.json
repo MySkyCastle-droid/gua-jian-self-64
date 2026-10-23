@@ -1,0 +1,63 @@
+{
+  "version": "2.1.0",
+  "builtAt": "2026-10-23T10:40:50.203332+00:00",
+  "sourceCount": 3370,
+  "sourceCounts": {
+    "ipip-ori": 3320,
+    "tipi-gosling": 10,
+    "minimarkers-saucier": 40
+  },
+  "seedCount": 288,
+  "semanticClusterCount": 277,
+  "derivedCount": 100000,
+  "uniqueNormalizedDerivedCount": 100000,
+  "familyCount": 288,
+  "inputs": {
+    "research/source-items.json": "111f8992904623013634318675e8fe6d781215abd03943cef9e4bd73aec622ec",
+    "research/bank-seeds-a.json": "e9d4b0675af6474d7da261c6c56368cb2401ddccc3c1fac095bde29ffeb3de85",
+    "research/bank-seeds-b.json": "bf72c0f6354fe5cd4a706ce12c89c0cf1cabe255ca5e0a422ba4496974827358",
+    "research/bank-contexts.json": "877a70b310f908ca45df41d018bb3ed359bc1e906a4e83b3f8729f3adebb8326"
+  },
+  "bucketCounts": {
+    "energy-positive": 8334,
+    "energy-negative": 8334,
+    "information-positive": 8334,
+    "information-negative": 8334,
+    "decision-positive": 8333,
+    "decision-negative": 8333,
+    "organization-positive": 8333,
+    "organization-negative": 8333,
+    "emotion-positive": 8333,
+    "emotion-negative": 8333,
+    "coordination-positive": 8333,
+    "coordination-negative": 8333
+  },
+  "outputs": [
+    {
+      "file": "question-bank/derived-items.jsonl",
+      "bytes": 65626735,
+      "sha256": "6181a629d862b2f88609b869b75d6a0f71992dadffb4d95ce040ae9dea7b6192"
+    },
+    {
+      "file": "question-bank/original-items.jsonl",
+      "bytes": 2473253,
+      "sha256": "63cb8dd0d386f54a244be0302357cd7e4319b6d61bd463f218acd152f68b7e7d"
+    },
+    {
+      "file": "question-bank/catalog.json",
+      "bytes": 225018,
+      "sha256": "522b0ca98033867ccd2a224146ba7f56411f18a746ca0ac80ab35b027f2c59fc"
+    },
+    {
+      "file": "question-bank/routing-index.json",
+      "bytes": 64100,
+      "sha256": "cf8a9384a11a9f407d73adae55b34d7b18df1c3b747e4f3315f229a2f10fcbe2"
+    },
+    {
+      "file": "dist/data/bank.js",
+      "bytes": 177732,
+      "sha256": "9438ca288e6e72280f0a6a952a76bca0ae59af9d6d153394a7e1f0966e7e7e1b"
+    }
+  ],
+  "countingNote": "3370 archived original items, 288 project-authored semantic seed families, 100000 contextual derivatives. Translations and variants do not increase the original count; no psychometric validity is inherited."
+}

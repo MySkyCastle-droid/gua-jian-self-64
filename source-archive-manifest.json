@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "format": "gzip",
+  "purpose": "Lossless public repository transport; restore before serving dist or generating questions.",
+  "entries": [
+    {
+      "path": "research/source-items.json",
+      "bytes": 3551515,
+      "sha256": "111f8992904623013634318675e8fe6d781215abd03943cef9e4bd73aec622ec",
+      "archive": "research/source-items.json.gz",
+      "archiveBytes": 185798,
+      "archiveSha256": "035b6d55ef4bb818efbac431728ee812a9570aa494de313ba9361f63482ea2dc"
+    },
+    {
+      "path": "question-bank/original-items.jsonl",
+      "bytes": 2473253,
+      "sha256": "63cb8dd0d386f54a244be0302357cd7e4319b6d61bd463f218acd152f68b7e7d",
+      "archive": "question-bank/original-items.jsonl.gz",
+      "archiveBytes": 163458,
+      "archiveSha256": "ea7449264b454f9f8e08c1e9deb8084f50ee096070fae2bbd7b59b1bed0f4acf"
+    },
+    {
+      "path": "dist/vendor/surveyjs/3.2.2/survey.core.min.js",
+      "bytes": 1721707,
+      "sha256": "c6fe8ca785bc05438a719f8aaead92bf887639cda1aadeeee98f056671705b65",
+      "archive": "dist/vendor/surveyjs/3.2.2/survey.core.min.js.gz",
+      "archiveBytes": 386745,
+      "archiveSha256": "cd9b7f48744bc9e4c7c2bcb38f2a94e34318092f97fa8244ebd702c6a47a0939"
+    },
+    {
+      "path": "dist/vendor/surveyjs/3.2.2/survey-core.min.css",
+      "bytes": 525467,
+      "sha256": "899f9604d25bcbd6193b3a9dfe25e56c5a282a95812c71d642f1873ea3194162",
+      "archive": "dist/vendor/surveyjs/3.2.2/survey-core.min.css.gz",
+      "archiveBytes": 50304,
+      "archiveSha256": "d4553c1023214d20d12fab7c6a395694862287e4b9ebe047fab3997ba267cb35"
+    }
+  ]
+}

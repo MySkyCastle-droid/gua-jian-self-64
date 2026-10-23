@@ -1,0 +1,2694 @@
+{
+  "version": "2.1.0",
+  "typeCount": 64,
+  "routes": {
+    "ESTJ-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ESTJ-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ESTJ-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ESTJ-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ESTP-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ESTP-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ESTP-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ESTP-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ESFJ-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ESFJ-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ESFJ-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ESFJ-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ESFP-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ESFP-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ESFP-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ESFP-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ENTJ-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ENTJ-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ENTJ-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ENTJ-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ENTP-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ENTP-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ENTP-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ENTP-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ENFJ-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ENFJ-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ENFJ-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ENFJ-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ENFP-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ENFP-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ENFP-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ENFP-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 1,
+          "count": 8334,
+          "axis": "energy",
+          "direction": 1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ISTJ-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ISTJ-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ISTJ-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ISTJ-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ISTP-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ISTP-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ISTP-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ISTP-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ISFJ-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ISFJ-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ISFJ-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ISFJ-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ISFP-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ISFP-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "ISFP-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "ISFP-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 16669,
+          "count": 8334,
+          "axis": "information",
+          "direction": 1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "INTJ-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "INTJ-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "INTJ-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "INTJ-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "INTP-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "INTP-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "INTP-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "INTP-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 33337,
+          "count": 8333,
+          "axis": "decision",
+          "direction": 1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "INFJ-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "INFJ-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "INFJ-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "INFJ-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 50003,
+          "count": 8333,
+          "axis": "organization",
+          "direction": 1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "INFP-calm-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "INFP-calm-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 66669,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": 1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    },
+    "INFP-sensitive-autonomous": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 83335,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": 1
+        }
+      ]
+    },
+    "INFP-sensitive-cooperative": {
+      "meaning": "Agreement with an item supports one endpoint; full results require all six axes.",
+      "total": 50000,
+      "ranges": [
+        {
+          "start": 8335,
+          "count": 8334,
+          "axis": "energy",
+          "direction": -1
+        },
+        {
+          "start": 25003,
+          "count": 8334,
+          "axis": "information",
+          "direction": -1
+        },
+        {
+          "start": 41670,
+          "count": 8333,
+          "axis": "decision",
+          "direction": -1
+        },
+        {
+          "start": 58336,
+          "count": 8333,
+          "axis": "organization",
+          "direction": -1
+        },
+        {
+          "start": 75002,
+          "count": 8333,
+          "axis": "emotion",
+          "direction": -1
+        },
+        {
+          "start": 91668,
+          "count": 8333,
+          "axis": "coordination",
+          "direction": -1
+        }
+      ]
+    }
+  }
+}

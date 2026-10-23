@@ -1,0 +1,49 @@
+{
+    "fetched":  "2026-10-23",
+    "surveyjs_version":  "3.2.2",
+    "iching_commit":  "631a04b28ab7cc41f94265178bb99726831f2591",
+    "files":  [
+                  {
+                      "url":  "https://unpkg.com/survey-core@3.2.2/survey-core.min.css",
+                      "file":  "dist/vendor/surveyjs/3.2.2/survey-core.min.css",
+                      "sha256":  "899f9604d25bcbd6193b3a9dfe25e56c5a282a95812c71d642f1873ea3194162",
+                      "bytes":  525467
+                  },
+                  {
+                      "url":  "https://unpkg.com/survey-core@3.2.2/survey.core.min.js",
+                      "file":  "dist/vendor/surveyjs/3.2.2/survey.core.min.js",
+                      "sha256":  "c6fe8ca785bc05438a719f8aaead92bf887639cda1aadeeee98f056671705b65",
+                      "bytes":  1721707
+                  },
+                  {
+                      "url":  "https://unpkg.com/survey-core@3.2.2/i18n/traditional-chinese.min.js",
+                      "file":  "dist/vendor/surveyjs/3.2.2/traditional-chinese.min.js",
+                      "sha256":  "b426d801af35a7c95b1ebce7053f9c1af3df91765609e0c123c9b7e77ba47074",
+                      "bytes":  5911
+                  },
+                  {
+                      "url":  "https://unpkg.com/survey-js-ui@3.2.2/survey-js-ui.min.js",
+                      "file":  "dist/vendor/surveyjs/3.2.2/survey-js-ui.min.js",
+                      "sha256":  "8bf169cd73691cefbc22f11df4821badabb587b17f73171ac4996e547d4490e8",
+                      "bytes":  230171
+                  },
+                  {
+                      "url":  "https://raw.githubusercontent.com/surveyjs/survey-library/v3.2.2/LICENSE",
+                      "file":  "dist/licenses/SurveyJS-MIT.txt",
+                      "sha256":  "ef2cef07ff83d3ab514f530d85b8b86eb5979f2897eabb875cb69c2bbd8ee611",
+                      "bytes":  1102
+                  },
+                  {
+                      "url":  "https://raw.githubusercontent.com/strobus/i-ching/631a04b28ab7cc41f94265178bb99726831f2591/lib/data.json",
+                      "file":  "dist/data/iching-source.json",
+                      "sha256":  "f501f3c29f0122953e2d26cc7b76818b8d68f3e41efb0e7843256f14b01b9f52",
+                      "bytes":  26493
+                  },
+                  {
+                      "url":  "https://raw.githubusercontent.com/strobus/i-ching/631a04b28ab7cc41f94265178bb99726831f2591/LICENSE",
+                      "file":  "dist/licenses/i-ching-MIT.txt",
+                      "sha256":  "51e60b14f93390f8fa4b3836688531b4fbc5b530b07b3f28db53d64ae0b1f6bb",
+                      "bytes":  1050
+                  }
+              ]
+}

@@ -1,0 +1,2120 @@
+[
+  {
+    "id": "seed-organization-p01",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我會先決定主要步驟，再開始進行。",
+    "family": "seed-organization-p01",
+    "sourceIds": [
+      "ipip-X171",
+      "ipip-H1351"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把事前規劃改為開始前決定步驟的偏好。",
+    "concept": "步驟先定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p01"
+  },
+  {
+    "id": "seed-organization-p02",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我偏好先定下時間，再安排要做的內容。",
+    "family": "seed-organization-p02",
+    "sourceIds": [
+      "ipip-X179"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把依時程行動改為先固定時間的偏好。",
+    "concept": "時間先定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p02"
+  },
+  {
+    "id": "seed-organization-p03",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我傾向按照事先選好的順序進行。",
+    "family": "seed-organization-p03",
+    "sourceIds": [
+      "ipip-H1350"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把邏輯順序改寫為預排順序偏好。",
+    "concept": "順序預排",
+    "review": "project-authored",
+    "semanticCluster": "semantic-organization-preorder"
+  },
+  {
+    "id": "seed-organization-p04",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我會把接下來要做的事先列成清單。",
+    "family": "seed-organization-p04",
+    "sourceIds": [
+      "ipip-H1161",
+      "ipip-X171"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把組織與規劃概念改為先列待辦行為。",
+    "concept": "清單前置",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p04"
+  },
+  {
+    "id": "seed-organization-p05",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我偏好開始之前就知道怎樣算完成。",
+    "family": "seed-organization-p05",
+    "sourceIds": [
+      "ipip-V300"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把確認計畫可行改為先定完成標準。",
+    "concept": "完成標準前置",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p05"
+  },
+  {
+    "id": "seed-organization-p06",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我傾向先安排各個階段的進度。",
+    "family": "seed-organization-p06",
+    "sourceIds": [
+      "ipip-W298"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把規劃未來改為近期階段安排。",
+    "concept": "階段預排",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p06"
+  },
+  {
+    "id": "seed-organization-p07",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我會先為重要部分預留固定時段。",
+    "family": "seed-organization-p07",
+    "sourceIds": [
+      "ipip-H301"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把規律時間表改為預留時段偏好。",
+    "concept": "時段預留",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p07"
+  },
+  {
+    "id": "seed-organization-p08",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我偏好把大致做法確定後再動手。",
+    "family": "seed-organization-p08",
+    "sourceIds": [
+      "ipip-P428",
+      "ipip-H1351"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把事前規劃觀念改為成行前定做法。",
+    "concept": "做法先定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p08"
+  },
+  {
+    "id": "seed-organization-p09",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我傾向先選定一條路線並照著推進。",
+    "family": "seed-organization-p09",
+    "sourceIds": [
+      "ipip-X263"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把按計畫行動改為先定路線偏好。",
+    "concept": "路線先定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p09"
+  },
+  {
+    "id": "seed-organization-p10",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我會先分配每個部分可以使用的時間。",
+    "family": "seed-organization-p10",
+    "sourceIds": [
+      "ipip-X179",
+      "ipip-H264"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把時程與例行概念改為事前分配時間。",
+    "concept": "時間分配",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p10"
+  },
+  {
+    "id": "seed-organization-p11",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我偏好用固定的節奏進行相似的事情。",
+    "family": "seed-organization-p11",
+    "sourceIds": [
+      "ipip-H309"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把規律概念改為相似任務的固定節奏。",
+    "concept": "重複節奏",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p11"
+  },
+  {
+    "id": "seed-organization-p12",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我偏好先決定材料怎麼使用，再開始操作。",
+    "family": "seed-organization-p12",
+    "sourceIds": [
+      "ipip-H1161",
+      "ipip-X171"
+    ],
+    "adaptationNote": "原題的組織事物為adjacent靈感，事前規劃為direct核心行為；本題改為使用材料前先決定用途的偏好，移除整潔品質，非原量表翻譯，不移植原量表效度。",
+    "concept": "材料用途先定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p12"
+  },
+  {
+    "id": "seed-organization-p13",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我傾向在開始前決定先處理哪個部分。",
+    "family": "seed-organization-p13",
+    "sourceIds": [
+      "ipip-H1350"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把有序行動改為事前決定優先項。",
+    "concept": "優先序前置",
+    "review": "project-authored",
+    "semanticCluster": "semantic-organization-preorder"
+  },
+  {
+    "id": "seed-organization-p14",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我偏好先訂好幾個要確認進度的時間點。",
+    "family": "seed-organization-p14",
+    "sourceIds": [
+      "ipip-H301",
+      "ipip-X179"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把固定時程改為預排進度確認點。",
+    "concept": "檢查點預排",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p14"
+  },
+  {
+    "id": "seed-organization-p15",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我會在事情告一段落前先安排下一步。",
+    "family": "seed-organization-p15",
+    "sourceIds": [
+      "ipip-X171"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把提前規劃改為階段之間預接步驟。",
+    "concept": "下一步前接",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p15"
+  },
+  {
+    "id": "seed-organization-p16",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我傾向讓不同安排各有明確的先後位置。",
+    "family": "seed-organization-p16",
+    "sourceIds": [
+      "ipip-H1161",
+      "ipip-H1350"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把組織與順序概念改為多項安排排序。",
+    "concept": "多事排序",
+    "review": "project-authored",
+    "semanticCluster": "semantic-organization-preorder"
+  },
+  {
+    "id": "seed-organization-p17",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我偏好先確定要採用的方式，再處理細節。",
+    "family": "seed-organization-p17",
+    "sourceIds": [
+      "ipip-A97"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把邏輯規劃改為先定方式的偏好。",
+    "concept": "方式先定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p17"
+  },
+  {
+    "id": "seed-organization-p18",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我會在開始時先畫出整件事的大致架構。",
+    "family": "seed-organization-p18",
+    "sourceIds": [
+      "ipip-W126",
+      "ipip-W298"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把長期規劃改為近期工作全程架構。",
+    "concept": "全程架構",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p18"
+  },
+  {
+    "id": "seed-organization-p19",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我傾向把已確定的安排當作後續行動基準。",
+    "family": "seed-organization-p19",
+    "sourceIds": [
+      "ipip-H303"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把希望按計畫推進改為以安排作基準。",
+    "concept": "計畫基準",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p19"
+  },
+  {
+    "id": "seed-organization-p20",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我偏好依預先訂好的節點推動事情。",
+    "family": "seed-organization-p20",
+    "sourceIds": [
+      "ipip-X196",
+      "ipip-H258"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把依計畫完成改為節點導向偏好。",
+    "concept": "節點推進",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p20"
+  },
+  {
+    "id": "seed-organization-p21",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我會先安排好何時整理與收尾。",
+    "family": "seed-organization-p21",
+    "sourceIds": [
+      "ipip-H264",
+      "ipip-X179"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把例行與時程概念改為收尾事前安排。",
+    "concept": "收尾預排",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p21"
+  },
+  {
+    "id": "seed-organization-p22",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我傾向在開始之前先決定各部分的範圍。",
+    "family": "seed-organization-p22",
+    "sourceIds": [
+      "ipip-H1161",
+      "ipip-V300"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把組織與確認計畫改為界定事前範圍。",
+    "concept": "範圍先定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p22"
+  },
+  {
+    "id": "seed-organization-p23",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我偏好讓相似的安排有一套固定流程。",
+    "family": "seed-organization-p23",
+    "sourceIds": [
+      "ipip-H264",
+      "ipip-H309"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把例行與規律改為固定流程偏好。",
+    "concept": "流程固定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p23"
+  },
+  {
+    "id": "seed-organization-p24",
+    "axis": "organization",
+    "direction": 1,
+    "text": "我會先為可能的變動準備另一套安排。",
+    "family": "seed-organization-p24",
+    "sourceIds": [
+      "ipip-X171",
+      "ipip-V300"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把提前規劃改為變動前的備案安排。",
+    "concept": "備案預排",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-p24"
+  },
+  {
+    "id": "seed-organization-n01",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我傾向開始之後再決定接下來的步驟。",
+    "family": "seed-organization-n01",
+    "sourceIds": [
+      "ipip-H848"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把無預先計畫改為進行中安排步驟。",
+    "concept": "步驟邊做邊定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n01"
+  },
+  {
+    "id": "seed-organization-n02",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我偏好接近實際時間才確定安排。",
+    "family": "seed-organization-n02",
+    "sourceIds": [
+      "ipip-E66",
+      "ipip-A90"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把近時規劃改為安排時間點偏好。",
+    "concept": "時間近端決定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n02"
+  },
+  {
+    "id": "seed-organization-n03",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我會依當下狀況改換處理順序。",
+    "family": "seed-organization-n03",
+    "sourceIds": [
+      "ipip-H1279"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把即興能力鄰近概念改為調序偏好而非能力。",
+    "concept": "順序即時調整",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n03"
+  },
+  {
+    "id": "seed-organization-n04",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我傾向先開始一部分，再補上其餘安排。",
+    "family": "seed-organization-n04",
+    "sourceIds": [
+      "ipip-E104",
+      "ipip-H848"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把少提前規劃改為局部先行的偏好。",
+    "concept": "先做局部",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n04"
+  },
+  {
+    "id": "seed-organization-n05",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我偏好在進行中逐漸決定完成的樣子。",
+    "family": "seed-organization-n05",
+    "sourceIds": [
+      "ipip-A90"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把少遠期安排改為逐步定義完成樣貌。",
+    "concept": "終點漸明",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n05"
+  },
+  {
+    "id": "seed-organization-n06",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我會隨新的進展調整下一個階段。",
+    "family": "seed-organization-n06",
+    "sourceIds": [
+      "ipip-H1279",
+      "ipip-X204"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把即興與變化概念改為階段滾動安排。",
+    "concept": "階段滾動",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n06"
+  },
+  {
+    "id": "seed-organization-n07",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我傾向讓各部分所花的時間保持可變動。",
+    "family": "seed-organization-n07",
+    "sourceIds": [
+      "ipip-R22"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把無固定時表旅程改為可調時長偏好。",
+    "concept": "時長開放",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n07"
+  },
+  {
+    "id": "seed-organization-n08",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我偏好保留幾種做法，到需要時再選。",
+    "family": "seed-organization-n08",
+    "sourceIds": [
+      "ipip-A90",
+      "ipip-H1279"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把少提前固定安排改為保留做法選項。",
+    "concept": "選項延後收斂",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n08"
+  },
+  {
+    "id": "seed-organization-n09",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我會在遇到新資訊時重新選擇路線。",
+    "family": "seed-organization-n09",
+    "sourceIds": [
+      "ipip-R22",
+      "ipip-X204"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把開放旅程與變化偏好改為路線更新。",
+    "concept": "路線隨資訊改",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n09"
+  },
+  {
+    "id": "seed-organization-n10",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我傾向依實際進度決定何時轉換下一項。",
+    "family": "seed-organization-n10",
+    "sourceIds": [
+      "ipip-E66"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把近時安排改為依進度決定轉換。",
+    "concept": "轉換時點彈性",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n10"
+  },
+  {
+    "id": "seed-organization-n11",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我偏好讓相似的事情每次有不同的進行方式。",
+    "family": "seed-organization-n11",
+    "sourceIds": [
+      "ipip-X204",
+      "ipip-X122"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把變化勝過例行改為相似任務變換方式。",
+    "concept": "重複方式可變",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n11"
+  },
+  {
+    "id": "seed-organization-n12",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我會一邊使用材料，一邊決定怎樣配置。",
+    "family": "seed-organization-n12",
+    "sourceIds": [
+      "ipip-H1279"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把即興鄰近概念改為材料配置順序偏好。",
+    "concept": "材料動態配置",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n12"
+  },
+  {
+    "id": "seed-organization-n13",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我傾向在實際動手後才排出優先順序。",
+    "family": "seed-organization-n13",
+    "sourceIds": [
+      "ipip-H848"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把先行動概念改為實作後決定優先序。",
+    "concept": "優先序後定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n13"
+  },
+  {
+    "id": "seed-organization-n14",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我偏好等需要確認進度時，再決定檢查時間。",
+    "family": "seed-organization-n14",
+    "sourceIds": [
+      "ipip-E66",
+      "ipip-A90"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把近時安排改為按需要定進度確認點。",
+    "concept": "檢查點隨需定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n14"
+  },
+  {
+    "id": "seed-organization-n15",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我會在一段事情結束後才挑選下一步。",
+    "family": "seed-organization-n15",
+    "sourceIds": [
+      "ipip-A90"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把少提前安排改為階段結束後選擇。",
+    "concept": "階段後選下一步",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n15"
+  },
+  {
+    "id": "seed-organization-n16",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我傾向讓新出現的事情插入原來的順序。",
+    "family": "seed-organization-n16",
+    "sourceIds": [
+      "ipip-D58",
+      "ipip-H1279"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把自發與即興概念改為安排容納新項目。",
+    "concept": "新事項可插入",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n16"
+  },
+  {
+    "id": "seed-organization-n17",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我偏好做過一小段之後再選定主要方式。",
+    "family": "seed-organization-n17",
+    "sourceIds": [
+      "ipip-H848",
+      "ipip-D58"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把自發行動改為試做後定主要方式。",
+    "concept": "方式試後再定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n17"
+  },
+  {
+    "id": "seed-organization-n18",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我會讓整件事的架構隨著進行逐漸成形。",
+    "family": "seed-organization-n18",
+    "sourceIds": [
+      "ipip-E104"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把少事前規劃改為進行中形成架構。",
+    "concept": "架構漸成",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n18"
+  },
+  {
+    "id": "seed-organization-n19",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我傾向把已有安排當成可以重寫的草稿。",
+    "family": "seed-organization-n19",
+    "sourceIds": [
+      "ipip-X204",
+      "ipip-H1279"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把變化與即興鄰近概念改為安排可重寫。",
+    "concept": "計畫可重寫",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n19"
+  },
+  {
+    "id": "seed-organization-n20",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我偏好依當下的發現改變前進的節點。",
+    "family": "seed-organization-n20",
+    "sourceIds": [
+      "ipip-D58",
+      "ipip-H1279"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把自發行動改為依發現改動階段節點。",
+    "concept": "節點即時改",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n20"
+  },
+  {
+    "id": "seed-organization-n21",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我會等事情進行到後段再安排收尾方式。",
+    "family": "seed-organization-n21",
+    "sourceIds": [
+      "ipip-A90",
+      "ipip-E66"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把近時規劃改為後段決定收尾偏好。",
+    "concept": "收尾後定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n21"
+  },
+  {
+    "id": "seed-organization-n22",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我傾向在接觸實際內容後再界定範圍。",
+    "family": "seed-organization-n22",
+    "sourceIds": [
+      "ipip-H848"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把先行動後計畫改為內容接觸後定範圍。",
+    "concept": "範圍接觸後定",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n22"
+  },
+  {
+    "id": "seed-organization-n23",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我偏好讓流程隨每次遇到的狀況變動。",
+    "family": "seed-organization-n23",
+    "sourceIds": [
+      "ipip-X122",
+      "ipip-X204"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把少例行與喜變化改為流程可調偏好。",
+    "concept": "流程情境調整",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n23"
+  },
+  {
+    "id": "seed-organization-n24",
+    "axis": "organization",
+    "direction": -1,
+    "text": "我會在變動真的出現時才重新安排做法。",
+    "family": "seed-organization-n24",
+    "sourceIds": [
+      "ipip-H1279",
+      "ipip-E104"
+    ],
+    "adaptationNote": "此題為本案安排偏好母題，非原量表逐字翻譯，不沿用原量表效度；把即興與少事前規劃改為變動後再安排。",
+    "concept": "變動發生後調整",
+    "review": "project-authored",
+    "semanticCluster": "seed-organization-n24"
+  },
+  {
+    "id": "seed-emotion-p01",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我面對結果變化時，內心的高低起伏較小。",
+    "family": "seed-emotion-p01",
+    "sourceIds": [
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；聚焦結果引發的內在情緒波幅。",
+    "concept": "結果波幅平緩",
+    "review": "project-authored",
+    "semanticCluster": "semantic-emotion-result-change"
+  },
+  {
+    "id": "seed-emotion-p02",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我受到稱讚時，心裡的喜悅是溫和的。",
+    "family": "seed-emotion-p02",
+    "sourceIds": [
+      "ipip-X267",
+      "ipip-H572"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；將低情緒波幅與低興奮改為稱讚後喜悅強度。",
+    "concept": "稱讚喜悅溫和",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p02"
+  },
+  {
+    "id": "seed-emotion-p03",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我碰到意料外的事情時，驚訝的感受較淡。",
+    "family": "seed-emotion-p03",
+    "sourceIds": [
+      "ipip-H802",
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由反應強度的鄰近概念改為內在驚訝強度。",
+    "concept": "意外驚訝較淡",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p03"
+  },
+  {
+    "id": "seed-emotion-p04",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我遇到未如預期的結果時，失落的程度較輕。",
+    "family": "seed-emotion-p04",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；反向參照情緒強度並限定內在失落程度。",
+    "concept": "落差失落較輕",
+    "review": "project-authored",
+    "semanticCluster": "semantic-emotion-expectation-gap"
+  },
+  {
+    "id": "seed-emotion-p05",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我期待一件好事時，心裡的興奮較溫和。",
+    "family": "seed-emotion-p05",
+    "sourceIds": [
+      "ipip-E19",
+      "ipip-H572"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；將易興奮概念改為好事尚未發生時的內在程度。",
+    "concept": "期待興奮溫和",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p05"
+  },
+  {
+    "id": "seed-emotion-p06",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我看見事情有進展時，喜悅的波動較小。",
+    "family": "seed-emotion-p06",
+    "sourceIds": [
+      "ipip-W379",
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把投入時興奮的概念改為進展後內在喜悅強度。",
+    "concept": "進展喜悅平緩",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p06"
+  },
+  {
+    "id": "seed-emotion-p07",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我發現安排改變時，心裡的波動較平緩。",
+    "family": "seed-emotion-p07",
+    "sourceIds": [
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；限定安排改變引發的內在感受幅度。",
+    "concept": "安排變動平緩",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p07"
+  },
+  {
+    "id": "seed-emotion-p08",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我遇到不同意見時，內心感受的強度較低。",
+    "family": "seed-emotion-p08",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-H802"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由反應強度改為分歧時的感受而非爭辯行為。",
+    "concept": "分歧感受較淡",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p08"
+  },
+  {
+    "id": "seed-emotion-p09",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我碰到進行被打斷時，內心的起伏較小。",
+    "family": "seed-emotion-p09",
+    "sourceIds": [
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；將情緒波幅限定為中斷時的內在感受。",
+    "concept": "中斷波幅平緩",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p09"
+  },
+  {
+    "id": "seed-emotion-p10",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我完成一件在意的事時，心裡有淡淡的喜悅。",
+    "family": "seed-emotion-p10",
+    "sourceIds": [
+      "ipip-X267",
+      "ipip-H572"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把低興奮概念改為完成後喜悅程度。",
+    "concept": "完成喜悅溫和",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p10"
+  },
+  {
+    "id": "seed-emotion-p11",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我想像新的可能時，期待感的強度較溫和。",
+    "family": "seed-emotion-p11",
+    "sourceIds": [
+      "ipip-W123",
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由想到未來的興奮改為內在期待強度。",
+    "concept": "未來期待溫和",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p11"
+  },
+  {
+    "id": "seed-emotion-p12",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我回想特別的經歷時，心裡的感受較平緩。",
+    "family": "seed-emotion-p12",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；以一般情緒強度改為回憶時的內在感受。",
+    "concept": "回憶感受平緩",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p12"
+  },
+  {
+    "id": "seed-emotion-p13",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我想起遺憾的事情時，內心起伏較小。",
+    "family": "seed-emotion-p13",
+    "sourceIds": [
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；將一般情緒波幅限定為回想遺憾時的感受。",
+    "concept": "遺憾波幅平緩",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p13"
+  },
+  {
+    "id": "seed-emotion-p14",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我遇到有趣的片段時，愉快的程度較輕柔。",
+    "family": "seed-emotion-p14",
+    "sourceIds": [
+      "ipip-X267",
+      "ipip-H572"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由低興奮鄰近概念改為愉快強度而非幽默能力。",
+    "concept": "趣味愉快輕柔",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p14"
+  },
+  {
+    "id": "seed-emotion-p15",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我聽見好消息時，內心的高興較溫和。",
+    "family": "seed-emotion-p15",
+    "sourceIds": [
+      "ipip-E19",
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由興奮與波幅改為好消息引發的內在強度。",
+    "concept": "好消息高興溫和",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p15"
+  },
+  {
+    "id": "seed-emotion-p16",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我面對一段經歷結束時，情緒波動較小。",
+    "family": "seed-emotion-p16",
+    "sourceIds": [
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；限定結束時感受而非能否放下的能力。",
+    "concept": "結束波幅較小",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p16"
+  },
+  {
+    "id": "seed-emotion-p17",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我得到意外收穫時，驚喜的感覺較柔和。",
+    "family": "seed-emotion-p17",
+    "sourceIds": [
+      "ipip-H802",
+      "ipip-H572"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把反應與興奮強度改為內在驚喜程度。",
+    "concept": "收穫驚喜柔和",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p17"
+  },
+  {
+    "id": "seed-emotion-p18",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我面對尚未確定的結果時，內心起伏較小。",
+    "family": "seed-emotion-p18",
+    "sourceIds": [
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；將波幅限定未定結果而非焦慮症狀或調節能力。",
+    "concept": "未定波幅平緩",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p18"
+  },
+  {
+    "id": "seed-emotion-p19",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我遇到觸動自己的故事時，心裡感受較平緩。",
+    "family": "seed-emotion-p19",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-V102"
+    ],
+    "adaptationNote": "原題情緒感受強度為direct概念，美感深層情緒為adjacent參考；本題以確實觸動自己的故事作錨點再問感受強弱，不測同理、審美或察覺能力，非翻譯，不移植原量表效度。",
+    "concept": "本人有感故事強度平緩",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p19"
+  },
+  {
+    "id": "seed-emotion-p20",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我收到回饋時，心裡的感受較平緩。",
+    "family": "seed-emotion-p20",
+    "sourceIds": [
+      "ipip-H802",
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；將反應強度改為接收回饋時內在幅度。",
+    "concept": "回饋感受平緩",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p20"
+  },
+  {
+    "id": "seed-emotion-p21",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我看見事情不如原先想像時，失落感較輕。",
+    "family": "seed-emotion-p21",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把一般情緒強度限定想像與現況落差。",
+    "concept": "想像落差溫和",
+    "review": "project-authored",
+    "semanticCluster": "semantic-emotion-expectation-gap"
+  },
+  {
+    "id": "seed-emotion-p22",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我碰到重新出現的機會時，興奮感較淡。",
+    "family": "seed-emotion-p22",
+    "sourceIds": [
+      "ipip-E19",
+      "ipip-H572"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由易興奮概念改為機會再現時的內在程度。",
+    "concept": "再現機會低興奮",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p22"
+  },
+  {
+    "id": "seed-emotion-p23",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我發現進度停住時，心裡的挫折感較輕。",
+    "family": "seed-emotion-p23",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把情緒強度限定進度停滯感受而非處理能力。",
+    "concept": "停滯挫折較輕",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-p23"
+  },
+  {
+    "id": "seed-emotion-p24",
+    "axis": "emotion",
+    "direction": 1,
+    "text": "我面對事情轉好或轉壞時，情緒起伏較小。",
+    "family": "seed-emotion-p24",
+    "sourceIds": [
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；保留高低波幅核心但限定近期事情轉折。",
+    "concept": "轉折總波幅平緩",
+    "review": "project-authored",
+    "semanticCluster": "semantic-emotion-result-change"
+  },
+  {
+    "id": "seed-emotion-n01",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我面對結果變化時，內心的高低起伏很鮮明。",
+    "family": "seed-emotion-n01",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-H802"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；聚焦結果引發的內在情緒強度。",
+    "concept": "結果波幅鮮明",
+    "review": "project-authored",
+    "semanticCluster": "semantic-emotion-result-change"
+  },
+  {
+    "id": "seed-emotion-n02",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我受到肯定時，心裡的喜悅相當鮮明。",
+    "family": "seed-emotion-n02",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-E19"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由情緒與興奮強度改為肯定引發的內在喜悅。",
+    "concept": "肯定喜悅鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n02"
+  },
+  {
+    "id": "seed-emotion-n03",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我遇到出乎意料的事情時，驚訝感很強。",
+    "family": "seed-emotion-n03",
+    "sourceIds": [
+      "ipip-H802"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把強烈反應改為驚訝的內在強度而非外在行為。",
+    "concept": "意外驚訝鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n03"
+  },
+  {
+    "id": "seed-emotion-n04",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我遇到期待落空時，心裡的失落感很鮮明。",
+    "family": "seed-emotion-n04",
+    "sourceIds": [
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把一般情緒強度限定為期待落空的失落。",
+    "concept": "期待落空鮮明",
+    "review": "project-authored",
+    "semanticCluster": "semantic-emotion-expectation-gap"
+  },
+  {
+    "id": "seed-emotion-n05",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我等待一件盼望的事時，興奮的感覺很強。",
+    "family": "seed-emotion-n05",
+    "sourceIds": [
+      "ipip-E19",
+      "ipip-W123"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把易興奮與未來期待改為盼望時的內在強度。",
+    "concept": "等待興奮鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n05"
+  },
+  {
+    "id": "seed-emotion-n06",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我看見新的進展時，心裡的喜悅很鮮明。",
+    "family": "seed-emotion-n06",
+    "sourceIds": [
+      "ipip-W379",
+      "ipip-E19"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由事情引發興奮改為看見進展的內在喜悅。",
+    "concept": "進展喜悅鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n06"
+  },
+  {
+    "id": "seed-emotion-n07",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我得知原定安排改變時，內心起伏很明顯。",
+    "family": "seed-emotion-n07",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-H802"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；只測變動引發的感受幅度而非能否調整。",
+    "concept": "安排變動鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n07"
+  },
+  {
+    "id": "seed-emotion-n08",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我聽到不同看法時，心裡的感受很鮮明。",
+    "family": "seed-emotion-n08",
+    "sourceIds": [
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；限定內在感受而非反駁強度或容忍程度。",
+    "concept": "分歧感受鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n08"
+  },
+  {
+    "id": "seed-emotion-n09",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我正在做的事情被打斷時，內心波動較強。",
+    "family": "seed-emotion-n09",
+    "sourceIds": [
+      "ipip-H802",
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把反應強度改為中斷時的內在波動。",
+    "concept": "中斷波幅鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n09"
+  },
+  {
+    "id": "seed-emotion-n10",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我完成重視的事情時，成就帶來強烈喜悅。",
+    "family": "seed-emotion-n10",
+    "sourceIds": [
+      "ipip-E19",
+      "ipip-W379"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；只借興奮強度改為完成後內在喜悅而非能力。",
+    "concept": "完成喜悅鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n10"
+  },
+  {
+    "id": "seed-emotion-n11",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我想到尚未展開的可能時，期待感很鮮明。",
+    "family": "seed-emotion-n11",
+    "sourceIds": [
+      "ipip-W123",
+      "ipip-E19"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；將未來興奮概念改為未展開可能的內在期待。",
+    "concept": "未來期待鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n11"
+  },
+  {
+    "id": "seed-emotion-n12",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我回想難忘的經歷時，內心感受很鮮明。",
+    "family": "seed-emotion-n12",
+    "sourceIds": [
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由一般情緒強度改為回憶當下的內在程度。",
+    "concept": "回憶感受鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n12"
+  },
+  {
+    "id": "seed-emotion-n13",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我回想一件遺憾時，心裡的感受仍很強。",
+    "family": "seed-emotion-n13",
+    "sourceIds": [
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；限定回想時強度而非持續低落症狀。",
+    "concept": "遺憾感受鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n13"
+  },
+  {
+    "id": "seed-emotion-n14",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我遇到有趣的內容時，心裡的愉快很鮮明。",
+    "family": "seed-emotion-n14",
+    "sourceIds": [
+      "ipip-E19",
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；將興奮與強度改為內在愉快而非表達音量。",
+    "concept": "趣味愉快鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n14"
+  },
+  {
+    "id": "seed-emotion-n15",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我收到好消息時，喜悅會強烈地湧上心頭。",
+    "family": "seed-emotion-n15",
+    "sourceIds": [
+      "ipip-E19",
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把易興奮改為好消息引發的內在喜悅強度。",
+    "concept": "好消息強喜悅",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n15"
+  },
+  {
+    "id": "seed-emotion-n16",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我面對一段經歷的結束時，心裡起伏很強。",
+    "family": "seed-emotion-n16",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-H802"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；限定結束時的情緒強度而非依附或放下能力。",
+    "concept": "結束波幅鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n16"
+  },
+  {
+    "id": "seed-emotion-n17",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我遇到意外的收穫時，心裡的驚喜很強烈。",
+    "family": "seed-emotion-n17",
+    "sourceIds": [
+      "ipip-E19",
+      "ipip-H802"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；將反應強度改為內在驚喜而非冒險偏好。",
+    "concept": "收穫驚喜鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n17"
+  },
+  {
+    "id": "seed-emotion-n18",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我面對結果未定的事情時，內心波動很鮮明。",
+    "family": "seed-emotion-n18",
+    "sourceIds": [
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；只借情緒強度核心而不以焦慮或擔心測量。",
+    "concept": "未定波幅鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n18"
+  },
+  {
+    "id": "seed-emotion-n19",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我遇到觸動自己的故事時，內心感動很強。",
+    "family": "seed-emotion-n19",
+    "sourceIds": [
+      "ipip-V102",
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由美感深情緒改為故事引發的內在感動強度。",
+    "concept": "故事感動鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n19"
+  },
+  {
+    "id": "seed-emotion-n20",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我收到別人的回饋時，心裡的感受很鮮明。",
+    "family": "seed-emotion-n20",
+    "sourceIds": [
+      "ipip-H802",
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；把反應強度改為內在感受而非接受能力。",
+    "concept": "回饋感受鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n20"
+  },
+  {
+    "id": "seed-emotion-n21",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我發現現況與原先想像有落差時，感受很強。",
+    "family": "seed-emotion-n21",
+    "sourceIds": [
+      "ipip-X92"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；限定落差的內在感受強度而非悲觀傾向。",
+    "concept": "想像落差鮮明",
+    "review": "project-authored",
+    "semanticCluster": "semantic-emotion-expectation-gap"
+  },
+  {
+    "id": "seed-emotion-n22",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我看見機會再次出現時，心裡的興奮很強。",
+    "family": "seed-emotion-n22",
+    "sourceIds": [
+      "ipip-E19",
+      "ipip-H5"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；由興奮鄰近概念改為機會再現時的內在程度。",
+    "concept": "再現機會鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n22"
+  },
+  {
+    "id": "seed-emotion-n23",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我發現事情暫時停滯時，挫折的感受很鮮明。",
+    "family": "seed-emotion-n23",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-H802"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；將一般強度限定停滯時感受而非排解能力。",
+    "concept": "停滯挫折鮮明",
+    "review": "project-authored",
+    "semanticCluster": "seed-emotion-n23"
+  },
+  {
+    "id": "seed-emotion-n24",
+    "axis": "emotion",
+    "direction": -1,
+    "text": "我經歷事情轉好或轉壞時，心情起伏很明顯。",
+    "family": "seed-emotion-n24",
+    "sourceIds": [
+      "ipip-X92",
+      "ipip-X267"
+    ],
+    "adaptationNote": "此題為本案內在情緒強度母題，非原量表翻譯，不測情緒管理、外顯表達或觀察力，也不沿用原效度；借一般波幅與強度核心改為近期轉折感受。",
+    "concept": "轉折總波幅鮮明",
+    "review": "project-authored",
+    "semanticCluster": "semantic-emotion-result-change"
+  },
+  {
+    "id": "seed-coordination-p01",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我會先自己擬好大綱，再找別人討論。",
+    "family": "seed-coordination-p01",
+    "sourceIds": [
+      "ipip-H784"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由未先諮詢的行動改為大綱成案順序。",
+    "concept": "大綱先獨擬",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p01"
+  },
+  {
+    "id": "seed-coordination-p02",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我傾向先列出自己的選項，再邀人交換意見。",
+    "family": "seed-coordination-p02",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H1342"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將獨立行動與考慮意見改為列選項前後順序。",
+    "concept": "選項先自列",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p02"
+  },
+  {
+    "id": "seed-coordination-p03",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我偏好先想清楚自己的看法，再進入共同討論。",
+    "family": "seed-coordination-p03",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-V132"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由獨立工作鄰近概念改為看法形成時機而非表現。",
+    "concept": "看法先自成",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p03"
+  },
+  {
+    "id": "seed-coordination-p04",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我會先寫出一份初稿，再請相關的人補充。",
+    "family": "seed-coordination-p04",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H406"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由獨立工作概念改為初稿先於徵詢而非能力。",
+    "concept": "初稿先自寫",
+    "review": "project-authored",
+    "semanticCluster": "semantic-coordination-first-draft"
+  },
+  {
+    "id": "seed-coordination-p05",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我傾向先自己定出比較標準，再和別人核對。",
+    "family": "seed-coordination-p05",
+    "sourceIds": [
+      "ipip-H784"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；把先行動概念限定為比較標準成案時機。",
+    "concept": "標準先自定",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p05"
+  },
+  {
+    "id": "seed-coordination-p06",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我偏好先做出可供討論的雛形，再徵詢意見。",
+    "family": "seed-coordination-p06",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H406"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由獨立工作改為先做雛形的徵詢順序。",
+    "concept": "雛形先自作",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p06"
+  },
+  {
+    "id": "seed-coordination-p07",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我會先自行整理要做的步驟，再與人同步。",
+    "family": "seed-coordination-p07",
+    "sourceIds": [
+      "ipip-H784"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由先行動概念改為步驟方案先於同步。",
+    "concept": "步驟先自整",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p07"
+  },
+  {
+    "id": "seed-coordination-p08",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我傾向帶著自己想好的答案參與商量。",
+    "family": "seed-coordination-p08",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-V132"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由獨立工作鄰近概念改為商量前有暫定答案。",
+    "concept": "答案先自想",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p08"
+  },
+  {
+    "id": "seed-coordination-p09",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我偏好先自己提出建議版本，再聽別人的建議。",
+    "family": "seed-coordination-p09",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將徵詢鄰近概念改為建議版本形成順序。",
+    "concept": "建議先自提",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p09"
+  },
+  {
+    "id": "seed-coordination-p10",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我會先在心裡組合出做法，再向別人說明。",
+    "family": "seed-coordination-p10",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H406"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由未先諮詢與獨立工作改為內在成案先後。",
+    "concept": "做法先內整",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p10"
+  },
+  {
+    "id": "seed-coordination-p11",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我傾向先排一份自己的時程，再邀人一起修訂。",
+    "family": "seed-coordination-p11",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H1342"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；把獨立行動與考慮意見改為時程初案順序。",
+    "concept": "時程先自排",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p11"
+  },
+  {
+    "id": "seed-coordination-p12",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我偏好先自行分清各部分的關係，再找人核對。",
+    "family": "seed-coordination-p12",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-V132"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由獨立工作鄰近概念改為結構整理順序。",
+    "concept": "關係先自理",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p12"
+  },
+  {
+    "id": "seed-coordination-p13",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我會先試著自擬陌生事情的做法，再請教別人。",
+    "family": "seed-coordination-p13",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將請教概念改為陌生事情先有自擬方案。",
+    "concept": "陌生任務先自擬",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p13"
+  },
+  {
+    "id": "seed-coordination-p14",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我傾向先排出自己的優先序，再和大家協商。",
+    "family": "seed-coordination-p14",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H1342"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由未先諮詢改為優先序形成時機。",
+    "concept": "優先序先自排",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p14"
+  },
+  {
+    "id": "seed-coordination-p15",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我偏好先選出暫時支持的方案，再共同討論。",
+    "family": "seed-coordination-p15",
+    "sourceIds": [
+      "ipip-H784"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；把先行動改為討論前暫選方案而非拒絕意見。",
+    "concept": "方案先自選",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p15"
+  },
+  {
+    "id": "seed-coordination-p16",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我會先自行整合資訊，再帶到共同討論中。",
+    "family": "seed-coordination-p16",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-V132"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由獨立工作改為資訊整合先後而非分析能力。",
+    "concept": "資訊先自整",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p16"
+  },
+  {
+    "id": "seed-coordination-p17",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我傾向先想好資源分配的初案，再詢問相關人。",
+    "family": "seed-coordination-p17",
+    "sourceIds": [
+      "ipip-H784"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；把未先諮詢改為資源初案先於詢問。",
+    "concept": "分配先自擬",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p17"
+  },
+  {
+    "id": "seed-coordination-p18",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我偏好先自己想出替代做法，再邀人比較。",
+    "family": "seed-coordination-p18",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將獨立行動與建議概念改為替代方案形成順序。",
+    "concept": "替代先自想",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p18"
+  },
+  {
+    "id": "seed-coordination-p19",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我會先整理個人的提案架構，再和他人合併。",
+    "family": "seed-coordination-p19",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H406"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由獨立工作改為個人架構先於合併。",
+    "concept": "架構先自整",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p19"
+  },
+  {
+    "id": "seed-coordination-p20",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我傾向先自行想過未決問題，再一起定方向。",
+    "family": "seed-coordination-p20",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-V132"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；把獨立工作概念改為未決問題先思後商量。",
+    "concept": "未決先自想",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p20"
+  },
+  {
+    "id": "seed-coordination-p21",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我偏好先擬好應對變動的做法，再與人商議。",
+    "family": "seed-coordination-p21",
+    "sourceIds": [
+      "ipip-H784"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將先行動概念改為變動回應方案的先後。",
+    "concept": "變動先自擬",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p21"
+  },
+  {
+    "id": "seed-coordination-p22",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我偏好先自行形成初步構想，再邀人共同修訂。",
+    "family": "seed-coordination-p22",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H406"
+    ],
+    "adaptationNote": "inspiration：來源的不諮詢行動與獨作能力不直接測成案順序；本題明確區分自擬初步構想與後續共同修訂，不測服從、外向或能力，非原量表翻譯，不移植原效度。",
+    "concept": "初步構想先自擬",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p22"
+  },
+  {
+    "id": "seed-coordination-p23",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我傾向先拿出自己做好的草案，再收集回饋。",
+    "family": "seed-coordination-p23",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H1342"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；把未先諮詢與意見概念改為回饋接入時點。",
+    "concept": "草案先於回饋",
+    "review": "project-authored",
+    "semanticCluster": "semantic-coordination-first-draft"
+  },
+  {
+    "id": "seed-coordination-p24",
+    "axis": "coordination",
+    "direction": 1,
+    "text": "我偏好先有自己的處理方向，再向夥伴確認。",
+    "family": "seed-coordination-p24",
+    "sourceIds": [
+      "ipip-H784",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由請教與獨立行動改為處理方向形成順序。",
+    "concept": "方向先自成",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-p24"
+  },
+  {
+    "id": "seed-coordination-n01",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我會先和別人討論，再一起定下大綱。",
+    "family": "seed-coordination-n01",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-V229"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由參與討論與徵詢建議改為大綱形成順序。",
+    "concept": "大綱先共議",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n01"
+  },
+  {
+    "id": "seed-coordination-n02",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我傾向先交換想法，再列出可選的方案。",
+    "family": "seed-coordination-n02",
+    "sourceIds": [
+      "ipip-H1342",
+      "ipip-H61"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由考慮意見改為列選項之前先交換。",
+    "concept": "選項先交換",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n02"
+  },
+  {
+    "id": "seed-coordination-n03",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我偏好先聽各人的看法，再形成自己的提案。",
+    "family": "seed-coordination-n03",
+    "sourceIds": [
+      "ipip-V229",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；把徵詢建議改為形成提案前的意見時點。",
+    "concept": "看法先徵詢",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n03"
+  },
+  {
+    "id": "seed-coordination-n04",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我會先邀相關的人商量，再動筆寫初稿。",
+    "family": "seed-coordination-n04",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-H1342"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由討論與意見概念改為寫初稿的先後。",
+    "concept": "初稿先商量",
+    "review": "project-authored",
+    "semanticCluster": "semantic-coordination-first-draft"
+  },
+  {
+    "id": "seed-coordination-n05",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我傾向先共同討論比較方式，再定判準。",
+    "family": "seed-coordination-n05",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將討論與建議改為比較標準的形成順序。",
+    "concept": "標準先共議",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n05"
+  },
+  {
+    "id": "seed-coordination-n06",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我偏好先和人談雛形要呈現什麼，再開始製作。",
+    "family": "seed-coordination-n06",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-W45"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由討論與團隊工作改為雛形製作前的共同成案。",
+    "concept": "雛形先共談",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n06"
+  },
+  {
+    "id": "seed-coordination-n07",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我會先和夥伴談做法，再排出要做的步驟。",
+    "family": "seed-coordination-n07",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-V229"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將討論與徵詢改為步驟形成前的接入時點。",
+    "concept": "步驟先共談",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n07"
+  },
+  {
+    "id": "seed-coordination-n08",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我傾向在共同商量中逐漸形成答案。",
+    "family": "seed-coordination-n08",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由參與討論改為答案形成方式而非服從。",
+    "concept": "答案由商量形成",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n08"
+  },
+  {
+    "id": "seed-coordination-n09",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我偏好先交換彼此的建議，再提出整合版本。",
+    "family": "seed-coordination-n09",
+    "sourceIds": [
+      "ipip-H1275",
+      "ipip-H1342"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將考慮建議改為版本形成前先交換。",
+    "concept": "建議先交換",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n09"
+  },
+  {
+    "id": "seed-coordination-n10",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我會先和別人對談，再整理出可採用的做法。",
+    "family": "seed-coordination-n10",
+    "sourceIds": [
+      "ipip-H61"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由參與討論改為做法形成順序。",
+    "concept": "做法由對談形成",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n10"
+  },
+  {
+    "id": "seed-coordination-n11",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我傾向先問大家的安排，再一起擬定時程。",
+    "family": "seed-coordination-n11",
+    "sourceIds": [
+      "ipip-V229",
+      "ipip-H1342"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由徵詢與意見概念改為時程初案之前接入。",
+    "concept": "時程先徵詢",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n11"
+  },
+  {
+    "id": "seed-coordination-n12",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我偏好先和人釐清各部分的關係，再整理架構。",
+    "family": "seed-coordination-n12",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-W45"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由討論與共同工作改為架構整理前共同釐清。",
+    "concept": "結構先共理",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n12"
+  },
+  {
+    "id": "seed-coordination-n13",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我會先請教相關的人，再擬定陌生事情的做法。",
+    "family": "seed-coordination-n13",
+    "sourceIds": [
+      "ipip-V229",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將徵詢建議改為陌生事情先問後成案。",
+    "concept": "陌生任務先請教",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n13"
+  },
+  {
+    "id": "seed-coordination-n14",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我傾向先交換各人的重點，再決定優先順序。",
+    "family": "seed-coordination-n14",
+    "sourceIds": [
+      "ipip-H1342",
+      "ipip-H61"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由考慮意見與討論改為排序形成前的接入。",
+    "concept": "優先序先交換",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n14"
+  },
+  {
+    "id": "seed-coordination-n15",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我偏好先共同比較選項，再支持某個方案。",
+    "family": "seed-coordination-n15",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由討論與建議改為暫選方案之前共同比較。",
+    "concept": "方案先共比",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n15"
+  },
+  {
+    "id": "seed-coordination-n16",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我會先在討論中交換資訊，再整理整體做法。",
+    "family": "seed-coordination-n16",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-W45"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由討論與團隊工作改為資訊整合的成案順序。",
+    "concept": "資訊先共換",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n16"
+  },
+  {
+    "id": "seed-coordination-n17",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我傾向先詢問相關的人，再擬資源分配初案。",
+    "family": "seed-coordination-n17",
+    "sourceIds": [
+      "ipip-V229",
+      "ipip-H1342"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；把徵詢概念限定為資源初案形成前詢問。",
+    "concept": "分配先徵詢",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n17"
+  },
+  {
+    "id": "seed-coordination-n18",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我偏好先和人談替代方向，再選出可試做法。",
+    "family": "seed-coordination-n18",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由討論與考慮建議改為替代方案形成順序。",
+    "concept": "替代先共談",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n18"
+  },
+  {
+    "id": "seed-coordination-n19",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我會先共同交換構想，再整理成一份提案。",
+    "family": "seed-coordination-n19",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-X271"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由參與討論與團隊概念改為提案整合前後。",
+    "concept": "架構先共整",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n19"
+  },
+  {
+    "id": "seed-coordination-n20",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我傾向先和夥伴談未決問題，再確定下一步。",
+    "family": "seed-coordination-n20",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-V229"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將徵詢與討論改為未決問題的成案順序。",
+    "concept": "未決先共談",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n20"
+  },
+  {
+    "id": "seed-coordination-n21",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我偏好先和人商量變動，再擬應對方案。",
+    "family": "seed-coordination-n21",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由討論與建議改為變動方案形成前商議。",
+    "concept": "變動先商議",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n21"
+  },
+  {
+    "id": "seed-coordination-n22",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我會先邀人一起發想，再定出最初的構想。",
+    "family": "seed-coordination-n22",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-W45"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由共同工作與討論改為最初構想形成時機。",
+    "concept": "構想先共生",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n22"
+  },
+  {
+    "id": "seed-coordination-n23",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我傾向先收集大家的回饋，再形成第一版草案。",
+    "family": "seed-coordination-n23",
+    "sourceIds": [
+      "ipip-H1342",
+      "ipip-V229"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；將徵詢意見改為草案形成之前的回饋接入。",
+    "concept": "回饋先於草案",
+    "review": "project-authored",
+    "semanticCluster": "semantic-coordination-first-draft"
+  },
+  {
+    "id": "seed-coordination-n24",
+    "axis": "coordination",
+    "direction": -1,
+    "text": "我偏好先與夥伴交換現況，再選擇處理方向。",
+    "family": "seed-coordination-n24",
+    "sourceIds": [
+      "ipip-H61",
+      "ipip-H1275"
+    ],
+    "adaptationNote": "此題為本案先自行成案／先共同討論的順序母題，從概念鄰近原題改寫，非外向、服從、同理或能力測量，不沿用原效度；由討論與建議改為方向確立前的資訊交換。",
+    "concept": "方向先共選",
+    "review": "project-authored",
+    "semanticCluster": "seed-coordination-n24"
+  }
+]
