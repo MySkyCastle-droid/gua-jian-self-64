@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f1e8">
-  <meta name="description" content="從48道生活小問題出發，遇見你的六十四卦人格原型。繁體中文、深入文化解讀，答案只留在自己的瀏覽器。">
+  <meta name="description" content="選擇10題快速、20題標準或48題資深探索，遇見你的六十四卦人格原型與插畫。繁體中文，答案只留在自己的瀏覽器。">
   <meta name="referrer" content="no-referrer">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://gua-jian-self-64.pages.dev/">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./bank.css">
   <link rel="stylesheet" href="./artwork.css">
+  <link rel="stylesheet" href="./modes.css">
   <script defer src="./vendor/surveyjs/3.2.2/survey.core.min.js"></script>
   <script defer src="./vendor/surveyjs/3.2.2/survey-js-ui.min.js"></script>
   <script defer src="./vendor/surveyjs/3.2.2/traditional-chinese.min.js"></script>
@@ -26,6 +27,8 @@
   <script defer src="./data/artwork.js"></script>
   <script defer src="./core.js"></script>
   <script defer src="./bank.js"></script>
+  <script defer src="./short.js"></script>
+  <script defer src="./sessions.js"></script>
   <script defer src="./app.js"></script>
 </head>
 <body>
@@ -34,9 +37,9 @@
     <div class="header-inner">
       <a class="brand" href="#home" aria-label="卦見自己，回首頁"><span class="brand-mark" aria-hidden="true">卦</span><span>卦見自己<small>GUA JIAN SELF</small></span></a>
       <nav aria-label="主要導覽">
-        <a href="#method">探索方法</a><a href="#atlas">六十四卦圖鑑</a><a href="#about">關於這份探索</a>
+        <a href="#method">探索方法</a><a href="#atlas">六十四卦圖鑑</a><a href="#senior">資深探索</a><a href="#about">關於這份探索</a>
       </nav>
-      <a class="header-cta" href="#quiz">開始探索 <span aria-hidden="true">↗</span></a>
+      <a class="header-cta" href="#explore">開始探索 <span aria-hidden="true">↗</span></a>
     </div>
   </header>
   <main id="main" tabindex="-1"><div class="loading-state"><span class="eyebrow">卦見自己</span><h1>正在展開你的探索</h1><p>題庫與文化解讀載入中。</p></div></main>

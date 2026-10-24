@@ -30,9 +30,9 @@
 下載工作需先通過專案 15 的用量預檢，再透過中央守門器登錄執行：
 
 ```powershell
-python -m guard.guard_run --project-id 15 --cwd C:\HOME\CODEX\15\guajian-self --stop-file C:\HOME\CODEX\15\guajian-self\research\collect.stop -- python scripts\collect-public-items.py
+python -m guard.guard_run --project-id 15 --cwd <專案目錄> --stop-file <專案目錄>\research\collect.stop -- python scripts\collect-public-items.py
 ```
 
-從 `C:\HOME\CODEX\10\codex_usage_guard` 執行上述命令；若 PATH 的 `python` 是 Windows Store stub，應將兩個 Python 命令都替換成可用執行檔的絕對路徑。腳本會讀取已保存的 raw 檔案作為快取，`--refresh` 才重新抓取，`--offline` 完全不連網。每個原始檔案的 SHA256、大小與網址記錄於 `sources.json`；腳本偵測到 `research/collect.stop` 時以 75 結束，絕不刪除停止標記。
+從 `<守門器目錄>` 執行上述命令；若 PATH 的 `python` 是 Windows Store stub，應將兩個 Python 命令都替換成可用執行檔的絕對路徑。腳本會讀取已保存的 raw 檔案作為快取，`--refresh` 才重新抓取，`--offline` 完全不連網。每個原始檔案的 SHA256、大小與網址記錄於 `sources.json`；腳本偵測到 `research/collect.stop` 時以 75 結束，絕不刪除停止標記。
 
 蒐集腳本只改本資料夾，不修改網站題庫、計分或現有測試。新增來源時，既有 `ipip-*` 編號與原文均穩定保留。

@@ -50,7 +50,7 @@ GuaBank.supportedTypes(form[0]); // 同意此題支持的一端，共32個type k
 先執行專案 15 用量預檢並取得允許，再從中央守門器目錄登錄：
 
 ```powershell
-python -m guard.guard_run --project-id 15 --cwd C:\HOME\CODEX\15\guajian-self --stop-file C:\HOME\CODEX\15\guajian-self\question-bank\build.stop -- python scripts\build-question-bank.py
+python -m guard.guard_run --project-id 15 --cwd <專案目錄> --stop-file <專案目錄>\question-bank\build.stop -- python scripts\build-question-bank.py
 ```
 
 如需指定 Python，兩處均使用實際 Python 執行檔的絕對路徑。建置腳本不連網，會讀取研究資料、檢查來源與重複、實際寫出全部題目，並定期檢查 `question-bank/build.stop`（或 `GUA_BANK_STOP_FILE`／`--stop-file` 指定位置）。發現停止標記即以 75 結束，保留已完成輸出與未完成的 `.partial`，不移除任何停止標記。
