@@ -5,14 +5,14 @@
   if (!D || !D.bank || !Array.isArray(D.axes) || !D.mapping || !Bank || typeof Bank.query !== 'function') {
     throw new Error('GuaShort requires question data, mapping data, and bank.js.');
   }
-  var VERSION = '1.0.0';
+  var VERSION = '2.0.0';
   var fields = ['mode', 'seed', 'version', 'bankVersion', 'questionIds', 'answers'];
   var axisIds = D.axes.map(function (axis) { return axis.id; });
   var seedById = {};
   D.bank.seeds.forEach(function (seed) { seedById[seed.id] = seed; });
 
   function assert(condition, message) { if (!condition) throw new Error(message); }
-  function isAnswer(value) { return value === 1 || value === -1; }
+  function isAnswer(value) { return typeof value === 'number' && Number.isInteger(value) && value >= -2 && value <= 2; }
   function validateOptions(mode, seed) {
     assert(mode === 10 || mode === 20, '短版測驗必須為 10 題或 20 題。');
     assert(Number.isInteger(seed) && seed >= 0 && seed <= 4294967295, '短版測驗種子必須為 32 位元無號整數。');
@@ -52,7 +52,7 @@
     for (var i = 0; i < end; i++) sums[items[i].axis] += answers[i] * items[i].direction;
     return sums;
   }
-  function nextSlot(index, items, answers, plan) {
+  function nextSlot(index, items, answers, plan, mode, seed) {
     if (index < 6) return { axis: plan.initialAxes[index], direction: plan.initialDirections[index] };
     var block = Math.floor((index - 6) / 2);
     var start = 6 + block * 2;
@@ -66,9 +66,11 @@
         if (Math.abs(sums[candidate]) / 3 < Math.abs(sums[axis]) / 3) axis = candidate;
       });
     }
-    var sign = sums[axis] > 0 ? 1 : -1;
-    // Both directions are locked to the odd, nonzero sum at block start. The
-    // first probe can temporarily produce zero without changing the second.
+    var sign = sums[axis] === 0
+      ? (randomFor(seed, mode, 'zero-block-direction/' + block + '/' + axis)() < 0.5 ? -1 : 1)
+      : (sums[axis] > 0 ? 1 : -1);
+    // Both directions use the block-start sum. A zero sum uses an independent
+    // seeded direction without adding any score or choosing an endpoint.
     return { axis: axis, direction: index === start ? -sign : sign };
   }
   function chooseItem(mode, seed, answers, items, slot) {
@@ -97,8 +99,19 @@
     var items = [];
     var prefix = [];
     for (var index = 0; index < Math.min(answers.length + 1, mode); index++) {
-      items.push(chooseItem(mode, seed, prefix, items, nextSlot(index, items, prefix, plan)));
+      items.push(chooseItem(mode, seed, prefix, items, nextSlot(index, items, prefix, plan, mode, seed)));
       if (index < answers.length) prefix.push(answers[index]);
+    }
+    if (answers.length >= mode) {
+      var mainSums = sumsThrough(items, answers, mode);
+      var tiedAxes = axisIds.filter(function (axis) { return mainSums[axis] === 0; });
+      assert(answers.length <= mode + tiedAxes.length, '短版答案超出本次所需的釐清題數。');
+      for (var tieIndex = 0; tieIndex < tiedAxes.length && mode + tieIndex <= answers.length; tieIndex++) {
+        var axis = tiedAxes[tieIndex];
+        var direction = randomFor(seed, mode, 'clarification-direction/' + axis)() < 0.5 ? -1 : 1;
+        items.push(chooseItem(mode, seed, prefix, items, { axis: axis, direction: direction }));
+        if (mode + tieIndex < answers.length) prefix.push(answers[mode + tieIndex]);
+      }
     }
     return {
       mode: mode, seed: seed, version: VERSION, bankVersion: D.bank.version,
@@ -119,11 +132,11 @@
     assert(Object.keys(saved).length === fields.length && fields.every(function (field) { return Object.prototype.hasOwnProperty.call(saved, field); }), '短版續答欄位無效。');
     validateOptions(saved.mode, saved.seed);
     assert(saved.version === VERSION && saved.bankVersion === D.bank.version, '短版續答版本不相容。');
-    assert(denseArray(saved.answers) && saved.answers.length <= saved.mode, '短版答案必須連續且不得超過題數。');
-    assert(saved.answers.every(isAnswer), '短版答案只能為 1 或 -1。');
-    assert(denseArray(saved.questionIds) && saved.questionIds.length === Math.min(saved.answers.length + 1, saved.mode), '短版續答必須保留唯一的下一題。');
+    assert(denseArray(saved.answers) && saved.answers.length <= saved.mode + axisIds.length, '短版答案必須連續且不得超過題數上限。');
+    assert(saved.answers.every(isAnswer), '短版答案必須為 -2 至 2 的整數。');
+    assert(denseArray(saved.questionIds), '短版題目必須為連續陣列。');
     var canonical = replay(saved.mode, saved.seed, saved.answers);
-    assert(saved.questionIds.every(function (id, index) { return id === canonical.questionIds[index]; }), '短版題目路徑與種子、答案不符。');
+    assert(saved.questionIds.length === canonical.questionIds.length && saved.questionIds.every(function (id, index) { return id === canonical.questionIds[index]; }), '短版題目路徑與種子、答案不符，或未保留唯一的下一題。');
     return canonical;
   }
   function canonicalItem(id) {
@@ -131,12 +144,16 @@
   }
   function questions(session) {
     var canonical = restore(session);
-    return canonical.questionIds.map(canonicalItem);
+    return canonical.questionIds.map(function (id, index) {
+      var item = canonicalItem(id);
+      item.isClarification = index >= canonical.mode;
+      return item;
+    });
   }
   function answer(session, index, value) {
     var canonical = restore(session);
     assert(Number.isInteger(index) && index >= 0 && index < canonical.questionIds.length, '短版答題位置不存在。');
-    assert(isAnswer(value), '短版答案只能為 1 或 -1。');
+    assert(isAnswer(value), '短版答案必須為 -2 至 2 的整數。');
     if (index < canonical.answers.length && canonical.answers[index] === value) return canonical;
     var answers = canonical.answers.slice(0, index);
     answers.push(value);
@@ -146,39 +163,61 @@
     var canonical = restore(session);
     var items = canonical.questionIds.map(canonicalItem);
     var collected = {};
-    D.axes.forEach(function (axis) { collected[axis.id] = { sum: 0, answered: 0, total: 0, positive: false, negative: false }; });
+    D.axes.forEach(function (axis) { collected[axis.id] = { sum: 0, mainSum: 0, clarificationSum: 0, answered: 0, mainCount: 0, clarificationCount: 0, total: 0, positive: false, negative: false }; });
     items.forEach(function (item, index) {
       var current = collected[item.axis];
       current.total += 1;
+      current[index < canonical.mode ? 'mainCount' : 'clarificationCount'] += 1;
       if (index >= canonical.answers.length) return;
       var vote = canonical.answers[index] * item.direction;
       current.sum += vote;
+      current[index < canonical.mode ? 'mainSum' : 'clarificationSum'] += vote;
       current.answered += 1;
-      current[vote > 0 ? 'positive' : 'negative'] = true;
+      if (vote !== 0) current[vote > 0 ? 'positive' : 'negative'] = true;
     });
+    var mainAnswered = Math.min(canonical.answers.length, canonical.mode);
+    var ties = mainAnswered === canonical.mode ? axisIds.filter(function (axis) { return collected[axis].mainSum === 0; }) : [];
+    var clarificationAnswered = Math.max(0, canonical.answers.length - canonical.mode);
+    var total = canonical.mode + ties.length;
+    var finished = canonical.answers.length === total;
+    var unresolvedTies = mainAnswered === canonical.mode ? axisIds.filter(function (axis) { return collected[axis].sum === 0; }) : [];
     var scores = {};
     D.axes.forEach(function (axis) {
       var current = collected[axis.id];
-      var side = current.answered === current.total && current.answered > 0 && current.sum !== 0 ? (current.sum > 0 ? 'positive' : 'negative') : null;
+      var side = finished && current.sum !== 0 ? (current.sum > 0 ? 'positive' : 'negative') : null;
       var endpoint = side ? axis[side] : null;
       scores[axis.id] = {
-        sum: current.sum, answered: current.answered, total: current.total, maxAbs: current.total,
-        normalized: current.total ? current.sum / current.total : 0,
-        nearMidpoint: false, tied: false, side: side,
+        sum: current.sum, mainSum: current.mainSum, clarificationSum: current.clarificationSum,
+        mainCount: current.mainCount, clarificationCount: current.clarificationCount,
+        answered: current.answered, total: current.total, maxAbs: 2 * current.total,
+        normalized: current.total ? current.sum / (2 * current.total) : 0,
+        nearMidpoint: current.total > 0 && Math.abs(current.sum / (2 * current.total)) <= 1 / 8,
+        tied: mainAnswered === canonical.mode && current.sum === 0, side: side,
         key: endpoint ? endpoint.key : null, label: endpoint ? endpoint.label : null,
         singleItem: current.total === 1, mixed: current.positive && current.negative
       };
     });
-    var complete = canonical.answers.length === canonical.mode;
+    var complete = finished && unresolvedTies.length === 0;
     var type = complete ? ['energy', 'information', 'decision', 'organization'].map(function (id) { return scores[id].key; }).join('') : null;
     var emotion = complete ? scores.emotion.key : null;
     var coordination = complete ? scores.coordination.key : null;
     var resultKey = complete ? type + '-' + emotion + '-' + coordination : null;
+    var candidateHexagramIds = Object.keys(D.mapping).filter(function (key) {
+      var parts = key.split('-');
+      return D.axes.every(function (axis, index) {
+        var known = scores[axis.id].key;
+        var candidate = index < 4 ? parts[0].charAt(index) : (axis.id === 'emotion' ? parts[1] : parts[2]);
+        return known === null || known === candidate;
+      });
+    }).map(function (key) { return D.mapping[key]; }).sort(function (a, b) { return a - b; });
     return {
-      complete: complete, answered: canonical.answers.length, total: canonical.mode, scores: scores,
+      finished: finished, complete: complete, mainAnswered: mainAnswered,
+      clarificationAnswered: clarificationAnswered, clarificationTotal: ties.length,
+      answered: canonical.answers.length, total: total, scores: scores,
       resultKey: resultKey, hexagramId: resultKey ? D.mapping[resultKey] : null,
       type: type, emotion: emotion, coordination: coordination,
-      ties: [], unresolvedTies: [], allNeutral: false, mode: canonical.mode
+      ties: ties, unresolvedTies: unresolvedTies, candidateHexagramIds: candidateHexagramIds,
+      allNeutral: finished && canonical.answers.every(function (value) { return value === 0; }), mode: canonical.mode
     };
   }
   global.GuaShort = Object.freeze({ VERSION: VERSION, create: create, questions: questions, answer: answer, restore: restore, score: score });

@@ -4,8 +4,9 @@
   var Core = global.GuaCore;
   var Bank = global.GuaBank;
   if (!D || !Core || !Bank) throw new Error('Question data, core.js and bank.js must load before sessions.js.');
-  var VERSION = 3;
-  var KEY = 'guajian-self.session.v3';
+  var VERSION = 4;
+  var KEY = 'guajian-self.session.v4';
+  var PREVIOUS_KEY = 'guajian-self.session.v3';
   var LEGACY_KEY = 'guajian-self.session.v2';
   var MODES = [10, 20, 48];
   var UNAVAILABLE = '此瀏覽器暫時無法保存進度，你仍可完成本次探索。';
@@ -32,7 +33,8 @@
   }
   function freshEnvelope() {
     return { version: VERSION, activeMode: 10, preferredMode: 10, migratedLegacy: false,
-      sessions: { '10': blank(10), '20': blank(20), '48': blank(48) } };
+      sessions: { '10': blank(10), '20': blank(20), '48': blank(48) },
+      archives: { '10': null, '20': null } };
   }
   function phase(value, started) {
     return ['intro', 'quiz', 'ties', 'done'].indexOf(value) >= 0 ? value : (started ? 'quiz' : 'intro');
@@ -43,7 +45,7 @@
     if (saved.version !== 2 || saved.bankVersion !== (D.bank && D.bank.version) || saved.scoringVersion !== Core.VERSION) throw new Error('Incompatible full session.');
     if (!legacy && saved.mode !== undefined && Number(saved.mode) !== 48) throw new Error('Incorrect session mode.');
     var result = blank(48);
-    // A blank v3 slot is a real saved reset, and must remain blank after reload.
+    // An empty saved slot is a real reset, and must remain blank after reload.
     if (!legacy && Array.isArray(saved.questionIds) && saved.questionIds.length === 0 && saved.started !== true) return result;
     var form = Bank.restoreForm(saved.questionIds);
     result.questionIds = form.map(function (question) { return question.id; });
@@ -80,20 +82,28 @@
     if (result.phase === 'ties' && answered !== 48) result.phase = 'quiz';
     return result;
   }
-  function restoreShort(saved, mode) {
+  function restoreShort(saved, mode, legacy) {
     saved = object(saved);
     if (saved.mode !== undefined && Number(saved.mode) !== mode) throw new Error('Incorrect session mode.');
     var result = blank(mode);
     if (saved.short === null && saved.started !== true) return result;
-    if (!global.GuaShort || typeof global.GuaShort.restore !== 'function') throw new Error('Short engine unavailable.');
-    var restored = global.GuaShort.restore(saved.short);
+    var engine = legacy ? global.GuaShortLegacy : global.GuaShort;
+    if (!engine || typeof engine.restore !== 'function' || typeof engine.score !== 'function') throw new Error('Short engine unavailable.');
+    var restored = engine.restore(saved.short);
     if (restored.mode !== mode) throw new Error('Incorrect short session mode.');
     result.short = restored;
     result.started = saved.started === true;
     result.phase = phase(saved.phase, result.started);
     result.questionIndex = index(saved.questionIndex, Math.max(0, restored.questionIds.length - 1));
-    if (result.phase === 'ties' || (result.phase === 'done' && !global.GuaShort.score(restored).complete)) result.phase = 'quiz';
+    var finished = legacy ? engine.score(restored).complete : engine.score(restored).finished;
+    if (result.phase === 'ties' || (result.phase === 'done' && !finished)) result.phase = 'quiz';
     return result;
+  }
+  function restoreArchive(saved, mode) {
+    if (saved === null) return null;
+    var restored = restoreShort(saved, mode, true);
+    // A previous blank/reset slot contains no binary answers to archive.
+    return restored.short === null ? null : restored;
   }
   function restoreEnvelope(saved) {
     saved = object(saved);
@@ -107,7 +117,32 @@
     MODES.forEach(function (mode) {
       try {
         if (!own(sessions, String(mode))) throw new Error('Missing session.');
-        result.sessions[mode] = mode === 48 ? restoreFull(sessions[mode], false) : restoreShort(sessions[mode], mode);
+        result.sessions[mode] = mode === 48 ? restoreFull(sessions[mode], false) : restoreShort(sessions[mode], mode, false);
+      } catch (_) { invalid = true; }
+    });
+    var archives = object(saved.archives);
+    [10, 20].forEach(function (mode) {
+      try {
+        if (!own(archives, String(mode))) throw new Error('Missing archive.');
+        result.archives[mode] = restoreArchive(archives[mode], mode);
+      } catch (_) { invalid = true; }
+    });
+    return { envelope: result, invalid: invalid };
+  }
+  function migratePrevious(saved) {
+    saved = object(saved);
+    if (saved.version !== 3) throw new Error('Incompatible previous envelope.');
+    var result = freshEnvelope();
+    result.activeMode = modeNumber(saved.activeMode);
+    result.preferredMode = Number(saved.preferredMode) === 20 ? 20 : 10;
+    result.migratedLegacy = true;
+    var sessions = object(saved.sessions);
+    var invalid = false;
+    MODES.forEach(function (mode) {
+      try {
+        if (!own(sessions, String(mode))) throw new Error('Missing previous session.');
+        if (mode === 48) result.sessions[48] = restoreFull(sessions[48], false);
+        else result.archives[mode] = restoreArchive(sessions[mode], mode);
       } catch (_) { invalid = true; }
     });
     return { envelope: result, invalid: invalid };
@@ -120,12 +155,23 @@
     var current;
     try { current = storage.getItem(KEY); }
     catch (_) { return outcome(envelope, false, UNAVAILABLE); }
-    // Any v3 value takes precedence over the v2 backup, including a saved reset.
+    // Any v4 value takes precedence over both backups, including a saved reset.
     if (current !== null && current !== undefined) {
       try {
         var restored = restoreEnvelope(JSON.parse(current));
         return outcome(restored.envelope, true, restored.invalid ? INVALID : '');
       } catch (_) { return outcome(envelope, true, INVALID); }
+    }
+    var previous;
+    try { previous = storage.getItem(PREVIOUS_KEY); }
+    catch (_) { return outcome(envelope, false, UNAVAILABLE); }
+    if (previous !== null && previous !== undefined) {
+      var migrated;
+      try { migrated = migratePrevious(JSON.parse(previous)); }
+      catch (_) { return outcome(envelope, true, INVALID); }
+      try { storage.setItem(KEY, JSON.stringify(migrated.envelope)); }
+      catch (_) { return outcome(migrated.envelope, false, UNAVAILABLE); }
+      return outcome(migrated.envelope, true, migrated.invalid ? INVALID : '已保留資深版進度，並將原本 10／20 題二選一紀錄封存為唯讀。');
     }
     var legacy;
     try { legacy = storage.getItem(LEGACY_KEY); }
@@ -154,12 +200,15 @@
     var all = mode === undefined || mode === null;
     if (all) {
       MODES.forEach(function (value) { result.sessions[value] = blank(value); });
+      result.archives = { '10': null, '20': null };
       result.migratedLegacy = true;
     } else result.sessions[modeNumber(mode)] = blank(mode);
     var saved = save(storage, result);
     if (all) {
-      try { storage.removeItem(LEGACY_KEY); }
-      catch (_) { saved.storageAvailable = false; saved.message = UNAVAILABLE; }
+      [PREVIOUS_KEY, LEGACY_KEY].forEach(function (key) {
+        try { storage.removeItem(key); }
+        catch (_) { saved.storageAvailable = false; saved.message = UNAVAILABLE; }
+      });
     }
     return saved;
   }
@@ -167,6 +216,6 @@
     // Selecting an entry point never creates questions or changes another mode.
     return Object.assign({}, envelope, { activeMode: modeNumber(mode) });
   }
-  global.GuaSessions = Object.freeze({ VERSION: VERSION, KEY: KEY, LEGACY_KEY: LEGACY_KEY,
+  global.GuaSessions = Object.freeze({ VERSION: VERSION, KEY: KEY, PREVIOUS_KEY: PREVIOUS_KEY, LEGACY_KEY: LEGACY_KEY,
     blank: blank, load: load, save: save, clear: clear, select: select });
 })(window);

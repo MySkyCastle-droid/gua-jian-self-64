@@ -3,6 +3,7 @@
   const D = window.GuaData;
   const Core = window.GuaCore;
   const Short = window.GuaShort;
+  const Legacy = window.GuaShortLegacy;
   const Sessions = window.GuaSessions;
   const main = document.getElementById('main');
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
@@ -15,6 +16,7 @@
   let toastTimer;
   let currentReportId = null;
   let currentReportMode = null;
+  let currentReportLegacy = false;
   let routeToken = 0;
   let storage;
   try { storage = window.localStorage; } catch (_) { storage = null; }
@@ -38,7 +40,7 @@
     activateFull(); persist();
   }
   function scoredState() {
-    if (state.mode !== 48) return state.short ? Short.score(state.short) : { complete:false, answered:0, total:state.mode };
+    if (state.mode !== 48) return state.short ? Short.score(state.short) : { finished:false, complete:false, answered:0, total:state.mode };
     activateFull();
     const scored = Core.score(state.answers, state.ties); scored.mode = 48;
     D.axes.forEach(axis => { const s = scored.scores[axis.id]; s.total = 8; s.maxAbs = 16; s.answered = D.questions.filter(q => q.axis === axis.id && own(state.answers,q.id)).length; });
@@ -93,7 +95,7 @@
     if (!art) return `<div class="report-gua">${hexSvg(id, false)}<span class="gua-fullname">${esc(guaName(id))}</span><small>第 ${id} 卦・${esc(h.pinyinName)}</small></div>`;
     return `<figure class="report-artwork"><img src="${esc(art.src)}" alt="${esc(art.title)}：${esc(art.conceptZh)}" width="${art.width}" height="${art.height}" decoding="async" fetchpriority="high"><figcaption class="portrait-caption">${hexSvg(id)}<span><strong>${esc(guaName(id))}</strong><small>第 ${id} 卦・原創設計 × AI 插畫</small></span></figcaption></figure>`;
   }
-  function resetView() { if (survey) { survey.dispose(); survey = null; } currentReportId = null; currentReportMode = null; }
+  function resetView() { if (survey) { survey.dispose(); survey = null; } currentReportId = null; currentReportMode = null; currentReportLegacy = false; }
   function page(content, title) {
     resetView(); main.innerHTML = content;
     document.title = `${title}｜卦見自己`;
@@ -103,20 +105,23 @@
   }
   function modeProgress(mode) {
     const saved = envelope.sessions[mode];
-    const count = saved.started ? (mode === 48 ? Object.keys(saved.answers).length : saved.short.answers.length) : 0;
-    return { saved, count, text: !saved.started ? '尚未開始' : saved.phase === 'done' ? '已完成・可查看結果' : `已保存 ${count}／${mode} 題` };
+    const scored = saved.started && mode !== 48 ? Short.score(saved.short) : null;
+    const count = saved.started ? (mode === 48 ? Object.keys(saved.answers).length : scored.answered) : 0;
+    const text = !saved.started ? '尚未開始' : saved.phase === 'done' ? (scored && !scored.complete ? '已完成・部分向度未定' : '已完成・可查看結果') : scored ? `主題 ${scored.mainAnswered}／${mode}${scored.mainAnswered === mode ? `・釐清 ${scored.clarificationAnswered}／${scored.clarificationTotal}` : '・必要時另加釐清'}` : `已保存 ${count}／48 題`;
+    return { saved, count, text };
   }
   function resumeList(className = '') {
     const modes = [10, 20, 48].filter(mode => envelope.sessions[mode].started);
-    if (!modes.length) return '';
-    return `<div class="saved-modes ${className}" aria-label="各版本的本機進度">${modes.map(mode => `<a href="#${envelope.sessions[mode].phase === 'done' ? 'result' : 'quiz'}/${mode}"><span>${modeLabel(mode)}</span><span>${modeProgress(mode).text} <span aria-hidden="true">→</span></span></a>`).join('')}</div>`;
+    const archives = [10, 20].filter(mode => envelope.archives && envelope.archives[mode] && envelope.archives[mode].started);
+    if (!modes.length && !archives.length) return '';
+    return `<div class="saved-modes ${className}" aria-label="各版本的本機進度">${modes.map(mode => `<a href="#${envelope.sessions[mode].phase === 'done' ? 'result' : 'quiz'}/${mode}"><span>${modeLabel(mode)}</span><span>${modeProgress(mode).text} <span aria-hidden="true">→</span></span></a>`).join('')}${archives.map(mode => `<a href="#archive/${mode}"><span>${mode} 題・舊版二選一封存</span><span>唯讀 ${envelope.archives[mode].short.answers.length}／${mode} 題 <span aria-hidden="true">→</span></span></a>`).join('')}</div>`;
   }
   function introDisclaimer() {
     return '<p class="intro-disclaimer">受人格偏好與易經文化啟發的原創探索，非官方 MBTI® 評估。<br>分類與配卦屬本產品創作；結果可作自我反思的起點。<a href="#method">了解方法 →</a></p>';
   }
   function renderExplore() {
     const selected = envelope.preferredMode === 20 ? 20 : 10;
-    page(`<div class="container page-heading centered"><span class="section-label">從你的步調出發</span><h1>留一點時間，<br class="mobile-heading-break">聽聽自己。</h1><p>想著最近三個月的大多數情況，選擇較接近你的回答。<br>先選一個適合今天的長度，兩種版本都會遇見完整的原型解讀。</p></div><section class="intro-box mode-intro"><fieldset class="mode-options"><legend>這次，想走多遠？</legend>${[10,20].map(mode => `<label class="mode-option"><input type="radio" name="explore-mode" value="${mode}" ${selected === mode ? 'checked' : ''}><span><strong>${mode} 題・${mode === 10 ? '快速探索' : '標準探索'}</strong><span>${mode === 10 ? '從六個向度輕輕開始，適合第一次認識自己。' : '多一些生活情境，為六個向度留下更多觀察。'}</span><small>${modeProgress(mode).text}</small></span></label>`).join('')}</fieldset><p class="mode-explanation">兩個選項，照實回答；後續題目會依本次回答安排，題數固定，不另加釐清題。短版觀察有限；10 題版有四個向度僅一道題，20 題版每軸至少三題，皆適合作為自我反思的起點。</p><div id="selected-mode-status" class="mode-selected-status" role="status"></div>${storageMessage ? `<div class="notice${storageAvailable ? '' : ' warning'}">${esc(storageMessage)}</div>` : ''}<div class="intro-actions"><button class="button button-primary" id="start-selected-mode" data-action="start-mode" data-mode="${selected}"></button><button class="button button-quiet" id="restart-selected-mode" data-action="restart" data-mode="${selected}" hidden>重新抽題探索</button></div><p class="senior-link">想保留更多回答層次？<a href="#senior">前往 48 題資深探索 →</a></p>${introDisclaimer()}${resumeList()}</section>`, '選擇探索長度');
+    page(`<div class="container page-heading centered"><span class="section-label">從你的步調出發</span><h1>留一點時間，<br class="mobile-heading-break">聽聽自己。</h1><p>想著最近三個月的大多數情況，選擇較接近你的回答。<br>先選一個適合今天的長度，五點回答保留不同程度；未定時也能閱讀相容原型。</p></div><section class="intro-box mode-intro"><fieldset class="mode-options"><legend>這次，想走多遠？</legend>${[10,20].map(mode => `<label class="mode-option"><input type="radio" name="explore-mode" value="${mode}" ${selected === mode ? 'checked' : ''}><span><strong>${mode} 題・${mode === 10 ? '快速探索' : '標準探索'}</strong><span>${mode === 10 ? '從六個向度輕輕開始，適合第一次認識自己。' : '多一些生活情境，為六個向度留下更多觀察。'}</span><small>${modeProgress(mode).text}</small></span></label>`).join('')}</fieldset><p class="mode-explanation">兩種長度都使用五點選項，從「非常不像我」到「非常像我」，也能選「介於兩者」。主題依回答安排；主題原分為 0 的向度各加一道五點釐清題，10 題版合計 10–16 題，20 題版合計 20–26 題。釐清後仍為 0，就保留未定與相容原型。短版觀察有限，適合作為自我反思的起點。</p><div id="selected-mode-status" class="mode-selected-status" role="status"></div>${storageMessage ? `<div class="notice${storageAvailable ? '' : ' warning'}">${esc(storageMessage)}</div>` : ''}<div class="intro-actions"><button class="button button-primary" id="start-selected-mode" data-action="start-mode" data-mode="${selected}"></button><button class="button button-quiet" id="restart-selected-mode" data-action="restart" data-mode="${selected}" hidden>重新抽題探索</button></div><p class="senior-link">想觀察更多生活情境？<a href="#senior">前往 48 題資深探索 →</a></p>${introDisclaimer()}${resumeList()}</section>`, '選擇探索長度');
     const update = () => {
       const mode = Number(document.querySelector('input[name="explore-mode"]:checked').value);
       const progress = modeProgress(mode);
@@ -187,10 +192,15 @@
   function renderShortQuiz() {
     const items = Short.questions(state.short);
     state.questionIndex = Math.max(0, Math.min(state.questionIndex, items.length - 1));
-    const position = state.questionIndex, item = items[position], count = state.short.answers.length;
+    const position = state.questionIndex, item = items[position], count = state.short.answers.length, scored = Short.score(state.short);
     const selected = position < count ? state.short.answers[position] : null;
     const revisingEarlier = position < count - 1;
-    page(`<section class="quiz-shell short-quiz"><div class="quiz-top"><a href="#explore">← 暫停，回到探索入口</a><span class="mode-badge">${modeLabel(state.mode)}</span><span class="question-counter"><strong>${String(position + 1).padStart(2,'0')}</strong> / ${state.mode}</span></div><div class="progress-track" role="progressbar" aria-label="${state.mode} 題探索已回答題數" aria-valuemin="0" aria-valuemax="${state.mode}" aria-valuenow="${count}"><span style="width:${count / state.mode * 100}%"></span></div><p class="short-progress" aria-live="polite">已回答 ${count}／${state.mode} 題${position < count ? '・正在回看已答題目' : ''}</p><div class="quiz-paper"><p class="quiz-hint">回想最近三個月，選擇比較接近你的回答。</p>${revisingEarlier ? '<p class="branch-notice" id="branch-notice">修改本題會重新安排後續問題；只回看或維持原答案，會保留目前進度。</p>' : ''}<fieldset class="short-options" ${revisingEarlier ? 'aria-describedby="branch-notice"' : ''}><legend tabindex="-1">${esc(item.text)}</legend>${[1,-1].map((value, i) => `<label class="short-option"><input id="short-answer-${i + 1}" type="radio" name="short-answer" value="${value}" ${selected === value ? 'checked' : ''}><span><span class="option-key" aria-hidden="true">${i + 1}</span>${value === 1 ? '比較符合我' : '比較不符合我'}</span></label>`).join('')}</fieldset><p id="answer-error" class="answer-error" role="alert" hidden>請先選擇一個答案，再繼續。</p></div><div class="quiz-navigation"><button class="button button-quiet" id="previous-question" ${position === 0 ? 'disabled' : ''}>← 上一題</button><span class="quiz-shortcut">1／2 選擇・Enter 下一題</span><button class="button button-primary" id="next-question">${position === state.mode - 1 ? '遇見我的原型 ↗' : '下一題 →'}</button></div><p class="quiz-status" id="save-status"></p><p class="quiz-help-link">這是偏好的探索，每一端都有它的價值。<br>下一題會依本次回答安排；尚未回答的題目不會計分。</p></section>`, `${state.mode} 題探索・第 ${position + 1} 題`);
+    const clarification = item.isClarification === true;
+    const counter = clarification ? `主題 ${state.mode}/${state.mode}・釐清 <strong>${position - state.mode + 1}</strong>/${scored.clarificationTotal}` : `<strong>${String(position + 1).padStart(2,'0')}</strong>/${state.mode}`;
+    const progressText = `主題已答 ${scored.mainAnswered}／${state.mode} 題${scored.mainAnswered === state.mode ? `・釐清已答 ${scored.clarificationAnswered}／${scored.clarificationTotal} 題・本次共 ${scored.total} 題` : `・必要時另加 0–6 題釐清，合計 ${state.mode}–${state.mode + 6} 題`}`;
+    const choices = [{ value:-2, text:'非常不像我' }, { value:-1, text:'比較不像我' }, { value:0, text:'介於兩者' }, { value:1, text:'比較像我' }, { value:2, text:'非常像我' }];
+    const nextText = position === state.mode - 1 && scored.mainAnswered < state.mode ? '完成主題 →' : scored.finished && position === items.length - 1 ? '查看這次結果 ↗' : '下一題 →';
+    page(`<section class="quiz-shell short-quiz"><div class="quiz-top"><a href="#explore">← 暫停，回到探索入口</a><span class="mode-badge">${modeLabel(state.mode)}・五點回答</span><span class="question-counter">${counter}</span></div><div class="progress-track" role="progressbar" aria-label="${scored.mainAnswered === state.mode ? '本次主題與釐清總作答進度' : '主題作答進度，必要時另加釐清'}" aria-valuemin="0" aria-valuemax="${scored.total}" aria-valuenow="${count}"><span style="width:${count / scored.total * 100}%"></span></div><p class="short-progress" aria-live="polite">${progressText}${position < count ? '・正在回看已答題目' : ''}</p><div class="quiz-paper"><p class="quiz-hint">回想最近三個月，選擇最接近你的程度。</p>${clarification ? '<p class="branch-notice">這個向度的主題原分為 0，再用一道五點題觀察。每個向度最多釐清一次；若仍為 0，結果會保留未定。</p>' : ''}${revisingEarlier ? '<p class="branch-notice" id="branch-notice">修改本題會重新安排後續問題；只回看或維持原答案，會保留目前進度。</p>' : ''}<fieldset class="short-options" ${revisingEarlier ? 'aria-describedby="branch-notice"' : ''}><legend tabindex="-1">${esc(item.text)}</legend><div class="short-choice-grid">${choices.map((choice, i) => `<label class="short-option"><input id="short-answer-${i + 1}" type="radio" name="short-answer" value="${choice.value}" ${selected === choice.value ? 'checked' : ''}><span><span class="option-key" aria-hidden="true">${i + 1}</span><span>${choice.text}</span></span></label>`).join('')}</div></fieldset><p id="answer-error" class="answer-error" role="alert" hidden>請先選擇一個答案，再繼續。</p></div><div class="quiz-navigation"><button class="button button-quiet" id="previous-question" ${position === 0 ? 'disabled' : ''}>← 上一題</button><span class="quiz-shortcut">1–5 選擇・Enter 下一題</span><button class="button button-primary" id="next-question">${nextText}</button></div><p class="quiz-status" id="save-status"></p><p class="quiz-help-link">這是偏好的探索，每一端都有它的價值。<br>0 分「介於兩者」是有效答案；尚未回答的題目保留空白。</p></section>`, `${state.mode} 題探索・${clarification ? '釐清' : '主題'}第 ${clarification ? position - state.mode + 1 : position + 1} 題`);
     document.querySelectorAll('input[name="short-answer"]').forEach(input => input.addEventListener('change', () => {
       state.short = Short.answer(state.short, state.questionIndex, Number(input.value));
       state.phase = 'quiz'; persist(); renderShortQuiz();
@@ -206,7 +216,8 @@
     if (state.questionIndex >= state.short.answers.length) {
       showAnswerError(); document.getElementById('short-answer-1').focus(); return;
     }
-    if (state.questionIndex === state.mode - 1) return finishExploration();
+    const scored = scoredState();
+    if (scored.finished && state.questionIndex === Short.questions(state.short).length - 1) return finishExploration();
     state.questionIndex++; persist(); renderShortQuiz();
     const heading = document.querySelector('.short-options legend'); heading.focus({preventScroll:true}); heading.scrollIntoView({block:'nearest'});
   }
@@ -249,7 +260,7 @@
   }
   function finishExploration() {
     const scored = scoredState();
-    if (!scored.complete) return state.mode === 48 ? renderTie() : renderShortQuiz();
+    if (!(state.mode === 48 ? scored.complete : scored.finished)) return state.mode === 48 ? renderTie() : renderShortQuiz();
     state.phase = 'done'; persist(); navigate(resultRoute());
   }
   function renderAtlas() {
@@ -264,29 +275,52 @@
     document.getElementById('atlas-search').addEventListener('input', filter); document.getElementById('atlas-type').addEventListener('change', filter); document.getElementById('atlas-emotion').addEventListener('change', filter); filter();
   }
   function scorePanel(scored) {
-    const short = scored.mode !== 48;
-    return `<section class="score-section"><h2>這次回答裡的六個傾向</h2><p>${short ? '各軸按本次實際題數呈現原分；位置只反映這次回答的方向，不代表人口比例或分類機率。題目較少的向度，適合多保留一點觀察。' : '這是作答原分的位置，不是人口百分比或分類機率。中間附近表示兩端都可能貼近你。'}</p><div class="score-grid">${D.axes.map(axis => {
+    const short = scored.mode !== 48, fivePoint = short && !scored.legacy;
+    const signed = value => value > 0 ? '+' + value : String(value);
+    return `<section class="score-section"><h2>這次回答裡的六個傾向</h2><p>${fivePoint ? '主題原分加上釐清分，形成最終分；每題 −2 至＋2 分，各軸範圍依實際題數為 ±2n。最終分為 0 的向度保留未定。位置只反映本次回答，不代表人口比例或分類機率。' : short ? '舊版二選一封存採每題 −1 或＋1 分，保留當時原分與分類。各軸範圍依原本題數呈現。' : '這是作答原分的位置，不是人口百分比或分類機率。中間附近表示兩端都可能貼近你。'}</p><div class="score-grid">${D.axes.map(axis => {
       const s = scored.scores[axis.id], maximum = s.maxAbs || 16;
       const pos = Math.max(1, Math.min(99, (maximum - s.sum) / (maximum * 2) * 100));
-      const note = s.singleItem ? '本向度僅一道題，觀察有限' : s.mixed ? '本向度的回答呈現混合傾向' : s.nearMidpoint ? '兩端接近' : `本次較偏${esc(s.label)}`;
-      return `<div class="axis-row ${s.nearMidpoint ? 'axis-near' : ''}"><div class="axis-heading"><strong>${esc(axis.label)}</strong><span>${note}</span></div><div class="axis-labels"><span class="${s.side === 'positive' ? 'selected' : ''}">${esc(axis.positive.label)}</span><span class="${s.side === 'negative' ? 'selected' : ''}">${esc(axis.negative.label)}</span></div><div class="axis-track" role="img" aria-label="${esc(axis.label)}原始分數${s.sum}，範圍負${maximum}至正${maximum}，本向度${s.total}題"><span class="axis-marker" style="left:${pos}%"></span></div><p class="axis-note">原分 ${s.sum > 0 ? '+' : ''}${s.sum} / ±${maximum}・本向度 ${s.total} 題${s.tied ? `・分類依補題呈現${esc(s.label)}` : ''}</p></div>`;
+      const notes = [];
+      if (!s.side) notes.push('未定');
+      else notes.push(`本次較偏${esc(s.label)}`);
+      if (s.singleItem) notes.push('僅一道題，觀察有限');
+      if (s.mixed) notes.push('回答呈現混合傾向');
+      if (s.nearMidpoint) notes.push('兩端接近');
+      const detail = fivePoint ? `主題原分 ${signed(s.mainSum)}（${s.mainCount} 題）＋釐清分 ${signed(s.clarificationSum)}（${s.clarificationCount} 題）＝最終分 ${signed(s.sum)} / ±${maximum}（2 × ${s.total} 題）` : `原分 ${signed(s.sum)} / ±${maximum}・本向度 ${s.total} 題${s.tied ? `・分類依補題呈現${esc(s.label)}` : ''}`;
+      return `<div class="axis-row ${s.nearMidpoint ? 'axis-near' : ''}${!s.side ? ' axis-unresolved' : ''}"><div class="axis-heading"><strong>${esc(axis.label)}</strong><span>${notes.join('・')}</span></div><div class="axis-labels"><span class="${s.side === 'positive' ? 'selected' : ''}">${esc(axis.positive.label)}</span><span class="${s.side === 'negative' ? 'selected' : ''}">${esc(axis.negative.label)}</span></div><div class="axis-track" role="img" aria-label="${esc(axis.label)}${fivePoint ? '最終' : '原始'}分數${s.sum}，範圍負${maximum}至正${maximum}，本向度${s.total}題${!s.side ? '，未定' : ''}"><span class="axis-marker" style="left:${pos}%"></span></div><p class="axis-note">${detail}</p></div>`;
     }).join('')}</div></section>`;
   }
   function renderPersonal() {
     const scored = scoredState();
-    if (!state.started || !scored.complete) { page(`<div class="error-state"><span class="eyebrow">${modeLabel(state.mode)}・探索還在途中</span><h1>完成作答，就能遇見你的原型。</h1><p>這個連結不含作答資料，請在原本的瀏覽器續答。</p><a class="button button-primary" href="${state.started ? quizRoute() : state.mode === 48 ? '#senior' : '#explore'}">${state.started ? '回到這次探索' : '前往探索入口'} →</a></div>`, '探索還在途中'); return; }
+    const finished = state.mode === 48 ? scored.complete : scored.finished;
+    if (!state.started || !finished) { page(`<div class="error-state"><span class="eyebrow">${modeLabel(state.mode)}・探索還在途中</span><h1>完成作答，展開這次觀察。</h1><p>這個連結不含作答資料，請在原本的瀏覽器續答。</p><a class="button button-primary" href="${state.started ? quizRoute() : state.mode === 48 ? '#senior' : '#explore'}">${state.started ? '回到這次探索' : '前往探索入口'} →</a></div>`, '探索還在途中'); return; }
+    if (!scored.complete) return renderUncertain(scored);
     renderReport(scored.hexagramId, scored);
+  }
+  function renderUncertain(scored) {
+    const ids = scored.candidateHexagramIds.slice().sort((a, b) => a - b);
+    const unresolved = D.axes.filter(axis => scored.unresolvedTies.includes(axis.id)).map(axis => esc(axis.label)).join('、');
+    page(`<article class="report-shell uncertain-report"><div class="report-breadcrumb"><a href="#home">← 回到首頁</a><span>這次探索已完成・保留未定</span></div><header class="uncertain-heading"><span class="mode-badge">${modeLabel(scored.mode)}・五點回答</span><h1>${scored.allNeutral ? '此刻，讓答案保留開放。' : '有些傾向，還可以慢慢觀察。'}</h1><p>${scored.allNeutral ? '你在主題與釐清題都選擇「介於兩者」。六個向度目前均為未定，這次回答沒有支持特定人格分類。' : `${unresolved}的最終分仍為 0，因此保留未定。本次作答已完成；已知傾向與未定向度一起保留在下方。`}</p><p>主題 ${scored.mainAnswered}／${scored.mode} 題・釐清 ${scored.clarificationAnswered}／${scored.clarificationTotal} 題・共 ${scored.answered} 題。每個向度最多釐清一次。</p></header><div class="report-actions"><button class="button button-quiet" data-action="review-answers" data-mode="${scored.mode}">回看我的答案</button><button class="button button-quiet" data-action="restart" data-mode="${scored.mode}">重新抽題探索</button><a class="button button-quiet" href="#senior">前往 48 題資深探索 →</a></div>${scorePanel(scored)}<section class="candidate-section"><div class="section-head"><div><span class="section-label">保留多種閱讀可能</span><h2>${scored.allNeutral ? '六十四面鏡子，任你翻閱。' : '與已知傾向相容的原型'}</h2></div><p>共 ${ids.length} 種，依文王卦序排列，沒有名次或機率。點選後閱讀文化圖鑑。</p></div><div class="card-grid candidate-grid">${ids.map(card).join('')}</div></section></article>`, '這次探索・保留未定');
+  }
+  function renderArchive(mode, answersOnly = false) {
+    const archived = envelope.archives && envelope.archives[mode];
+    if (!archived || !archived.started || !archived.short || !Legacy) return renderNotFound();
+    const scored = Object.assign({}, Legacy.score(archived.short), { legacy: true });
+    if (scored.complete && !answersOnly) return renderReport(scored.hexagramId, scored);
+    const items = Legacy.questions(archived.short).slice(0, archived.short.answers.length);
+    page(`<article class="report-shell archive-report"><div class="report-breadcrumb"><a href="#explore">← 回到探索入口</a><span>${mode} 題・舊版二選一封存</span></div><header class="uncertain-heading"><span class="mode-badge">舊版二選一封存・唯讀</span><h1>${scored.complete ? '回看當時的回答。' : '保留走過的這一段。'}</h1><p>已回答 ${archived.short.answers.length}／${mode} 題。這份紀錄保留原本的二選一答案與計分，封存後僅供閱讀。</p><p>原選項為「比較符合我」＋1 與「比較不符合我」−1，依題目方向換算；原分不轉換為五點量尺。</p></header><div class="report-actions">${scored.complete ? `<a class="button button-quiet" href="#archive/${mode}">閱讀封存結果 →</a>` : `<button class="button button-primary" data-action="start-mode" data-mode="${mode}">開始新版 ${mode} 題五點探索 →</button>`}</div><ol class="archive-answers">${items.length ? items.map((item, index) => `<li><span class="section-label">${String(index + 1).padStart(2, '0')} / ${esc(D.axes.find(axis => axis.id === item.axis).label)}</span><h2>${esc(item.text)}</h2><p>${archived.short.answers[index] === 1 ? '＋1・比較符合我' : '−1・比較不符合我'}<span>依題目方向換算：${archived.short.answers[index] * item.direction > 0 ? '＋1' : '−1'}</span></p></li>`).join('') : '<li><p>這份紀錄尚未作答。</p></li>'}</ol></article>`, `${mode} 題・舊版二選一封存`);
   }
   function renderReport(id, scored) {
     const r = D.reports[id], h = getHex(id); if (!r || !h) return renderNotFound();
     const parts = r.typeKey.split('-'), emotion = parts[1] === 'calm' ? '沉著' : '敏銳', coordination = parts[2] === 'autonomous' ? '自主' : '協作', top = getTri(h.topTrigram), bottom = getTri(h.bottomTrigram);
     const personal = Boolean(scored);
+    const legacy = Boolean(personal && scored.legacy);
     const reportMode = personal ? scored.mode : null;
-    page(`<article class="report-shell"><div class="report-breadcrumb"><a href="${personal ? '#home' : '#atlas'}">← ${personal ? '回到首頁' : '返回原型圖鑑'}</a><span>${personal ? '這次探索的文化原型' : '原型圖鑑・閱讀示例'} / NO. ${String(id).padStart(2, '0')}</span></div><header class="report-hero"><div><span class="eyebrow">${personal ? 'A MIRROR OF YOUR PRESENT SELF' : 'AN ARCHETYPE TO EXPLORE'}</span><span class="mode-badge report-mode">${personal ? modeLabel(reportMode) : '原型圖鑑・閱讀示例'}</span><p class="report-type">${esc(parts[0])} · ${emotion} × ${coordination}</p><h1>${esc(r.title)}</h1><p class="summary">${esc(r.summary)}</p></div>${reportVisual(id)}</header>${personal && scored.allNeutral ? '<div class="notice warning">主問卷全部選擇中立，因此目前的偏好不明顯。這個卦象主要依釐清題的選擇呈現，適合當成閱讀與反思的起點。</div>' : ''}${personal && reportMode !== 48 ? `<div class="notice">這是 ${reportMode} 題短版探索：${reportMode === 10 ? '有四個向度僅一道題' : '每軸至少三題'}，呈現的是本次有限回答中的傾向。可把文章作為反思的起點，也可透過 <a href="#senior">48 題資深探索</a> 觀察更多情境。</div>` : ''}${!personal ? '<div class="notice">你正在閱讀原型圖鑑。這裡的類型是文章設定，並不是你的測驗結果。</div>' : ''}<div class="report-actions"><button class="button button-primary" data-action="download-card">下載分享卡 <span aria-hidden="true">↓</span></button><button class="button button-quiet" data-action="copy-link">複製原型連結 <span aria-hidden="true">↗</span></button>${personal ? '<button class="button button-quiet" data-action="review-answers">回看我的答案</button><button class="button button-quiet" data-action="restart">重新抽題探索</button>' : '<a class="button button-quiet" href="#explore">開始我的探索 →</a>'}</div>${personal ? scorePanel(scored) : ''}<div class="report-grid"><div class="report-body"><section><span class="report-section-label">01 / 讀一段古老的意象</span><h2>卦象的文化背景</h2><blockquote class="report-quote">${esc(r.quote)}</blockquote><p>${esc(r.plainMeaning)}</p><a class="report-source" href="${esc(r.source)}" target="_blank" rel="noopener noreferrer">閱讀《周易》本卦原文 ↗</a></section><section><span class="report-section-label">02 / 本產品的原創詮釋</span><h2>為什麼是這一面鏡子？</h2><p>${esc(r.pairing)}</p><p class="editorial-note">這一配對是當代文化創作；原典提供意象，本產品另行建立人格比喻。</p>${D.artwork && D.artwork[id] ? `<div class="artwork-reading"><h3>畫面裡的線索</h3><p>${esc(D.artwork[id].conceptZh)}</p><small>角色與場景是本產品的視覺比喻，以 AI 生成插畫呈現。</small></div>` : ""}</section><section class="report-two-column"><div><span class="report-section-label">你的可用之力</span><h3>讓傾向成為支持</h3><p>${esc(r.strength)}</p></div><div><span class="report-section-label">值得多看一眼</span><h3>照顧容易忽略的地方</h3><p>${esc(r.blindspot)}</p></div></section><section><span class="report-section-label">03 / 帶回生活的小練習</span><h2>從一件小事開始</h2><ol class="advice-list">${r.advice.map((text, i) => `<li><span>0${i + 1}</span><p>${esc(text)}</p></li>`).join('')}</ol></section><section class="reflection"><span class="report-section-label">留給自己的提問</span><p>${esc(r.reflection)}</p></section></div><aside class="report-aside"><div class="aside-box"><h2>卦象小箋</h2><dl class="aside-dl"><div><dt>文王卦序</dt><dd>第 ${id} 卦・${esc(h.chineseName)}</dd></div><div><dt>上卦 / 外在意象</dt><dd>${esc(top.chineseName)} ☯ ${esc(top.chineseImage)}</dd></div><div><dt>下卦 / 內在意象</dt><dd>${esc(bottom.chineseName)} ☯ ${esc(bottom.chineseImage)}</dd></div><div><dt>本篇原型分支</dt><dd>${esc(parts[0])}・${emotion}${coordination}</dd></div></dl></div><div class="aside-box"><h2>給探索中的你</h2><p>卦象描寫變化中的局勢，也提供回應的角度。把合用的提醒帶走，保留與自己對話的空間。</p><p style="margin-top:12px">所有原型都有優勢與成長課題，分型不代表能力、品德或命運的高低。</p><a class="text-link" style="font-size:10px;margin-top:12px" href="#method">了解分類與配卦方法 →</a></div></aside></div><div class="notice">分享卡與原型連結只含類型、卦象與文章摘要，不含逐題答案或個人分數。你的作答紀錄只留在這個瀏覽器。</div></article>`, `${r.title}・${h.chineseName}`);
-    currentReportId = Number(id); currentReportMode = reportMode;
+    page(`<article class="report-shell"><div class="report-breadcrumb"><a href="${personal ? '#home' : '#atlas'}">← ${personal ? '回到首頁' : '返回原型圖鑑'}</a><span>${personal ? '這次探索的文化原型' : '原型圖鑑・閱讀示例'} / NO. ${String(id).padStart(2, '0')}</span></div><header class="report-hero"><div><span class="eyebrow">${personal ? 'A MIRROR OF YOUR PRESENT SELF' : 'AN ARCHETYPE TO EXPLORE'}</span><span class="mode-badge report-mode">${legacy ? `${reportMode} 題・舊版二選一封存` : personal ? modeLabel(reportMode) + (reportMode !== 48 ? '・五點回答' : '') : '原型圖鑑・閱讀示例'}</span><p class="report-type">${esc(parts[0])} · ${emotion} × ${coordination}</p><h1>${esc(r.title)}</h1><p class="summary">${esc(r.summary)}</p></div>${reportVisual(id)}</header>${personal && scored.allNeutral ? '<div class="notice warning">主問卷全部選擇中立，因此目前的偏好不明顯。這個卦象主要依釐清題的選擇呈現，適合當成閱讀與反思的起點。</div>' : ''}${legacy ? '<div class="notice">舊版二選一封存：保留當時的 −1／＋1 量尺、分類與原型。這份紀錄僅供閱讀。</div>' : personal && reportMode !== 48 ? `<div class="notice">這是 ${reportMode} 題主題的五點探索，另完成 ${scored.clarificationAnswered} 題釐清，共 ${scored.answered} 題。各軸呈現本次有限回答中的傾向；單題或兩端接近的向度仍值得繼續觀察。也可透過 <a href="#senior">48 題資深探索</a> 觀察更多情境。</div>` : ''}${!personal ? '<div class="notice">你正在閱讀原型圖鑑。這裡的類型是文章設定，並不是你的測驗結果。</div>' : ''}<div class="report-actions"><button class="button button-primary" data-action="download-card">下載分享卡 <span aria-hidden="true">↓</span></button><button class="button button-quiet" data-action="copy-link">複製原型連結 <span aria-hidden="true">↗</span></button>${legacy ? `<a class="button button-quiet" href="#archive/${reportMode}/answers">回看封存答案</a>` : personal ? `<button class="button button-quiet" data-action="review-answers" data-mode="${reportMode}">回看我的答案</button><button class="button button-quiet" data-action="restart" data-mode="${reportMode}">重新抽題探索</button>` : '<a class="button button-quiet" href="#explore">開始我的探索 →</a>'}</div>${personal ? scorePanel(scored) : ''}<div class="report-grid"><div class="report-body"><section><span class="report-section-label">01 / 讀一段古老的意象</span><h2>卦象的文化背景</h2><blockquote class="report-quote">${esc(r.quote)}</blockquote><p>${esc(r.plainMeaning)}</p><a class="report-source" href="${esc(r.source)}" target="_blank" rel="noopener noreferrer">閱讀《周易》本卦原文 ↗</a></section><section><span class="report-section-label">02 / 本產品的原創詮釋</span><h2>為什麼是這一面鏡子？</h2><p>${esc(r.pairing)}</p><p class="editorial-note">這一配對是當代文化創作；原典提供意象，本產品另行建立人格比喻。</p>${D.artwork && D.artwork[id] ? `<div class="artwork-reading"><h3>畫面裡的線索</h3><p>${esc(D.artwork[id].conceptZh)}</p><small>角色與場景是本產品的視覺比喻，以 AI 生成插畫呈現。</small></div>` : ""}</section><section class="report-two-column"><div><span class="report-section-label">你的可用之力</span><h3>讓傾向成為支持</h3><p>${esc(r.strength)}</p></div><div><span class="report-section-label">值得多看一眼</span><h3>照顧容易忽略的地方</h3><p>${esc(r.blindspot)}</p></div></section><section><span class="report-section-label">03 / 帶回生活的小練習</span><h2>從一件小事開始</h2><ol class="advice-list">${r.advice.map((text, i) => `<li><span>0${i + 1}</span><p>${esc(text)}</p></li>`).join('')}</ol></section><section class="reflection"><span class="report-section-label">留給自己的提問</span><p>${esc(r.reflection)}</p></section></div><aside class="report-aside"><div class="aside-box"><h2>卦象小箋</h2><dl class="aside-dl"><div><dt>文王卦序</dt><dd>第 ${id} 卦・${esc(h.chineseName)}</dd></div><div><dt>上卦 / 外在意象</dt><dd>${esc(top.chineseName)} ☯ ${esc(top.chineseImage)}</dd></div><div><dt>下卦 / 內在意象</dt><dd>${esc(bottom.chineseName)} ☯ ${esc(bottom.chineseImage)}</dd></div><div><dt>本篇原型分支</dt><dd>${esc(parts[0])}・${emotion}${coordination}</dd></div></dl></div><div class="aside-box"><h2>給探索中的你</h2><p>卦象描寫變化中的局勢，也提供回應的角度。把合用的提醒帶走，保留與自己對話的空間。</p><p style="margin-top:12px">所有原型都有優勢與成長課題，分型不代表能力、品德或命運的高低。</p><a class="text-link" style="font-size:10px;margin-top:12px" href="#method">了解分類與配卦方法 →</a></div></aside></div><div class="notice">分享卡與原型連結只含類型、卦象與文章摘要，不含逐題答案或個人分數。你的作答紀錄只留在這個瀏覽器。</div></article>`, `${r.title}・${h.chineseName}`);
+    currentReportId = Number(id); currentReportMode = reportMode; currentReportLegacy = legacy;
   }
   function renderMethod() {
-    page(`<div class="narrow"><section class="page-heading"><span class="section-label">OUR APPROACH</span><h1>以偏好為引，以卦義為鏡。</h1><p>這份探索把六個生活向度組合為 64 型，再按卦義逐一人工配對。每一步都有可查閱的規則。</p></section><div class="prose"><div class="method-equation"><div><strong>16</strong>四組人格偏好</div><span>×</span><div><strong>2</strong>情緒感受</div><span>×</span><div><strong>2</strong>協調方式</div><span>＝</span><div><strong>64</strong>文化原型</div></div><h2>六個向度，觀察六種生活傾向。</h2><div class="axis-definitions">${D.axes.map((axis, i) => `<section class="definition"><small>0${i + 1}${i >= 4 ? ' / 本產品原創向度' : ''}</small><h3>${esc(axis.label)}</h3><p class="endpoints">${esc(axis.positive.label)} ↔ ${esc(axis.negative.label)}</p><p>${esc(axis.definition)}</p></section>`).join('')}</div><h2>從題庫組卷，保持每一場的平衡。</h2><p>公開原題會保留原文與來源。本產品另行撰寫繁中母題，再以受控生活情境產生衍生題。題庫容量、語意母題數與公開原題數分開計算，情境變體不代表新增的心理構念。</p><p>一般入口提供 10 題快速與 20 題標準探索：每軸先回答一題，再依回答安排成對的追加題，讓每軸最終維持奇數題，不另加釐清題。10 題版有四軸僅一道題；20 題版每軸至少三題。回改較早的答案時，後續問題與答案會重新安排。</p><p>48 題資深版則在開始時固定全卷：六個向度各 8 題，正反向各 4 題。同一份探索避免重複語意家族與近義群，每題都可追溯母題、公開來源與分類理由；續答保留原來的題目。</p><p><a href="#bank">查看題庫與來源分流工作台 →</a></p><h2>保留連續分數，再呈現一種原型。</h2><p>10／20 題版使用「比較符合我」＋1 與「比較不符合我」−1，依題目方向換算後加總。各軸按本次實際題數呈現原分；單題向度會提醒觀察有限，正負回答同時出現時會描述為混合傾向，不推算準確率或分類機率。</p><p>48 題資深版使用五點選項 −2 至＋2 分，每軸範圍 −16 至＋16；正負決定本次較偏的一端，完全同分時才加一題釐清。原分接近中間時會誠實標示「兩端接近」。</p><details class="method-details"><summary>展開 48 題計分與同分規則</summary><ul><li>正分端依序為 E、S、T、J、沉著、自主；負分端為 I、N、F、P、敏銳、協作。</li><li>反向題以作答值乘 −1；漏答保留空白，與中立選項的 0 分不同。</li><li>同分補題只決定本次分類，原分維持 0；返回修改後，失效的補題選擇會清除。</li><li>絕對值不超過 2 分時顯示兩端接近。這是產品呈現規則，不是統計信心區間。</li><li>同一套題與相同答案會產生相同結果；重新抽題後結果可能隨情境與作答改變。</li></ul></details><h2>人格與卦象，由故事連接。</h2><p>每個 64 型分支對應一個不同的文王卦序，配對兼顧偏好、卦義與成長課題；六個向度不會直接拼成六爻。報告把原典、白話文化背景與本產品的現代比喻分開呈現。</p><p>「困」「否」「剝」描寫的限制與變化，同樣可以成為守志、辨識耗損與保護根基的提醒。每個原型都保有尊嚴與選擇。</p><h2>這份探索的定位</h2><p>官方 MBTI® 是以四組偏好與 16 型為基礎的評估系統。本產品的題目、兩個新增向度及 64 型配卦都是原創設計，沒有承接官方測驗或原始題庫的效度宣稱。</p><p>結果用於文化閱讀與自我反思。若你想進一步理解某個偏好，可以觀察不同情境中的自己，再回來比較哪些文字仍然貼近生活。</p><div class="intro-actions"><a class="button button-primary" href="#explore">帶著理解，開始探索 ↗</a><a class="button button-quiet" href="#sources">資料與授權</a></div></div></div>`, '探索方法');
+    page(`<div class="narrow"><section class="page-heading"><span class="section-label">OUR APPROACH</span><h1>以偏好為引，以卦義為鏡。</h1><p>這份探索把六個生活向度組合為 64 型，再按卦義逐一人工配對。每一步都有可查閱的規則。</p></section><div class="prose"><div class="method-equation"><div><strong>16</strong>四組人格偏好</div><span>×</span><div><strong>2</strong>情緒感受</div><span>×</span><div><strong>2</strong>協調方式</div><span>＝</span><div><strong>64</strong>文化原型</div></div><h2>六個向度，觀察六種生活傾向。</h2><div class="axis-definitions">${D.axes.map((axis, i) => `<section class="definition"><small>0${i + 1}${i >= 4 ? ' / 本產品原創向度' : ''}</small><h3>${esc(axis.label)}</h3><p class="endpoints">${esc(axis.positive.label)} ↔ ${esc(axis.negative.label)}</p><p>${esc(axis.definition)}</p></section>`).join('')}</div><h2>從題庫組卷，保持每一場的平衡。</h2><p>公開原題會保留原文與來源。本產品另行撰寫繁中母題，再以受控生活情境產生衍生題。題庫容量、語意母題數與公開原題數分開計算，情境變體不代表新增的心理構念。</p><p>一般入口提供 10 題快速與 20 題標準五點探索：每軸先回答一題，再依回答安排成對的追加題。10 題主題有四軸僅一道題；20 題主題每軸至少三題。完成主題後，主題原分為 0 的向度各加一道來自題庫的五點釐清題，合計最多 16／26 題。同一份探索避免重複語意家族與近義群。回改較早的答案時，後續問題與答案會重新安排；只回看或維持原答案則保留進度。</p><p>48 題資深版則在開始時固定全卷：六個向度各 8 題，正反向各 4 題。同一份探索避免重複語意家族與近義群，每題都可追溯母題、公開來源與分類理由；續答保留原來的題目。</p><p><a href="#bank">查看題庫與來源分流工作台 →</a></p><h2>保留連續分數，再呈現一種原型。</h2><p>10／20 題版與 48 題主問卷使用相同五點選項：「非常不像我」−2、「比較不像我」−1、「介於兩者」0、「比較像我」＋1、「非常像我」＋2。依題目方向換算，主題原分加上釐清分得到最終分；各軸以實際總題數 n 呈現 −2n 至＋2n 的範圍。0 是有效答案，與漏答不同。</p><p>短版每軸最多釐清一次；最終分仍為 0 就保留未定，不預設任何一端。作答完成與能否形成唯一分類分開判定：有未定向度時，呈現與已知傾向相容的原型，依文王卦序排列，沒有排名。全部選中立時，六軸均未定。絕對正規化分數不超過 1／8 時標示兩端接近；單題向度會提醒觀察有限，正負有效回答並存時標示混合傾向，0 不算任一端。</p><p>舊版 10／20 題的二選一紀錄僅供封存閱讀，保留當時的 −1／＋1 分數與原型；新版五點進度獨立保存。</p><p>48 題資深版使用五點選項 −2 至＋2 分，每軸範圍 −16 至＋16；正負決定本次較偏的一端，完全同分時才加一題釐清。原分接近中間時會誠實標示「兩端接近」。</p><details class="method-details"><summary>展開 48 題計分與同分規則</summary><ul><li>正分端依序為 E、S、T、J、沉著、自主；負分端為 I、N、F、P、敏銳、協作。</li><li>反向題以作答值乘 −1；漏答保留空白，與中立選項的 0 分不同。</li><li>同分補題只決定本次分類，原分維持 0；返回修改後，失效的補題選擇會清除。</li><li>絕對值不超過 2 分時顯示兩端接近。這是產品呈現規則，不是統計信心區間。</li><li>同一套題與相同答案會產生相同結果；重新抽題後結果可能隨情境與作答改變。</li></ul></details><h2>人格與卦象，由故事連接。</h2><p>每個 64 型分支對應一個不同的文王卦序，配對兼顧偏好、卦義與成長課題；六個向度不會直接拼成六爻。報告把原典、白話文化背景與本產品的現代比喻分開呈現。</p><p>「困」「否」「剝」描寫的限制與變化，同樣可以成為守志、辨識耗損與保護根基的提醒。每個原型都保有尊嚴與選擇。</p><h2>這份探索的定位</h2><p>官方 MBTI® 是以四組偏好與 16 型為基礎的評估系統。本產品的題目、兩個新增向度及 64 型配卦都是原創設計，沒有承接官方測驗或原始題庫的效度宣稱。</p><p>結果用於文化閱讀與自我反思。若你想進一步理解某個偏好，可以觀察不同情境中的自己，再回來比較哪些文字仍然貼近生活。</p><div class="intro-actions"><a class="button button-primary" href="#explore">帶著理解，開始探索 ↗</a><a class="button button-quiet" href="#sources">資料與授權</a></div></div></div>`, '探索方法');
   }
   function renderAbout() {
     page(`<div class="narrow"><section class="page-heading"><span class="section-label">ABOUT GUA JIAN SELF</span><h1>人格有傾向，人生有變化。</h1><p>「卦見自己」是一份把當代生活提問與易經文化放在一起的原創探索。透過一面面不同的鏡子，練習更細緻地看待自己。</p></section><div class="prose"><h2>讓古老意象，回到日常。</h2><p>六十四卦描繪開創、等待、相遇、合作與轉變。這些文字可以引出有用的提問：何時推進？如何照顧界線？面對不同的人，怎樣讓自己的傾向成為支持？</p><p>我們把四組人格偏好，加上情緒感受與協調方式，編成 64 種文化原型。每篇解讀都保留古文短引與來源，另以清楚標示的現代比喻，連接到生活中的優勢、代價與練習。</p><h2>你的答案，留在你的手裡。</h2><ul class="privacy-list"><li><strong>不用帳號，也不需要個人資料</strong><p>測驗不詢問姓名、電子郵件或生日，不設廣告與使用分析追蹤。</p></li><li><strong>只在此瀏覽器保存</strong><p>題目清單、逐題答案、必要補題及進度使用本機儲存。換裝置、使用私人瀏覽或清除資料後，原紀錄可能無法接續。</p></li><li><strong>你可以隨時清除</strong><p>頁尾的「清除本機紀錄」只移除本產品的作答資料，不會清除其他網站的資料。</p></li><li><strong>分享由你決定</strong><p>下載的分享卡與複製的原型連結只有類型、卦象與文章摘要；逐題答案與分數不會出現在連結裡。</p></li></ul><h2>關於免費與開源</h2><p>網站採用開源問卷元件與卦象資料，題庫來源、版本與授權均可查閱。第一版提供事先撰寫並核對來源的固定文章，不載入 AI 模型，也不呼叫模型推論服務。</p><p>網站託管服務本身可能使用維持登入與私人存取所需的機制；本產品不把作答資料傳送到該服務。</p><div class="intro-actions"><a class="button button-primary" href="#explore">開始我的探索 ↗</a><a class="button button-quiet" href="#sources">閱讀來源與授權</a></div></div></div>`, '關於這份探索');
@@ -297,7 +331,7 @@
   function renderBank() {
     if (!window.GuaBank || !D.bank) return renderNotFound();
     const bank = D.bank, stats = window.GuaBank.stats();
-    page(`<div class="container"><section class="page-heading"><span class="section-label">QUESTION BANK / ${esc(bank.version)}</span><h1>題庫有多少，來源就說多少。</h1><p>公開原題、語意母題與情境衍生分開計數。這些是本產品的文化探索題目，並非十萬個獨立或經驗證的心理構念。</p></section><div class="bank-stats"><div><strong>${Number(stats.sourceCount).toLocaleString()}</strong><span>公開原始評量項目</span></div><div><strong>${stats.seedCount}</strong><span>繁中語意母題條目</span></div><div><strong>${Number(stats.count).toLocaleString()}</strong><span>可追溯情境衍生題</span></div><div><strong class="bank-mode-count">10／20／48</strong><span>三種探索長度・同家族不重複</span></div></div><p class="bank-count-note">本版 ${stats.seedCount} 個母題歸為 ${stats.semanticClusterCount} 個近義群，實際引用 ${bank.sources.length} 個公開父題；正式組卷同時避免同家族與近義群重複。其餘收集項目保留於原始來源存檔。</p><div class="notice">分流方式：原題來源 → 本案母題與向度／方向 → 情境衍生 → 組卷。每題的正負作答分別支持對應傾向的 32 型；64 型由全卷六維共同決定。下方分型篩選顯示「同意時支持該型」的題目，48 題版平衡正反向；短版以每軸首題與正反向成對的追加題安排路徑。</div><div class="atlas-tools"><label for="bank-axis" class="skip-link">探索向度篩選</label><select id="bank-axis" class="filter-select"><option value="">全部探索向度</option>${D.axes.map(a => `<option value="${a.id}">${esc(a.label)}</option>`).join('')}</select><label for="bank-type" class="skip-link">人格分型篩選</label><select id="bank-type" class="filter-select"><option value="">全部 64 型</option>${Object.keys(D.mapping).map(key => `<option value="${key}">${key.split('-')[0]}・${key.includes('-calm-') ? '沉著' : '敏銳'}${key.endsWith('autonomous') ? '自主' : '協作'}</option>`).join('')}</select><button class="button button-quiet" id="bank-sample" style="min-height:43px;font-size:12px">再看一組題目 ↻</button><span id="bank-count" class="atlas-count"></span></div><div id="bank-items" class="bank-items"></div><div class="bank-pagination"><button class="button button-quiet" id="bank-prev">← 上一頁</button><span id="bank-page"></span><button class="button button-quiet" id="bank-next">下一頁 →</button></div><section class="prose"><h2>從題目到分型，保留可查的路徑。</h2><p>母題由本產品根據公開題意重新撰寫，題意與原始量表可能不同。情境題由公開的組合規則生成，保留父題 ID、母題家族、計分方向與情境編號。三種探索共用同一題庫與 64 型配對；10／20 題版依回答安排後續題目，48 題版則固定六軸各 8 題、正反向各 4 題。各版皆由全卷六維形成分類。</p><p>題目經格式、來源、重複與組卷規則檢查；大量情境變體尚未逐題經心理測量專家驗證。題庫大，不等於測驗已取得信效度。</p><p><a href="#sources">完整來源與授權 →</a></p></section></div>`, '題庫與分流工作台');
+    page(`<div class="container"><section class="page-heading"><span class="section-label">QUESTION BANK / ${esc(bank.version)}</span><h1>題庫有多少，來源就說多少。</h1><p>公開原題、語意母題與情境衍生分開計數。這些是本產品的文化探索題目，並非十萬個獨立或經驗證的心理構念。</p></section><div class="bank-stats"><div><strong>${Number(stats.sourceCount).toLocaleString()}</strong><span>公開原始評量項目</span></div><div><strong>${stats.seedCount}</strong><span>繁中語意母題條目</span></div><div><strong>${Number(stats.count).toLocaleString()}</strong><span>可追溯情境衍生題</span></div><div><strong class="bank-mode-count">10／20／48</strong><span>三種探索長度・同家族不重複</span></div></div><p class="bank-count-note">本版 ${stats.seedCount} 個母題歸為 ${stats.semanticClusterCount} 個近義群，實際引用 ${bank.sources.length} 個公開父題；正式組卷同時避免同家族與近義群重複。其餘收集項目保留於原始來源存檔。</p><div class="notice">分流方式：原題來源 → 本案母題與向度／方向 → 情境衍生 → 組卷。每題的正負作答分別支持對應傾向的 32 型；64 型由全卷六維共同決定。下方分型篩選顯示「同意時支持該型」的題目，48 題版平衡正反向；10／20 題五點版以每軸首題與正反向成對的追加題安排主題路徑；主題原分為 0 的向度各加一道五點釐清，仍為 0 則保留未定。</div><div class="atlas-tools"><label for="bank-axis" class="skip-link">探索向度篩選</label><select id="bank-axis" class="filter-select"><option value="">全部探索向度</option>${D.axes.map(a => `<option value="${a.id}">${esc(a.label)}</option>`).join('')}</select><label for="bank-type" class="skip-link">人格分型篩選</label><select id="bank-type" class="filter-select"><option value="">全部 64 型</option>${Object.keys(D.mapping).map(key => `<option value="${key}">${key.split('-')[0]}・${key.includes('-calm-') ? '沉著' : '敏銳'}${key.endsWith('autonomous') ? '自主' : '協作'}</option>`).join('')}</select><button class="button button-quiet" id="bank-sample" style="min-height:43px;font-size:12px">再看一組題目 ↻</button><span id="bank-count" class="atlas-count"></span></div><div id="bank-items" class="bank-items"></div><div class="bank-pagination"><button class="button button-quiet" id="bank-prev">← 上一頁</button><span id="bank-page"></span><button class="button button-quiet" id="bank-next">下一頁 →</button></div><section class="prose"><h2>從題目到分型，保留可查的路徑。</h2><p>母題由本產品根據公開題意重新撰寫，題意與原始量表可能不同。情境題由公開的組合規則生成，保留父題 ID、母題家族、計分方向與情境編號。三種探索共用同一題庫與 64 型配對；10／20 題五點版依回答安排主題，必要時每軸加一道五點釐清；48 題版則固定六軸各 8 題、正反向各 4 題，並保留原有二選一同分釐清。短版若仍有向度未定，就呈現與已知傾向相容的文化原型。</p><p>題目經格式、來源、重複與組卷規則檢查；大量情境變體尚未逐題經心理測量專家驗證。題庫大，不等於測驗已取得信效度。</p><p><a href="#sources">完整來源與授權 →</a></p></section></div>`, '題庫與分流工作台');
     let pageIndex = 0;
     function update() {
       const axis = document.getElementById('bank-axis').value, type = document.getElementById('bank-type').value;
@@ -330,6 +364,7 @@
         const parts = hash.split('/'); useMode(Number(parts[1]));
         if (parts[0] === '#quiz') renderQuiz(); else renderPersonal();
       }
+      else if (/^#archive\/(10|20)(\/answers)?$/.test(hash)) renderArchive(Number(hash.split('/')[1]), hash.endsWith('/answers'));
       else if (hash === '#atlas') renderAtlas();
       else if (/^#atlas\/(\d+)$/.test(hash)) renderReport(Number(hash.split('/')[1]));
       else if (hash === '#method') renderMethod();
@@ -338,7 +373,7 @@
       else if (hash === '#bank') renderBank();
       else renderNotFound();
     } catch (error) { console.error('Guajian page error:', error); page(`<div class="error-state"><span class="eyebrow">頁面暫時無法展開</span><h1>請重新整理，再接續探索。</h1><p>本機紀錄會保留；也可以回到首頁重試。</p><a class="button button-primary" href="#home">回到首頁 →</a></div>`, '頁面載入遇到問題'); }
-    const navigationHash = /^#(?:quiz|result)\/48$/.test(hash) ? '#senior' : /^#(?:quiz|result)\/(10|20)$/.test(hash) ? '#explore' : hash;
+    const navigationHash = /^#(?:quiz|result)\/48$/.test(hash) ? '#senior' : /^#(?:quiz|result|archive)\/(10|20)(?:\/answers)?$/.test(hash) ? '#explore' : hash;
     document.querySelectorAll('.site-header nav a, .header-cta').forEach(a => { if (a.getAttribute('href') === navigationHash) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     requestAnimationFrame(() => { if (token === routeToken) { window.scrollTo(0, 0); main.focus({ preventScroll: true }); } });
   }
@@ -346,7 +381,7 @@
     const dlg = document.getElementById('confirm-dialog');
     if (dlg.open) return;
     document.getElementById('confirm-title').textContent = all ? '清除所有版本的本機紀錄？' : restart ? `重新開始 ${mode} 題探索？` : `清除 ${mode} 題探索？`;
-    document.getElementById('confirm-description').textContent = all ? '這會移除此瀏覽器 10、20、48 題的題目、答案、進度與舊版備份。清除後無法復原。' : `這會移除 ${modeLabel(mode)} 的答案與進度${restart ? '，並重新抽題' : ''}。其他版本的進度會保留。`;
+    document.getElementById('confirm-description').textContent = all ? '這會移除此瀏覽器所有新版 10、20、48 題的題目、答案與進度，以及舊版二選一封存和所有舊版備份。清除後無法復原。' : `這會移除 ${modeLabel(mode)} 的答案與進度${restart ? '，並重新抽題' : ''}。其他版本的進度與舊版二選一封存會保留。`;
     dlg.querySelector('button[value="confirm"]').textContent = all ? '清除全部紀錄' : restart ? '重新開始' : '清除這版紀錄';
     dlg.returnValue = '';
     const agreed = await new Promise(resolve => { dlg.addEventListener('close', () => resolve(dlg.returnValue === 'confirm'), { once: true }); dlg.showModal(); });
@@ -356,7 +391,7 @@
     if (restart) {
       try { prepareForm(); navigate(quizRoute()); } catch (error) { toast(error.message); }
     } else {
-      navigate('#home'); toast(storageAvailable ? (all ? '此瀏覽器三個版本的作答紀錄與舊版備份已清除。' : `${mode} 題探索的本機紀錄已清除。`) : storageMessage);
+      navigate('#home'); toast(storageAvailable ? (all ? '此瀏覽器所有新版作答紀錄、舊版二選一封存與舊版備份已清除。' : `${mode} 題探索的本機紀錄已清除。`) : storageMessage);
     }
   }
   async function copyReportLink() {
@@ -380,7 +415,7 @@
   }
   async function downloadCard() {
     if (!currentReportId) return;
-    const id = currentReportId, mode = currentReportMode, r = D.reports[id], h = getHex(id), parts = r.typeKey.split('-');
+    const id = currentReportId, mode = currentReportMode, legacy = currentReportLegacy, r = D.reports[id], h = getHex(id), parts = r.typeKey.split('-');
     const canvas = document.createElement('canvas'); canvas.width = 900; canvas.height = 1200;
     const ctx = canvas.getContext('2d'); if (!ctx) return toast('此瀏覽器暫不支援分享卡，仍可複製原型連結。');
     let illustration = null;
@@ -392,7 +427,7 @@
     }
     ctx.fillStyle = '#f5f1e8'; ctx.fillRect(0, 0, 900, 1200); ctx.strokeStyle = '#d0d4c3'; ctx.lineWidth = 1; ctx.strokeRect(37, 37, 826, 1126);
     ctx.textAlign = 'left'; ctx.fillStyle = '#283830'; ctx.font = '30px "PMingLiU",serif'; ctx.fillText('卦見自己', 80, 109);
-    ctx.font = '16px "Microsoft JhengHei",sans-serif'; ctx.fillStyle = '#697167'; ctx.fillText(mode ? modeLabel(mode) : '原型圖鑑・閱讀示例', 80, 140);
+    ctx.font = '16px "Microsoft JhengHei",sans-serif'; ctx.fillStyle = '#697167'; ctx.fillText(legacy ? `${mode} 題・舊版二選一封存` : mode ? modeLabel(mode) + (mode !== 48 ? '・五點回答' : '') : '原型圖鑑・閱讀示例', 80, 140);
     ctx.fillStyle = '#a44232'; ctx.fillRect(758, 73, 60, 62); ctx.fillStyle = '#fff7e9'; ctx.font = '38px "PMingLiU",serif'; ctx.fillText('易', 769, 119);
     if (illustration) {
       ctx.drawImage(illustration,190,156,520,520);
@@ -408,7 +443,7 @@
     ctx.strokeStyle = '#d0d4c3'; ctx.beginPath(); ctx.moveTo(105, 1044); ctx.lineTo(795, 1044); ctx.stroke(); ctx.textAlign = 'center'; ctx.font = '17px "Microsoft JhengHei",sans-serif'; ctx.fillStyle = '#697167'; ctx.fillText('人格有傾向，人生有變化。', 450, 1090); ctx.font = '13px "Microsoft JhengHei",sans-serif'; ctx.fillText('原創文化探索・此卡不含作答答案與分數', 450, 1125);
     const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
     if (!blob) return toast('分享卡未能產生，請稍後再試。');
-    const url = URL.createObjectURL(blob), a = document.createElement('a'); a.href = url; a.download = `卦見自己-${mode ? mode + '題' : '圖鑑示例'}-${parts[0]}-${h.chineseName}.png`; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 30000); toast('分享卡已產生，請查看瀏覽器的下載項目。');
+    const url = URL.createObjectURL(blob), a = document.createElement('a'); a.href = url; a.download = `卦見自己-${legacy ? mode + '題舊版二選一封存' : mode ? mode + '題' : '圖鑑示例'}-${parts[0]}-${h.chineseName}.png`; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 30000); toast('分享卡已產生，請查看瀏覽器的下載項目。');
   }
   document.addEventListener('click', event => {
     if (event.target.closest('.skip-link[href="#main"]')) { event.preventDefault(); main.focus({ preventScroll: true }); main.scrollIntoView({ block: 'start' }); return; }
@@ -420,7 +455,9 @@
     else if (action === 'clear-mode') confirmReset(false, false, mode);
     else if (action === 'clear-data') confirmReset(false, true);
     else if (action === 'review-answers') {
+      if (currentReportLegacy) { navigate('#archive/' + currentReportMode + '/answers'); return; }
       if (currentReportMode) useMode(currentReportMode);
+      else if (state.mode !== mode) useMode(mode);
       state.phase = 'quiz'; state.questionIndex = 0; persist(); navigate(quizRoute());
     }
     else if (action === 'download-card') downloadCard();
@@ -429,7 +466,7 @@
   document.addEventListener('keydown', event => {
     if (event.altKey || event.ctrlKey || event.metaKey || document.querySelector('dialog[open]') || !/^#quiz\/(10|20|48)$/.test(location.hash)) return;
     if (event.target.matches('input[type="text"],textarea,select,[contenteditable="true"]')) return;
-    if (state.mode !== 48 && state.phase === 'quiz' && /^[12]$/.test(event.key)) {
+    if (state.mode !== 48 && state.phase === 'quiz' && /^[1-5]$/.test(event.key)) {
       event.preventDefault(); const input = document.getElementById('short-answer-' + event.key);
       if (input) { input.checked = true; input.dispatchEvent(new Event('change', {bubbles:true})); }
     } else if (survey && state.phase === 'quiz' && /^[1-5]$/.test(event.key)) {
@@ -439,6 +476,6 @@
     }
   });
   window.addEventListener('hashchange', route);
-  if (!D || !D.iching || !Core || !Short || !Sessions || !D.reports) { main.innerHTML = '<div class="error-state"><h1>資料尚未完整載入</h1><p>請重新整理，或確認網站檔案已完整解壓縮。</p></div>'; return; }
+  if (!D || !D.iching || !Core || !Short || !Legacy || !Sessions || !D.reports) { main.innerHTML = '<div class="error-state"><h1>資料尚未完整載入</h1><p>請重新整理，或確認網站檔案已完整解壓縮。</p></div>'; return; }
   route();
 })();
