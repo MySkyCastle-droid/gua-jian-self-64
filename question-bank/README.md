@@ -1,6 +1,6 @@
 # 卦見自己：可追溯情境題庫 v2.1.0
 
-完整本機交付包含**實際寫出的 100,000 道情境衍生題**，以及可在瀏覽器重建完全相同題目的精簡配方。公開 GitHub 儲存庫不追蹤 65.6 MB 的生成全文；請先執行 `python scripts/prepare-source.py` 還原無損封裝的來源／供應商檔案，再執行 `python scripts/build-question-bank.py` 產出 JSONL，最後執行題庫測試。這些情境組合不是十萬道從網路蒐集的原題、不是十萬個獨立心理構念，也未逐題獲得心理測量效度。
+完整本機交付包含**實際寫出的 100,000 道情境衍生題**，以及可在瀏覽器重建完全相同題目的精簡配方。公開 GitHub 儲存庫不追蹤 65.6 MB 的生成全文；請先執行 `python scripts/build-question-bank.py` 產出 JSONL，再執行題庫測試。這些情境組合不是十萬道從網路蒐集的原題、不是十萬個獨立心理構念，也未逐題獲得心理測量效度。
 
 | 層級 | 實際數量 | 說明 |
 |---|---:|---|
@@ -60,3 +60,7 @@ node --test tests\core.test.cjs tests\content.test.cjs tests\bank.test.cjs
 ```
 
 題庫測試逐行比對 100,000 題與瀏覽器配方，檢查全部正規化題文唯一、父題可追溯、原題存檔、64 型分流、組卷平衡、家族與近義群組不重複、續答還原及檔案 SHA256。
+
+## 本版原創材料與原始來源的授權邊界
+
+本版有權授權的新原創具體表達，依根目錄 LICENSE 採非商業免費、商用須另行付費書面授權。已依 MIT 發布的相同內容仍可依 MIT 使用；IPIP、TIPI、Mini-Markers 等原始項目仍依各自地位或許可，不被本案新條款私有化。參見 COMMERCIAL-LICENSE.md、LICENSING-TRANSITION.md 與 THIRD_PARTY_NOTICES.md。

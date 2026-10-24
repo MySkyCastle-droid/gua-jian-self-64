@@ -36,3 +36,7 @@ python -m guard.guard_run --project-id 15 --cwd <專案目錄> --stop-file <專�
 從 `<守門器目錄>` 執行上述命令；若 PATH 的 `python` 是 Windows Store stub，應將兩個 Python 命令都替換成可用執行檔的絕對路徑。腳本會讀取已保存的 raw 檔案作為快取，`--refresh` 才重新抓取，`--offline` 完全不連網。每個原始檔案的 SHA256、大小與網址記錄於 `sources.json`；腳本偵測到 `research/collect.stop` 時以 75 結束，絕不刪除停止標記。
 
 蒐集腳本只改本資料夾，不修改網站題庫、計分或現有測試。新增來源時，既有 `ipip-*` 編號與原文均穩定保留。
+
+## 本版原創材料與原始來源的授權邊界
+
+本版有權授權的新原創具體表達，依根目錄 LICENSE 採非商業免費、商用須另行付費書面授權。已依 MIT 發布的相同內容仍可依 MIT 使用；IPIP、TIPI、Mini-Markers 等原始項目仍依各自地位或許可，不被本案新條款私有化。參見 COMMERCIAL-LICENSE.md、LICENSING-TRANSITION.md 與 THIRD_PARTY_NOTICES.md。

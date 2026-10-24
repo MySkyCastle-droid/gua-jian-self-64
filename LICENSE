@@ -1,27 +1,113 @@
-MIT License
+卦見自己條件式公開授權 1.0
+Gua Jian Self Source-Available Noncommercial License 1.0
 
 Copyright (c) 2026 卦見自己 contributors
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+本專案以「原始碼可見（source-available）、非商業使用免費、商業使用須另行
+取得付費書面授權」方式提供。本授權含商業使用限制，不是 OSI 認可的開源授權，
+不得將本版整體宣稱為 MIT 或 OSI 開源專案。
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. 適用材料與授權權限
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+「授權方」指對適用材料依法有權提供本授權的著作財產權人；「卦見自己
+contributors」沿用專案既有署名，不表示某一已登記公司名稱，也不表示維護者
+僅因管理儲存庫就取得其他作者的權利。
 
-Third-party components retain their own copyright and license notices.
-This license applies to this project's original contributions only. It does
-not relicense third-party assessment items, public-domain source texts,
-third-party software, or trademarks. See THIRD_PARTY_NOTICES.md,
-dist/licenses/, and vendor-manifest.json for their separate terms and sources.
+「適用材料」指明確隨附本授權版本中，授權方有權依本授權提供、受法律保護的
+本專案原創程式、模組、文案、題庫創作、配對編排、文件與視覺創作及其改作。
+僅使用其中一個模組或部分受保護內容，仍在適用範圍；改名、包裝、抽出或修改
+不會自行消除本授權條件。本授權只及於授權方依法能授予的權利。
+
+第 5 條的舊版 MIT、第三方、公有領域、抽象概念及法定權利例外優先適用。
+隨附本授權不表示這些例外材料改授本授權，也不保證每個檔案或每個元素都有
+可由授權方排他控制的權利。
+
+2. 免費的非商業許可
+
+在遵守本授權與第 5 條例外的前提下，授權方免費授予您非專屬、全球性的許可，
+僅為非商業目的查看、下載、執行、重製、研究、修改及散布適用材料。
+
+非商業目的包括個人學習、自我反思、私人改作，以及不為商業利益或營利活動
+服務的無償研究、教學與公益展示。判斷以實際目的與使用方式為準，不僅依是否
+向受測者收費，或使用者是否為非營利機構判斷。
+
+散布原版或修改版時，須保留相關著作權、授權與來源聲明，隨附本授權、
+LICENSE-MIT-LEGACY.txt 與適用的第三方聲明；修改者須合理標明修改內容，
+不得使他人誤認為官方發行或官方背書。不得對適用材料另授足以排除本授權
+商業限制的權利。修改者對自己獨立新增部分的權利不因此移轉給授權方。
+
+3. 商業使用須先取得付費書面授權
+
+除第 5 條保留的既有或獨立權利外，凡為直接或間接商業利益、營利活動或企業
+業務而使用、重製、修改、整合、部署、提供或散布適用材料，均須先與有權授權
+的權利人完成另行的付費書面商用授權，並依該書面約定滿足付款及其他生效條件。
+本免費許可不包含商業使用權。
+
+商業使用包括但不限於：
+(a) 出售、出租、再授權、代架設或交付含適用材料的軟體、網站、App 或 API；
+(b) 納入付費、訂閱、廣告、贊助、聯盟分潤、導流或品牌行銷的產品或服務；
+(c) 為客戶提供收費報告、顧問、課程、工作坊、活動或其他營利服務；
+(d) 企業為其營運、員工管理、招募、內部系統、客戶服務或商業研究而導入；
+(e) 將受保護的原創文案、題庫編排、報告或視覺內容拆出後另作商業商品。
+
+對終端使用者免費、尚未獲利、試營運、只在內部使用、未修改原版、改名或
+註明出處，均不會自行取代所需的商用授權。商用實例與洽詢程序見
+COMMERCIAL-LICENSE.md。
+
+4. 官方網站的個人免費自測
+
+自然人以個人身分，直接到「卦見自己」官方網站
+https://gua-jian-self-64.pages.dev/ 免費自測、閱讀目前提供的免費文化報告、
+保存個人結果，或非商業分享個人結果與一般網站連結，不需購買商用授權。
+不會僅因使用者是企業員工、自營工作者或有職業收入就觸發商用授權。
+
+本例外不包括企業或服務提供者把模組導入業務、替客戶收費施測或報告、
+嵌入其他商業網站，或把本專案材料再製成商品。將來如另有加購商品，須另行
+清楚標示商品與交易條件；本授權不表示現有免費報告已被鎖定或需要付款。
+
+5. 不受新商業限制取代的材料與權利
+
+(a) 舊 MIT：已依 MIT 發布的版本及內容，包含提交
+    e1655d80e49981ce37a436cbc0a8591aead422fb，保留其 MIT 許可及通知。
+    本授權不溯及撤銷、縮減或收費取代其既有授權。任何人依法取得舊 MIT
+    副本，仍可依 MIT 使用、修改、散布、再授權及商用，不以取得副本的時間
+    早於本次轉換為條件。新版內可辨識、已受原 MIT 許可涵蓋的同一內容，
+    亦不因重新包裝或本授權文字而失去原有許可。詳見 LICENSING-TRANSITION.md。
+(b) 第三方：第三方程式、資料、字型、圖片、商標及其他材料各依原權利與
+    授權處理。授權方不因收錄而取得所有權，也不對他人依其原授權單獨使用
+    第三方材料收取本專案商用授權費。保留 THIRD_PARTY_NOTICES.md、
+    dist/licenses/、vendor-manifest.json 及逐項來源說明。
+(c) 公有領域與公開許可：古代《周易》原文、公有領域項目及另有公開使用
+    許可的原始評量項目，各依其原有地位或許可使用；本授權不使其私有化。
+    本專案後來新增、受保護的具體表達與編排，須與原始材料分開判斷。
+(d) 概念與事實：抽象卦義、卦名、數字、事實、一般人格分類概念、計分思想
+    或不受著作權保護的方法本身，不因本授權成為授權方的獨占財產。
+    未重製或改作適用材料之受保護表達的獨立實作，不因概念相似就須付費。
+(e) AI 視覺：AI 生成或本案設計過程不保證可著作性、排他性或完全不近似
+    他人作品。僅授予授權方依法能授予的權利；不對不具該等權利的元素
+    主張本授權商用費。保留 artwork/README.md 與圖像來源聲明。
+(f) 其他權利：本授權不排除法律所保留的合理使用或其他法定權利，不撤回
+    依平台條款另行授予的權利；公開 GitHub 儲存庫仍容許平台條款與功能
+    所允許的查看及站內 fork。該等權利不等於另授所有站外商用權。
+
+6. 品牌與背書
+
+除識別來源所需及依法允許的使用外，本授權不另授品牌、標誌或商標使用權，
+也不表示授權方或任何第三方提供認證、贊助或背書。本文件不宣稱
+「卦見自己」已註冊商標；第三方商標仍由各權利人持有。
+
+7. 保固、責任與超出許可範圍的使用
+
+在法律允許的範圍內，適用材料按現狀提供，不保證特定目的適用性、結果正確性、
+不侵權、不中斷或圖像獨占性；本產品不因此成為心理衡鑑或醫療診斷服務。
+本條不排除依法不得排除的責任，亦未預先約定固定賠償金額或懲罰性費用。
+
+不符合免費條件或超出授權範圍的使用，不受本免費許可允許；應停止相關
+超範圍使用，或先取得另行的有效書面授權。這不影響第 5 條保留的獨立權利。
+
+8. 版本與另行約定
+
+本授權適用於明確隨附本授權的發行版本；未發布的私人候選不因起草日期而
+自行變更既有公開版本。未來修改授權文字不自動改寫先前版本已授予的權利。
+有權授權之權利人另行簽署的商用協議，僅在其明確約定範圍內另行適用。
+僅洽詢、收到報價、單方匯款、捐款或購買其他商品，都不表示商用授權已成立。

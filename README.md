@@ -1,5 +1,7 @@
 # 卦見自己｜64 型人格 × 六十四卦
 
+**授權政策：原始碼可見、非商業使用免費；適用的新原創受保護材料，商業使用須另行取得付費書面授權。** 詳見 [LICENSE](LICENSE)、[商用說明](COMMERCIAL-LICENSE.md) 與 [舊 MIT 權利保留](LICENSING-TRANSITION.md)。個人到官方網站免費自測不受影響，既有 MIT 與第三方許可保留。本版整體不是 OSI 開源。
+
 繁體中文靜態網站。六組偏好組合成 64 型，以人工編訂的文王卦序表連接原創文化解讀。一般版預設 10 題主題，可選 20 題主題；資深版有 48 題主問卷。三個模式均使用五點作答，主題原分為 0 的向度各最多加一道題庫釐清題，合計最多 16／26／54 題。有唯一分類時顯示文化報告與對應插畫；仍有未定向度時保留分數與相容原型，答案與題序只存本機。
 
 這是文化與自我反思產品，非官方 MBTI® 評估。原題的效度不會因翻譯、改寫、情境衍生或配卦而轉移至本產品。
@@ -97,7 +99,7 @@ powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File <守門器目錄
 
 ## 授權與來源
 
-原創程式與文案採根目錄 MIT。第三方授權不被根目錄授權取代：
+本版依法有權授權的原創部分採根目錄條件式公開授權：非商業免費，商業使用須另行付費書面授權。已依 MIT 發布的舊版及相同內容仍保有 MIT 權利；更換文件不能追溯鎖回。第三方授權不被根目錄授權取代：
 
 - SurveyJS Form Library：MIT，`dist/licenses/SurveyJS-MIT.txt`。
 - strobus/i-ching 靜態資料：MIT，`dist/licenses/i-ching-MIT.txt`。
@@ -132,3 +134,5 @@ Qwen3 及其他 Hugging Face 人格資料只列研究備選，沒有下載權重
 
 公開來源已含完整 WebP，完成原有 `python scripts/prepare-source.py` 來源還原步驟後即可部署 `dist/`。原始 PNG 與含本機路徑的生成檢查紀錄另行保存，不在公開儲存庫內。只有另備全部 64 張原始 PNG、各圖的本機生成檢查紀錄，並安裝 Node.js 與 `sharp` 後，才可執行 `node scripts/build-artwork-assets.cjs` 重新編碼。這個指令保留原圖尺寸、不裁切，並重新驗證原圖雜湊；一般部署不需要執行它。
 <!-- artwork-release:end -->
+
+本次新授權發布請使用 `scripts/package-mode-release.py`；舊的固定檔數 `package-public-art-source.py` 與原圖專用 `package-art-release.py` 未支援本次新授權文件，不應用於本版發布。

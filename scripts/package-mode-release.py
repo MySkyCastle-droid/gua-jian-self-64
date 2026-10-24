@@ -26,6 +26,13 @@ ARCHIVE_SOURCES = {
     "dist/vendor/surveyjs/3.2.2/survey.core.min.js",
     "dist/vendor/surveyjs/3.2.2/survey-core.min.css",
 }
+PROJECT_LICENSE_TITLE = "Gua Jian Self Source-Available Noncommercial License 1.0"
+PROJECT_LICENSE_COPIES = (
+    ("LICENSE", "licenses/PROJECT-LICENSE.txt"),
+    ("LICENSE-MIT-LEGACY.txt", "licenses/LICENSE-MIT-LEGACY.txt"),
+    ("COMMERCIAL-LICENSE.md", "licenses/COMMERCIAL-LICENSE.md"),
+    ("LICENSING-TRANSITION.md", "licenses/LICENSING-TRANSITION.md"),
+)
 PRIVATE = re.compile(
     r'"(?:generatedPath|workspacePath|editInputPaths?|referencedImagePaths|referenced_image_paths)"\s*:', re.I)
 LOCAL = re.compile(r"(?i)(?:\b[A-Z]:[\\/]+(?=[A-Z0-9_.-])|file" + r"://|/(?:Users|home)/|[\\/]\.codex[\\/])")
@@ -182,6 +189,40 @@ def verify_gzip(public: Path, entries: list[dict], guard: Guard) -> tuple[list[d
     return checks, restored
 
 
+def verify_project_licenses(source: Path, public: Path, web: list[dict],
+                            public_plan: list[dict], guard: Guard) -> dict:
+    source_license_path = source / "LICENSE"
+    source_license = read(source_license_path, guard) if source_license_path.is_file() else b""
+    public_license = read(public / "LICENSE", guard)
+    # Earlier MIT releases do not contain the new commercial licensing files.
+    # Activate these requirements only for the explicitly titled new policy;
+    # checking both roots also rejects an incompletely synchronized transition.
+    titles = [data.decode("utf-8-sig").splitlines()[:2]
+              for data in (source_license, public_license)]
+    if not any(PROJECT_LICENSE_TITLE in lines for lines in titles):
+        return {"status": "not_applicable", "reason": "legacy_license_title"}
+    web_by_name = {item["relative"]: item for item in web}
+    public_by_name = {item["relative"]: item for item in public_plan}
+    checks = []
+    for original, copy in PROJECT_LICENSE_COPIES + (("THIRD_PARTY_NOTICES.md", "licenses/THIRD_PARTY_NOTICES.md"),):
+        path = source / original
+        if path.is_symlink() or not path.is_file():
+            raise ValueError("Missing or unsafe project license: " + original)
+        data = read(path, guard)
+        privacy(data, original)
+        expected = sha(data)
+        for name, entries in ((original, public_by_name),
+                              ("dist/" + copy, public_by_name), (copy, web_by_name)):
+            item = entries.get(name)
+            if not item or item["sha256"] != expected or item["bytes"] != len(data):
+                raise ValueError("Missing or inconsistent project license: " + name)
+        checks.append({"root": original, "website": copy, "sha256": expected})
+    return {"status": "passed", "policyTitle": PROJECT_LICENSE_TITLE,
+            "rootFiles": len(PROJECT_LICENSE_COPIES),
+            "websiteCopies": len(PROJECT_LICENSE_COPIES),
+            "thirdPartyNoticesMatch": True, "files": checks}
+
+
 def promote_new(temporary: Path, final: Path, guard: Guard) -> None:
     guard.check()
     if final.exists():
@@ -261,6 +302,7 @@ def main() -> int:
     if public_art != web_art:
         raise ValueError("Public-source and website artwork bytes differ")
     gzip_checks, restored = verify_gzip(public, public_plan, guard)
+    license_checks = verify_project_licenses(source, public, web, public_plan, guard)
     public_by_name = {item["relative"]: item for item in public_plan}
     for item in web:
         name = "dist/" + item["relative"]
@@ -282,6 +324,7 @@ def main() -> int:
               "createdUtc": datetime.now(timezone.utc).isoformat(),
               "cutoffAt": cutoff.isoformat() if cutoff else None,
               "artworkCount": len(web_art), "artworkPreserved": True,
+              "projectLicenseCheck": license_checks,
               "gzipPreservationCheck": gzip_checks, "prepareSourceSha256": public_by_name["scripts/prepare-source.py"]["sha256"],
               "privacyCheck": "passed", "website": website, "publicSource": public_archive}
     manifest = output / "release-manifest.json"

@@ -1,6 +1,6 @@
 # 第三方來源、授權及商標聲明
 
-查核日期：2026-10-23。根目錄 `LICENSE` 的 MIT 授權適用於本專案的原創程式、現代說明、配對及題庫創作；以下第三方內容各自保留原有權利與條件。公開 GitHub 與靜態網站應保留本檔及隨附授權全文。
+授權範圍更新：2026-10-25；第三方來源查核：2026-10-23。本版依法有權授權的原創部分依根目錄 `LICENSE` 採條件式公開：非商業免費，適用的新創作商業使用須另行取得付費書面授權。舊 MIT 版本及相同內容保留原許可，詳見 `LICENSE-MIT-LEGACY.txt` 與 `LICENSING-TRANSITION.md`。以下第三方內容各自保留原有權利與條件，不改為本案的商用收費材料。公開 GitHub 與靜態網站應保留本檔及隨附授權全文。
 
 ## SurveyJS Form Library 3.2.2
 
@@ -50,7 +50,7 @@
 
 ## MBTI® 名稱及商標
 
-MBTI®、Myers-Briggs® 及 Myers-Briggs Type Indicator® 是 Myers & Briggs Foundation 在美國及其他國家的商標或註冊商標。商標所有權不因本專案 MIT 授權而轉移，也不授予第三人使用這些商標的權利。
+MBTI®、Myers-Briggs® 及 Myers-Briggs Type Indicator® 是 Myers & Briggs Foundation 在美國及其他國家的商標或註冊商標。商標所有權不因本專案任何授權而轉移，也不授予第三人使用這些商標的權利。
 
 本專案品牌為「卦見自己」，其 64 型分類是文化探索創作，與商標權人沒有隸屬、認證或贊助關係。本專案沒有使用、複製、翻譯或改寫官方 MBTI® 測驗題目，也不提供官方 MBTI® 評估；對名稱的引用限於辨明與官方系統的差異。依 [官方權限及商標說明](https://www.myersbriggs.org/using-type-as-a-professional/mbti-permission-trademarks/)，重製或改作官方測驗需取得出版方書面許可。請勿將本產品改名或宣傳為官方評估或「官方 MBTI 64 型」。
 
