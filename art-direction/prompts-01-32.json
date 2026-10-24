@@ -1,0 +1,537 @@
+[
+  {
+    "hexagramNumber": 1,
+    "hexagramName": "乾",
+    "typeCode": "ENTJ-calm-autonomous",
+    "title": "開途定向者",
+    "summary": "你習慣先看見可抵達的遠方，再替行動排出次序。沉著使你面對變化時感受較平緩，自主讓你先完成構想才邀人加入。乾卦在此是一面提醒節奏的鏡子：有力量，也要知道何時等待、轉向與交棒。",
+    "conceptZh": "先擬好遠方的路徑，也願意停下來等同行者；以高天空間表現乾的力量與節奏。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/乾"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36055"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. A composed adult in a short forest-green jacket kneels on a broad ridge, unrolling a narrow vermilion fabric path toward an open horizon. One hand pauses above a loose stepping stone rather than rushing onward. A small closed toolkit rests beside them; a single high cloud suggests spacious sky and deliberate timing. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 2,
+    "hexagramName": "坤",
+    "typeCode": "ISFJ-calm-cooperative",
+    "title": "厚土共育者",
+    "summary": "你可能把關心放在可重複的小事裡：記住需要、補上遺漏，讓大家安心做事。沉著協作的你，偏愛先聽彼此的想法再定安排。坤卦映照這份承載，也邀請你為自己的需要留出同樣踏實的位置。",
+    "conceptZh": "兩人先商量再共同移植幼苗，兩個同樣大小的水杯提醒照料也要包含自己；坤的厚土不是單向犧牲。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/坤"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/49244",
+      "https://www.metmuseum.org/art/collection/search/43205"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults at equal height kneel on opposite sides of one low garden bed, jointly transplanting a young sapling into rich earth. Each has a matching small watering cup, with one spare seat clearly reserved for rest. Their open gestures suggest an agreed division of care; rounded soil terraces anchor the scene. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 3,
+    "hexagramName": "屯",
+    "typeCode": "ESTP-sensitive-autonomous",
+    "title": "雨中拓路者",
+    "summary": "你傾向貼近現場，在實際嘗試中找出路徑；變化帶來的情緒感受也可能相當鮮明。你喜歡先動手形成方案，再向他人同步。屯卦用初生的艱難提醒你：開局的混亂值得整理，不必急著把一切一次突破。",
+    "conceptZh": "雨中只先鋪出第一小段路，旁邊的新芽呼應屯的初生；情緒鮮明仍可採用可回退的小試驗。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/屯"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36149"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An alert adult in a simple ochre rain cape places the very first flat stone across a shallow muddy garden runnel. A fresh seedling stands beside the unfinished path; a compact bucket holds only two more stones. Sparse rain falls beneath a low jade cloud, with a clear dry bank visible nearby: a practical beginning, not a dramatic conquest. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 4,
+    "hexagramName": "蒙",
+    "typeCode": "INTP-sensitive-autonomous",
+    "title": "泉問探理者",
+    "summary": "你可能喜歡追問事物如何成立，寧願重新想清楚，也不急著接受現成答案。變化帶來的情緒感受較鮮明時，你仍偏愛先自行理出模型。蒙卦把未知看作學習的起點，提醒好問題需要與真實行動相遇。",
+    "conceptZh": "獨自在山泉旁以葉片做小實驗，把心中的好問題放回現場驗證；蒙代表學習而不是愚昧。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/蒙"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36149",
+      "https://www.metmuseum.org/art/collection/search/43205"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. A thoughtful adult sits beside a tiny spring emerging at the foot of a rounded mountain, testing how one leaf floats through a curved clay channel. A clear bowl and one small wooden paddle form an approachable hands-on experiment. Their face shows curious uncertainty; the spring remains partly hidden, leaving room for further discovery. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 5,
+    "hexagramName": "需",
+    "typeCode": "ESTP-calm-autonomous",
+    "title": "候潮行動者",
+    "summary": "你偏愛面對真實情境，從眼前條件找出可行的下一步。沉著使變化帶來的感受較平緩，自主使你先自行試出方案。需卦讓這份行動力多一項本領：辨認時機未到時，把等待也做成有用的準備。",
+    "conceptZh": "先整理好船與工具，在岸邊觀察水勢；需的等待是一種準備，不是消極停滯。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/需"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/44720",
+      "https://www.metmuseum.org/art/collection/search/36149"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. A calm adult on a wide safe river landing carefully folds a small sail while watching the current. A plain wooden boat remains tied to a low post, with an oar laid neatly across its bow. High clouds gather above a pale river; the figure is ready to move but has consciously chosen this quiet moment of preparation. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 6,
+    "hexagramName": "訟",
+    "typeCode": "ESTJ-sensitive-autonomous",
+    "title": "明界議事者",
+    "summary": "你可能看重清楚的責任、可靠的標準，以及說到做到的安排。變化帶來的情緒感受較鮮明時，你傾向先整理自己的方案再同步。訟卦並非說你愛爭辯，而是提醒：把界線和約定說在開始，能少一點事後拉扯。",
+    "conceptZh": "以不同水路與桌面邊界呈現規則和事實待澄清；訟不是好辯的標籤，而是先說清共同約定。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/訟"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/43205",
+      "https://www.metmuseum.org/art/collection/search/36149"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An adult in rolled sleeves sits at a low worktable, arranging two smooth stones on either side of a shallow branching water tray. They leave the center deliberately open and turn one palm outward in an invitation to clarify. One empty stool faces the table; an open window frames a cloud moving opposite the stream below. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 7,
+    "hexagramName": "師",
+    "typeCode": "ENTJ-calm-cooperative",
+    "title": "整隊共進者",
+    "summary": "你可能善於把遠景分成任務，也願意讓不同專長的人朝同一方向前進。沉著協作使你傾向先共同討論再成案。師卦借群體的紀律與照料提醒你：真正穩定的組織，除了方向，還需要每個人都能承擔的步伐。",
+    "conceptZh": "兩位同等位置的夥伴先對齊模組橋的接點；師的群體紀律轉成能共同承擔的步伐，避開軍事威權。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/師"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/44720"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults stand shoulder to shoulder around a small modular footbridge on dry ground, discussing where a new wooden beam should fit. One holds the beam while the other steadies its matching support; their gestures are reciprocal, neither commands. A tool basket and distant earth bank suggest organized shared work at a sustainable pace. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 8,
+    "hexagramName": "比",
+    "typeCode": "ESFJ-calm-cooperative",
+    "title": "結伴安居者",
+    "summary": "你可能從日常往來建立信任，願意先聽大家的需要，再安排一個能一起維持的做法。情緒感受較平緩時，你常能讓交流繼續。比卦把親近視為相互選擇，也提醒你：好的歸屬感應當容得下不同意見和自由離開。",
+    "conceptZh": "共同討論庭院水路與座位，入口保持敞開；比的歸屬來自互相選擇，也容得下不同步調。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/比"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/44720",
+      "https://www.metmuseum.org/art/collection/search/49244"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults converse beside a low courtyard bench, each placing one stone to connect two small garden water channels. Their seating remains spacious, and a wide open gate leads into a pale landscape. A shared pot of grass sits between them, expressing chosen belonging with room to enter, pause, or leave freely. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 9,
+    "hexagramName": "小畜",
+    "typeCode": "ESTP-calm-cooperative",
+    "title": "聚風蓄勢者",
+    "summary": "你喜歡接觸真實情境，也可能在共同討論裡找到下一個可試的方法。沉著讓變化帶來的感受較平緩，協作讓你先交換想法才成案。小畜卦邀請你珍惜小成果：把眼前的嘗試累積起來，機會才有能夠落下的地方。",
+    "conceptZh": "共同製作小風車、保留已完成零件，在密雲下慢慢蓄勢；小畜以可留下的小成果支持大計畫。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/小畜"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36149",
+      "https://www.metmuseum.org/art/collection/search/49244"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults at an outdoor craft table compare a small wooden wind wheel with three carefully saved wooden parts in a shallow tray. One gently turns a single blade while the other steadies the base. A broad cloud holds its rain above them, and a light ribbon catches the wind: modest shared experiments accumulating into readiness. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 10,
+    "hexagramName": "履",
+    "typeCode": "ESFJ-calm-autonomous",
+    "title": "知禮行路者",
+    "summary": "你可能重視人與人相處的分寸，願意把照顧安排成可實行的細節。沉著自主的你，常先整理好做法再向人同步。履卦映照你在關係中穩步前行的姿態，也提醒：得體並不要求隱藏需要，界線可以溫和而清楚。",
+    "conceptZh": "獨自確認腳步與距離，在安睡的虎旁保留寬裕空間；履的分寸同時尊重他人與自己的界線。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/履"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36055"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An adult walks carefully along a broad pale stone path, one palm softly raised to indicate a comfortable boundary. Far to the side, a small tiger sleeps peacefully beneath a low shrub, separated by a generous strip of grass; nobody touches or threatens it. A neatly placed stepping stone and open sky emphasize attentive, respectful passage. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 11,
+    "hexagramName": "泰",
+    "typeCode": "ESTJ-calm-cooperative",
+    "title": "通流築序者",
+    "summary": "你可能喜歡把共同生活安排得有次序，讓承諾、資源和時間彼此對得起來。沉著協作讓你偏愛先討論再成案。泰卦以交流通暢作為鏡子：可靠的秩序需要上下互通，也要容許現場經驗持續修正規則。",
+    "conceptZh": "兩人疏通從不同高度而來的灌溉渠，讓資源雙向抵達；泰的順暢需要維護，而非永遠不變。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/泰"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/44720",
+      "https://www.metmuseum.org/art/collection/search/36149"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults at opposite ends of one gently sloping irrigation rill jointly lift a small wooden gate so water can flow between two garden terraces. Both watch the newly connected stream and adjust together. A young tree and a plain bucket complete a balanced open scene where useful structure listens to the living ground. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 12,
+    "hexagramName": "否",
+    "typeCode": "INFP-calm-autonomous",
+    "title": "守心候通者",
+    "summary": "你可能先在心裡確認事情是否符合自己的價值，再決定願意投入的方式。沉著自主讓你傾向安靜整理方案。否卦在此指向連結暫時不通時的成長課題：保存重要的自己，也替重新交流保留一個小入口。",
+    "conceptZh": "守住自己的安靜工作室，同時主動打開一扇小窗；否是暫時不通的情境，不是人格注定封閉。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/否"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/49244",
+      "https://www.metmuseum.org/art/collection/search/36149"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An adult in a quiet small studio gently opens a narrow window in an otherwise solid curved wall, allowing a ribbon of garden light to reach a protected potted seedling. A closed notebook rests on a low stool, and the door remains accessible. The figure safeguards a meaningful inner space while making one modest opening for reconnection. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 13,
+    "hexagramName": "同人",
+    "typeCode": "ENFJ-calm-cooperative",
+    "title": "聚志同行者",
+    "summary": "你可能喜歡讓不同的人看見共同方向，再把彼此的需要接進一個可行的安排。沉著協作使你傾向先一起討論。同行人的力量在於有共同志向，同人卦也提醒你：真正的共同，應容得下背景、步調與意見的不同。",
+    "conceptZh": "兩人帶著不同顏色的布，在原野共同縫成一面不必完全相同的帆；同人重視共同志向與差異。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/同人"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36055",
+      "https://www.metmuseum.org/art/collection/search/44720"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults stand at equal height in an open field, joining two differently colored fabric panels into one small sail laid on a low frame. Their hands meet at the seam without either erasing the other color. A single warm lamp sits beside the shared work, with broad sky overhead: a common direction that preserves individual voices. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 14,
+    "hexagramName": "大有",
+    "typeCode": "ENTP-calm-cooperative",
+    "title": "集光開想者",
+    "summary": "你可能喜歡讓不同想法相互碰撞，從討論中找到更多可能。沉著協作使你傾向先交換觀點，再組合出方案。大有卦借豐富的資源提醒你：點子多是起點，知道如何分享、取捨與持續照料，才讓豐富真正有用。",
+    "conceptZh": "合作收集不同透鏡，也一起選出這次要用的少數組合；大有的豐富需要分享與取捨的容器。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/大有"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/43205"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two curious adults sort a few colored glass discs and a small prism into a broad shallow tray on a sunny table. One chooses a single jade disc while the other returns an extra piece to its place, jointly shaping abundance into a workable experiment. A warm shaft of light crosses the tray; the surrounding space stays uncluttered. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 15,
+    "hexagramName": "謙",
+    "typeCode": "INFP-calm-cooperative",
+    "title": "留白共生者",
+    "summary": "你可能珍惜內心的價值，也願意在共同討論裡為別人的位置留白。沉著協作讓你不急著以情緒推動結論。謙卦映照這份平衡：你可以不搶占所有空間，同時清楚承認自己的能力、意見與應得的份量。",
+    "conceptZh": "兩人在低矮山坡同高度工作，一位把自己的石子放進共同構圖；謙的留白不應變成消失。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/謙"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36055"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults sit at the same level on a broad low earthen terrace, composing a simple arrangement of smooth stones. One quietly but clearly places their own vermilion stone into the shared center, while the other makes room. A modest hill lies beneath the wide plain, with generous negative space expressing humility that still has a voice. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 16,
+    "hexagramName": "豫",
+    "typeCode": "ESFP-calm-cooperative",
+    "title": "和樂鼓動者",
+    "summary": "你可能善於讓生活有溫度，從當下的互動中找到一起行動的動能。沉著協作使你傾向先聽大家想怎麼做。豫卦以樂與動映照這份活力，也提醒你：歡樂若有可靠的準備和照料，才能讓更多人舒服地加入。",
+    "conceptZh": "先一起確認節奏，再敲響小鼓；豫的歡樂包含準備與休息位置，沒有要求人人都熱烈回應。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/豫"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/49244"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults create a gentle shared rhythm beside a low earthen rise: one holds a small hand drum while the other lightly taps a wooden clapper. Their relaxed bodies leave a comfortable gap, and a nearby empty cushion offers a quiet place to rest. One plain paper streamer lifts in the breeze, expressing welcoming joy with thoughtful preparation. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 17,
+    "hexagramName": "隨",
+    "typeCode": "ISFP-calm-cooperative",
+    "title": "隨時共作人",
+    "summary": "你可能重視真實的感受與可觸摸的生活，願意在交流後找到適合彼此的步調。沉著協作使你偏愛先共同討論再成案。隨卦映照你對情境的彈性，也提醒：跟隨可以是有意識的選擇，並不需要放下自己的判準。",
+    "conceptZh": "兩位工作者共同調整織帶，各自保留不同顏色與轉向；隨是有判準地配合情境，而非盲從。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/隨"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/49244",
+      "https://www.metmuseum.org/art/collection/search/36149"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults beside a quiet lake weave a loose reed mat on a low frame, each choosing a distinct jade or ochre ribbon. They pause to compare how the flexible strands can turn together, leaving one end deliberately adjustable. A single reed bends with the breeze; their equal gestures suggest voluntary coordination rather than obedience. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 18,
+    "hexagramName": "蠱",
+    "typeCode": "INTJ-sensitive-cooperative",
+    "title": "修本更新者",
+    "summary": "你可能習慣追查問題背後的結構，希望修正的不是表面，而是讓問題反覆出現的根。情緒感受較鮮明時，你仍傾向先與人討論再成案。蠱卦把修復視為重新開始，提醒你：更新舊事，也需要理解共同承擔它的人。",
+    "conceptZh": "先共同查看水車真正卡住的根部，再更換磨損零件；蠱的更新兼顧承接者，不把舊物一概否定。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/蠱"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36149",
+      "https://www.metmuseum.org/art/collection/search/44720"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults examine an old garden waterwheel opened at its base, tracing one blocked wooden channel before fitting a fresh piece. One supports the sound frame while the other removes a worn peg; a small tray separates parts to keep from parts to replace. A mountain slope and moving grass frame careful shared renewal, not destruction. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 19,
+    "hexagramName": "臨",
+    "typeCode": "ENFJ-calm-autonomous",
+    "title": "近人啟途者",
+    "summary": "你可能看得見人們正在成長的方向，也願意先準備一個能支持他們的安排。沉著自主使你偏愛想好方案再同步。臨卦把靠近與照料放在一起，提醒你的幫助需要真的走到對方身邊，也尊重他自己選擇的路。",
+    "conceptZh": "先準備好可調整的矮凳與園徑，仍以敞開手勢等候對方選擇；臨的靠近是一份尊重自主的邀請。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/臨"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/49244",
+      "https://www.metmuseum.org/art/collection/search/43205"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An adult approaches a low garden terrace carrying one small movable stool, then pauses with an open palm rather than imposing a plan. A second plain seat already stands beside a young tree, with enough space for someone to choose their own distance. The gently rising earth and pale pool suggest thoughtful approach, teaching, and room to grow. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 20,
+    "hexagramName": "觀",
+    "typeCode": "INFJ-calm-autonomous",
+    "title": "靜觀織意者",
+    "summary": "你可能需要安靜的距離，才能把不同經驗整理成有意義的圖像。沉著自主讓你傾向先形成理解再向人同步。觀卦邀請你一面看世界、一面回看自己：好的洞見不只在遠處成立，也能接受當事人的經驗與回應。",
+    "conceptZh": "從低平台觀察田野與葉影，再把透鏡放低回到現場；觀的洞見需要接受真實回應，不是神秘讀心。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/觀"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36055",
+      "https://www.metmuseum.org/art/collection/search/49244"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. A reflective adult stands on a low wooden viewing platform, holding a simple glass lens over a real leaf and its shadow. Below, broad garden plots and a narrow path remain close enough to enter. A light cloth moves in the wind; the figure turns back toward the path, ready to test a quiet insight through direct experience. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 21,
+    "hexagramName": "噬嗑",
+    "typeCode": "ENTP-sensitive-cooperative",
+    "title": "辨結通路者",
+    "summary": "你可能喜歡把卡住的問題攤開討論，追問真正妨礙前進的是什麼。變化帶來的情緒感受較鮮明，你仍偏愛先共同思考再成案。噬嗑卦把咬開阻隔當作比喻：釐清分歧很有力量，也需要公平的程序與合宜的力度。",
+    "conceptZh": "兩人先攤開卡住門道的繩結，再以合宜力度拆解；噬嗑的咬開阻隔轉成公平釐清，避開刑罰畫面。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/噬嗑"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/44720",
+      "https://www.metmuseum.org/art/collection/search/43205"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults sit on opposite sides of a low open gate, jointly loosening a single complex rope knot that blocks its latch. One gently separates a loop while the other holds tension steady; both attend to the same problem. A small amber lamp makes the knot clear, with a distant soft storm cloud suggesting energy guided by fair, careful procedure. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 22,
+    "hexagramName": "賁",
+    "typeCode": "ISFP-sensitive-autonomous",
+    "title": "映心造境者",
+    "summary": "你可能透過物件、色彩與親手做出的安排表達自己，讓內心價值有可感受的形狀。情緒感受較鮮明時，你偏愛先自行完成構想。賁卦映照形式與內在的關係，也提醒：美可以幫助表達，卻不需要替所有感受遮掩。",
+    "conceptZh": "獨自製作素器，以簡單布與枝葉襯托真實形狀；賁的美幫助表達，而不是遮住所有內心需要。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/賁"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/43205",
+      "https://www.metmuseum.org/art/collection/search/36055"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An adult maker at a small pottery table lifts a plain warm-white vase beside a short vermilion cloth and one green branch. A tiny lamp beneath a rounded mountain-shaped alcove reveals the vessel without extravagant decoration. The figure leaves one part deliberately simple, allowing honest material and feeling to remain visible. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 23,
+    "hexagramName": "剝",
+    "typeCode": "INTJ-sensitive-autonomous",
+    "title": "去蕪固本者",
+    "summary": "你可能重視事情的根本結構，寧願減去不再有用的部分，也不想只維持表面完整。變化帶來的情緒感受較鮮明，你傾向先自行整理方案。剝卦在此是一個減法的成長課題：保存真正支撐生活的基礎，再決定如何更新。",
+    "conceptZh": "從老舊棚架卸下失效枝條，保護仍能承重的根與柱；剝的減法指向穩固基礎，而不是一片荒敗。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/剝"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/49244",
+      "https://www.metmuseum.org/art/collection/search/36055"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An adult carefully removes one dry slat from an old garden trellis while preserving its sound posts and the living vine below. The removed piece rests neatly on the ground, and one mature fruit remains protected on the branch. A low solid mountain sits behind the earthen foundation, conveying deliberate subtraction with care for what still supports life. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 24,
+    "hexagramName": "復",
+    "typeCode": "ESFP-calm-autonomous",
+    "title": "返真再行者",
+    "summary": "你可能願意親身體驗生活，在當下找回讓自己有力量的人事物。沉著自主讓你先整理出可行做法再向人同步。復卦描繪重新回到起點的能力：偏離之後還能調整，停一停再出發，也可以是對生命節奏的尊重。",
+    "conceptZh": "休息後沿熟悉小徑重新出發，腳邊新芽回應復的循環；回返建立在真正調整，不只是重複耗損。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/復"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36055",
+      "https://www.metmuseum.org/art/collection/search/49244"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An adult at a familiar curved woodland path pauses to tighten a comfortable shoe before setting out again. A small sprout emerges beside an old smooth stepping stone, and a folded resting cloth lies on a low bench. The path circles gently back toward morning light, suggesting a restorative return with one practical change rather than endless repetition. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 25,
+    "hexagramName": "無妄",
+    "typeCode": "ISTP-calm-autonomous",
+    "title": "本真試行者",
+    "summary": "你可能喜歡從可驗證的事實出發，自己動手弄清楚事情如何運作。沉著自主讓你先形成做法再向人同步。無妄卦映照不添多餘假設的真實，也提醒：忠於事實需要承認偶然與限制，並不保證每次行動都有預期回報。",
+    "conceptZh": "以簡單槓桿實測石塊重量，保留尚未確定的空間；無妄強調貼近事實，也承認偶然不能全被控制。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/无妄"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36055"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. A practical adult tests a small wooden lever with two ordinary stones on a low outdoor bench, watching the actual balance rather than an imagined diagram. A plain tool roll sits open beside them; a loose leaf has landed unexpectedly on the surface. Clear sky and a distant soft thundercloud frame honest experimentation with room for chance. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 26,
+    "hexagramName": "大畜",
+    "typeCode": "INTJ-calm-autonomous",
+    "title": "蓄識定局者",
+    "summary": "你可能願意先花時間理解全貌，累積足夠知識，再提出長期可行的安排。沉著自主使你偏好先自行成案。大畜卦把力量與節制放在同一處：真正有用的準備，最後仍要走出心中的山，接受現實的檢驗。",
+    "conceptZh": "從山中小書室帶著一件可試作模型走到外面；大畜的累積與節制，最後需要接受現實檢驗。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/大畜"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36055"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An adult steps from a sheltered mountain workshop into daylight, carrying one small wooden prototype while a neat stack of unmarked books remains inside. A low doorway frames the solid hill; outside, a simple clear path invites the first test. Their measured posture conveys accumulated knowledge finally becoming a modest usable action. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 27,
+    "hexagramName": "頤",
+    "typeCode": "ISFJ-calm-autonomous",
+    "title": "養心守日者",
+    "summary": "你可能透過安穩的日常照顧人，也願意先把需要的事準備妥當。沉著自主讓你偏愛自行整理做法再同步。頤卦把滋養放在中心，邀請你同時看看給出與接收：支持別人的生活，也需要有真正能支持自己的來源。",
+    "conceptZh": "安排能持續維持的茶食日常，也替自己留下一杯；頤的滋養包含給出與接收，沒有性別角色分配。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/頤"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/43205",
+      "https://www.metmuseum.org/art/collection/search/49244"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An adult prepares a simple nourishing tray at a low table: a small teapot, two plain cups, and a bowl of fruit. They deliberately draw one cup toward their own resting place instead of sending everything outward. A gentle mountain silhouette and one green shoot frame a quiet daily ritual of care that includes its maker. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 28,
+    "hexagramName": "大過",
+    "typeCode": "ISTP-sensitive-cooperative",
+    "title": "承重共構者",
+    "summary": "你可能喜歡直接處理實際難題，也願意先與夥伴討論，找出可以動手改善的部分。變化帶來的情緒感受較鮮明時，你需要合宜的承重方式。大過卦提醒：願意接住難題很珍貴，但重新分配負荷，比獨自撐住更能讓事情走遠。",
+    "conceptZh": "兩位工作者共同為微彎的梁增添支點；大過不是證明誰撐得最多，而是重新分配負荷與資源。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/大過"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/44720",
+      "https://www.metmuseum.org/art/collection/search/49244"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults inspect a low freestanding wooden garden frame with a gently bowed crossbeam, then jointly slide an additional support into place from safe ground. One indicates the stressed joint while the other steadies the new post. A small tool basket and a shallow lake behind the frame underline shared practical repair and redistributed load, without peril or heroics. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 29,
+    "hexagramName": "坎",
+    "typeCode": "INFP-sensitive-autonomous",
+    "title": "深流守信者",
+    "summary": "你可能對內心價值有深刻的感受，面對變化時也經驗較鮮明的情緒。你偏愛先自行沉澱，再形成想走的方向。坎卦在此是一項穿越不確定的成長主題：不必一次看見全部出口，先守住一個能實行、能求助的小步。",
+    "conceptZh": "在深水旁只選第一個可行小步，岸上的繩索代表可尋求的支援；坎不是人格命運，而是練習穿越未知。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/坎"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36149",
+      "https://www.metmuseum.org/art/collection/search/44720"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An introspective adult on a broad safe stream bank tests the first of a few close stepping stones with one foot while keeping the other firmly on land. A neatly coiled rope remains within reach on the bank; both shores are visible. Deep jade water curves between rounded rocks, giving vivid feeling a small actionable step and a practical source of support. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 30,
+    "hexagramName": "離",
+    "typeCode": "ENFJ-sensitive-autonomous",
+    "title": "持光引路者",
+    "summary": "你可能希望讓人看見值得共同前進的方向，也對變化有較鮮明的情緒感受。你傾向先想好支持別人的方案再同步。離卦借光與依附提醒你：照亮他人需要穩定的燃料，也需要讓自己的心意被直接理解。",
+    "conceptZh": "先替手中的燈補充燃料，再照向可步行的路；離的持光需要真實支持，沒有永遠燃燒自己的要求。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/離"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/43205",
+      "https://www.metmuseum.org/art/collection/search/36149"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. An adult beside an open evening window carefully trims and refills a small amber lantern before lifting it toward a short garden path. A spare oil cup rests on the sill, making the source of light tangible. Two soft reflected glows echo across the window glass; the figure is attentive and human, sustaining useful warmth rather than blazing heroically. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 31,
+    "hexagramName": "咸",
+    "typeCode": "INFP-sensitive-cooperative",
+    "title": "聽心相應者",
+    "summary": "你可能在相互理解中感到連結，也願意先聽彼此的經驗再形成共同做法。變化帶來的情緒感受較鮮明，讓交流值得細細整理。咸卦借感應提醒你：能被觸動很珍貴，而真正的相應仍需詢問、確認與彼此自由的選擇。",
+    "conceptZh": "兩人隔著淺水碗安靜聆聽，保留各自清楚的空間；咸的感應需要詢問與確認，不用讀心或性別配對。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/咸"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/36149",
+      "https://www.metmuseum.org/art/collection/search/43205"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Two adults sit at equal height beside a mountain lake, listening with open hands on their own knees. A shallow water bowl between them catches two gently intersecting ripples from falling leaves, while a comfortable gap preserves each person’s space. Their faces show attentive conversation, not magic, romance, or mind-reading; a low mountain anchors mutual openness. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  },
+  {
+    "hexagramNumber": 32,
+    "hexagramName": "恆",
+    "typeCode": "ISTJ-calm-autonomous",
+    "title": "守序長行者",
+    "summary": "你可能看重可靠的承諾，願意把重要的事做成能長期維持的日常。沉著自主讓你先整理好方法再向人同步。恆卦映照這份持續，也提醒：長久需要回應季節與處境，守住方向與調整走法可以同時發生。",
+    "conceptZh": "維護循環水輪，旁邊不同生長階段的植株提醒季節變化；恆的長久，是守方向也調整方法。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/恒"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/49244",
+      "https://www.metmuseum.org/art/collection/search/36149"
+    ],
+    "originalityNotes": "僅參考公共領域館藏中的自然物與器物類別，不下載或重用像素，不臨摹人物姿勢、獨特構圖、筆觸或題跋；場景、角色、配色與人格成長比喻為本案新創。文化配對是本產品原創，並非古代人格學說；AI 生成後仍需人工檢視相似性、文字雜訊及人體細節。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted matte gouache and subtle paper texture; warm ivory #f6f1e7 background, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. A steady adult maintains a small recirculating wooden waterwheel, adjusting one peg while the familiar flow continues. Three simple pots show a seedling, green growth, and a bare resting branch, indicating changing seasons around a lasting purpose. A light wind stirs one sleeve; the quiet practical scene joins reliability with periodic revision. Gender-neutral adults in simple everyday clothing, clear readable silhouettes, natural anatomy, 6–8 key elements at most, airy uncluttered space. No writing, glyphs, hexagram lines, borders, logos, watermarks, existing characters, or artist imitation."
+  }
+]

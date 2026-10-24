@@ -22,3 +22,8 @@ question-bank/original-items.jsonl
 dist/vendor/surveyjs/3.2.2/survey.core.min.js
 dist/vendor/surveyjs/3.2.2/survey-core.min.css
 *.prepare.partial
+
+# Keep original artwork and local generation state private.
+artwork/originals/
+art-direction/generation-*.json
+work-state.json

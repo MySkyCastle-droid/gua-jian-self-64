@@ -6,7 +6,7 @@
 
 ## 公開網站與原始碼
 
-- 公開測驗：https://gua-jian-self-64.pages.dev/
+- Cloudflare 目標網址：https://gua-jian-self-64.pages.dev/ （本版部署待完成與驗證）
 - GitHub：https://github.com/MySkyCastle-droid/gua-jian-self-64
 - Cloudflare Pages 直接上傳交付的完整網站 ZIP，沒有建置步驟；不需環境變數或 API 金鑰。GitHub 與 Cloudflare 此版採分別發布，尚未連接自動部署。從此 GitHub 原始碼部署時，先執行下方來源準備步驟，再使用 `dist/`。
 - 第三方條件與 MBTI® 商標說明：[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
@@ -60,7 +60,7 @@
 python scripts/prepare-source.py
 python scripts/prepare-source.py --verify
 python scripts/build-question-bank.py
-node --test tests/core.test.cjs tests/content.test.cjs tests/bank.test.cjs
+node --test tests/core.test.cjs tests/content.test.cjs tests/bank.test.cjs tests/artwork.test.cjs
 python scripts/package-portable.py --output <專案外的絕對路徑.zip>
 ```
 
@@ -95,3 +95,13 @@ Qwen3 及其他 Hugging Face 人格資料只列研究備選，沒有下載權重
 核心測試覆蓋正反向、缺答、中立、補題、返回修改與 64 型可達性；內容測試核對 64 篇、來源欄位、字數、卦象方向、本機資產與授權雜湊；題庫測試核對十萬實體題、來源路徑、組卷平衡、去重與續答。
 
 大量情境變體尚未逐題由心理測量專家審查。本產品不宣稱常模、準確率、人口稀有度、六維獨立性或臨床用途。
+
+<!-- artwork-release:start -->
+## 64 張人格插畫
+
+64 型各有一張獨立、經人工檢查的內建 imagegen 插畫。網站直接使用 `dist/assets/personality/hexagram-01.webp` 至 `hexagram-64.webp`，不需模型、API 金鑰或額外圖片建置。圖鑑、結果頁與分享卡會使用對應圖像。
+
+`art-direction/artwork-manifest.json` 和 `dist/data/artwork-sources.json` 保存全部 64 圖的公開提示、文化參考頁、尺寸與 SHA256；`art-direction/prompts-01-32.json`、`prompts-33-64.json` 保存設計提示。圖像使用與權利說明見 `artwork/README.md` 和 `dist/licenses/Artwork-Notes.txt`。
+
+公開來源已含完整 WebP，完成原有 `python scripts/prepare-source.py` 來源還原步驟後即可部署 `dist/`。原始 PNG 與含本機路徑的生成檢查紀錄另行保存，不在公開儲存庫內。只有另備全部 64 張原始 PNG、各圖的本機生成檢查紀錄，並安裝 Node.js 與 `sharp` 後，才可執行 `node scripts/build-artwork-assets.cjs` 重新編碼。這個指令保留原圖尺寸、不裁切，並重新驗證原圖雜湊；一般部署不需要執行它。
+<!-- artwork-release:end -->

@@ -63,3 +63,7 @@ MBTI®、Myers-Briggs® 及 Myers-Briggs Type Indicator® 是 Myers & Briggs Fou
 SAPA 其他混合題目、OEJTS 的非商業題目、BIM、RIASEC Markers、O*NET 工具、PersonalityCafe 受測者資料及其他授權不明來源沒有匯入正式題庫。Qwen3-0.6B 只列研究備選，沒有隨本產品散布權重或提供推論功能。
 
 上述是本次實際檔案與上游公開聲明的查核紀錄，不是第三方權利的全面保證。後續新增題庫、翻譯、圖像或模型時，應再次核對該份內容的實際授權。
+
+## 本案 AI 生成插畫
+
+64 型的角色、場景、配色及卦義比喻由本案設計，再以內建 imagegen 各別生成。未下載、嵌入或重製公共參考頁的圖像；公共領域自然器物意象的參考與每張提示保留於插畫來源清單。AI 生成不保證專屬性、可著作性或完全不近似他人作品；本案僅對依法能授予的權利提供許可。詳見 `artwork/README.md` 或本站 `licenses/Artwork-Notes.txt`。

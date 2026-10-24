@@ -1,0 +1,546 @@
+[
+  {
+    "hexagramNumber": 33,
+    "hexagramName": "遯",
+    "typeCode": "ISFP-calm-autonomous",
+    "title": "留白守山人",
+    "summary": "你傾向在獨處中整理感受，先依眼前經驗與個人價值形成做法，再讓事情自然展開。遯所提供的比喻，是知道何時保留空間。沉著不是沒有感情，而是你面對變化時，感受通常比較平緩。",
+    "conceptZh": "山腳的創作者將自己的工作角落留出通風與遠景，折起屏風但不封閉通路。以遯的天山距離表現有意識的界線，保留日後重返交流的入口。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/遯"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. A solitary androgynous adult craftsperson folds a low wooden screen beside a mountain terrace, revealing a wide ivory sky. Their finished small clay bowl rests on a stone seat; a red woven ribbon marks the open return path. They calmly choose a quiet working space while keeping the valley visible. A mountain mass below and broad open sky above embody deliberate boundaries and room to return. Three-quarter side view, figure in lower right, mountain on left, generous open sky. No withdrawal as defeat."
+  },
+  {
+    "hexagramNumber": 34,
+    "hexagramName": "大壯",
+    "typeCode": "ESTJ-calm-autonomous",
+    "title": "有度推進者",
+    "summary": "你常從具體目標出發，依一致標準排好順序，形成方案後再帶動事情前進。大壯像一股已有力量的雷聲，提醒你把能做轉化為做得合宜。你的沉著使推進顯得穩定，而自主讓責任有清楚的起點。",
+    "conceptZh": "執行者把力量接到有邊界的木製推進裝置，手掌主動停在閘門前核對，遠處雷雲只是動勢。強勁與節制同時成立。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/大壯"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. One androgynous adult builder stands firmly beside a large wooden lever on a simple wheeled platform. The lever could open a low garden gate, but the builder pauses with an open palm to check the clear path first. A compact tool tray and two neatly arranged blocks show prepared execution. A soft thundercloud arcs high above a broad sky without a dramatic lightning strike. Strong diagonal composition balanced by the deliberate stopping gesture. Depict usable strength, responsibility and measured forward movement, never conquest."
+  },
+  {
+    "hexagramNumber": 35,
+    "hexagramName": "晉",
+    "typeCode": "ESTP-sensitive-cooperative",
+    "title": "共行見曉者",
+    "summary": "你容易在實際互動中找到下一步，碰到變化時感受鮮明，也偏好先和人討論再形成行動。晉像陽光漸漸越過地平線，把共同做成的小進展照亮。它邀請你看見成果，也看見讓成果成為可能的人。",
+    "conceptZh": "兩位夥伴一起完成面向晨光的低平台，同時回顧固定支撐與實作成果。以地上出明連結現場應變與共享貢獻。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/晉"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult collaborators kneel and stand at equal scale around a newly completed low wooden viewing platform. One tests its first step while the other points to a well-fitted support they made together. Early ochre sunlight rises over a low earthen horizon and illuminates both contributions. A small open toolbox and a single plant are the only extra objects. Show animated engagement and shared practical progress, with room to review what worked. Low horizontal composition, bright horizon, equal agency, no leader on a pedestal."
+  },
+  {
+    "hexagramNumber": 36,
+    "hexagramName": "明夷",
+    "typeCode": "INFJ-sensitive-autonomous",
+    "title": "藏光護念者",
+    "summary": "你可能先在心中連起事情的深層意義，依關懷與價值形成自己的安排；變化帶來的感受也較鮮明。明夷把光放在土地裡，提供一種保護信念的想像：暫時不把所有想法公開，仍可以誠實照顧自己與他人。",
+    "conceptZh": "創作者在土色拱廊下保護小燈，另一端的開口讓光有安全的出口。以明入地中表現信念的保存與選擇表達時機，避免受難或被囚意象。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/明夷"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. One androgynous adult quietly shields a small warm lantern inside an open earthen alcove beneath a grassy hill. The lantern is protected by a curved terracotta screen, not locked away. A clear archway leads toward a distant friendly lit window. Their posture is thoughtful and self-possessed; one hand adjusts the screen so a narrow beam can safely reach the path. Cross-section-like poetic scene, deep forest-ink interior and warm ivory outside. Evoke preserving an inner purpose while planning a safe way to share it; no cage, injury or martyrdom."
+  },
+  {
+    "hexagramNumber": 37,
+    "hexagramName": "家人",
+    "typeCode": "ISTJ-calm-cooperative",
+    "title": "共築日常者",
+    "summary": "你常把可信的經驗整理成明確約定，先和相關的人討論，再一步步完成共同生活。家人以日常秩序為鏡，照見承諾如何累積信任。你面對變化時感受較平緩，這份穩定能讓分工被持續照顧，也值得留給自己。",
+    "conceptZh": "兩位夥伴在日常共用桌前調整可拆換的木格與器物位置，風從小火爐上方的開窗流過。以共同協商維持可靠日常，不指定家庭或性別角色。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/家人"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adults sit at equal height beside a shared household worktable, jointly rearranging simple wooden dividers and useful ceramic vessels. One offers a removable joint while the other checks that the arrangement suits both. A tiny enclosed stove warms the room; an open high window carries a soft wind through a linen curtain. Calm, practical continuity, adjustable responsibilities and mutual agreement. Warm interior vignette, sturdy horizontal table, no family hierarchy, gendered chores, inscriptions or paper checklists."
+  },
+  {
+    "hexagramNumber": 38,
+    "hexagramName": "睽",
+    "typeCode": "ENTP-calm-autonomous",
+    "title": "異路探問者",
+    "summary": "你喜歡從交流裡生出新問題，先自行組合可能方案，再帶到現場驗證。睽容許方向不同的人仍共享一段道路。當變化引起的感受較平緩，你可能更願意把分歧當成可研究的材料，並替習以為常的答案打開窗口。",
+    "conceptZh": "探問者在上方暖光與下方水澤之間測試兩種不同小橋，讓不同路徑仍接到共同的平台。以睽表現差異中的小尺度驗證。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/睽"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. An androgynous adult inventor studies two visibly different miniature footbridges crossing the same shallow pool on a tabletop terrace. One bridge curves, one uses angular supports, and both lead to a common landing. The figure holds a plain testing weight, curious rather than triumphant. A small warm hanging lamp above and jade water below suggest divergent motions of fire and lake. Asymmetric playful composition, a clear original hypothesis made tangible. Depict difference as a useful experiment and leave space for another viewpoint, not an argument or victory."
+  },
+  {
+    "hexagramNumber": 39,
+    "hexagramName": "蹇",
+    "typeCode": "ISTJ-sensitive-cooperative",
+    "title": "聯手越嶺者",
+    "summary": "你重視可信的資料與可靠安排，也願意先和人釐清困難再定下做法。當變動帶來鮮明感受，蹇的山路提醒你，停下查看地形也是前進的一部分。請求支援能使責任更可持續，不會抹去你已經付出的努力。",
+    "conceptZh": "兩位行者面對山前積水，一起查看安全落腳點並握持同一條鬆繩。停下核對與接受支援，是共同越嶺的實際能力。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/蹇"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult hikers pause together at a shallow mountain stream that interrupts a stone path. One kneels to test a stepping stone with a plain staff; the other holds a loose safety rope and indicates a gentler route around the water. Both are active decision-makers, neither rescuing a helpless person. Layered mountain shapes rise behind the stream, with a clear small route visible at one side. Sensitive but steady engagement, careful preparation and shared support. No danger spectacle, cliffs, injuries, badges or heroic summit pose."
+  },
+  {
+    "hexagramNumber": 40,
+    "hexagramName": "解",
+    "typeCode": "ISTP-calm-cooperative",
+    "title": "解結共修者",
+    "summary": "你傾向先看實際問題，以可檢查的原理尋找解法，也願意和相關的人談過再動手。解像雷雨鬆開乾硬的土地，把卡住的環節重新打通。沉著讓你有空間逐項排查，協作則使修好的東西真正回到大家的生活。",
+    "conceptZh": "兩位修理者先交換看法，再解開卡住水輪的繩結。雨後水道重新流動，連結解卦的鬆動與可使用的實際解法。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/解"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult repairers work beside a modest garden waterwheel after light rain. One gently loosens a tangled rope at the axle while the other holds the detached peg and watches the water channel resume flowing. A single open tool roll rests on dry stone. The loosened knot is the main visual metaphor: a mechanism becomes useful again through understanding its users. A small retreating cloud and first clear light suggest thunder-rain releasing tension. Close three-quarter scene, collaborative hands, no sparks, violence or dramatic machinery."
+  },
+  {
+    "hexagramNumber": 41,
+    "hexagramName": "損",
+    "typeCode": "ISFJ-sensitive-cooperative",
+    "title": "知量共養者",
+    "summary": "你常記得生活裡具體的需要，願意先和人商量，再把關懷放進可持續的安排。變化引起的感受較鮮明時，損提醒你分辨哪些付出有益、哪些已經超出負荷。留下自己的餘裕，能讓照顧走得更長遠。",
+    "conceptZh": "照料者與夥伴共同衡量有限的水，留下自己休息用的一杯而非全部倒出。以山下有澤與適量滋養表現界線及平等分工。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/損"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult gardeners share a limited watering pitcher beside a small mountain pond. One pours a measured amount into a young plant while the other gently sets aside a full ceramic cup and an empty resting stool for the caregiver. A second plant waits within reach. The scene expresses agreed limits and sustainable care, not sacrifice or scarcity panic. Quiet mountain form above, jade pond below, a warm red sleeve gesture at the center. Balanced triangular composition with enough unallocated water and space for both people to rest."
+  },
+  {
+    "hexagramNumber": 42,
+    "hexagramName": "益",
+    "typeCode": "ENFJ-sensitive-cooperative",
+    "title": "互益引路者",
+    "summary": "你容易在交流中看見共同願望，願意把人的需要連成有方向的行動，並先討論再成案。益把成長想成流動的支持。鮮明的情緒感受能讓投入充滿溫度，也提醒你確認每個人是否真的從這份投入中受益。",
+    "conceptZh": "兩位共同培育者把小水渠分向不同高度的苗木，各自調整而非強迫同步成長。以風雷的動能表現支持流動與共同受益。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/益"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult cultivators jointly redirect a narrow garden water channel toward three young plants of different heights. One adjusts a smooth wooden sluice while the other checks the slower-growing plant's soil. Wind stirs a single branch, and a soft rolling cloud suggests the energy of wind and thunder without storm drama. Each plant receives appropriate support rather than identical treatment. Warm human connection and shared direction, open arc composition. No teacher-pupil hierarchy, growth charts, trophies, text or magical instant growth."
+  },
+  {
+    "hexagramNumber": 43,
+    "hexagramName": "夬",
+    "typeCode": "ENTJ-sensitive-autonomous",
+    "title": "明言開路者",
+    "summary": "你傾向先整理整體方向與判準，再帶著方案推動改變；遇到變化時的感受也較鮮明。夬像把需要說清楚的事帶到公開場合。它邀請你讓果斷配上證據與程序，使重要決定既能前進，也容得下他人的回應。",
+    "conceptZh": "發起者把已有的方案放上開放的平台，手勢留出回應的方向；上方水澤意象保留在雲與水盆中。果斷伴隨公開理由與可回應的空間。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/夬"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. One androgynous adult initiator unrolls a blank architectural paper sheet on a low open-air platform and places two simple wooden prototype pieces beside it. The figure turns an open hand toward a vacant listener's cushion, visibly inviting a response before proceeding. A shallow water basin reflects a broad sky near the platform edge, suggesting lake above heaven. The posture is decisive yet receptive, emotionally engaged without aggression. Strong clean silhouette, diagonal unfurling gesture, no weapons, proclamation text, political symbols, crown or victory pose."
+  },
+  {
+    "hexagramNumber": 44,
+    "hexagramName": "姤",
+    "typeCode": "ENFP-sensitive-autonomous",
+    "title": "遇風尋路者",
+    "summary": "你常被新相遇打開想像，依在意的價值先形成自己的方向，再隨情況調整。變動帶來的感受較鮮明，讓機會容易顯得生動。姤把偶然相遇放到眼前，提醒你珍惜新意，也為承諾留下辨認與選擇的時間。",
+    "conceptZh": "探索者在半開門前接住風送來的種莢，另一手仍握著門緣調整開度。姤的相遇帶來想像，也保有選擇承諾的自主節奏。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/姤"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. An androgynous adult explorer stands beside a freestanding half-open rounded wooden garden gate. A gentle gust carries one winged seedpod into their open palm; their other hand remains on the gate edge, choosing how far to open it. A folded satchel and a small plant root the encounter in real life. A broad sky and visibly wind-bent grass suggest heaven over wind. Curious lively expression and thoughtful boundaries, asymmetrical doorway composition. No romantic destiny, seduction, marriage imagery, locks or captive figures."
+  },
+  {
+    "hexagramNumber": 45,
+    "hexagramName": "萃",
+    "typeCode": "ESFJ-sensitive-cooperative",
+    "title": "聚心成席者",
+    "summary": "你願意透過交流照顧實際需要，和大家討論後把聚會與分工安排妥當；變化也容易引起鮮明感受。萃把分散的人帶到同一個地方，提醒你好的凝聚既有溫度，也有讓不同聲音安心出現的空間。",
+    "conceptZh": "兩位籌備者把座席圍成開口的圓，保留可自由加入或離開的位置。澤上於地的聚集意象，轉成容納不同聲音的共同場合。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/萃"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult hosts arrange a welcoming oval gathering space on an earthen terrace beside a reed-edged lake. One moves a cushion to create an open entrance; the other places a shared tea tray within everyone's reach. Include a clearly available spare seat and a continuous unobstructed exit path. People have equal scale and inviting but unforced gestures. Lake above soft ground, warm practical hospitality and room for different voices. Three-quarter overhead composition, no banquet crowd, ceremonial hierarchy, decorative lettering or compulsory celebration."
+  },
+  {
+    "hexagramNumber": 46,
+    "hexagramName": "升",
+    "typeCode": "ENFP-calm-cooperative",
+    "title": "共栽新枝者",
+    "summary": "你喜歡在交流中發現可能，再和夥伴一起把想法種進生活。升像木在土中慢慢長出道路，讓熱情有了可持續的步伐。情緒感受較平緩時，你可能更有餘裕容納不同進度，為共同願望保留耐心與空間。",
+    "conceptZh": "兩位夥伴共同把幼木安置到土中，支架可以調整，枝條向上留有空間。升的地中生木成為耐心陪伴、持續照料的原創比喻。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/升"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult collaborators plant a young tree together in a raised earthen bed. One gently steadies the trunk while the other loosens an adjustable cloth tie on a plain wooden support, leaving room for growth. Exposed roots settle into dark soil, and one new jade branch rises into broad warm ivory space. A modest watering bowl rests nearby. Calm shared imagination made sustainable through repeated care. Low-to-high organic composition, no instant magical tree, staircase to power, measuring text or gardener hierarchy."
+  },
+  {
+    "hexagramNumber": 47,
+    "hexagramName": "困",
+    "typeCode": "ISTP-sensitive-autonomous",
+    "title": "限中尋徑者",
+    "summary": "你常先自行理解現場條件，以實際測試尋找可用的做法；變化帶來的情緒感受較鮮明。困提供的是資源受限時的解題鏡子，並不預告你的命運。它提醒你守住重要目標，也容許暫停、換工具與請人幫忙。",
+    "conceptZh": "受限的修理者在乾淺水池旁試做竹管，取用眼前有限材料並把開口朝外，讓限制可被看見、協助有入口。困不作命運或失敗標籤。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/困"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. One androgynous adult practical maker sits beside a nearly dry shallow stone pool, testing a short bamboo conduit assembled from a few salvaged pieces. A low open timber frame creates a visible constraint without enclosing the person. A small water cup, a plain hand tool and an outward-facing unfinished joint show exactly what resource is missing. The figure is absorbed and emotionally engaged, not defeated; a clear path remains open for someone to help. Intimate oblique view, inventive use of limits. No cage, chains, poverty spectacle, tears or fortune symbols."
+  },
+  {
+    "hexagramNumber": 48,
+    "hexagramName": "井",
+    "typeCode": "INTP-calm-cooperative",
+    "title": "共汲知泉者",
+    "summary": "你可能喜歡先理解背後原理，再透過共同討論形成能反覆使用的解法。井像一處大家都能取水的知識來源，提醒你把想法整理到他人也能汲取的程度。沉著讓推敲有空間，協作讓深度能夠連上真實需要。",
+    "conceptZh": "兩位思考者把井水汲入形狀不同、皆可使用的容器，順便調整井口高度。知識的深度須透過可理解的入口成為共同資源。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/井"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult thinkers stand on opposite sides of a simple stone well at equal height. One draws up a plain wooden bucket while the other arranges three differently shaped ceramic vessels so each can receive water. A small removable step makes the well accessible rather than monumental. The clear rising water represents deep understanding made reusable for others. Quiet attentive conversation, round well opening and outward flow as central shapes. Sparse garden setting, no mystical glowing well, books with text, scholar robes, status symbols or copied historic ornament."
+  },
+  {
+    "hexagramNumber": 49,
+    "hexagramName": "革",
+    "typeCode": "ENTJ-sensitive-cooperative",
+    "title": "共議革新者",
+    "summary": "你傾向把長期方向化成可執行安排，也願意先與人討論，再推動制度改變。當變化帶來鮮明感受，革讓這股投入有了關於時機與信任的提問。好的更新要能說清楚理由，也讓受影響的人一起塑造新的做法。",
+    "conceptZh": "兩位改革者把磨損結構拆成可重組的木件，邊比較舊件與新接點邊共同定案。以革表現時機、信任與受影響者參與的更新。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/革"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult planners jointly redesign a small worn garden shelter. One lays a weathered removable wooden joint beside a newly fitted one; the other shifts a modular support while both compare the change. A folded plain fabric roof and a warm small enclosed lamp suggest renewed structure, not demolition. Lake reflections meet a touch of firelight in the lower scene. Purposeful emotionally invested collaboration, visible process and equal participation. Centered low work surface, no burning building, revolution imagery, weapons, leader podium or written plans."
+  },
+  {
+    "hexagramNumber": 50,
+    "hexagramName": "鼎",
+    "typeCode": "INTJ-calm-cooperative",
+    "title": "共煉新器者",
+    "summary": "你可能先在安靜中掌握整體結構，再和相關的人討論，將長期想法煉成可用的安排。鼎像一件能把不同材料轉為共享滋養的器物。沉著讓你有餘裕觀察轉化過程，協作則提醒你讓使用者一起決定這件新器的樣子。",
+    "conceptZh": "兩位設計者一同檢查原創三足器的把手與受力，材料在適度熱源中轉成共享滋養。鼎是能維護、能使用的共同系統，非照摹任何館藏器物。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/鼎"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult designers jointly test an original plain three-legged ceramic cooking vessel with simple rounded handles. One checks a handle's balance while the other gently adds a small ingredient bowl; a modest enclosed heat source warms the vessel. Include two empty serving bowls ready for shared nourishment. The vessel must have an invented minimal silhouette, entirely unornamented, not a recognizable museum bronze. Calm structural thinking translated into a useful shared tool. Strong central vessel with equal figures, no ritual costume, inscriptions, copied motifs, smoke clutter or luxury status cues."
+  },
+  {
+    "hexagramNumber": 51,
+    "hexagramName": "震",
+    "typeCode": "ENTP-sensitive-autonomous",
+    "title": "驚中試新者",
+    "summary": "你容易從突發變化中生出新假設，先自行推演方案，再帶到外界碰撞。當情緒感受較鮮明，震把驚動看作重新檢查方向的契機。你可以容許驚訝與興奮存在，同時留下辨認事實、安排下一步的短暫停頓。",
+    "conceptZh": "突發雷聲使探索者暫停手上的小原型，先以簡單實物確認新想法。震的驚動與好奇並存，但畫面保留核對事實的短暫停頓。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/震"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. An androgynous adult experimenter pauses halfway through testing an original small wooden wind mechanism on a stone workbench. A distant curved thundercloud and one newly moving leaf have caught their attention; one hand holds the prototype steady while the other compares a loose paddle against its socket. The expression is vivid curiosity and surprise, not fear or genius worship. Show the pause before the next test. Off-center lively diagonal composition anchored by a stable workbench, broad ivory sky. No lightning hitting people, explosions, magic, thought-bulb icons or lettering."
+  },
+  {
+    "hexagramNumber": 52,
+    "hexagramName": "艮",
+    "typeCode": "INTP-calm-autonomous",
+    "title": "止處深思者",
+    "summary": "你傾向靠獨處釐清概念，先自行形成理解，再保留修正的餘地。艮像重疊的山，讓思考暫時停在可以站穩的地方。沉著使變化帶來的感受較平緩，而它也提醒你，安靜推敲之後，仍需要辨認何時可以向外踏一步。",
+    "conceptZh": "獨處思考者在雙重山勢前把問題縮到一盤幾何木件，空出一塊待測位置。艮的止處提供可站穩的範圍，旁邊的小徑仍朝外延伸。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/艮"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. One androgynous adult quiet thinker sits on a broad stone ledge before two overlapping mountain shapes. They arrange three plain geometric wooden pieces inside a shallow circular tray, leaving one deliberate empty space for a later real-world test. A narrow path continues out of the scene rather than ending at the seat. Calm attention, bounded inquiry and room to revise. Wide still composition, tactile materials, substantial unoccupied warm ivory background. No monk costume, supernatural aura, chess king, book lettering or claim of superior intelligence."
+  },
+  {
+    "hexagramNumber": 53,
+    "hexagramName": "漸",
+    "typeCode": "INFJ-calm-cooperative",
+    "title": "同行漸成者",
+    "summary": "你常在心中保存長期願景，依重視的價值與人商量，逐步建立可以同行的安排。漸像山上慢慢長大的樹，讓改變有時間扎根。你的沉著能容納成長所需的等待，也值得提醒自己，穩定前進仍可以有清楚的回顧。",
+    "conceptZh": "兩位同行者在山坡幼樹旁，把可移動小踏步調到共同可走的間距。漸的山上有木連結長期願景、耐心與看得見的階段。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/漸"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult companions adjust a short sequence of three movable wooden stepping platforms beside a young tree on a gentle mountain slope. One checks the distance while the other steadies the next platform; both look toward a modest reachable landing rather than a grand summit. The tree has visible roots and a few new branches, embodying slow grounded development. Patient equal collaboration, calm continuity and shared milestones. Ascending curved composition with airy sky. No race, wedding procession, age hierarchy, success ladder or text markers."
+  },
+  {
+    "hexagramNumber": 54,
+    "hexagramName": "歸妹",
+    "typeCode": "ESFJ-sensitive-autonomous",
+    "title": "擇約守心者",
+    "summary": "你重視具體關係與可落實的承諾，常先整理好照顧方式再向外同步；變化帶來的感受較鮮明。歸妹在這裡是一面檢查關係位置的鏡子，提醒你讓善意建立在平等選擇上，加入任何安排前，也先確認自己的意願。",
+    "conceptZh": "主動照顧者在湖畔整理自己的座席與空白邀請物件，保留可選擇的入口。以歸妹檢視關係位置的課題，轉成平等同意與加入前的自我確認。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/歸妹"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. One androgynous adult host pauses before joining a lakeside shared arrangement. They place their own cushion at the same height as an empty companion cushion, adjust the spacing, and hold a plain folded cloth invitation without any writing. A small low table has two equal cups; an open path remains behind the figure. A soft thundercloud above a quiet lake suggests the traditional natural pairing. Attentive self-respect, lively feeling and freely chosen commitment. No bride, groom, rings, romantic destiny, subordinate position, gender roles or forced union."
+  },
+  {
+    "hexagramNumber": 55,
+    "hexagramName": "豐",
+    "typeCode": "ESFP-sensitive-autonomous",
+    "title": "盛時點光者",
+    "summary": "你容易在真實互動中投入當下，依重視的價值先選擇自己的行動，再靈活調整；變化引起的感受也較鮮明。豐像光與雷同時到場，讓生命的豐富被看見。它邀請你享受盛時，也為熱鬧之後留下安穩的餘地。",
+    "conceptZh": "表達者把豐盛的當下化為一盞自己完成的紙燈，桌旁留一張休息凳和收納盒。雷電皆至的飽滿轉成精彩與收尾並存的日常場景。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/豐"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. An androgynous adult expressive maker lifts one large original hand-shaped paper lantern they have just completed in an open courtyard. Warm ochre light spills across a simple worktable with two remaining colored paper pieces. A resting stool and a storage box are visibly ready for after the lively moment. A distant soft thundercloud meets the bright sky, suggesting fullness of light and movement without spectacle. Joyful engaged posture, clear central lantern, no festival crowd, confetti, costume, inscriptions or culturally specific copied lantern patterns."
+  },
+  {
+    "hexagramNumber": 56,
+    "hexagramName": "旅",
+    "typeCode": "ENFP-calm-autonomous",
+    "title": "行旅拾意者",
+    "summary": "你願意透過新交流探索可能，先依自己的價值選好方向，再隨旅程調整。旅讓陌生環境成為認識自己的場域。當情緒感受較平緩，你可能較有餘裕欣賞沿途的新意，也需要記得說明行蹤與承諾，讓自由能與連結共存。",
+    "conceptZh": "旅人停在陌生山路上的開放驛亭，先整理行囊、觀察所在環境再選路。小火光照亮可返回的小徑，表現自由與連結共存。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/旅"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. One androgynous adult traveler pauses in an open mountain wayside shelter, calmly unpacking a small satchel and choosing between two visible paths. A tiny protected cooking flame warms a cup on a stone shelf; a neatly folded return cord remains tied to the satchel as a personal reminder of existing commitments. The figure studies a fresh leaf picked from the ground, finding meaning in unfamiliar surroundings. Mountain below and contained fire above. Light wandering composition, no map text, national costume, flags, exoticizing architecture or endless escape fantasy."
+  },
+  {
+    "hexagramNumber": 57,
+    "hexagramName": "巽",
+    "typeCode": "ISFP-sensitive-cooperative",
+    "title": "柔風共作人",
+    "summary": "你可能先從生活經驗感受什麼重要，願意與相關的人討論，再用柔軟而實際的方式行動。巽像接續而來的風，使改變逐漸進入日常。鮮明的情緒感受值得被聽見，你的配合也可以同時帶著清楚的個人選擇。",
+    "conceptZh": "兩位創作者在柔風吹動的布幔旁共修一件作品，一方示意自己的選色，另一方調整材料。風的漸入日常包含互相聽見，而非單方順從。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/巽"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult makers jointly work on an original small woven screen in a breezy garden. One holds up a muted vermilion strip to express a personal preference; the other adjusts a jade strip while listening. A soft linen curtain and two bamboo leaves bend in the same gentle wind. Both people's hands remain active and distinct, showing flexible collaboration with clear individual wishes. Flowing lateral composition, intimate tactile details, no copied textile patterns, written labels, submissive bowing or ornate traditional costumes."
+  },
+  {
+    "hexagramNumber": 58,
+    "hexagramName": "兌",
+    "typeCode": "ESFP-sensitive-cooperative",
+    "title": "歡語共學者",
+    "summary": "你容易在真實相遇中投入，用重視人的方式回應當下，並願意先和夥伴討論再安排活動。兌把喜悅放在朋友彼此交流的場景裡。當情緒感受較鮮明，分享能讓快樂有共鳴，也要為安靜、不同意見與低落留一張椅子。",
+    "conceptZh": "兩位朋友在相連水澤旁分享小型手作體驗，一張空凳也歡迎安靜參與。兌的喜悅與共學保留真誠差異，不要求每個人表情一致。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/兌"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult friends sit beside two gently connected shallow garden pools, sharing a simple hands-on clay activity. One smiles while demonstrating how to shape a small cup; the other listens with a quieter thoughtful expression. A spare cushion welcomes silent participation, and a plain shared water bowl sits between them. The atmosphere is warm, curious and freely social, allowing different moods. Soft rounded lake shapes, equal scale, uncluttered low composition. No forced matching smiles, party props, exaggerated comedy, logos or lettering."
+  },
+  {
+    "hexagramNumber": 59,
+    "hexagramName": "渙",
+    "typeCode": "ENFP-sensitive-cooperative",
+    "title": "散結連橋者",
+    "summary": "你喜歡從互動中展開新的可能，先與人交換願望，再讓共同方向逐漸成形；變化也帶來鮮明感受。渙像風在水面散開僵固的結，提醒你讓隔閡鬆動。重新連結需要共同理由，也需要保留每個人自己的邊界。",
+    "conceptZh": "兩位連結者在水邊把散開的繩索重新接成鬆而可靠的小橋，留下各自岸邊的空間。風行水上的渙，轉為釐清隔閡與自由連結。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/渙"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult collaborators stand on opposite low banks of a narrow calm stream, jointly assembling a small rope-and-plank footbridge. One untangles a loose rope while the other tests an adjustable connection; neither pulls the other across. A gentle wind scatters three fallen leaves on the water, making old knots visibly loosen. Keep each bank spacious with a clear place to stand. Emotionally engaged mutual imagination made practical. Graceful outward curves, no broken relationship icons, handcuffs, grand rescue, compulsory togetherness or text."
+  },
+  {
+    "hexagramNumber": 60,
+    "hexagramName": "節",
+    "typeCode": "ISTJ-sensitive-autonomous",
+    "title": "定度守衡者",
+    "summary": "你常依可靠經驗與一致標準安排責任，先自行整理做法再向外同步；變化引起的感受也較鮮明。節像替水量畫出合宜的尺度，提醒你讓規則服務生活。清楚界線能帶來安穩，過於嚴苛的限制則需要重新衡量。",
+    "conceptZh": "規劃者為湖邊水槽調整可拆換的木製水閘，保留一個溢流出口。節的尺度服務生活，規則可隨條件改變而重新衡量。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/節"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. One androgynous adult careful planner adjusts a removable wooden sluice gate between a shallow lake and a garden basin. A simple notch-free measuring vessel and three evenly spaced smooth stones suggest a considered amount without numbers. Include a clearly open overflow channel, showing that the system can adapt instead of becoming rigid. The figure checks the real water level with engaged concentration. Structured yet gentle geometry, jade water and warm red handle. No ruler ticks, written schedules, locked dam, perfectionist distress or superior authority pose."
+  },
+  {
+    "hexagramNumber": 61,
+    "hexagramName": "中孚",
+    "typeCode": "INFJ-sensitive-cooperative",
+    "title": "誠聲相和者",
+    "summary": "你可能先在心裡連起事件的意義，再與人討論，讓重視的價值成為共同安排。鮮明的情緒感受讓理解與被理解格外有份量。中孚把內在真誠與外在回應放在一起，提醒你以可核對的表達建立信任，讓共鳴有實際根基。",
+    "conceptZh": "兩位對話者在有風的水邊，各自把一塊透明器物放到同一個可見位置，確認彼此所指。遠處一對水鳥呼應，真誠透過可核對的表達建立信任。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/中孚"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult companions sit at equal height on a low lakeside bench, each placing a clear plain glass vessel on a shared small table so the other can see its contents. One makes an open questioning gesture and the other responds directly, embodying sincere meaning checked through dialogue. A pair of small original long-legged water birds face each other in the reeds; gentle wind touches the lake. Deep warmth without mind-reading or mystical bonds. Spacious intimate composition, no hearts, telepathic light beams, calligraphy or romantic ownership."
+  },
+  {
+    "hexagramNumber": 62,
+    "hexagramName": "小過",
+    "typeCode": "ISFJ-sensitive-autonomous",
+    "title": "細步護行者",
+    "summary": "你常記得生活裡的實際需要，先替自己重視的人事物安排周到的做法，再向外同步。變動帶來的情緒感受較鮮明，小過把注意力帶回能照料的小事。謹慎能成為溫柔的力量，也需要為不完美保留呼吸的空間。",
+    "conceptZh": "照料者在低矮山徑邊先修一級容易踩空的小踏步，再查看自己剩餘材料。低飛小鳥呼應小過的小步與適度，不把周到畫成無限責任。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/小過"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. One androgynous adult attentive caretaker repairs a single low step on a gentle mountain garden path. They fit a small wooden shim under the step and pause to check a modest remaining tool pouch before doing more. A small bird flies low and safely across the foreground, while a distant soft thundercloud hints at thunder above mountain. Practical care in a deliberately small scope, visible breathing room and an open return path. Close calm composition, warm emotionally invested posture. No anxious overwork, giant tasks, rescue scene, medical imagery or lettering."
+  },
+  {
+    "hexagramNumber": 63,
+    "hexagramName": "既濟",
+    "typeCode": "ESTJ-sensitive-cooperative",
+    "title": "共守成局者",
+    "summary": "你願意把實際目標整理成明確分工，先和人確認再推進，變化引起的感受也較鮮明。既濟像一件已經完成重要階段的工作，提醒你把成果交給日常維護。共同守成需要回顧與交接，也需要讓大家安心承認新的問題。",
+    "conceptZh": "兩位維護者在已可使用的茶水裝置旁核對接點與交接，水在有節制的小火上方。既濟的完成是一個需要共同照料的階段。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/既濟"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult maintainers jointly inspect a completed simple tea-water station in a courtyard. A plain ceramic pot containing water rests safely above a small enclosed heat source; one person checks a removable support while the other offers the matching spare joint. Two cups show the system is already usable. The focus is calm shared upkeep after completion, with vivid investment rather than celebration or control. Balanced stable composition, water over fire clearly practical. No trophies, finish banners, supervisor-subordinate pose, gauges with text or dangerous exposed flames."
+  },
+  {
+    "hexagramNumber": 64,
+    "hexagramName": "未濟",
+    "typeCode": "INTP-sensitive-cooperative",
+    "title": "共辨未來者",
+    "summary": "你可能喜歡把問題拆開推敲，透過共同討論形成暫時可用的答案；變化也帶來鮮明感受。未濟把尚未完成看成仍有路可走的狀態。它邀請你讓好奇與實作同行，在未確定的地方標明界限，也為下一次驗證找到落腳點。",
+    "conceptZh": "兩位探索者在尚未接上的水上小橋前，先把可用與待測木件分置兩盤，準備下一個可驗證落腳點。未濟的開放性有清楚界線與共同實作。",
+    "meaningSourcesURLs": [
+      "https://zh.wikisource.org/zh-hant/周易/未濟"
+    ],
+    "imageInspirationURLs": [
+      "https://www.metmuseum.org/art/collection/search/53574",
+      "https://www.metmuseum.org/art/collection/search/49083"
+    ],
+    "originalityNotes": "原創構圖與角色設計；參考《周易》古代自然意象及本站既有原創人格文案。The Met 藏品均於官方頁標為 Public Domain，僅參考山水、竹、人物與自然的概念，不複製其構圖、筆觸、題款、器物裝飾或數位圖像；未下載、拼貼或送入生成工具作為圖像輸入。非任何既有人格品牌角色，未指定藝術家風格；AI 輸出的相似性仍須人工檢查。",
+    "promptEnglish": "Create one original square 1024x1024 contemporary East Asian editorial story illustration. Hand-painted paper texture; warm ivory #f6f1e7, forest ink #253c34, vermilion #b44c3a, muted jade and ochre. Simple modern clothes, clear human silhouettes, airy background, at most 6-8 key objects. No text, symbols, hexagram lines, borders, logos or watermarks. No imitation of existing characters or any named artist. Two androgynous adult investigators pause beside an unfinished low bridge over a narrow stream. They jointly sort a few plain wooden bridge pieces into two separate shallow trays, one holding tested fitted joints and the other an unresolved piece. A single safe completed stepping platform invites the next small experiment. A contained lantern glows above the water, suggesting fire over water without mystical imagery. Curious engaged conversation and provisional understanding, not failure. Open-ended oblique composition, clear usable next step, no question-mark symbols, letters, blueprint text or impossible infinite bridge."
+  }
+]
