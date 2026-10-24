@@ -6,7 +6,7 @@
 
 ## 公開網站與原始碼
 
-- Cloudflare 目標網址：https://gua-jian-self-64.pages.dev/ （本版部署待完成與驗證）
+- 公開測驗：https://gua-jian-self-64.pages.dev/ （已部署完整 64 張人格插畫）
 - GitHub：https://github.com/MySkyCastle-droid/gua-jian-self-64
 - Cloudflare Pages 直接上傳交付的完整網站 ZIP，沒有建置步驟；不需環境變數或 API 金鑰。GitHub 與 Cloudflare 此版採分別發布，尚未連接自動部署。從此 GitHub 原始碼部署時，先執行下方來源準備步驟，再使用 `dist/`。
 - 第三方條件與 MBTI® 商標說明：[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
