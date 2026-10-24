@@ -22,9 +22,9 @@
 node --test tests/core.test.cjs tests/content.test.cjs tests/bank.test.cjs tests/artwork.test.cjs tests/short.test.cjs tests/full.test.cjs tests/sessions.test.cjs
 ```
 
-本次自動化測試為 **91 項通過、0 失敗、0 略過**：既有核心／內容／題庫／插畫 26 項、五點短版與舊版唯讀模組 19 項、新版 48 題引擎 11 項、進度與 QA 儲存 35 項。這些結果驗證工程規則，不是分類準確率證據。本次公開網站 300 場逐題操作驗收尚未開始；部署與瀏覽器操作應以後續實際執行輸出及交付驗證 JSON 為準，不能沿用下方 48 題歷史紀錄作為本次驗收。
+本次自動化測試為 **91 項通過、0 失敗、0 略過**：既有核心／內容／題庫／插畫 26 項、五點短版與舊版唯讀模組 19 項、新版 48 題引擎 11 項、進度與 QA 儲存 35 項。這些結果驗證工程規則，不是分類準確率證據。300 場矩陣的固定被測來源為帶臨時驗收介面的 23d58a6f94405ba15461836a33a7294fa599c5cd。各場次完成數與差異依實際交付 JSON 為準。公開清理版另執行程式保留核對與針對性手機回歸，不把 300 場記為清理後版本的同一批驗收，也不沿用下方原始 48 題歷史紀錄充數。
 
-隔離瀏覽器驗收入口為 `#qa`，可見表單指定 Run ID、Case ID、10／20／48 模式及 32 位元無號整數種子，經正常五點介面從第一題作答。QA 儲存前綴為 `guajian-self.qa.<namespace>.`；匯入、保存、重載、單模式重設與全部清除均限制於同一空間，不讀寫一般紀錄。`qa`、`qaRun`、`qaCase`、`qaMode`、`qaSeed` 網址參數保存場次環境。題目與結果提供可見 JSON，列出場次、種子、題目 ID／文字／軸／方向／語意家族／近義群、所選答案與計分明細；這些是留存實際逐題操作證據的介面，本身不代表已完成公開驗收。
+臨時公開驗收介面已自正常站點移除，包含 #qa 設定頁、指定種子表單、驗收橫幅、題目／結果 JSON 與測試動作。舊驗收網址只移除五個已退役參數並回一般首頁，不載入或清除任何驗收命名空間。一般進度、三版原有儲存／遷移與唯讀封存保持原規則。固定被測版及其私有驗收資料用於內部重播，不在正常頁面顯示偵錯資料。
 
 短版是啟發式自適應選題，未經 IRT 校準、受測者常模或外部效度研究。10 題的六向度資訊有限；20／48 題增加作答情境，不構成某個準確率或短長版等值的證據。報告、插畫與卦序配對是文化解讀，無臨床用途。
 
@@ -66,3 +66,419 @@ node --test tests/core.test.cjs tests/content.test.cjs tests/bank.test.cjs tests
 大量情境變體經格式、唯一性、來源與抽樣語義適配檢查，未逐題經外部心理測量專家審查。IPIP、TIPI 與 Mini-Markers 原始項目不因收錄或改寫就成為本產品的 MBTI／64 型效度證據。
 
 上述 2026-10-23 瀏覽器紀錄完成時，第一版只部署私人存取。後續公開站與模式更新的發布狀態應以各次部署驗證紀錄為準；這份歷史紀錄不代表本次更新已上線。託管平台必要的登入與存取機制不屬於問卷答案收集。
+
+
+## 公開介面清理的私有候選驗證
+
+本節記錄套用前的候選檢查。候選僅包含 app.js、modes.css 與兩份說明，尚未套用至網站、尚未重新發布。套用前須完成全部 300 場實際公開介面驗收，保留帶入口被測版的私有站點副本與原始證據，再執行下列手機回歸。不能用清理後的檔案取代被測版來重播這批矩陣。
+
+### 保留範圍
+
+只移除驗收 UI 與入口。核心、Full、Short、舊版唯讀模組、Sessions、題庫、配卦及插畫不修改。公開 app 不再呼叫 createNamespace，沒有指定種子的外部入口。退役連結在讀一般進度前先清掉驗收參數並回首頁，驗收空間的任何鍵均不讀寫。一般分享仍移除舊驗收參數，不帶答案或分數。
+
+46 個既有頂層函式的 LF 正規化來源 SHA256 完全相同。另 8 個與驗收 UI 相鄰的函式，扣除驗收分支後的正常路徑來源 SHA256 相同。一般 click handler 扣掉三個測試動作後完全相同，鍵盤 handler 與最後載入檢查完全相同。這些來源比對不是真人效度證據。
+
+### 已執行的記憶體檢查
+
+候選 JavaScript 通過 node --check。以實際資料、引擎與 Sessions，在隔離的記憶體 DOM 中比對 17 組正常路徑，全部通過。
+
+- 首頁、一般入口、資深入口、圖鑑報告、方法、關於與來源頁的 HTML 及儲存狀態相同。
+- 10、20、48 題各完成一場全中立及一場有方向的五點作答，原版正常路徑與候選的最終 HTML／存檔一致。全中立分別完成 16／26／54 題並保留 64 候選，有方向者直接已定。
+- 四組退役網址回一般首頁、保留無關參數，沒有讀寫驗收儲存、沒有清除一般儲存、沒有顯示驗收 JSON 或入口。
+- 分享連結仍只到原型圖鑑，不帶測試參數。
+- modes.css 只刪除 qa 類別規則，保留其餘模式比較及回應提示樣式。
+
+上述是記憶體行為比對，不是實際手機瀏覽器操作，也不取代公開清理版套用後的針對性回歸。
+
+### 套用後仍須執行
+
+正常手機 390 CSS 像素下檢查三版入口與問卷。確認有效中立、漏答、返回修改、重新整理續答、全中立未定、已定結果、舊封存、分享與重設取消。舊驗收網址應安全回首頁且一般進度保持，頁面及原始碼不再包含驗收表單、測試按鈕或可見 JSON。發布後另比對網站實際雜湊，將最終清理版的 commit／部署識別寫入交付紀錄。300 場被測 commit 與最終清理版 commit 分開標示。
+
+### 來源與保留雜湊
+
+以下機器可讀資料中的函式來源採 LF 正規化後 SHA256，核心模組則為原始檔案位元組 SHA256。候選尚未發布。
+
+
+```json
+{
+  "syntaxChecked": true,
+  "comparedNormalUiCases": 17,
+  "cases": [
+    {
+      "kind": "normal route equality",
+      "route": "#home",
+      "passed": true
+    },
+    {
+      "kind": "normal route equality",
+      "route": "#explore",
+      "passed": true
+    },
+    {
+      "kind": "normal route equality",
+      "route": "#senior",
+      "passed": true
+    },
+    {
+      "kind": "normal route equality",
+      "route": "#atlas/1",
+      "passed": true
+    },
+    {
+      "kind": "normal route equality",
+      "route": "#method",
+      "passed": true
+    },
+    {
+      "kind": "normal route equality",
+      "route": "#about",
+      "passed": true
+    },
+    {
+      "kind": "normal route equality",
+      "route": "#sources",
+      "passed": true
+    },
+    {
+      "kind": "normal five-point completion equality",
+      "mode": 10,
+      "neutral": true,
+      "total": 16,
+      "complete": false,
+      "candidateCount": 64,
+      "passed": true
+    },
+    {
+      "kind": "normal five-point completion equality",
+      "mode": 10,
+      "neutral": false,
+      "total": 10,
+      "complete": true,
+      "candidateCount": 1,
+      "passed": true
+    },
+    {
+      "kind": "normal five-point completion equality",
+      "mode": 20,
+      "neutral": true,
+      "total": 26,
+      "complete": false,
+      "candidateCount": 64,
+      "passed": true
+    },
+    {
+      "kind": "normal five-point completion equality",
+      "mode": 20,
+      "neutral": false,
+      "total": 20,
+      "complete": true,
+      "candidateCount": 1,
+      "passed": true
+    },
+    {
+      "kind": "normal five-point completion equality",
+      "mode": 48,
+      "neutral": true,
+      "total": 54,
+      "complete": false,
+      "candidateCount": 64,
+      "passed": true
+    },
+    {
+      "kind": "normal five-point completion equality",
+      "mode": 48,
+      "neutral": false,
+      "total": 48,
+      "complete": true,
+      "candidateCount": 1,
+      "passed": true
+    },
+    {
+      "kind": "retired link strips to ordinary home without QA storage access",
+      "url": "?qa=old&qaRun=r&qaCase=c&qaMode=48&qaSeed=123&keep=1#result/48",
+      "passed": true
+    },
+    {
+      "kind": "retired link strips to ordinary home without QA storage access",
+      "url": "#qa",
+      "passed": true
+    },
+    {
+      "kind": "retired link strips to ordinary home without QA storage access",
+      "url": "?keep=1#qa/path",
+      "passed": true
+    },
+    {
+      "kind": "retired link strips to ordinary home without QA storage access",
+      "url": "?qaSeed=123#quiz/10",
+      "passed": true
+    }
+  ],
+  "unchangedFunctionCount": 46,
+  "unchangedFunctions": [
+    {
+      "name": "adopt",
+      "sha256": "214529ce9246de227b60f4a540ce55e0102f95b4fa806a4535ba1be6ade47822"
+    },
+    {
+      "name": "useMode",
+      "sha256": "feb2c5ae64331031f882e6876b58bd2e8d7ebb5349f54782cabb089187822c71"
+    },
+    {
+      "name": "sessionModel",
+      "sha256": "f170d4bb26e4612667c93285cd8bf519f75ee468a67d48c34454e575434f2745"
+    },
+    {
+      "name": "sessionQuestions",
+      "sha256": "b93513d288e7ea28626c1f9765e3671d9938ddb89be6326e5ac89ca4143abbca"
+    },
+    {
+      "name": "questionAnswer",
+      "sha256": "0856c060a152c05ead361446ffa89df60e72f7359512d443e2668219820993e3"
+    },
+    {
+      "name": "scoredState",
+      "sha256": "dc79496387624a834e4735c8f4317a5c98a30ffd5eace77a615e8f13ba3afbe3"
+    },
+    {
+      "name": "answeredCount",
+      "sha256": "91d72077920fa20db3b4b59a19167495895ac0d31f02022cc03c93a2a7353cca"
+    },
+    {
+      "name": "persist",
+      "sha256": "109344511f51b78e4ad1bc1011985c8755ecd43cbb28e96a971774921b989de3"
+    },
+    {
+      "name": "toast",
+      "sha256": "ccafe98545e95e68cae9478b785252679f407682afae6ba9a365f96567f86e64"
+    },
+    {
+      "name": "getHex",
+      "sha256": "641319f9fbccab9665edb532b8f589fc5b80dc9aebe98358a9acf05046d92db5"
+    },
+    {
+      "name": "getTri",
+      "sha256": "4cad9f61120ce6d521e3177cdf3a294f9079addf4a76981f592e2052df6b7dcf"
+    },
+    {
+      "name": "guaName",
+      "sha256": "900b77d2344871eda3df5c30b56d1ab6d29408c051cc6c164d8df09ca3e7c0ef"
+    },
+    {
+      "name": "hexSvg",
+      "sha256": "f8f675ddde1678570a64a4391a44e5f1290370d43c7d7d4f420c72dcbed1ead7"
+    },
+    {
+      "name": "compass",
+      "sha256": "9606a45296d661ecc2581aa053cab45b44fc768850f9ff9f272ec2bf1b16f97b"
+    },
+    {
+      "name": "card",
+      "sha256": "1a106ec9ab955b3603d90114961d6e83942a10f725b3994936e11f7b835f0339"
+    },
+    {
+      "name": "reportVisual",
+      "sha256": "c187578cc1d6383a21b6e11406d9dde8cbf93c0b882d25d44ccb2ba806b9fea4"
+    },
+    {
+      "name": "resetView",
+      "sha256": "c35207ecbe342ab1263e54f7f4184821c10912e68463a89b2790d3f194728afb"
+    },
+    {
+      "name": "renderHome",
+      "sha256": "104242c8669b267085b8d583fe48467c4123283a5adf2540b1b2a980dcf20898"
+    },
+    {
+      "name": "archiveLabel",
+      "sha256": "10a50e166034e107d1c4c0b6b08b4ab31911f21ce050b9fe5c61b4087ad1658f"
+    },
+    {
+      "name": "modeProgress",
+      "sha256": "6790bdb4211bb5b618871528d487550bd9e6e0b2bc7eb97b5db9f8ccd46b8e38"
+    },
+    {
+      "name": "resumeList",
+      "sha256": "1e346451192f0b4596ce3e797ed0eac6c9ebfd6f9c3e5405c37f5b709d18359c"
+    },
+    {
+      "name": "modeComparison",
+      "sha256": "55e81657f44321bde5006c42e82052f4c5ee37f3d207897d49cd05cf8ceb5b53"
+    },
+    {
+      "name": "introDisclaimer",
+      "sha256": "ce194ea4f775cc5665182db4bbc52ca9c7b0bfa907596bbd582c103156ebd1cc"
+    },
+    {
+      "name": "renderExplore",
+      "sha256": "a1537e076378b46c0584be4417a8519676cab1ab31fee244d42a0f4f43c48bbe"
+    },
+    {
+      "name": "renderSenior",
+      "sha256": "191747023f00fe1623b1e7a90a505fe45210b21e66a66b18616433fc45a732f6"
+    },
+    {
+      "name": "renderIntro",
+      "sha256": "0fe5046760c862fcd6f148237ea84da0049e7d0aa628d340c87be844078f6613"
+    },
+    {
+      "name": "navigate",
+      "sha256": "a47d9e69f8693a95dbf02f3ee91e856fe9d373d2d33f7c79222c0b08e6991812"
+    },
+    {
+      "name": "startMode",
+      "sha256": "44a17e2777af37a4e2446c0628ff12a29f37bc4b167cb9a53cec1df8ab024a90"
+    },
+    {
+      "name": "showAnswerError",
+      "sha256": "141633f20377d56e7518308155214950abb8d50281be3cb8d6e0873030bfaf56"
+    },
+    {
+      "name": "renderQuiz",
+      "sha256": "50e9e220a963dc7e0db68a991d22fef51701fe60a5590b549b09e893d71fb5cc"
+    },
+    {
+      "name": "responseHint",
+      "sha256": "a7867e4551db187282dc912545ca993fbd723f8a2e8a6de010881bf39e7b3d23"
+    },
+    {
+      "name": "nextFivePointQuestion",
+      "sha256": "9fd6f0af35fc40b13868f8b2ae81374af658f01f8dc7bb111c1226e1176e675d"
+    },
+    {
+      "name": "finishExploration",
+      "sha256": "af8b9fc9a58eb99f4153d9b435035bcb6f77a5cdf6bbf92835c28baf1c0f1c4a"
+    },
+    {
+      "name": "renderAtlas",
+      "sha256": "8449bdbf8828c31ffa9d080b99b119ed4b715e34741ae67fd8530e24970a2428"
+    },
+    {
+      "name": "scorePanel",
+      "sha256": "0f868b2b932b6749e7e4fd10f3e7ab5257b28d9072ae7ee4baa80bcb9e4408ae"
+    },
+    {
+      "name": "legacyFullEvidence",
+      "sha256": "3e636fc000c33868b79fcfd5600365f89db684ed873b1d5f26be5c26adb6429d"
+    },
+    {
+      "name": "renderArchive",
+      "sha256": "a2370002817875adb730b238697d276a9f289d777b601cd26e34cbfa07ada982"
+    },
+    {
+      "name": "renderReport",
+      "sha256": "01766b683ef48a75b2be6f84f5f629ff70349c924fbc1162cf2b0778f657b289"
+    },
+    {
+      "name": "renderMethod",
+      "sha256": "74b8fca25df10103ac05a237f7d988b592d7ab6c2540970017c63d7dd877966d"
+    },
+    {
+      "name": "renderAbout",
+      "sha256": "81e315395f1ff1bf78f11f2282637057ccb99396e73ddfa23f0c4846495ba272"
+    },
+    {
+      "name": "renderSources",
+      "sha256": "17cbc4a3bd398a56d2cb858ead80035e089eba1ba75def04360d6154f7fd30eb"
+    },
+    {
+      "name": "renderBank",
+      "sha256": "be9e89ea4ee6fb379cde30f3a106e08b90a12e0b93c2c98de611db2eac3432f3"
+    },
+    {
+      "name": "renderNotFound",
+      "sha256": "9898ca507384e382e24a3ffb7aecf0db91189dbb3a7e85c6cc1ce3a2629a1cc2"
+    },
+    {
+      "name": "copyReportLink",
+      "sha256": "7f20ddfa2c44a8ab4632c825c5ae5a98546a1963b6831d289e8e282872b996ff"
+    },
+    {
+      "name": "wrappedText",
+      "sha256": "80287b8c8c5cdf8d2361f5754ddde36a7b46c718c7259ff68725b48e5824934d"
+    },
+    {
+      "name": "downloadCard",
+      "sha256": "7f5e2fd04cf965c06eb96418b481b1bdc10603c457476256ef1551dd1e24cd3b"
+    }
+  ],
+  "modifiedFunctions": [
+    "updateSaveStatus",
+    "page",
+    "prepareForm",
+    "renderFivePointQuiz",
+    "renderPersonal",
+    "renderUncertain",
+    "route",
+    "confirmReset"
+  ],
+  "removedFunctions": [
+    "qaBanner",
+    "qaMetadata",
+    "qaQuestionEvidence",
+    "appendQAResult",
+    "renderQA",
+    "startQA",
+    "clearQA",
+    "exitQA"
+  ],
+  "instrumentedAppSha256": "b6f4c812bb8fd98317b0a476d3c650ca6ae3c2dcdeafa1e5b8b6fb2639251a11",
+  "candidateAppSha256": "36b4906feca46561772fe3822400cd8e201ae425cecf3b3ce54b074fa91a1463",
+  "protectedHashes": {
+    "core.js": "63a7d4cbd124288bb6ddf108383c177912ebd620e5e75b8736fd38ba3c83a92f",
+    "full.js": "990b1a87eb2b74c152008fdc2df0598a9803d65daa917e7928fd94fbf8c2fae1",
+    "short.js": "430e877377f72fde8e6292337d716255ea96d2632d86c88203e57bccbca049ee",
+    "short-legacy.js": "8abb45c5ab1172e769b022c4370cee65cfad0603c5fff194a3eada3f86b32dda",
+    "sessions.js": "8dcccad874c39beaf2352b0df8ec4eaaa1aee1f8f5c0cce12bdebc9d9699c9cf",
+    "bank.js": "9c81b9dc114667237bd26396ee0739e32c82562ff35f943d97991deae97f5f02",
+    "data/mapping.js": "36c6ab99fcf355ce2f2efc49e5b6893191d0d27a79fc2d09b399ce209f0a1aed"
+  },
+  "cssOnlyQaRulesRemoved": true,
+  "liveFilesChanged": false,
+  "normalProjections": [
+    {
+      "name": "updateSaveStatus",
+      "sha256": "5cc8ba49374c4ce416452795e399c24689d3f1b8deb6a580f5fb4888488d877f",
+      "equal": true
+    },
+    {
+      "name": "page",
+      "sha256": "c42710091a40f1b3ea5883d1c4087381e9fe7ea35b538f54a20fd7582912a0eb",
+      "equal": true
+    },
+    {
+      "name": "prepareForm",
+      "sha256": "9d6efdf20f683d49acf65568327ded37947bfd4716e45079988552399c793c61",
+      "equal": true
+    },
+    {
+      "name": "renderFivePointQuiz",
+      "sha256": "aecd2eb6021cf0a16a86d2e80d7f92b44beecf7100e0e3c399ed97b0f542181a",
+      "equal": true
+    },
+    {
+      "name": "renderPersonal",
+      "sha256": "d949946e95785668b06928812bd399653b46aef07f23bbb6469408782ecee12e",
+      "equal": true
+    },
+    {
+      "name": "renderUncertain",
+      "sha256": "791f7933d3498f0ef3580f401e0fd5b621c887a71bd8c42f17862b7b60476377",
+      "equal": true
+    },
+    {
+      "name": "route",
+      "sha256": "250cfd0bab2c8b01c17823db1a164b0ae56096b22e262ff92127e86707a84dd4",
+      "equal": true
+    },
+    {
+      "name": "confirmReset",
+      "sha256": "27a39b8d3f5c3cb81a7853716066154d265e6dc325ffe1c3107aab1e33aebefa",
+      "equal": true
+    }
+  ],
+  "normalClickHandlerSha256": "0e0d58904e55dfae9f1c8938d90e1f06f00e5889f57ca7f1e5267d08c356b105",
+  "keyboardAndFinalBootstrapSha256": "405d6ce318dc597b2a530f12754c65ae9980508cc7533cc8e34acdfae449f965",
+  "normalCssSha256": "3e78fb6f09f70b3aa342e914913b1911d71b58b5e963bd58625730642e1e1e2d",
+  "sourceModesCssSha256": "0c8b143ab179020b7673ec065ca643025d3be16d233c950473445b3e959fa255"
+}
+```

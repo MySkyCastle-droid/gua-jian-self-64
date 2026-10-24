@@ -20,14 +20,16 @@
   let routeToken = 0;
   let baseStorage;
   try { baseStorage = window.localStorage; } catch (_) { baseStorage = null; }
-  const qaQuery = new URL(location.href).searchParams;
-  let qa = qaQuery.has('qa') || location.hash === '#qa' ? {
-    namespace: qaQuery.get('qa') || 'entry', runId: qaQuery.get('qaRun') || '',
-    caseId: qaQuery.get('qaCase') || '', mode: Number(qaQuery.get('qaMode')) || 10,
-    seed: qaQuery.get('qaSeed') || '0'
-  } : null;
-  if (qa && !/^[A-Za-z0-9_-]{1,64}$/.test(qa.namespace)) qa.namespace = 'entry';
-  let storage = qa ? Sessions.createNamespace(baseStorage, qa.namespace) : baseStorage;
+  function stripRetiredTestLink() {
+    const url = new URL(location.href);
+    const retiredKeys = ['qa','qaRun','qaCase','qaMode','qaSeed'];
+    if (!retiredKeys.some(key => url.searchParams.has(key)) && !/^#qa(?:[/?]|$)/.test(url.hash)) return;
+    retiredKeys.forEach(key => url.searchParams.delete(key));
+    url.hash = '#home';
+    history.replaceState(null, '', url.href);
+  }
+  stripRetiredTestLink();
+  const storage = baseStorage;
   const loaded = Sessions.load(storage);
   let envelope = loaded.envelope;
   let state = envelope.sessions[envelope.activeMode];
@@ -65,7 +67,7 @@
   }
   function updateSaveStatus() {
     const el = document.getElementById('save-status');
-    if (el) el.textContent = qa ? (storageAvailable ? 'QA 驗收進度已存於此場次的獨立本機空間' : storageMessage) : storageAvailable ? '進度僅儲存在此瀏覽器・可以隨時離開再回來' : storageMessage;
+    if (el) el.textContent = storageAvailable ? '進度僅儲存在此瀏覽器・可以隨時離開再回來' : storageMessage;
   }
   function toast(message) {
     const el = document.getElementById('toast'); clearTimeout(toastTimer);
@@ -108,70 +110,8 @@
   }
   function resetView() { currentReportId = null; currentReportMode = null; currentReportLegacy = false; }
   function page(content, title) {
-    resetView(); main.innerHTML = qaBanner() + content;
+    resetView(); main.innerHTML = content;
     document.title = `${title}｜卦見自己`;
-  }
-  function qaBanner() {
-    if (!qa) return '';
-    return `<aside class="qa-banner" aria-label="隔離驗收模式"><strong>QA 驗收模式</strong><span>Run ${esc(qa.runId || '尚未設定')} / Case ${esc(qa.caseId || '尚未設定')}・獨立本機空間 ${esc(qa.namespace)}</span><a href="#qa">設定新場次</a><button type="button" data-action="clearqa">清除此驗收場次</button><button type="button" data-action="exitqa">離開 QA，返回一般網站</button></aside>`;
-  }
-  function qaMetadata(item, index) {
-    return { id:item.id, questionId:item.id, text:item.text, axis:item.axis, direction:item.direction,
-      family:item.family, semanticCluster:item.semanticCluster, position:index + 1, index:index,
-      isClarification:item.isClarification === true, kind:item.isClarification ? 'clarification' : 'main', seed:sessionModel().seed };
-  }
-  function qaQuestionEvidence(item, index, selected, scored) {
-    if (!qa) return '';
-    const evidence = Object.assign({ runId:qa.runId, caseId:qa.caseId, mode:state.mode,
-      selectedAnswer:selected, answeredCount:scored.answered, mainAnswered:scored.mainAnswered,
-      clarificationAnswered:scored.clarificationAnswered }, qaMetadata(item,index));
-    return `<details class="qa-evidence" open><summary>QA 題目稽核資料（可見 JSON）</summary><pre id="qa-question-json">${esc(JSON.stringify(evidence,null,2))}</pre></details>`;
-  }
-  function appendQAResult(scored) {
-    if (!qa) return;
-    const items = sessionQuestions();
-    const evidence = { runId:qa.runId, caseId:qa.caseId, mode:state.mode, seed:sessionModel().seed,
-      score:scored, session:sessionModel(), questionIds:items.map(item => item.id),
-      items:items.map((item,index) => Object.assign(qaMetadata(item,index), { answer:questionAnswer(item,index) })) };
-    const section = document.createElement('section'); section.className = 'qa-evidence qa-result-evidence';
-    section.innerHTML = `<h2>QA 結果稽核資料（可見 JSON）</h2><p>本場次已保存於獨立本機空間，可重新整理核對。</p><pre id="qa-result-json">${esc(JSON.stringify(evidence,null,2))}</pre><button type="button" class="button button-quiet" data-action="clearqa">清除此驗收場次</button>`;
-    main.appendChild(section);
-  }
-  function renderQA() {
-    if (!qa) {
-      qa = { namespace:'entry', runId:'', caseId:'', mode:10, seed:'0' };
-      storage = Sessions.createNamespace(baseStorage,qa.namespace);
-      adopt(Sessions.load(storage));
-    }
-    const contextUrl = new URL(location.href);
-    if (!contextUrl.searchParams.has('qa')) { contextUrl.searchParams.set('qa',qa.namespace); history.replaceState(null,'',contextUrl.href); }
-    page(`<div class="narrow"><section class="page-heading"><span class="section-label">ISOLATED QA</span><h1>指定種子，從第一題開始。</h1><p>此入口使用獨立驗收空間，不讀取、匯入或清除一般作答紀錄。按開始後實際建立新版測驗；所有答案都由正常五點介面逐題選擇。</p></section><form id="qa-start-form" class="qa-form"><label for="qa-run-id">Run ID<input id="qa-run-id" name="runId" type="text" required pattern="(?:[A-Za-z0-9_]|-){1,28}" maxlength="28" value="${esc(qa.runId)}" placeholder="例如 matrix20261025"></label><label for="qa-case-id">Case ID<input id="qa-case-id" name="caseId" type="text" required pattern="(?:[A-Za-z0-9_]|-){1,28}" maxlength="28" value="${esc(qa.caseId)}" placeholder="例如 neutral48"></label><label for="qa-mode">版本<select id="qa-mode" name="mode">${[10,20,48].map(mode => `<option value="${mode}" ${qa.mode === mode ? 'selected' : ''}>${modeLabel(mode)}</option>`).join('')}</select></label><label for="qa-seed">抽題種子<input id="qa-seed" name="seed" type="number" required min="0" max="4294967295" step="1" value="${esc(qa.seed)}"></label><p class="qa-form-note">Run ID 與 Case ID 使用 1–28 個英數字、底線或連字號；種子為 0–4294967295 的整數。同一 Run / Case 再開始會建立新的本次測驗。網址會保存驗收空間，重新整理可續答。</p><p id="qa-error" class="answer-error" role="alert" hidden></p><button type="button" class="button button-primary" data-action="startqa">開始這個驗收場次 →</button></form>${resumeList()}</div>`, '隔離 QA 驗收入口');
-  }
-  function startQA() {
-    const form = document.getElementById('qa-start-form');
-    if (!form || !form.reportValidity()) return;
-    const runId = form.elements.runId.value.trim(), caseId = form.elements.caseId.value.trim();
-    const mode = Number(form.elements.mode.value), seedText = form.elements.seed.value;
-    const seed = Number(seedText);
-    if (!/^[A-Za-z0-9_-]{1,28}$/.test(runId) || !/^[A-Za-z0-9_-]{1,28}$/.test(caseId) || !/^\d+$/.test(seedText) || !Number.isInteger(seed) || seed < 0 || seed > 4294967295 || ![10,20,48].includes(mode)) {
-      const error = document.getElementById('qa-error'); error.hidden = false; error.textContent = '請填寫有效的 Run ID、Case ID、版本與 32 位元無號整數種子。'; return;
-    }
-    qa = { namespace:runId + '--' + caseId, runId:runId, caseId:caseId, mode:mode, seed:String(seed) };
-    const url = new URL(location.href);
-    Object.entries({qa:qa.namespace,qaRun:runId,qaCase:caseId,qaMode:mode,qaSeed:seed}).forEach(([key,value]) => url.searchParams.set(key,String(value)));
-    url.hash = '#qa'; history.replaceState(null,'',url.href);
-    storage = Sessions.createNamespace(baseStorage,qa.namespace); adopt(Sessions.load(storage));
-    useMode(mode); prepareForm(seed); navigate(quizRoute());
-  }
-  function clearQA() {
-    if (!qa) return;
-    adopt(Sessions.clear(storage,envelope)); navigate('#qa');
-    toast('此驗收場次的本機作答紀錄已清除。');
-  }
-  function exitQA() {
-    const url = new URL(location.href);
-    ['qa','qaRun','qaCase','qaMode','qaSeed'].forEach(key => url.searchParams.delete(key));
-    url.hash = '#home'; location.assign(url.href);
   }
   function renderHome() {
     page(`<div class="container"><section class="hero"><div class="hero-copy"><span class="eyebrow">THE BOOK OF CHANGES, A MIRROR OF YOU</span><h1>在變化裡，<br>看見自己的<em>模樣。</em></h1><p class="hero-description">以人格偏好為引，以六十四卦為鏡。<br>從一道道生活小問題出發，認識你的行動節奏、<br>內在感受，以及與世界相處的方式。</p><div class="hero-actions"><a class="button button-primary" href="#explore">開始我的探索 <span aria-hidden="true">↗</span></a><a class="text-link" href="#atlas">先翻翻六十四卦 <span aria-hidden="true">→</span></a></div><p class="hero-meta"><span>10／20 題，依你的步調選擇</span><i class="tiny-dot"></i><span>6 個探索向度</span><i class="tiny-dot"></i><span>答案只留本機</span></p>${resumeList('home-resumes')}</div><div class="hero-art">${compass()}<span class="art-margin-note">觀乎人文，以化成天下。</span><span class="art-caption">六十四種意象・六十四面鏡子</span></div></section><div class="hero-foot"><p>一卦一面，皆是自己。</p><span class="foot-symbol" aria-hidden="true">䷊</span><p class="foot-right">古老的智慧，當代的提問。<br>把每一種傾向，讀成理解自己的起點。</p></div><section class="section-space"><div class="section-head"><div><span class="section-label">一場向內的旅程</span><h2>熟悉的人格，多一層看見。</h2></div><p>保留四種人格偏好的熟悉感，加入情緒與協調方式，再從卦義找到新的觀察角度。</p></div><div class="journey-grid"><article class="journey-item"><span class="journey-number">01</span><h3>覺察你的偏好</h3><p>精神如何恢復、資訊如何接收、決定如何形成、生活如何安排。從日常選擇，慢慢看見傾向。</p><span class="math">四組偏好 → 16 種組合</span></article><article class="journey-item"><span class="journey-number">02</span><h3>聽見內在的回應</h3><p>變化帶來的感受是平緩或鮮明？形成方案前，你較喜歡獨立整理或共同討論？兩端都有自己的力量。</p><span class="math">沉著／敏銳 × 自主／協作</span></article><article class="journey-item"><span class="journey-number">03</span><h3>遇見一面卦象之鏡</h3><p>每一型依卦義原創配對，細讀文化背景、優勢與成長課題。透過具體建議，帶一點新理解回到生活。</p><span class="math">16 × 2 × 2 = 64 型原型</span></article></div></section><section class="section-space featured-section"><div class="section-head"><div><span class="section-label">先遇見一種可能</span><h2>每一卦，都有自己的風景。</h2></div><a class="text-link" href="#atlas">走進六十四卦圖鑑 <span aria-hidden="true">↗</span></a></div><div class="card-grid">${[1, 61, 15, 64].map(card).join('')}</div></section><section class="closing-banner"><div><h2>答案，在你的生活裡。</h2><p>給自己一段安靜的時間。從最近三個月的真實感受開始。</p></div><a class="button" href="#explore">展開這次探索 <span aria-hidden="true">↗</span></a></section></div>`, '在變化裡，看見自己的模樣');
@@ -215,11 +155,10 @@
     page(`<div class="container page-heading centered"><span class="section-label">SENIOR EXPLORATION</span><h1>多一點層次，細讀你的模樣。</h1><p>48 題資深探索，以五個程度保留生活裡的細微差異。<br>給自己一段安靜的時間，從六個向度慢慢看見傾向。</p></div><section class="intro-box senior-intro"><span class="mode-badge">48 題・資深探索</span><div class="notice trial-notice"><strong>目前免費試用</strong><br>未來可能收費，目前可直接完成全部探索與解讀。</div><ul class="intro-list"><li><span class="intro-icon">一</span><span><strong>48 道生活情境題・五點回答</strong><br>六個向度各 8 題，平衡正反向題。主題原分為 0 的向度各加一道題庫五點釐清，合計 48–54 題；仍為 0 就保留未定。</span></li><li><span class="intro-icon">二</span><span><strong>保留原題，隨時回來</strong><br>新版進度獨立保存在此瀏覽器。舊版已完成結果保留唯讀；未完成的主題可保留原題與答案接續五點探索，舊版釐清不混入新版分數。</span></li><li><span class="intro-icon">三</span><span><strong>完整的原型文章與插畫</strong><br>閱讀你的 64 型原型、卦象故事，以及可以帶回生活的小練習。</span></li></ul>${progress.saved.started ? `<div class="resume-banner"><span>${progress.text}</span><a href="#${progress.saved.phase === 'done' ? 'result' : 'quiz'}/48" class="text-link">${progress.saved.phase === 'done' ? '查看結果' : '繼續探索'} →</a></div>` : ''}${storageMessage ? `<div class="notice${storageAvailable ? '' : ' warning'}">${esc(storageMessage)}</div>` : ''}<div class="intro-actions"><button class="button button-primary" data-action="start-mode" data-mode="48">${progress.saved.phase === 'done' ? '查看我的結果' : progress.saved.started ? '繼續我的資深探索' : '開始 48 題資深探索'} ↗</button>${progress.saved.started ? '<button class="button button-quiet" data-action="restart" data-mode="48">重新抽題探索</button>' : ''}</div><p class="senior-link"><a href="#explore">回到 10／20 題一般探索 →</a></p>${modeComparison()}${introDisclaimer()}${resumeList()}</section>`, '48 題資深探索');
   }
   function renderIntro() { return state.mode === 48 ? renderSenior() : renderExplore(); }
-  function prepareForm(explicitSeed) {
+  function prepareForm() {
     if (!window.GuaBank || !D.bank || D.bank.count < 5000) throw new Error('題庫尚未完整載入，請重新整理後再試。');
     const seed = new Uint32Array(1);
-    if (explicitSeed !== undefined) seed[0] = explicitSeed;
-    else if (window.crypto && window.crypto.getRandomValues) window.crypto.getRandomValues(seed);
+    if (window.crypto && window.crypto.getRandomValues) window.crypto.getRandomValues(seed);
     else seed[0] = Date.now() ^ Math.floor(Math.random() * 0xffffffff);
     const mode = state.mode;
     state = Sessions.blank(mode);
@@ -258,7 +197,7 @@
     const choices = [{ value:-2, text:'非常不像我' }, { value:-1, text:'比較不像我' }, { value:0, text:'介於兩者' }, { value:1, text:'比較像我' }, { value:2, text:'非常像我' }];
     const nextText = scored.finished && position === items.length - 1 ? '查看這次結果 ↗' : position === state.mode - 1 && scored.mainAnswered < state.mode ? '完成主題 →' : '下一題 →';
     const chapters = state.mode === 48 ? `<div class="chapter-steps">${['日常裡的你','學習與做事','變化與選擇','關係與未來'].map((title,index) => `<span class="chapter-step ${!clarification && item.chapter === index + 1 ? 'active' : ''}"><span class="step-num">0${index + 1}</span>${title}</span>`).join('')}</div>` : '';
-    page(`<section class="quiz-shell short-quiz"><div class="quiz-top"><a href="${state.mode === 48 ? '#senior' : '#explore'}">← 暫停，回到探索入口</a><span class="mode-badge">${modeLabel(state.mode)}・五點回答</span><span class="question-counter">${counter}</span></div><div class="progress-track" role="progressbar" aria-label="${scored.mainAnswered === state.mode ? '本次主題與釐清總作答進度' : '主題作答進度，必要時另加釐清'}" aria-valuemin="0" aria-valuemax="${scored.total}" aria-valuenow="${count}"><span style="width:${count / scored.total * 100}%"></span></div><p class="short-progress" aria-live="polite">${progressText}${selected !== null ? '・正在回看已答題目' : ''}</p>${chapters}<div class="quiz-paper"><p class="quiz-hint">回想最近三個月，選擇最接近你的程度。</p>${clarification ? '<p class="branch-notice">這個向度的主題原分為 0，再用一道五點題觀察。每個向度最多釐清一次；若仍為 0，結果會保留未定。</p>' : ''}${revisingEarlier ? '<p class="branch-notice" id="branch-notice">修改本題會重新安排後續問題；只回看或維持原答案，會保留目前進度。</p>' : state.mode === 48 && selected !== null ? '<p class="branch-notice">主題固定不變。修改主題答案會重新確認需釐清的向度，原釐清答案會清除；只回看或維持原答案則保留進度。</p>' : ''}<fieldset class="short-options" ${revisingEarlier ? 'aria-describedby="branch-notice"' : ''}><legend tabindex="-1">${esc(item.text)}</legend><div class="short-choice-grid">${choices.map((choice,i) => `<label class="short-option"><input id="short-answer-${i + 1}" type="radio" name="short-answer" value="${choice.value}" ${selected === choice.value ? 'checked' : ''}><span><span class="option-key" aria-hidden="true">${i + 1}</span><span>${choice.text}</span></span></label>`).join('')}</div></fieldset><p id="answer-error" class="answer-error" role="alert" hidden>請先選擇一個答案，再繼續。</p>${responseHint()}</div><div class="quiz-navigation"><button class="button button-quiet" id="previous-question" ${position === 0 ? 'disabled' : ''}>← 上一題</button><span class="quiz-shortcut">1–5 選擇・Enter 下一題</span><button class="button button-primary" id="next-question">${nextText}</button></div><p class="quiz-status" id="save-status"></p><p class="quiz-help-link">這是偏好的探索，每一端都有它的價值。<br>0 分「介於兩者」是有效答案；尚未回答的題目保留空白。</p>${qaQuestionEvidence(item, position, selected, scored)}</section>`, `${state.mode} 題探索・${clarification ? '釐清' : '主題'}第 ${clarification ? position - state.mode + 1 : position + 1} 題`);
+    page(`<section class="quiz-shell short-quiz"><div class="quiz-top"><a href="${state.mode === 48 ? '#senior' : '#explore'}">← 暫停，回到探索入口</a><span class="mode-badge">${modeLabel(state.mode)}・五點回答</span><span class="question-counter">${counter}</span></div><div class="progress-track" role="progressbar" aria-label="${scored.mainAnswered === state.mode ? '本次主題與釐清總作答進度' : '主題作答進度，必要時另加釐清'}" aria-valuemin="0" aria-valuemax="${scored.total}" aria-valuenow="${count}"><span style="width:${count / scored.total * 100}%"></span></div><p class="short-progress" aria-live="polite">${progressText}${selected !== null ? '・正在回看已答題目' : ''}</p>${chapters}<div class="quiz-paper"><p class="quiz-hint">回想最近三個月，選擇最接近你的程度。</p>${clarification ? '<p class="branch-notice">這個向度的主題原分為 0，再用一道五點題觀察。每個向度最多釐清一次；若仍為 0，結果會保留未定。</p>' : ''}${revisingEarlier ? '<p class="branch-notice" id="branch-notice">修改本題會重新安排後續問題；只回看或維持原答案，會保留目前進度。</p>' : state.mode === 48 && selected !== null ? '<p class="branch-notice">主題固定不變。修改主題答案會重新確認需釐清的向度，原釐清答案會清除；只回看或維持原答案則保留進度。</p>' : ''}<fieldset class="short-options" ${revisingEarlier ? 'aria-describedby="branch-notice"' : ''}><legend tabindex="-1">${esc(item.text)}</legend><div class="short-choice-grid">${choices.map((choice,i) => `<label class="short-option"><input id="short-answer-${i + 1}" type="radio" name="short-answer" value="${choice.value}" ${selected === choice.value ? 'checked' : ''}><span><span class="option-key" aria-hidden="true">${i + 1}</span><span>${choice.text}</span></span></label>`).join('')}</div></fieldset><p id="answer-error" class="answer-error" role="alert" hidden>請先選擇一個答案，再繼續。</p>${responseHint()}</div><div class="quiz-navigation"><button class="button button-quiet" id="previous-question" ${position === 0 ? 'disabled' : ''}>← 上一題</button><span class="quiz-shortcut">1–5 選擇・Enter 下一題</span><button class="button button-primary" id="next-question">${nextText}</button></div><p class="quiz-status" id="save-status"></p><p class="quiz-help-link">這是偏好的探索，每一端都有它的價值。<br>0 分「介於兩者」是有效答案；尚未回答的題目保留空白。</p></section>`, `${state.mode} 題探索・${clarification ? '釐清' : '主題'}第 ${clarification ? position - state.mode + 1 : position + 1} 題`);
     document.querySelectorAll('input[name="short-answer"]').forEach(input => input.addEventListener('change', () => {
       if (state.mode === 48) state.full = Full.answer(state.full, item.id, Number(input.value));
       else state.short = Short.answer(state.short, state.questionIndex, Number(input.value));
@@ -324,13 +263,11 @@
     if (!state.started || !finished) { page(`<div class="error-state"><span class="eyebrow">${modeLabel(state.mode)}・探索還在途中</span><h1>完成作答，展開這次觀察。</h1><p>這個連結不含作答資料，請在原本的瀏覽器續答。</p><a class="button button-primary" href="${state.started ? quizRoute() : state.mode === 48 ? '#senior' : '#explore'}">${state.started ? '回到這次探索' : '前往探索入口'} →</a></div>`, '探索還在途中'); return; }
     if (!scored.complete) return renderUncertain(scored);
     renderReport(scored.hexagramId, scored);
-    appendQAResult(scored);
   }
   function renderUncertain(scored) {
     const ids = scored.candidateHexagramIds.slice().sort((a, b) => a - b);
     const unresolved = D.axes.filter(axis => scored.unresolvedTies.includes(axis.id)).map(axis => esc(axis.label)).join('、');
     page(`<article class="report-shell uncertain-report"><div class="report-breadcrumb"><a href="#home">← 回到首頁</a><span>這次探索已完成・保留未定</span></div><header class="uncertain-heading"><span class="mode-badge">${modeLabel(scored.mode)}・五點回答</span><h1>${scored.allNeutral ? '此刻，讓答案保留開放。' : '有些傾向，還可以慢慢觀察。'}</h1><p>${scored.allNeutral ? '你在主題與釐清題都選擇「介於兩者」。六個向度目前均為未定，這次回答沒有支持特定人格分類。' : `${unresolved}的最終分仍為 0，因此保留未定。本次作答已完成；已知傾向與未定向度一起保留在下方。`}</p><p>主題 ${scored.mainAnswered}／${scored.mode} 題・釐清 ${scored.clarificationAnswered}／${scored.clarificationTotal} 題・共 ${scored.answered} 題。每個向度最多釐清一次。</p></header><div class="report-actions"><button class="button button-quiet" data-action="review-answers" data-mode="${scored.mode}">回看我的答案</button><button class="button button-quiet" data-action="restart" data-mode="${scored.mode}">重新抽題探索</button><a class="button button-quiet" href="#senior">前往 48 題資深探索 →</a></div>${responseHint()}${scorePanel(scored)}<section class="candidate-section"><div class="section-head"><div><span class="section-label">保留多種閱讀可能</span><h2>${scored.allNeutral ? '六十四面鏡子，任你翻閱。' : '與已知傾向相容的原型'}</h2></div><p>共 ${ids.length} 種，依文王卦序排列，沒有名次或機率。點選後閱讀文化圖鑑。</p></div><div class="card-grid candidate-grid">${ids.map(card).join('')}</div></section></article>`, '這次探索・保留未定');
-    appendQAResult(scored);
   }
   function legacyFullEvidence(archived) {
     const previousQuestions = D.questions;
@@ -400,10 +337,10 @@
   }
   function renderNotFound() { page('<div class="error-state"><span class="eyebrow">這一頁還沒有展開</span><h1>回到圖鑑，遇見另一面鏡子。</h1><p>這個連結沒有對應的原型。</p><a class="button button-primary" href="#atlas">走進原型圖鑑 →</a></div>', '找不到這一頁'); }
   function route() {
+    stripRetiredTestLink();
     routeToken++; const token = routeToken; const hash = location.hash || '#home';
     try {
-      if (hash === '#qa') renderQA();
-      else if (hash === '#home' || hash === '#') renderHome();
+      if (hash === '#home' || hash === '#') renderHome();
       else if (hash === '#explore') renderExplore();
       else if (hash === '#senior') renderSenior();
       else if (hash === '#quiz' || hash === '#result') {
@@ -430,8 +367,8 @@
   async function confirmReset(restart, all = false, mode = state.mode) {
     const dlg = document.getElementById('confirm-dialog');
     if (dlg.open) return;
-    document.getElementById('confirm-title').textContent = qa ? (restart ? `重新開始 ${mode} 題 QA 驗收？` : '清除這個 QA 空間的紀錄？') : all ? '清除所有版本的本機紀錄？' : restart ? `重新開始 ${mode} 題探索？` : `清除 ${mode} 題探索？`;
-    document.getElementById('confirm-description').textContent = qa ? `此操作只會清除 QA 空間 ${qa.namespace} 中的${all ? '全部驗收紀錄' : mode + ' 題驗收紀錄'}，並${restart ? '重新抽題' : '保留空白進度'}。` : all ? '這會移除此瀏覽器所有新版 10、20、48 題的題目、答案與進度，以及舊版封存和所有舊版備份。清除後無法復原。' : `這會移除 ${modeLabel(mode)} 的答案與進度${restart ? '，並重新抽題' : ''}。其他版本的進度與舊版封存會保留。`;
+    document.getElementById('confirm-title').textContent = all ? '清除所有版本的本機紀錄？' : restart ? `重新開始 ${mode} 題探索？` : `清除 ${mode} 題探索？`;
+    document.getElementById('confirm-description').textContent = all ? '這會移除此瀏覽器所有新版 10、20、48 題的題目、答案與進度，以及舊版封存和所有舊版備份。清除後無法復原。' : `這會移除 ${modeLabel(mode)} 的答案與進度${restart ? '，並重新抽題' : ''}。其他版本的進度與舊版封存會保留。`;
     dlg.querySelector('button[value="confirm"]').textContent = all ? '清除全部紀錄' : restart ? '重新開始' : '清除這版紀錄';
     dlg.returnValue = '';
     const agreed = await new Promise(resolve => { dlg.addEventListener('close', () => resolve(dlg.returnValue === 'confirm'), { once: true }); dlg.showModal(); });
@@ -441,7 +378,7 @@
     if (restart) {
       try { prepareForm(); navigate(quizRoute()); } catch (error) { toast(error.message); }
     } else {
-      navigate(qa ? '#qa' : '#home'); toast(qa ? '此 QA 空間的驗收紀錄已清除。' : storageAvailable ? (all ? '此瀏覽器所有新版作答紀錄、舊版封存與舊版備份已清除。' : `${mode} 題探索的本機紀錄已清除。`) : storageMessage);
+      navigate('#home'); toast(storageAvailable ? (all ? '此瀏覽器所有新版作答紀錄、舊版封存與舊版備份已清除。' : `${mode} 題探索的本機紀錄已清除。`) : storageMessage);
     }
   }
   async function copyReportLink() {
@@ -503,10 +440,7 @@
     const button = event.target.closest('[data-action]'); if (!button) return;
     const action = button.dataset.action;
     const mode = [10,20,48].includes(Number(button.dataset.mode)) ? Number(button.dataset.mode) : state.mode;
-    if (action === 'startqa') { try { startQA(); } catch (error) { toast(error.message); } }
-    else if (action === 'clearqa') clearQA();
-    else if (action === 'exitqa') exitQA();
-    else if (action === 'start-mode' || action === 'begin' || action === 'resume') { try { startMode(mode); } catch (error) { toast(error.message); } }
+    if (action === 'start-mode' || action === 'begin' || action === 'resume') { try { startMode(mode); } catch (error) { toast(error.message); } }
     else if (action === 'restart') confirmReset(true, false, mode);
     else if (action === 'clear-mode') confirmReset(false, false, mode);
     else if (action === 'clear-data') confirmReset(false, true);
