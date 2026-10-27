@@ -41,6 +41,7 @@ test('all 64 reports have unique identities and match the questionnaire classifi
   assert.equal(new Set(reports.map(report => report.id)).size, 64, 'Report ids are unique');
   assert.equal(new Set(reports.map(report => report.typeKey)).size, 64, 'Type keys are unique');
   assert.equal(new Set(reports.map(report => report.title)).size, 64, 'Original report titles are unique');
+  assert.equal(new Set(reports.map(report => report.subtitle)).size, 64, 'Plain-language subtitles are unique');
   assert.deepEqual(reports.map(report => report.id).sort((a, b) => a - b), Array.from({ length: 64 }, (_, i) => i + 1));
   for (const report of reports) {
     assert.equal(Number.isInteger(report.id), true, 'Report id must be a King Wen number');
@@ -59,7 +60,7 @@ test('all 64 reports have unique identities and match the questionnaire classifi
 test('every report contains the promised cultural interpretation and actionable advice', t => {
   const overTarget = [];
   for (const report of Object.values(data.reports)) {
-    for (const field of ['title', 'summary', 'quote', 'plainMeaning', 'pairing', 'strength', 'blindspot', 'reflection', 'source', 'typeKey']) {
+    for (const field of ['title', 'subtitle', 'summary', 'quote', 'plainMeaning', 'pairing', 'strength', 'blindspot', 'reflection', 'source', 'typeKey']) {
       assert.ok(nonempty(report[field]), 'Report ' + report.id + ' is missing ' + field);
     }
     assert.ok(Array.isArray(report.advice), 'Report ' + report.id + ' advice must be an array');
