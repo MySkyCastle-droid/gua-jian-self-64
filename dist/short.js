@@ -6,6 +6,7 @@
     throw new Error('GuaShort requires question data, mapping data, and bank.js.');
   }
   var VERSION = '2.0.0';
+  var DIRECT_VERSION = '2.1.0';
   var fields = ['mode', 'seed', 'version', 'bankVersion', 'questionIds', 'answers'];
   var axisIds = D.axes.map(function (axis) { return axis.id; });
   var seedById = {};
@@ -16,6 +17,19 @@
   function validateOptions(mode, seed) {
     assert(mode === 10 || mode === 20, '短版測驗必須為 10 題或 20 題。');
     assert(Number.isInteger(seed) && seed >= 0 && seed <= 4294967295, '短版測驗種子必須為 32 位元無號整數。');
+  }
+  function directOpening(item) {
+    var copy = global.GuaQuestionCopy;
+    assert(copy && typeof copy.has === 'function' && typeof copy.render === 'function', '新版題目文字尚未完整載入，請重新整理。');
+    assert(copy.has(item.seedId), '新版題目缺少對應文字，請重新整理。');
+    var rendered = copy.render(item);
+    assert(rendered && typeof rendered.text === 'string' && rendered.text.trim() && typeof rendered.openingKey === 'string' && rendered.openingKey.trim(), '新版題目缺少可核對的句型。');
+    return rendered.openingKey;
+  }
+  function requireDirectData() {
+    var copy = global.GuaQuestionCopy;
+    assert(copy && typeof copy.has === 'function' && typeof copy.render === 'function', '新版題目文字尚未完整載入，請重新整理。');
+    assert(D.bank.seeds.every(function (item) { return copy.has(item.id); }), '新版題目文字尚未完整載入，請重新整理。');
   }
   // Domain-separated deterministic streams keep axis order, polarity, and item
   // selection independent. The raw answer prefix is part of each item stream.
@@ -73,13 +87,14 @@
     // seeded direction without adding any score or choosing an endpoint.
     return { axis: axis, direction: index === start ? -sign : sign };
   }
-  function chooseItem(mode, seed, answers, items, slot) {
+  function chooseItem(mode, seed, answers, items, slot, direct) {
     var bucket = D.bank.buckets.find(function (candidate) { return candidate.axis === slot.axis && candidate.direction === slot.direction; });
     assert(bucket, '題庫缺少所需的向度與方向。');
     var usedIds = new Set(items.map(function (item) { return item.id; }));
     var usedFamilies = new Set(items.map(function (item) { return item.family; }));
     var usedClusters = new Set(items.map(function (item) { return item.semanticCluster; }));
-    var random = randomFor(seed, mode, 'item/' + answers.join(',') + '/' + slot.axis + '/' + slot.direction);
+    var usedOpenings = direct ? new Set(items.map(directOpening)) : null;
+    var random = randomFor(seed, mode, 'item/' + answers.join(',') + '/' + slot.axis + '/' + slot.direction + (direct ? '/direct-v1' : ''));
     var candidates = shuffle(bucket.seedIds.map(function (_, index) { return index; }), random);
     for (var i = 0; i < candidates.length; i++) {
       var seedIndex = candidates[i];
@@ -90,16 +105,18 @@
       var contextIndex = Math.floor(random() * contextCount);
       var offset = bucket.start - 1 + contextIndex * bucket.seedIds.length + seedIndex;
       var item = Bank.query({ offset: offset, limit: 1 }).items[0];
+      if (direct && item && usedOpenings.has(directOpening(item))) continue;
       if (item && !usedIds.has(item.id)) return item;
     }
     throw new Error('題庫沒有可用且語意不重複的短版題目。');
   }
-  function replay(mode, seed, answers) {
+  function replay(mode, seed, answers, direct) {
+    if (direct) requireDirectData();
     var plan = planFor(mode, seed);
     var items = [];
     var prefix = [];
     for (var index = 0; index < Math.min(answers.length + 1, mode); index++) {
-      items.push(chooseItem(mode, seed, prefix, items, nextSlot(index, items, prefix, plan, mode, seed)));
+      items.push(chooseItem(mode, seed, prefix, items, nextSlot(index, items, prefix, plan, mode, seed), direct));
       if (index < answers.length) prefix.push(answers[index]);
     }
     if (answers.length >= mode) {
@@ -109,18 +126,20 @@
       for (var tieIndex = 0; tieIndex < tiedAxes.length && mode + tieIndex <= answers.length; tieIndex++) {
         var axis = tiedAxes[tieIndex];
         var direction = randomFor(seed, mode, 'clarification-direction/' + axis)() < 0.5 ? -1 : 1;
-        items.push(chooseItem(mode, seed, prefix, items, { axis: axis, direction: direction }));
+        items.push(chooseItem(mode, seed, prefix, items, { axis: axis, direction: direction }, direct));
         if (mode + tieIndex < answers.length) prefix.push(answers[mode + tieIndex]);
       }
     }
     return {
-      mode: mode, seed: seed, version: VERSION, bankVersion: D.bank.version,
+      mode: mode, seed: seed, version: direct ? DIRECT_VERSION : VERSION, bankVersion: D.bank.version,
       questionIds: items.map(function (item) { return item.id; }), answers: answers.slice()
     };
   }
-  function create(mode, seed) {
+  function create(mode, seed, options) {
     validateOptions(mode, seed);
-    return replay(mode, seed, []);
+    var direct = options !== undefined;
+    if (direct) assert(options && typeof options === 'object' && !Array.isArray(options) && Object.keys(options).length === 1 && options.wording === 'direct-v1', '問卷文字設定無效。');
+    return replay(mode, seed, [], direct);
   }
   function denseArray(value) {
     if (!Array.isArray(value) || Object.keys(value).length !== value.length) return false;
@@ -131,11 +150,11 @@
     assert(saved && typeof saved === 'object' && !Array.isArray(saved), '短版續答資料格式無效。');
     assert(Object.keys(saved).length === fields.length && fields.every(function (field) { return Object.prototype.hasOwnProperty.call(saved, field); }), '短版續答欄位無效。');
     validateOptions(saved.mode, saved.seed);
-    assert(saved.version === VERSION && saved.bankVersion === D.bank.version, '短版續答版本不相容。');
+    assert((saved.version === VERSION || saved.version === DIRECT_VERSION) && saved.bankVersion === D.bank.version, '短版續答版本不相容。');
     assert(denseArray(saved.answers) && saved.answers.length <= saved.mode + axisIds.length, '短版答案必須連續且不得超過題數上限。');
     assert(saved.answers.every(isAnswer), '短版答案必須為 -2 至 2 的整數。');
     assert(denseArray(saved.questionIds), '短版題目必須為連續陣列。');
-    var canonical = replay(saved.mode, saved.seed, saved.answers);
+    var canonical = replay(saved.mode, saved.seed, saved.answers, saved.version === DIRECT_VERSION);
     assert(saved.questionIds.length === canonical.questionIds.length && saved.questionIds.every(function (id, index) { return id === canonical.questionIds[index]; }), '短版題目路徑與種子、答案不符，或未保留唯一的下一題。');
     return canonical;
   }
@@ -157,7 +176,7 @@
     if (index < canonical.answers.length && canonical.answers[index] === value) return canonical;
     var answers = canonical.answers.slice(0, index);
     answers.push(value);
-    return replay(canonical.mode, canonical.seed, answers);
+    return replay(canonical.mode, canonical.seed, answers, canonical.version === DIRECT_VERSION);
   }
   function score(session) {
     var canonical = restore(session);

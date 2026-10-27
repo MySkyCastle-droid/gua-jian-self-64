@@ -116,7 +116,17 @@
     }
     return form;
   }
-  function createForm(seedNumber) {
+  function directOpening(item) {
+    var copy = global.GuaQuestionCopy;
+    assert(copy && typeof copy.has === 'function' && typeof copy.render === 'function', '新版題目文字尚未完整載入，請重新整理。');
+    assert(copy.has(item.seedId), '新版題目缺少對應文字，請重新整理。');
+    var rendered = copy.render(item);
+    assert(rendered && typeof rendered.text === 'string' && rendered.text.trim() && typeof rendered.openingKey === 'string' && rendered.openingKey.trim(), '新版題目缺少可核對的句型。');
+    return rendered.openingKey;
+  }
+  function createForm(seedNumber, options) {
+    var direct = options !== undefined;
+    if (direct) assert(options && typeof options === 'object' && !Array.isArray(options) && Object.keys(options).length === 1 && options.wording === 'direct-v1', '問卷文字設定無效。');
     var random = randomSource(seedNumber);
     var picks = {};
     var slots = [];
@@ -145,7 +155,41 @@
       }
       return false;
     }
-    slots.forEach(function (_, index) { assert(assignSlot(index, new Set()), '題庫的近義群組不足以組成平衡的 48 題。'); });
+    if (direct) {
+      // A direct form matches both real sentence openings and semantic meaning.
+      // The legacy matcher above remains byte-for-byte the default path.
+      var openingBySeed = {};
+      B.buckets.forEach(function (bucket) {
+        bucket.seedIds.forEach(function (id, index) { openingBySeed[id] = directOpening(makeItem(bucket, index)); });
+        assert(new Set(bucket.seedIds.map(function (id) { return openingBySeed[id]; })).size >= 4, '新版題目句型不足以維持每個面向的平衡。');
+      });
+      assert(new Set(Object.keys(openingBySeed).map(function (id) { return openingBySeed[id]; })).size >= 48, '新版題目的不同句型不足 48 題。');
+      var usedOpenings = new Set();
+      var usedMeanings = new Set();
+      var attempts = 0;
+      function assignDirect(slotIndex) {
+        if (slotIndex === slots.length) return true;
+        var slot = slots[slotIndex];
+        for (var candidate = 0; candidate < slot.candidates.length; candidate++) {
+          attempts++;
+          assert(attempts <= 200000, '新版題目的句型與語意限制無法組成平衡問卷。');
+          var seedIndex = slot.candidates[candidate];
+          var id = slot.bucket.seedIds[seedIndex];
+          var seed = bySeed[id];
+          var cluster = seed.semanticCluster || seed.family;
+          var opening = openingBySeed[id];
+          if (usedOpenings.has(opening) || usedMeanings.has(cluster)) continue;
+          usedOpenings.add(opening); usedMeanings.add(cluster);
+          chosenSeedIndices[slotIndex] = seedIndex;
+          if (assignDirect(slotIndex + 1)) return true;
+          usedOpenings.delete(opening); usedMeanings.delete(cluster);
+        }
+        return false;
+      }
+      assert(assignDirect(0), '新版題目的句型與語意不足以組成平衡問卷。');
+    } else {
+      slots.forEach(function (_, index) { assert(assignSlot(index, new Set()), '題庫的近義群組不足以組成平衡的 48 題。'); });
+    }
     slots.forEach(function (slot, index) {
       var seedIndex = chosenSeedIndices[index];
       var availableContexts = Math.floor((slot.bucket.count - 1 - seedIndex) / 24) + 1;
@@ -159,7 +203,9 @@
       axisOrder.forEach(function (axisId, index) { ids.push(picks[axisId + '/' + firstDirections[index]][chapterIndex].id); });
       axisOrder.forEach(function (axisId, index) { ids.push(picks[axisId + '/' + (-firstDirections[index])][chapterIndex].id); });
     }
-    return restoreForm(ids);
+    var form = restoreForm(ids);
+    if (direct) assert(new Set(form.map(directOpening)).size === form.length, '新版問卷不能重複相同句型。');
+    return form;
   }
   function activate(form) {
     assert(Array.isArray(form), '缺少要使用的問卷。');

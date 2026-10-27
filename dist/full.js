@@ -14,6 +14,14 @@
   var own = function (object, key) { return Object.prototype.hasOwnProperty.call(object, key); };
 
   function assert(condition, message) { if (!condition) throw new Error(message); }
+  function directOpening(item) {
+    var copy = global.GuaQuestionCopy;
+    assert(copy && typeof copy.has === 'function' && typeof copy.render === 'function', '新版題目文字尚未完整載入，請重新整理。');
+    assert(copy.has(item.seedId), '新版題目缺少對應文字，請重新整理。');
+    var rendered = copy.render(item);
+    assert(rendered && typeof rendered.text === 'string' && rendered.text.trim() && typeof rendered.openingKey === 'string' && rendered.openingKey.trim(), '新版題目缺少可核對的句型。');
+    return rendered.openingKey;
+  }
   function isAnswer(value) { return typeof value === 'number' && Number.isInteger(value) && value >= -2 && value <= 2; }
   function isObject(value) {
     if (!value || typeof value !== 'object' || Array.isArray(value)) return false;
@@ -81,17 +89,19 @@
   }
   // A tied axis gets one real five-point bank item. Domains include the fixed
   // main form, so replay does not depend on clocks or the order answers arrive.
-  function clarificationItems(seed, ids, main, answers) {
+  function clarificationItems(seed, ids, main, answers, origin) {
     if (Object.keys(answers).length !== MODE) return [];
     var sums = mainSums(main, answers);
     var usedIds = new Set(main.map(function (item) { return item.id; }));
     var usedFamilies = new Set(main.map(function (item) { return item.family; }));
     var usedClusters = new Set(main.map(function (item) { return item.semanticCluster; }));
+    var direct = origin === 'direct-v1';
+    var usedOpenings = direct ? new Set(main.map(directOpening)) : null;
     return axisIds.filter(function (axis) { return sums[axis] === 0; }).map(function (axis) {
       var direction = randomFor(seed, ids, 'clarification-direction/' + axis)() < 0.5 ? -1 : 1;
       var bucket = D.bank.buckets.find(function (item) { return item.axis === axis && item.direction === direction; });
       assert(bucket, '題庫缺少所需的釐清題方向。');
-      var random = randomFor(seed, ids, 'clarification-item/' + axis);
+      var random = randomFor(seed, ids, 'clarification-item/' + axis + (direct ? '/direct-v1' : ''));
       var candidates = shuffle(bucket.seedIds.map(function (_, index) { return index; }), random);
       for (var i = 0; i < candidates.length; i++) {
         var seedIndex = candidates[i];
@@ -102,7 +112,10 @@
         var contextIndex = Math.floor(random() * contextCount);
         var item = Bank.query({ offset: bucket.start - 1 + contextIndex * bucket.seedIds.length + seedIndex, limit: 1 }).items[0];
         if (!item || usedIds.has(item.id)) continue;
+        var opening = direct ? directOpening(item) : null;
+        if (direct && usedOpenings.has(opening)) continue;
         usedIds.add(item.id); usedFamilies.add(item.family); usedClusters.add(item.semanticCluster);
+        if (direct) usedOpenings.add(opening);
         return item;
       }
       throw new Error('題庫沒有可用且語意不重複的釐清題。');
@@ -111,28 +124,31 @@
   function build(seed, origin, ids, answers, clarificationAnswers) {
     var main = Bank.restoreForm(ids);
     var cleaned = cleanAnswers(answers, ids, '完整版主題答案');
-    var clarificationIds = clarificationItems(seed, ids, main, cleaned).map(function (item) { return item.id; });
+    var clarificationIds = clarificationItems(seed, ids, main, cleaned, origin).map(function (item) { return item.id; });
     return {
       mode: MODE, seed: seed, formOrigin: origin, version: VERSION, bankVersion: D.bank.version,
       questionIds: ids.slice(), answers: cleaned, clarificationIds: clarificationIds,
       clarificationAnswers: cleanAnswers(clarificationAnswers, clarificationIds, '完整版釐清題答案')
     };
   }
-  function create(seed) {
+  function create(seed, options) {
     validateSeed(seed);
-    var ids = Bank.createForm(seed).map(function (item) { return item.id; });
-    return build(seed, 'seed', ids, {}, {});
+    var direct = options !== undefined;
+    if (direct) assert(options && typeof options === 'object' && !Array.isArray(options) && Object.keys(options).length === 1 && options.wording === 'direct-v1', '問卷文字設定無效。');
+    var ids = (direct ? Bank.createForm(seed, { wording: 'direct-v1' }) : Bank.createForm(seed)).map(function (item) { return item.id; });
+    return build(seed, direct ? 'direct-v1' : 'seed', ids, {}, {});
   }
   function restore(saved) {
     assert(isObject(saved), '完整版續答資料格式無效。');
     assert(!Object.getOwnPropertySymbols(saved).length && Object.keys(saved).length === fields.length && fields.every(function (field) { return own(saved, field); }), '完整版續答欄位無效。');
     assert(saved.mode === MODE && saved.version === VERSION && saved.bankVersion === D.bank.version, '完整版續答版本或題數不相容。');
     validateSeed(saved.seed);
-    assert(saved.formOrigin === 'seed' || saved.formOrigin === 'legacy', '完整版組卷來源無效。');
+    assert(saved.formOrigin === 'seed' || saved.formOrigin === 'legacy' || saved.formOrigin === 'direct-v1', '完整版組卷來源無效。');
     assert(denseArray(saved.questionIds) && denseArray(saved.clarificationIds), '完整版題目編號必須為連續陣列。');
     Bank.restoreForm(saved.questionIds);
-    if (saved.formOrigin === 'seed') {
-      assert(sameIds(saved.questionIds, Bank.createForm(saved.seed).map(function (item) { return item.id; })), '完整版題目與組卷種子不符。');
+    if (saved.formOrigin === 'seed' || saved.formOrigin === 'direct-v1') {
+      var form = saved.formOrigin === 'direct-v1' ? Bank.createForm(saved.seed, { wording: 'direct-v1' }) : Bank.createForm(saved.seed);
+      assert(sameIds(saved.questionIds, form.map(function (item) { return item.id; })), '完整版題目與組卷種子不符。');
     } else {
       assert(saved.seed === legacySeed(saved.questionIds), '舊版完整版的衍生種子不符。');
     }

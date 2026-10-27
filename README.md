@@ -1,5 +1,16 @@
 # 卦見自己｜64 型人格 × 六十四卦
 
+## direct-v1 題句與抽題更新（2026-10-27）
+
+新版重新撰寫288條核心行為句，刪除「你對相關背景已有一些了解」等通用背景。每題只描述一件可回想的行為或感受，以五點回答。100,000筆歷史情境變體及3,370項來源存檔保留；它們不是十萬個不同核心題意，不能把新單句庫說成十萬條新寫題句。
+
+新版同卷含補充題，最多各用一次母題家族、近義群與實際開場分句。開場鍵取自題文本身第一個逗號／句號之前的片語，經正規化核對，不使用題號當句型標籤；這不宣稱54題各有互斥的語法類型。新48題配對有容量檢查及200,000候選搜尋上限；無法滿足條件就明確拒絕，不悄悄重複。
+
+`research/question-copy-a.json`與`question-copy-b.json`保存新文案，`python scripts/build-question-copy.py`重建`dist/data/question-copy.js`；`question-copy.js`提供純展示與題庫目錄。一般新場明確使用`GuaShort.create(mode,seed,{wording:'direct-v1'})`或`GuaFull.create(seed,{wording:'direct-v1'})`。Short以2.1.0、Full以formOrigin=direct-v1保留文字路徑，v5存檔欄位不增加。未帶options的API、舊2.0短版及原48題仍走原題文／題序；已有作答不暗中換題，重新抽題才啟用新版。
+
+題目措辭參考[16Personalities繁中測驗](https://www.16personalities.com/tw/性格測試)、[Truity TypeFinder](https://www.truity.com/test/type-finder-personality-test-new)與[OpenPsychometrics OJTS](https://openpsychometrics.org/tests/OJTS/1.php)的直接短句結構，全部另行原創。沒有移植競品題文、量尺或效度；[OJTS開發頁](https://openpsychometrics.org/tests/OJTS/development/)標示CC BY-NC-SA4.0，其題目未納入本商用產品。
+
+
 **授權政策：原始碼可見、非商業使用免費；適用的新原創受保護材料，商業使用須另行取得付費書面授權。** 詳見 [LICENSE](LICENSE)、[商用說明](COMMERCIAL-LICENSE.md) 與 [舊 MIT 權利保留](LICENSING-TRANSITION.md)。個人到官方網站免費自測不受影響，既有 MIT 與第三方許可保留。本版整體不是 OSI 開源。
 
 繁體中文靜態網站。六組偏好組合成 64 型，以人工編訂的文王卦序表連接原創文化解讀。一般版預設 10 題主要問題，可選 20 題；資深版有 48 題。三個模式均使用五點作答，還沒看出方向的面向各最多加一道補充情境，合計最多 16／26／54 題。有唯一分類時顯示文化報告與對應插畫；有些面向仍保持開放時，保留目前線索與相容原型，答案與題序只存本機。
