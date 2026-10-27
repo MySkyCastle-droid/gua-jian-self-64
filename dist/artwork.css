@@ -3,3 +3,8 @@
 @media(max-width:600px){.gua-card.with-art .card-index{padding:13px 13px 10px}.gua-card.with-art h3{margin:14px 13px 7px;font-size:17px}.gua-card.with-art .card-subtitle{margin:0 13px 13px}.gua-card.with-art .card-bottom{margin:0 13px;padding:12px 0 14px}.artwork-badge{right:7px;bottom:7px;width:35px;height:43px}.gua-card.with-art .artwork-badge svg{width:20px;height:29px}.report-artwork{max-width:370px;align-self:center}.portrait-caption strong{font-size:17px}.report-hero:has(.report-artwork){display:flex}.artwork-reading{padding:18px}.artwork-reading h3{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.artwork-frame img{transition:none}.gua-card.with-art:hover .artwork-frame img{transform:none}}
 @media print{.report-artwork{width:180px}.report-hero:has(.report-artwork){grid-template-columns:1fr 180px}.artwork-reading{break-inside:avoid}}
+
+/* Keep all four TWOBU corner marks visible on atlas thumbnails. */
+.artwork-badge{right:50%;transform:translateX(50%)}
+@media(max-width:600px){.artwork-badge{right:50%}}
+.image-rights-logo{display:block;object-fit:contain;margin-bottom:20px}

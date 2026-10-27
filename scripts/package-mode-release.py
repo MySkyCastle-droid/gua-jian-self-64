@@ -32,6 +32,7 @@ PROJECT_LICENSE_COPIES = (
     ("LICENSE-MIT-LEGACY.txt", "licenses/LICENSE-MIT-LEGACY.txt"),
     ("COMMERCIAL-LICENSE.md", "licenses/COMMERCIAL-LICENSE.md"),
     ("LICENSING-TRANSITION.md", "licenses/LICENSING-TRANSITION.md"),
+    ("IMAGE-LICENSE.md", "licenses/Image-Use.txt"),
 )
 PRIVATE = re.compile(
     r'"(?:generatedPath|workspacePath|editInputPaths?|referencedImagePaths|referenced_image_paths)"\s*:', re.I)
@@ -144,15 +145,34 @@ def verify_artwork(root: Path, entries: list[dict], guard: Guard, dist_prefix: s
     for image in images:
         guard.check()
         number = image["hexagramNumber"]
-        relative = dist_prefix + f"assets/personality/hexagram-{number:02d}.webp"
+        src = image.get("src", "")
+        legacy_src = f"./assets/personality/hexagram-{number:02d}.webp"
+        branded_src = f"./assets/personality/twobu/hexagram-{number:02d}.webp"
+        if src not in {legacy_src, branded_src}:
+            raise ValueError("Unexpected artwork asset path")
+        relative = dist_prefix + src[2:]
         item = by_name.get(relative)
         if (not item or item["bytes"] != image.get("bytes") or item["sha256"] != image.get("sha256")
-                or image.get("src") != f"./assets/personality/hexagram-{number:02d}.webp"):
+                or not image.get("originalSha256")):
             raise ValueError("Existing WebP hash/size mismatch: " + relative)
         data = read(item["source"], guard)
         if data[:4] != b"RIFF" or data[8:12] != b"WEBP":
             raise ValueError("Invalid WebP signature: " + relative)
         hashes[number] = item["sha256"]
+        if src == branded_src:
+            derivative = image.get("derivative", {})
+            logo = manifest.get("watermark", {}).get("logo", {})
+            logo_item = by_name.get(dist_prefix + "assets/brand/twobu-logo.webp")
+            expected_corners = [(31, 31), (1173, 31), (31, 1173), (1173, 1173)]
+            corners = derivative.get("corners", [])
+            if (derivative.get("version") != "twobu-corners-v3"
+                    or derivative.get("opacity") != 1 or len(corners) != 4
+                    or [(c.get("left"), c.get("top")) for c in corners] != expected_corners
+                    or any(c.get("width") != 50 or c.get("height") != 50 for c in corners)
+                    or not logo_item or logo_item["sha256"] != logo.get("sha256")
+                    or derivative.get("logoSha256") != logo_item["sha256"]
+                    or dist_prefix + legacy_src[2:] in by_name):
+                raise ValueError("Incomplete branded derivative or unbranded current asset: " + relative)
     if len(set(hashes.values())) != 64:
         raise ValueError("The 64 existing WebPs must remain distinct")
     return hashes
@@ -323,7 +343,8 @@ def main() -> int:
     report = {"schemaVersion": "1.0.0", "status": "complete", "runId": args.run_id,
               "createdUtc": datetime.now(timezone.utc).isoformat(),
               "cutoffAt": cutoff.isoformat() if cutoff else None,
-              "artworkCount": len(web_art), "artworkPreserved": True,
+              "artworkCount": len(web_art), "artworkManifestVerified": True,
+              "artworkVersion": json.loads(read(dist / "data/artwork-sources.json", guard)).get("version"),
               "projectLicenseCheck": license_checks,
               "gzipPreservationCheck": gzip_checks, "prepareSourceSha256": public_by_name["scripts/prepare-source.py"]["sha256"],
               "privacyCheck": "passed", "website": website, "publicSource": public_archive}
