@@ -527,3 +527,10 @@ node --test tests/core.test.cjs tests/content.test.cjs tests/bank.test.cjs tests
 六場完整JSDOM介面流程（每版已定及全中立）均通過，實際題文、5選項、開場去重及結果檢查正常；axe結構0自動violations，JSDOM色彩檢查停用。公開手機流程與Cloudflare重新部署結果另存本輪交付紀錄，不能以舊版紀錄替代。
 
 舊進度保留原題文，不自動換成新版措辭。新短版2.1.0與Full formOrigin=direct-v1均使用原v5保存結構。原始10萬筆情境資料、來源與授權、計分、配卦、64篇報告與插畫保留。
+
+
+## hero-v1 首頁展示驗收範圍
+
+新增首頁 seed 選取規則：5 款版型 × 64 卦，共 320 組純文化展示，不是測驗結果，且不讀人格答案。每個一般新分頁訪次以 crypto 取得 32 位元 seed；sessionStorage 僅寫入 `gj-home-visual-v1` 的 `{version:1,seed}`，同一訪次回首頁或刷新保持固定，儲存不可用時保留於頁面記憶體。瀏覽器複製分頁若複製 sessionStorage，則可能保留原 seed。
+
+新增 hero 測試涵蓋 uint32 邊界、相同種子重現、320 組可達、損壞或阻擋儲存、上下卦與六爻一致、缺少版型明確失敗及 renderer 轉義責任。既有題庫、人格引擎、插畫與授權沿用已驗證 twobu-4pct-v1 的相同位元組；本節保留既有歷史驗收紀錄，最終測試數與真實瀏覽器驗收以本輪交付報告為準，不將舊 300 場矩陣宣稱為新首頁的公開手機驗收。

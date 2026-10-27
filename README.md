@@ -168,3 +168,12 @@ Qwen3 及其他 Hugging Face 人格資料只列研究備選，沒有下載權重
 <!-- artwork-release:end -->
 
 本次新授權發布請使用 `scripts/package-mode-release.py`；舊的固定檔數 `package-public-art-source.py` 與原圖專用 `package-art-release.py` 未支援本次新授權文件，不應用於本版發布。
+
+
+## 首頁五款版型與卦象展示（hero-v1）
+
+首頁以本分頁訪次的 32 位元 seed，從 A–E 五款構圖與 64 卦組成的 320 種組合中選擇一組。同一 seed 可重現相同畫面；sessionStorage 只保存 `gj-home-visual-v1` 的 `{version:1,seed}`，同一分頁回首頁或重新整理時保持固定，儲存無法使用時則在本次頁面記憶體保留。一般新分頁以 `crypto.getRandomValues` 取得新 seed；瀏覽器複製分頁若連同 sessionStorage 複製，可能沿用原 seed。
+
+這只是純文化首頁展示，不讀取人格答案、不更動題庫、計分、配卦或 v5 作答保存，也不是訪客的測驗結果。首頁文字、卦名與爻線隨所選卦象更新，圖說與印章各自留白。完整結果仍須完成探索後閱讀。
+
+`dist/hero.js` 提供選擇與訪次保存；三個版型模組註冊 A–E，搭配 `hero.css`。新增 `tests/hero.test.cjs` 驗證 seed、320 組可達、儲存失效、64 卦資料及版型派送。這些測試是工程驗證，不是心理測量證據。
