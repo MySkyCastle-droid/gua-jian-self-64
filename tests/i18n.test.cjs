@@ -5,7 +5,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
 const dist=path.join(__dirname,'../dist');
-const localeCodes=['zh-Hant','zh-Hans','en','ja'];
+const localeCodes=['zh-Hant','zh-Hans','en','ja','ko','hi','th','id','de','fr','es'];
 const translatedFields=['title','subtitle','summary','plainMeaning','pairing','strength','blindspot','reflection'];
 const plain=value=>JSON.parse(JSON.stringify(value));
 function data(){
@@ -29,8 +29,8 @@ function sourceItems(D){
  return items;
 }
 
-test('four supported locales expose an explicit locale and stable translator API',()=>{
- const {api}=load();assert.equal(api.VERSION,'i18n-v1');assert.deepEqual(plain(api.LOCALES),localeCodes);
+test('eleven supported locales expose an explicit locale and stable translator API',()=>{
+ const {api}=load();assert.equal(api.VERSION,'i18n-v2');assert.deepEqual(plain(api.LOCALES),localeCodes);
  assert.equal(typeof api.translate,'function');assert.equal(typeof api.apply,'function');assert.equal(typeof api.setLocale,'function');
  assert.equal(api.locale(),'zh-Hant');assert.equal(api.translate('非常不像我','zh-Hant'),'非常不像我');
  assert.equal(api.translate('ENTJ · TWOBU · 2026','en'),'ENTJ · TWOBU · 2026');
@@ -99,7 +99,7 @@ test('translation packs preserve classical quotations and use plain text rather 
  }
 });
 
-test('language selection is a named native select with four public query-language links and local assets',()=>{
+test('language selection is a named native select with eleven public query-language links and local assets',()=>{
  const html=fs.readFileSync(path.join(dist,'index.html'),'utf8');
  assert.match(html,/<select\b[^>]*id=["']language-select["']/i);
  for(const locale of localeCodes)assert.match(html,new RegExp('value=["\']'+locale+'["\']'));

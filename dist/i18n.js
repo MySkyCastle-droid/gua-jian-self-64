@@ -1,8 +1,10 @@
 /* Display-only localization. Canonical questions, seed rules and answers stay unchanged. */
 (function (global) {
   'use strict';
-  const VERSION = 'i18n-v1';
-  const LOCALES = Object.freeze(['zh-Hant', 'zh-Hans', 'en', 'ja']);
+  const VERSION = 'i18n-v2';
+  const LOCALES = Object.freeze(['zh-Hant', 'zh-Hans', 'en', 'ja', 'ko', 'hi', 'th', 'id', 'de', 'fr', 'es']);
+  const EXTRA_LOCALES = new Set(['ko', 'hi', 'th', 'id', 'de', 'fr', 'es']);
+  const LATIN_LOCALES = new Set(['en', 'id', 'de', 'fr', 'es']);
   const KEY = 'gj-language-v1';
   const packs = Object.create(null), tries = Object.create(null);
   const sources = new WeakMap(), attributeSources = new WeakMap();
@@ -24,7 +26,12 @@
       for (const char of source) node = node[char] || (node[char] = Object.create(null));
       node.$ = target;
     });
-    packs[code] = Object.freeze({messages:Object.freeze(messages), characters:pack.characters || {}});
+    const templates = Object.create(null);
+    Object.entries(pack.templates || {}).forEach(([key,value]) => {
+      if (!key || typeof value !== 'string' || !value.trim() || /[<>]/.test(value)) throw new Error('Invalid language template');
+      templates[key] = value;
+    });
+    packs[code] = Object.freeze({messages:Object.freeze(messages), characters:pack.characters || {}, templates:Object.freeze(templates)});
     tries[code] = trie;
   }
   function phrase(text, code) {
@@ -43,8 +50,61 @@
     }
     return output;
   }
-  // Dynamic sentences have explicit templates so English word order does not follow Chinese fragments.
+  function format(code, key, ...values) {
+    const template = packs[code]?.templates[key];
+    if (!template) return null;
+    return template.replace(/\{(\d+)\}/g, (_,index) => String(values[Number(index)-1] ?? ''));
+  }
+  function nature(value, code) {
+    const key = {天:'Heaven',地:'Earth',雷:'Thunder',水:'Water',山:'Mountain',風:'Wind',火:'Fire',澤:'Lake'}[value];
+    return key ? format(code,'nature'+key) || value : value;
+  }
+  // New languages use complete localized sentence templates; numerical and named values are display-only.
+  function expandedDynamic(text, code) {
+    const tr = value => phrase(value,code), f = (key,...values) => format(code,key,...values);
+    let m;
+    const outsideLabel = '八象名稱與卦環分開。';
+    if (text.startsWith(outsideLabel)) return tr(outsideLabel) + ' ' + (expandedDynamic(text.slice(outsideLabel.length),code) || tr(text.slice(outsideLabel.length)));
+    if ((m=text.match(/^(.+?) · ([天地雷水山風火澤])$/))) return `${tr(m[1])} · ${nature(m[2],code)}`;
+    if ((m=text.match(/^唯讀 (\d+)／(\d+) 題$/))) return f('readOnly',m[1],m[2]);
+    if ((m=text.match(/^主要問題 (\d+)\/(\d+)・補充情境\s*$/))) return f('mainFollow',m[1],m[2])+' ';
+    if ((m=text.match(/^開始新版 (10|20|48) 題五點探索(.*)$/))) return f('newVersion',m[1],tr(m[2]));
+    if ((m=text.match(/^這會移除 (10|20|48) 題(?:快速探索|標準探索|資深探索) 的答案與進度(，並重新抽題)?。其他版本的進度與舊版封存會保留。$/))) return f(m[2]?'redrawRecord':'removeRecord',m[1]);
+    if ((m=text.match(/^已回答 (\d+)／(\d+) 道主要問題。這份紀錄保留當時的主要問題回答，以及二選一補充情境所決定的分類，僅供閱讀。$/))) return f('archiveMain',m[1],m[2]);
+    if ((m=text.match(/^已回答 (\d+)／(\d+) 題。這份紀錄保留原本的二選一答案，封存後僅供閱讀。$/))) return f('archiveBinary',m[1],m[2]);
+    if ((m=text.match(/^外圈依文王卦序環列六十四卦，朱紅標出(.+?)。中央為第(\d+)卦，上(.+?)（(.+?)）、下(.+?)（(.+?)），爻線自下而上讀。$/))) return f('heroRing',tr(m[1]),m[2],tr(m[3]),nature(m[4],code),tr(m[5]),nature(m[6],code));
+    if ((m=text.match(/^第 (\d+) 卦 · 上(.+?)下(.+)$/))) return f('guaUpperLower',m[1],tr(m[2]),tr(m[3]));
+    if ((m=text.match(/^(10|20|48) 題・(.+)$/))) return f('questionMode',m[1],tr(m[2]));
+    if ((m=text.match(/^(\d+)[–—-](\d+) 題$/))) return f('questionRange',m[1],m[2]);
+    if ((m=text.match(/^(10|20|48) 題(快速|標準|資深)$/))) return f('questionMode',m[1],f({快速:'quick',標準:'standard',資深:'inDepth'}[m[2]]));
+    if ((m=text.match(/^(10|20|48) 題探索・(主要問題|補充情境)第 (\d+) 題(.*)$/))) return f('questionTitle',m[1],f(m[2]==='主要問題'?'mainQuestion':'followUp'),m[3],tr(m[4]));
+    if ((m=text.match(/^([天地雷水山風火澤])在上，([天地雷水山風火澤])在下。$/))) return f('natureAboveBelow',nature(m[1],code),nature(m[2],code));
+    if ((m=text.match(/^閱讀(.+?)：(.+)$/))) return f('readArticle',tr(m[1]),tr(m[2]));
+    if ((m=text.match(/^六十四卦環，中央為第(\d+)卦(.+?)，上(.+?)下(.+)$/))) return f('ringCenter',m[1],tr(m[2]),tr(m[3]),tr(m[4]));
+    if ((m=text.match(/^文王六十四卦環；中央為第 (\d+) 卦(.+?)，上(.+?)下(.+?)。六爻由下至上為(.+)。$/))) return f('ringLines',m[1],tr(m[2]),tr(m[3]),tr(m[4]),m[5].split('、').map(v=>f(v==='陰'?'yin':'yang')).join(', '));
+    if ((m=text.match(/^八卦與自然意象；(.+?)，上卦為(.+?)，下卦為(.+?)。$/))) return f('naturalImages',tr(m[1]),tr(m[2]),tr(m[3]));
+    if ((m=text.match(/^(.+?)，([天地雷水山風火澤])，本卦(上卦|下卦)$/))) return f('trigramNature',tr(m[1]),nature(m[2],code),f(m[3]==='上卦'?'upper':'lower'));
+    if ((m=text.match(/^(10|20|48) 題(資深探索|標準探索|快速探索)(.*)$/))) return f('questionMode',m[1],f({'10':'quickExploration','20':'standardExploration','48':'inDepthExploration'}[m[1]]))+tr(m[3]);
+    if ((m=text.match(/^主要問題已答 (\d+)／(\d+) 題・必要時另加 0–6 題補充情境，合計 (\d+)–(\d+) 題(.*)$/))) return f('mainProgress',m[1],m[2],m[3],m[4],tr(m[5]));
+    if ((m=text.match(/^主要問題已答 (\d+)／(\d+) 題・補充情境已答 (\d+)／(\d+) 題・本次共 (\d+) 題(.*)$/))) return f('followProgress',m[1],m[2],m[3],m[4],m[5],tr(m[6]));
+    if ((m=text.match(/^(已完成 |這次完成 )(\d+) 題主要問題、(\d+) 題補充情境，共 (\d+) 題。(.*)$/))) return f('finished',m[2],m[3],m[4],tr(m[5]));
+    if ((m=text.match(/^本次觀察：(\d+) 題$/))) return f('observation',m[1]);
+    if ((m=text.match(/^這次較靠近「(.+)」$/))) return f('thisTime',tr(m[1]));
+    if ((m=text.match(/^當時的主要問題沒有偏向；原封存分類保留「(.+)」。$/))) return f('archivedCategory',tr(m[1]));
+    if ((m=text.match(/^「(.+)」目前還沒有明顯靠近哪一邊，先讓這些面向保持開放。(.*)$/))) return f('openAspects',m[1].split('、').map(tr).join(', '),tr(m[2]));
+    if ((m=text.match(/^共 (\d+) 篇，依文王卦序排列，沒有先後名次。點開一篇，看看它帶你想起什麼。$/))) return f('candidateArticles',m[1]);
+    if ((m=text.match(/^開始 (10|20|48) 題探索(.*)$/))) return f('start',m[1],tr(m[2]));
+    if ((m=text.match(/^(重新開始|清除) (10|20|48) 題探索？$/))) return f(m[1]==='清除'?'clearQuestion':'restartQuestion',m[2]);
+    if ((m=text.match(/^(10|20|48) 題探索的本機紀錄已清除。$/))) return f('recordCleared',m[1]);
+    if ((m=text.match(/^(\d+) \/ 64 種原型$/))) return f('archetypeCount',m[1]);
+    if ((m=text.match(/^(\d+)條核心題句$/))) return f('coreCount',m[1]);
+    if ((m=text.match(/^第\s*(\d+)\s*卦(.*)$/))) return f('hexagram',m[1],tr(m[2]));
+    if ((m=text.match(/^(.+)。左側是(.+)，右側是(.+)。(.+)$/))) return f('axisDescription',tr(m[1]),tr(m[2]),tr(m[3]),tr(m[4]));
+    return null;
+  }
+  // Existing English and Japanese templates remain unchanged.
   function dynamic(text, code) {
+    if (EXTRA_LOCALES.has(code)) return expandedDynamic(text,code);
     if (code !== 'en' && code !== 'ja') return null;
     const en = code === 'en', tr = s => phrase(s,code);
     let m;
@@ -96,6 +156,7 @@
     const leading = (text.match(/^\s*/) || [''])[0], trailing = (text.match(/\s*$/) || [''])[0], core = text.trim();
     const pack = packs[code];
     if (!pack) return text;
+    if (EXTRA_LOCALES.has(code) && own(imageNames,core)) return leading + nature(core,code) + trailing;
     if ((code === 'en' || code === 'ja') && own(imageNames,core)) return leading + imageNames[core][code === 'en' ? 0 : 1] + trailing;
     let result = own(pack.messages,core) ? pack.messages[core] : dynamic(core,code);
     if (result === null) result = phrase(core,code);
@@ -112,7 +173,7 @@
     if (!record || node.nodeValue !== record.output) record = {source:node.nodeValue};
     let output = translate(record.source);
     // A hidden responsive line break still separates English words.
-    if (current === 'en' && node.nextSibling && node.nextSibling.nodeName === 'BR' && output && !/\s$/.test(output)) output += ' ';
+    if (LATIN_LOCALES.has(current) && node.nextSibling && node.nextSibling.nodeName === 'BR' && output && !/\s$/.test(output)) output += ' ';
     record.output = output; sources.set(node,record);
     if (node.nodeValue !== output) node.nodeValue = output;
     if (protectedQuotes.has(record.source.trim())) node.parentElement.setAttribute('lang','zh-Hant');
@@ -172,11 +233,13 @@
     if (!valid(code)) return false;
     const token = ++request;
     setStatus('正在切換語言…');
+    if (doc) doc.documentElement.setAttribute('data-language-loading','');
     try { await load(code); } catch (_) {
       if (token === request) {
         const select = doc && doc.getElementById('language-select');
         if (select) select.value = current;
         setStatus('語言載入失敗，請再試一次。');
+        if (doc) doc.documentElement.removeAttribute('data-language-loading');
       }
       return false;
     }
@@ -186,12 +249,13 @@
       doc.documentElement.lang = code;
       doc.documentElement.dataset.locale = code;
       const select = doc.getElementById('language-select'); if (select) select.value = code;
-      if (select) select.setAttribute('aria-label',{en:'Language',ja:'言語','zh-Hans':'语言','zh-Hant':'語言'}[code]);
+      if (select) select.setAttribute('aria-label',EXTRA_LOCALES.has(code) ? format(code,'languageLabel') : {en:'Language',ja:'言語','zh-Hans':'语言','zh-Hant':'語言'}[code]);
       const brand = doc.querySelector('.brand');
-      if (brand) brand.setAttribute('aria-label',{en:'Gua Jian Self, home',ja:'卦見自己、ホームへ','zh-Hans':'卦见自己，回到首页','zh-Hant':'卦見自己，回首頁'}[code]);
+      if (brand) brand.setAttribute('aria-label',EXTRA_LOCALES.has(code) ? format(code,'homeLabel') : {en:'Gua Jian Self, home',ja:'卦見自己、ホームへ','zh-Hans':'卦见自己，回到首页','zh-Hant':'卦見自己，回首頁'}[code]);
       try { global.localStorage.setItem(KEY,code); } catch (_) {}
       try { const url = new URL(global.location.href); url.searchParams.set('lang',code); global.history.replaceState(null,'',url.href); } catch (_) {}
       apply(); setStatus('');
+      doc.documentElement.removeAttribute('data-language-loading');
       global.dispatchEvent(new CustomEvent('gua:languagechange', {detail:{locale:code}}));
     }
     return true;
