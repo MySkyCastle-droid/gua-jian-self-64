@@ -30,7 +30,7 @@ function sourceItems(D){
 }
 
 test('eleven supported locales expose an explicit locale and stable translator API',()=>{
- const {api}=load();assert.equal(api.VERSION,'i18n-v2');assert.deepEqual(plain(api.LOCALES),localeCodes);
+ const {api}=load();assert.equal(api.VERSION,'i18n-v2-auto1');assert.deepEqual(plain(api.LOCALES),localeCodes);
  assert.equal(typeof api.translate,'function');assert.equal(typeof api.apply,'function');assert.equal(typeof api.setLocale,'function');
  assert.equal(api.locale(),'zh-Hant');assert.equal(api.translate('非常不像我','zh-Hant'),'非常不像我');
  assert.equal(api.translate('ENTJ · TWOBU · 2026','en'),'ENTJ · TWOBU · 2026');

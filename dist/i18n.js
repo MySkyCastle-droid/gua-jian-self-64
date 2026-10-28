@@ -1,7 +1,7 @@
 /* Display-only localization. Canonical questions, seed rules and answers stay unchanged. */
 (function (global) {
   'use strict';
-  const VERSION = 'i18n-v2';
+  const VERSION = 'i18n-v2-auto1';
   const LOCALES = Object.freeze(['zh-Hant', 'zh-Hans', 'en', 'ja', 'ko', 'hi', 'th', 'id', 'de', 'fr', 'es']);
   const EXTRA_LOCALES = new Set(['ko', 'hi', 'th', 'id', 'de', 'fr', 'es']);
   const LATIN_LOCALES = new Set(['en', 'id', 'de', 'fr', 'es']);
@@ -14,6 +14,39 @@
   const imageNames = {天:['Heaven','天'],地:['Earth','地'],雷:['Thunder','雷'],水:['Water','水'],山:['Mountain','山'],風:['Wind','風'],火:['Fire','火'],澤:['Lake','沢']};
   const own = (o,k) => Object.prototype.hasOwnProperty.call(o,k);
   function valid(code) { return LOCALES.includes(code); }
+  function matchLocale(value) {
+    if (typeof value !== 'string') return null;
+    const tag = value.trim().replace(/_/g,'-').toLowerCase();
+    if (!/^[a-z]{2,8}(?:-[a-z0-9]{1,8})*$/.test(tag)) return null;
+    const parts = tag.split('-');
+    const language = parts[0] === 'in' ? 'id' : parts[0];
+    if (language === 'zh') {
+      // Only the primary tag's script/region matters, not Unicode/private extensions.
+      const subtags = [];
+      for (const part of parts.slice(1)) { if (part.length === 1) break; subtags.push(part); }
+      if (subtags.includes('hant')) return 'zh-Hant';
+      if (subtags.includes('hans')) return 'zh-Hans';
+      const region = subtags.find(part => /^[a-z]{2}$|^\d{3}$/.test(part));
+      return ['tw','hk','mo'].includes(region) ? 'zh-Hant' : 'zh-Hans';
+    }
+    return valid(language) ? language : null;
+  }
+  function selectInitialLocale(options = {}) {
+    if (!options || typeof options !== 'object') return 'en';
+    try {
+      const url = new URL(options.url || '', 'https://guajian.invalid/');
+      if (url.searchParams.has('lang')) return matchLocale(url.searchParams.get('lang')) || 'en';
+    } catch (_) {}
+    const saved = matchLocale(options.saved);
+    if (saved) return saved;
+    if (Array.isArray(options.languages)) {
+      for (const language of options.languages) {
+        const supported = matchLocale(language);
+        if (supported) return supported;
+      }
+    }
+    return matchLocale(options.language) || 'en';
+  }
   function register(code, pack) {
     if (!valid(code) || !pack || pack.locale !== code || !pack.messages || typeof pack.messages !== 'object' || Array.isArray(pack.messages)) throw new Error('Invalid language pack');
     const messages = Object.create(null), trie = Object.create(null);
@@ -253,22 +286,21 @@
       const brand = doc.querySelector('.brand');
       if (brand) brand.setAttribute('aria-label',EXTRA_LOCALES.has(code) ? format(code,'homeLabel') : {en:'Gua Jian Self, home',ja:'卦見自己、ホームへ','zh-Hans':'卦见自己，回到首页','zh-Hant':'卦見自己，回首頁'}[code]);
       try { global.localStorage.setItem(KEY,code); } catch (_) {}
-      try { const url = new URL(global.location.href); url.searchParams.set('lang',code); global.history.replaceState(null,'',url.href); } catch (_) {}
+      try { const url = new URL(global.location.href); url.searchParams.set('lang',code); global.history.replaceState(global.history.state,'',url.href); } catch (_) {}
       apply(); setStatus('');
       doc.documentElement.removeAttribute('data-language-loading');
       global.dispatchEvent(new CustomEvent('gua:languagechange', {detail:{locale:code}}));
     }
     return true;
   }
-  let preferred = 'zh-Hant';
+  let preferred = 'en';
   if (doc) {
-    try {
-      const fromUrl = new URL(global.location.href).searchParams.get('lang');
-      const saved = global.localStorage.getItem(KEY);
-      preferred = valid(fromUrl) ? fromUrl : valid(saved) ? saved : preferred;
-    } catch (_) {
-      try { const fromUrl = new URL(global.location.href).searchParams.get('lang'); if (valid(fromUrl)) preferred = fromUrl; } catch (_) {}
-    }
+    const preferences = {};
+    try { preferences.url = global.location.href; } catch (_) {}
+    try { preferences.saved = global.localStorage.getItem(KEY); } catch (_) {}
+    try { preferences.languages = global.navigator.languages; } catch (_) {}
+    try { preferences.language = global.navigator.language; } catch (_) {}
+    preferred = selectInitialLocale(preferences);
   }
   const ready = doc ? setLocale(preferred).then(() => {
     const select = doc.getElementById('language-select');
@@ -285,5 +317,5 @@
     observer.observe(doc.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:attrs});
     doc.documentElement.removeAttribute('data-language-loading');
   }) : Promise.resolve();
-  global.GuaI18n = Object.freeze({VERSION,LOCALES,KEY,locale:() => current,register,translate,apply,setLocale,ready});
+  global.GuaI18n = Object.freeze({VERSION,LOCALES,KEY,locale:() => current,matchLocale,selectInitialLocale,register,translate,apply,setLocale,ready});
 })(typeof window !== 'undefined' ? window : globalThis);

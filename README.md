@@ -1,3 +1,11 @@
+## auto-locale-v1 自動選擇語言（2026-10-28）
+
+開啟頁面時依序採用網址明確指定的 `lang`、已保存且受支援的 `gj-language-v1` 選擇、瀏覽器 `navigator.languages` 中依偏好排序的第一個受支援語言；都沒有時使用英文 `en`。網址只要帶有 `lang`，即視為明確指定：不受支援的值或空值（`?lang=`／`?lang`）直接使用英文，不再採用已存選擇或瀏覽器偏好。右上角手動選擇可以覆蓋自動結果，並保存供下次使用。
+
+語言標籤按本產品規則對應十一語：`zh-Hant` 與 `zh-TW`／`zh-HK`／`zh-MO` 對應繁體，`zh-Hans` 與 `zh-CN`／`zh-SG`／`zh-MY` 及裸 `zh` 對應簡體；明確的 `Hant`／`Hans` 書寫系統優先於地區。其他支援語言的地區形式對應其基本語言，例如 `en-GB` → `en`、`es-MX` → `es`。這使用瀏覽器語言設定，不以 IP、位置或國籍推測偏好。
+
+網址以 `history.replaceState` 更新語言參數，保留既有路徑、其他查詢參數與 hash 路由，不重新載入頁面。手動切換及自動選擇都不改題序、答案、計分、人格配卦或 v5 進度格式；語系仍為原有十一種，不新增付費服務。此版同時將印尼文兩個「沉著」顯示詞由 `Pemarah` 修正為 `Tenang`。實作規則與 API 來源見 [多語實作與來源](PUBLICI18N.md)。
+
 ## i18n-v2 十一語頁面（2026-10-28）
 
 原有繁體中文、简体中文、English、日本語之外，右上角語言選單新增 한국어、हिन्दी、ไทย、Bahasa Indonesia、Deutsch、Français、Español。可用 `?lang=ko`、`?lang=hi`、`?lang=th`、`?lang=id`、`?lang=de`、`?lang=fr`、`?lang=es` 配合既有路由開啟頁面。

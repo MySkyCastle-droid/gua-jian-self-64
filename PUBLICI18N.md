@@ -1,5 +1,26 @@
 # 十一語頁面與翻譯來源
 
+## auto-locale-v1 語言選擇規則
+
+本節是目前版本的規則，下方 i18n-v1 的繁中預設僅為歷史紀錄。支援語系仍是 `zh-Hant`、`zh-Hans`、`en`、`ja`、`ko`、`hi`、`th`、`id`、`de`、`fr`、`es` 共十一種。
+
+首次顯示按以下順序選擇：
+
+1. 網址只要存在 `lang` 參數就優先處理。可辨識的值對應支援語系；不支援或空值（包含 `?lang` 與 `?lang=`）直接回到 `en`，不繼續讀取較低優先的偏好。
+2. 沒有 `lang` 參數時，採用獨立 `gj-language-v1` 鍵中已保存且受支援的語系選擇。
+3. 沒有有效保存選擇時，依 `navigator.languages` 的偏好順序，採用第一個能對應到支援語系的項目；略過不受支援項目，不把第一個未知語言直接當成英文而遮蔽後面的支援項目。清單沒有可用項目時，以 `navigator.language` 補足單一語言設定。
+4. 都無法對應時使用 `en`。不查 IP、地理位置或國籍，也不使用新的付費語言服務。
+
+語言標籤的對應屬本產品政策：`zh-Hant` 及 `zh-TW`、`zh-HK`、`zh-MO` 對應 `zh-Hant`；`zh-Hans` 及 `zh-CN`、`zh-SG`、`zh-MY` 對應 `zh-Hans`，沒有書寫系統或地區的裸 `zh` 也對應 `zh-Hans`。若標籤同時有書寫系統與地區，以明確的 `Hant`／`Hans` 為先。其餘支援語言的地區形式對應基本語言，如 `ja-JP` → `ja`、`en-GB` → `en`、`es-MX` → `es`。這不是以地區判定使用者國籍。
+
+右上角手動選擇可覆蓋自動結果，保存至原有語言偏好鍵。更新網址時使用 `history.replaceState`，只調整語言參數，保留 path、其他 query 與 hash 路由，不呼叫頁面重新載入；作答答案、題序、位置、計分、人格與候選、首頁卦象種子，以及既有 v5 保存格式均不變。本輪另修正印尼文兩個「沉著」顯示鍵的 `Pemarah` → `Tenang`；不更動計分方向或分類鍵。
+
+這些規則只屬語言顯示層。以下 MDN 連結用於開發者核對 API 行為，並不代表本產品的語言映射或譯文取得心理測量認證：
+
+- [Navigator.languages](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages)：瀏覽器提供依偏好排列的語言標籤。
+- [URLSearchParams.has()](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/has)：區分參數不存在與明確存在但值為空。
+- [History.replaceState()](https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState)：修改目前歷史紀錄與網址，不因此載入另一份頁面。
+
 ## i18n-v2 新增七種語言
 
 2026-10-28 新增 한국어（`ko`）、हिन्दी（`hi`）、ไทย（`th`）、Bahasa Indonesia（`id`）、Deutsch（`de`）、Français（`fr`）及 Español（`es`），保留繁體中文、簡體中文、英文與日文。這裡的印度語言為印地文 Hindi，並不代表印度所有語言。
