@@ -28,6 +28,7 @@ function renderedPage(hash, imagePolicy) {
   const window = {
     GuaData: data, GuaCore: {}, GuaShort: {}, GuaFull: {}, GuaShortLegacy: {},
     GuaResultCopy: { VERSION: 'test' }, GuaQuestionCopy: {},
+    GuaI18n: { ready: { then: callback => callback() }, apply() {}, translate: value => value },
     GuaSessions: { load: () => ({ envelope: { activeMode: 10, sessions: { 10: { mode: 10, started: false } } }, storageAvailable: true, message: '' }) },
     localStorage: {}, addEventListener() {}, scrollTo() {}
   };

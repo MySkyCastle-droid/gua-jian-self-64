@@ -1,0 +1,36 @@
+/* Language control and typographic adaptations; no scoring or question styling changes. */
+.header-actions{display:flex;align-items:center;gap:18px;margin-left:auto;min-width:0}
+.language-control{display:flex;align-items:center;gap:7px;position:relative;flex:none}
+.language-control svg{width:16px;height:16px;color:var(--muted);flex:none}
+.language-control select{font:inherit;font-size:12px;color:var(--ink);background:var(--paper-light);border:1px solid var(--line);border-radius:3px;padding:9px 24px 9px 9px;max-width:124px;min-height:40px;cursor:pointer}
+.language-control select:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.language-status{position:absolute;top:100%;right:0;width:max-content;max-width:240px;background:var(--paper-light);font-size:11px;line-height:1.5;z-index:101}
+.language-status:empty{display:none}
+html[data-language-loading] main,html[data-language-loading] .site-footer{visibility:hidden}
+html:lang(en){--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",sans-serif}
+html:lang(ja){--serif:"Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",serif;--sans:"Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif}
+html:lang(zh-Hans){--serif:"Noto Serif SC","SimSun",serif;--sans:"Noto Sans SC","Microsoft YaHei",system-ui,sans-serif}
+html:lang(en) h1,html:lang(en) h2,html:lang(en) h3{letter-spacing:-.025em;overflow-wrap:anywhere}
+html:lang(en) .hero h1{font-size:clamp(36px,4.2vw,58px);line-height:1.18;white-space:normal}
+html:lang(en) .hero-description{line-height:1.8}
+html:lang(en) .hero-meta{flex-wrap:wrap;letter-spacing:0}
+html:lang(en) .site-header nav{gap:20px}
+html:lang(en) .site-header nav a{font-size:12px;letter-spacing:0}
+html:lang(en) .header-cta{font-size:12px;letter-spacing:0;white-space:nowrap;padding-left:16px;padding-right:16px}
+html:lang(en) .button,html:lang(en) .text-link{letter-spacing:0;line-height:1.4}
+html:lang(en) .gua-card h3{line-height:1.25;font-size:23px}
+html:lang(en) .card-bottom{gap:12px;line-height:1.5;letter-spacing:0}
+html:lang(en) .report-hero h1{line-height:1.15;font-size:43px;letter-spacing:-.025em}
+html:lang(en) .report-body p,html:lang(en) .report-hero .summary{line-height:1.9}
+html:lang(en) .section-label,html:lang(en) .report-section-label{letter-spacing:.07em}
+html:lang(en) .short-options legend,html:lang(ja) .short-options legend{letter-spacing:0;line-height:1.65}
+html:lang(en) .axis-heading{flex-wrap:wrap}
+html:lang(en) .axis-heading strong{flex-basis:100%}
+html:lang(en) .concept-a-caption,html:lang(en) .concept-b-caption,html:lang(en) .concept-e-caption{letter-spacing:0}
+html:lang(en) .home-visual-note{letter-spacing:0}
+html:lang(en) .journey-item .math{font-size:16px;line-height:1.5}
+html:lang(ja) .hero h1{line-height:1.5;white-space:normal}
+[lang="zh-Hant"].report-quote{font-family:"Noto Serif TC","PMingLiU",serif}
+@media(max-width:1150px){.site-header nav{gap:14px}.header-inner{gap:18px}.header-actions{gap:12px}html:lang(en) .site-header nav{display:none}}
+@media(max-width:800px){.header-inner{flex-wrap:wrap}.site-header nav{display:none}.header-actions{gap:12px}.language-control select{font-size:11px;padding-top:8px;padding-bottom:8px}.report-breadcrumb{flex-wrap:wrap}}
+@media(max-width:600px){.header-inner{padding:12px 16px;min-height:76px;gap:10px}.header-actions{gap:9px}.header-cta{display:none}.language-control select{max-width:118px;min-height:42px}.language-control svg{width:15px;height:15px}.hero-actions{flex-wrap:wrap}html:lang(en) .hero h1{font-size:39px;line-height:1.18}html:lang(en) .hero-description br{display:none}html:lang(en) .hero-actions .button{font-size:13px}html:lang(en) .page-heading h1{font-size:32px;line-height:1.3}html:lang(en) .gua-card h3{font-size:22px}html:lang(en) .card-bottom{flex-wrap:wrap;font-size:10px}html:lang(en) .report-hero h1{font-size:36px}html:lang(en) .journey-item h3{display:block;margin:12px 0 0}html:lang(en) .chapter-step{font-size:9px;line-height:1.4}html:lang(en) .mode-badge{line-height:1.5;max-width:180px}html:lang(en) .quiz-top{flex-wrap:wrap;gap:12px}html:lang(en) .comparison-scroll table{min-width:620px}}
