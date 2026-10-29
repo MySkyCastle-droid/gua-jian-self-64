@@ -1,149 +1,581 @@
 {
   "version": "direct-v1",
   "items": [
-    {"seedId":"seed-organization-p01","text":"主要步驟先想好，我才開始動手處理事情。"},
-    {"seedId":"seed-organization-p02","text":"聚會的日期先定下來，我才開始安排活動內容。"},
-    {"seedId":"seed-organization-p03","text":"事情開始之後，我照著事先排好的順序往下做。"},
-    {"seedId":"seed-organization-p04","text":"接下來要辦的事情，我會先列成一張清單。"},
-    {"seedId":"seed-organization-p05","text":"一件事要做到什麼程度才算完成，我在動手前就會定好。"},
-    {"seedId":"seed-organization-p06","text":"整個任務分幾段完成，我會提早安排各段的進度。"},
-    {"seedId":"seed-organization-p07","text":"重要的待辦事項，在我的行程裡有固定保留的時段。"},
-    {"seedId":"seed-organization-p08","text":"大致做法確定之後，我才著手處理眼前的事情。"},
-    {"seedId":"seed-organization-p09","text":"出發以前選好的路線，我會照著走下去。"},
-    {"seedId":"seed-organization-p10","text":"每個環節可以花多久，我會在開始前分配好。"},
-    {"seedId":"seed-organization-p11","text":"重複出現的日常事務，我喜歡按固定節奏處理。"},
-    {"seedId":"seed-organization-p12","text":"手邊材料各要用在哪裡，我會想好再開始製作。"},
-    {"seedId":"seed-organization-p13","text":"哪一部分應該最先處理，我會事先決定。"},
-    {"seedId":"seed-organization-p14","text":"檢查進度的幾個時間點，我會一開始就訂下來。"},
-    {"seedId":"seed-organization-p15","text":"這一階段尚未結束，我已經安排好接著要做的事。"},
-    {"seedId":"seed-organization-p16","text":"幾件事情排在一起，我會先替它們定好先後順序。"},
-    {"seedId":"seed-organization-p17","text":"處理細節之前，我會先確定整件事要採用的方法。"},
-    {"seedId":"seed-organization-p18","text":"整體的安排架構，我習慣在動手之初就畫出來。"},
-    {"seedId":"seed-organization-p19","text":"後續要怎麼行動，我會以已經確定的計畫為依據。"},
-    {"seedId":"seed-organization-p20","text":"預先排好的幾個節點，會帶著我逐段推進事情。"},
-    {"seedId":"seed-organization-p21","text":"何時開始整理與收尾，我會提早放進行程。"},
-    {"seedId":"seed-organization-p22","text":"各個部分做到哪裡為止，我會先界定清楚再開始。"},
-    {"seedId":"seed-organization-p23","text":"相似的事情交到手上，我會沿用一套固定流程。"},
-    {"seedId":"seed-organization-p24","text":"原定安排還沒發生變動，我就會先準備一套備案。"},
-    {"seedId":"seed-organization-n01","text":"先動手完成一小段，我再決定接下來的步驟。"},
-    {"seedId":"seed-organization-n02","text":"活動時間快到了，我才把當天的安排定下來。"},
-    {"seedId":"seed-organization-n03","text":"現場狀況一有變化，我就調整事情的處理順序。"},
-    {"seedId":"seed-organization-n04","text":"有一部分已經可以開始，我就先做，其餘安排留著慢慢補。"},
-    {"seedId":"seed-organization-n05","text":"最後要做成什麼樣子，我會在進行中逐漸決定。"},
-    {"seedId":"seed-organization-n06","text":"新的進展出現之後，我會跟著調整下一階段的安排。"},
-    {"seedId":"seed-organization-n07","text":"各部分要花的時間，我喜歡保留隨時調整的空間。"},
-    {"seedId":"seed-organization-n08","text":"幾種可用的做法，我會留到真正需要時才選定一種。"},
-    {"seedId":"seed-organization-n09","text":"路上得到新的資訊，我會重新選擇接下來的路線。"},
-    {"seedId":"seed-organization-n10","text":"這一項實際做得如何，會決定我何時轉向下一項。"},
-    {"seedId":"seed-organization-n11","text":"即使又做一次相似的事，我也喜歡換一種進行方式。"},
-    {"seedId":"seed-organization-n12","text":"材料拿到手裡實際使用後，我才逐步決定怎樣配置。"},
-    {"seedId":"seed-organization-n13","text":"實際試做之後，我才排出哪些部分應該優先處理。"},
-    {"seedId":"seed-organization-n14","text":"需要確認目前進度時，我才安排檢查的時間。"},
-    {"seedId":"seed-organization-n15","text":"一段事情告一段落，我才挑選下一步要做什麼。"},
-    {"seedId":"seed-organization-n16","text":"新出現的待辦事項，我會讓它插進原來的順序。"},
-    {"seedId":"seed-organization-n17","text":"主要方法要用哪一種，我會試過一小段再決定。"},
-    {"seedId":"seed-organization-n18","text":"整件事的架構，我喜歡讓它隨著實際進行慢慢成形。"},
-    {"seedId":"seed-organization-n19","text":"已經寫好的計畫，在我手上仍是隨時可以修改的草稿。"},
-    {"seedId":"seed-organization-n20","text":"當下有了新的發現，我就會改變原本前進的節點。"},
-    {"seedId":"seed-organization-n21","text":"事情做到後半段，我才決定要用什麼方式收尾。"},
-    {"seedId":"seed-organization-n22","text":"接觸過實際內容，我才界定這次要處理的範圍。"},
-    {"seedId":"seed-organization-n23","text":"每次遇到的狀況不同，我就跟著改動處理流程。"},
-    {"seedId":"seed-organization-n24","text":"變動真的發生之後，我才重新安排應對的做法。"},
-    {"seedId":"seed-emotion-p01","text":"結果有了變化，我心裡的起伏仍然不大。"},
-    {"seedId":"seed-emotion-p02","text":"別人稱讚我的表現，我感到的是溫和的高興。"},
-    {"seedId":"seed-emotion-p03","text":"意料之外的事情發生，我心裡的驚訝很輕。"},
-    {"seedId":"seed-emotion-p04","text":"結果不如原先預期，我的失落程度仍然很輕。"},
-    {"seedId":"seed-emotion-p05","text":"盼望的好事即將到來，我心裡的興奮是輕柔的。"},
-    {"seedId":"seed-emotion-p06","text":"眼前的事情往前推進，我只感到淡淡的喜悅。"},
-    {"seedId":"seed-emotion-p07","text":"得知安排需要更改，我的心情依然平穩。"},
-    {"seedId":"seed-emotion-p08","text":"面前有人提出不同意見，我內心的反應仍然平緩。"},
-    {"seedId":"seed-emotion-p09","text":"正在進行的事情遭到打斷，我的情緒波動很小。"},
-    {"seedId":"seed-emotion-p10","text":"在意的事情終於做完，我心裡是一份淡淡的高興。"},
-    {"seedId":"seed-emotion-p11","text":"想像未來的新發展，我的期待感是溫和的。"},
-    {"seedId":"seed-emotion-p12","text":"特別的往事浮上心頭，我的感受仍然平靜。"},
-    {"seedId":"seed-emotion-p13","text":"想到曾經留下的遺憾，我內心的起伏不大。"},
-    {"seedId":"seed-emotion-p14","text":"看到一段有趣的內容，我感到輕輕的愉快。"},
-    {"seedId":"seed-emotion-p15","text":"好消息傳到耳邊，我心裡的高興仍很溫和。"},
-    {"seedId":"seed-emotion-p16","text":"一段生活經歷走到尾聲，我的情緒起伏不大。"},
-    {"seedId":"seed-emotion-p17","text":"意外得到一份收穫，我感到的驚喜是柔和的。"},
-    {"seedId":"seed-emotion-p18","text":"事情還沒有定案，我的心情依然平穩。"},
-    {"seedId":"seed-emotion-p19","text":"讓我產生共鳴的故事，只在心裡帶來輕柔的感動。"},
-    {"seedId":"seed-emotion-p20","text":"收到關於自己的回饋，我心裡的波動很小。"},
-    {"seedId":"seed-emotion-p21","text":"現實沒有原先想得那麼好，我的失落程度仍然很輕。"},
-    {"seedId":"seed-emotion-p22","text":"機會再次出現，我只感到些微興奮。"},
-    {"seedId":"seed-emotion-p23","text":"手上的進度暫時卡住，我的挫折感並不強烈。"},
-    {"seedId":"seed-emotion-p24","text":"事情往好或往壞發展，我心情的高低變化都不大。"},
-    {"seedId":"seed-emotion-n01","text":"最後的結果一改變，我的心情就跟著大幅起落。"},
-    {"seedId":"seed-emotion-n02","text":"自己的付出獲得肯定，我心裡會湧起強烈喜悅。"},
-    {"seedId":"seed-emotion-n03","text":"突然出現的新狀況，會讓我產生很強的驚訝感。"},
-    {"seedId":"seed-emotion-n04","text":"期待的事情落空，我心裡的失落十分鮮明。"},
-    {"seedId":"seed-emotion-n05","text":"等待盼望的事情發生，我內心的興奮十分強烈。"},
-    {"seedId":"seed-emotion-n06","text":"一看見新的進展，我就感到明顯的喜悅。"},
-    {"seedId":"seed-emotion-n07","text":"原來說好的安排改了，我的心情會出現明顯起伏。"},
-    {"seedId":"seed-emotion-n08","text":"聽見與自己不同的看法，我心裡的感受相當強烈。"},
-    {"seedId":"seed-emotion-n09","text":"手頭的事被打斷，我內心的波動很強。"},
-    {"seedId":"seed-emotion-n10","text":"重視的事情順利完成，會帶給我強烈的喜悅。"},
-    {"seedId":"seed-emotion-n11","text":"尚未展開的新方向，已經讓我充滿鮮明的期待。"},
-    {"seedId":"seed-emotion-n12","text":"難忘的經歷重新浮現，我內心的感受仍十分鮮明。"},
-    {"seedId":"seed-emotion-n13","text":"一件遺憾再次被想起，依然會帶來很強的感受。"},
-    {"seedId":"seed-emotion-n14","text":"碰到讓我覺得有趣的內容，心裡的愉快十分鮮明。"},
-    {"seedId":"seed-emotion-n15","text":"得知好消息，我心裡會湧出很強的高興。"},
-    {"seedId":"seed-emotion-n16","text":"熟悉的一段經歷結束了，我的情緒起伏很強。"},
-    {"seedId":"seed-emotion-n17","text":"沒有預期到的收穫，會在我心裡激起強烈驚喜。"},
-    {"seedId":"seed-emotion-n18","text":"等著尚未揭曉的結果，我的心情起伏十分明顯。"},
-    {"seedId":"seed-emotion-n19","text":"讀到觸動自己的故事，我的感動十分強烈。"},
-    {"seedId":"seed-emotion-n20","text":"別人對我的回饋，會引起心裡很鮮明的感受。"},
-    {"seedId":"seed-emotion-n21","text":"實際情況和原先想的不一樣，我的感受十分強烈。"},
-    {"seedId":"seed-emotion-n22","text":"機會重新來到眼前，我會產生很強的興奮感。"},
-    {"seedId":"seed-emotion-n23","text":"一件事停在原地沒有進展，我心裡的挫折感很強。"},
-    {"seedId":"seed-emotion-n24","text":"事情開始變好或變壞，我的心情都會有明顯起伏。"},
-    {"seedId":"seed-coordination-p01","text":"要拿出大綱討論，我會先獨自擬好一份。"},
-    {"seedId":"seed-coordination-p02","text":"可行的選項有哪些，我會先自己列過才找人交換意見。"},
-    {"seedId":"seed-coordination-p03","text":"共同討論開始以前，我已經想清楚自己的看法。"},
-    {"seedId":"seed-coordination-p04","text":"第一份草稿由我先寫好，再交給相關的人補充。"},
-    {"seedId":"seed-coordination-p05","text":"採用什麼比較標準，我會先自己想好再請人核對。"},
-    {"seedId":"seed-coordination-p06","text":"徵詢意見以前，我喜歡先自行做出一個雛形。"},
-    {"seedId":"seed-coordination-p07","text":"和夥伴同步做法之前，我會先自行整理要做的步驟。"},
-    {"seedId":"seed-coordination-p08","text":"帶進商量場合的答案，我會先一個人想過。"},
-    {"seedId":"seed-coordination-p09","text":"要聽取大家的建議，我會先提出自己想好的一個版本。"},
-    {"seedId":"seed-coordination-p10","text":"怎樣做才合適，我會先在心裡組合好再向別人說明。"},
-    {"seedId":"seed-coordination-p11","text":"一份由我先排好的時程，會是邀請大家修訂的起點。"},
-    {"seedId":"seed-coordination-p12","text":"各部分有什麼關係，我會先獨自理清再找人核對。"},
-    {"seedId":"seed-coordination-p13","text":"接到不熟悉的事情，我先自擬做法再向人請教。"},
-    {"seedId":"seed-coordination-p14","text":"哪些事情排在前面，我會先自己排序再與大家協商。"},
-    {"seedId":"seed-coordination-p15","text":"進入方案討論時，我已經選好暫時支持的一案。"},
-    {"seedId":"seed-coordination-p16","text":"蒐集到的資訊，我會先獨自整合再帶進共同討論。"},
-    {"seedId":"seed-coordination-p17","text":"資源分配的第一個版本，我會先擬好再問相關的人。"},
-    {"seedId":"seed-coordination-p18","text":"邀人比較替代做法之前，我會先自己想出幾種選擇。"},
-    {"seedId":"seed-coordination-p19","text":"和別人的提案合併以前，我會先整理自己的架構。"},
-    {"seedId":"seed-coordination-p20","text":"尚待決定的問題，我會先獨自想過再與大家定方向。"},
-    {"seedId":"seed-coordination-p21","text":"商議如何應付變動時，我會帶著自己擬好的做法。"},
-    {"seedId":"seed-coordination-p22","text":"最初的構想由我先整理出來，再邀人一起修改。"},
-    {"seedId":"seed-coordination-p23","text":"收集大家的回饋之前，我會先拿出已經做好的草案。"},
-    {"seedId":"seed-coordination-p24","text":"向夥伴確認想法時，我已有一個自己的處理方向。"},
-    {"seedId":"seed-coordination-n01","text":"大綱要怎麼寫，我喜歡先找大家談過再一起定下來。"},
-    {"seedId":"seed-coordination-n02","text":"選項還沒列出來，我會先聽聽彼此的想法。"},
-    {"seedId":"seed-coordination-n03","text":"各人的看法先聽一輪，我再形成自己的提案。"},
-    {"seedId":"seed-coordination-n04","text":"動筆寫第一份草稿前，我會邀相關的人先商量。"},
-    {"seedId":"seed-coordination-n05","text":"拿什麼來比較方案，我會先共同討論再定標準。"},
-    {"seedId":"seed-coordination-n06","text":"雛形要呈現哪些東西，我喜歡先和人談過再製作。"},
-    {"seedId":"seed-coordination-n07","text":"要做的步驟怎麼排，我會先和夥伴討論做法。"},
-    {"seedId":"seed-coordination-n08","text":"答案尚未成形時，我喜歡在共同商量中把它想清楚。"},
-    {"seedId":"seed-coordination-n09","text":"彼此的建議交換過後，我再提出一個整合版本。"},
-    {"seedId":"seed-coordination-n10","text":"可以採用的做法，我會從與別人的對談中整理出來。"},
-    {"seedId":"seed-coordination-n11","text":"大家各自的時間先問清楚，我才和他們一起擬定時程。"},
-    {"seedId":"seed-coordination-n12","text":"各部分的關係由大家一起理清，我再整理整體架構。"},
-    {"seedId":"seed-coordination-n13","text":"陌生的任務交到手上，我先請教相關的人再擬做法。"},
-    {"seedId":"seed-coordination-n14","text":"每個人在意的重點交換過後，我才決定優先順序。"},
-    {"seedId":"seed-coordination-n15","text":"要支持哪一個方案，我會先和大家比較選項再決定。"},
-    {"seedId":"seed-coordination-n16","text":"資訊在討論中先交換過，我再整理出整體的做法。"},
-    {"seedId":"seed-coordination-n17","text":"資源該如何分配，我會先問相關的人再提出初案。"},
-    {"seedId":"seed-coordination-n18","text":"替代方向有哪些，我喜歡先和人聊過再選出可試的方法。"},
-    {"seedId":"seed-coordination-n19","text":"一份提案的架構，我會先共同交換構想再整理成形。"},
-    {"seedId":"seed-coordination-n20","text":"下一步還不確定時，我先和夥伴談過問題再做決定。"},
-    {"seedId":"seed-coordination-n21","text":"變動帶來的新情況，我會先與人商量再擬應對方案。"},
-    {"seedId":"seed-coordination-n22","text":"最初的點子還沒定下來，我就會邀人一起發想。"},
-    {"seedId":"seed-coordination-n23","text":"第一版草案尚未動筆，我會先收集大家的回饋。"},
-    {"seedId":"seed-coordination-n24","text":"處理方向怎麼選，我喜歡先與夥伴交換目前的情況。"}
+    {
+      "seedId": "seed-organization-p01",
+      "text": "主要步驟先想好，我才開始動手處理事情。"
+    },
+    {
+      "seedId": "seed-organization-p02",
+      "text": "聚會的日期先定下來，我才開始安排活動內容。"
+    },
+    {
+      "seedId": "seed-organization-p03",
+      "text": "事情開始之後，我照著事先排好的順序往下做。"
+    },
+    {
+      "seedId": "seed-organization-p04",
+      "text": "接下來要辦的事情，我會先列成一張清單。"
+    },
+    {
+      "seedId": "seed-organization-p05",
+      "text": "一件事要做到什麼程度才算完成，我在動手前就會定好。"
+    },
+    {
+      "seedId": "seed-organization-p06",
+      "text": "整個任務分幾段完成，我會提早安排各段的進度。"
+    },
+    {
+      "seedId": "seed-organization-p07",
+      "text": "重要的待辦事項，在我的行程裡有固定保留的時段。"
+    },
+    {
+      "seedId": "seed-organization-p08",
+      "text": "大致做法確定之後，我才著手處理眼前的事情。"
+    },
+    {
+      "seedId": "seed-organization-p09",
+      "text": "出發以前選好的路線，我會照著走下去。"
+    },
+    {
+      "seedId": "seed-organization-p10",
+      "text": "每個環節可以花多久，我會在開始前分配好。"
+    },
+    {
+      "seedId": "seed-organization-p11",
+      "text": "重複出現的日常事務，我喜歡按固定節奏處理。"
+    },
+    {
+      "seedId": "seed-organization-p12",
+      "text": "手邊材料各要用在哪裡，我會想好再開始製作。"
+    },
+    {
+      "seedId": "seed-organization-p13",
+      "text": "哪一部分應該最先處理，我會事先決定。"
+    },
+    {
+      "seedId": "seed-organization-p14",
+      "text": "檢查進度的幾個時間點，我會一開始就訂下來。"
+    },
+    {
+      "seedId": "seed-organization-p15",
+      "text": "這一階段尚未結束，我已經安排好接著要做的事。"
+    },
+    {
+      "seedId": "seed-organization-p16",
+      "text": "幾件事情排在一起，我會先替它們定好先後順序。"
+    },
+    {
+      "seedId": "seed-organization-p17",
+      "text": "處理細節之前，我會先確定整件事要採用的方法。"
+    },
+    {
+      "seedId": "seed-organization-p18",
+      "text": "整件事要怎麼安排，我會在開始前先畫出大致的步驟。"
+    },
+    {
+      "seedId": "seed-organization-p19",
+      "text": "後續要怎麼行動，我會以已經確定的計畫為依據。"
+    },
+    {
+      "seedId": "seed-organization-p20",
+      "text": "事先排好的幾個步驟，我會一段一段照著完成。"
+    },
+    {
+      "seedId": "seed-organization-p21",
+      "text": "何時開始整理與收尾，我會提早放進行程。"
+    },
+    {
+      "seedId": "seed-organization-p22",
+      "text": "哪些部分要做、要做到哪裡，我會在開始前先決定。"
+    },
+    {
+      "seedId": "seed-organization-p23",
+      "text": "相似的事情交到手上，我會沿用一套固定流程。"
+    },
+    {
+      "seedId": "seed-organization-p24",
+      "text": "原定安排還沒發生變動，我就會先準備一套備案。"
+    },
+    {
+      "seedId": "seed-organization-n01",
+      "text": "先動手完成一小段，我再決定接下來的步驟。"
+    },
+    {
+      "seedId": "seed-organization-n02",
+      "text": "活動時間快到了，我才把當天的安排定下來。"
+    },
+    {
+      "seedId": "seed-organization-n03",
+      "text": "現場狀況一有變化，我就調整事情的處理順序。"
+    },
+    {
+      "seedId": "seed-organization-n04",
+      "text": "有一部分已經可以開始，我就先做，其餘安排留著慢慢補。"
+    },
+    {
+      "seedId": "seed-organization-n05",
+      "text": "最後要做成什麼樣子，我會在進行中逐漸決定。"
+    },
+    {
+      "seedId": "seed-organization-n06",
+      "text": "新的進展出現之後，我會跟著調整下一階段的安排。"
+    },
+    {
+      "seedId": "seed-organization-n07",
+      "text": "各部分要花的時間，我喜歡保留隨時調整的空間。"
+    },
+    {
+      "seedId": "seed-organization-n08",
+      "text": "幾種可用的做法，我會留到真正需要時才選定一種。"
+    },
+    {
+      "seedId": "seed-organization-n09",
+      "text": "路上得到新的資訊，我會重新選擇接下來的路線。"
+    },
+    {
+      "seedId": "seed-organization-n10",
+      "text": "這一項實際做得如何，會決定我何時轉向下一項。"
+    },
+    {
+      "seedId": "seed-organization-n11",
+      "text": "即使又做一次相似的事，我也喜歡換一種進行方式。"
+    },
+    {
+      "seedId": "seed-organization-n12",
+      "text": "一邊動手使用材料，我才一邊決定各種材料放在哪裡。"
+    },
+    {
+      "seedId": "seed-organization-n13",
+      "text": "實際試做之後，我才排出哪些部分應該優先處理。"
+    },
+    {
+      "seedId": "seed-organization-n14",
+      "text": "需要確認目前進度時，我才安排檢查的時間。"
+    },
+    {
+      "seedId": "seed-organization-n15",
+      "text": "一段事情告一段落，我才挑選下一步要做什麼。"
+    },
+    {
+      "seedId": "seed-organization-n16",
+      "text": "新出現的待辦事項，我會讓它插進原來的順序。"
+    },
+    {
+      "seedId": "seed-organization-n17",
+      "text": "主要方法要用哪一種，我會試過一小段再決定。"
+    },
+    {
+      "seedId": "seed-organization-n18",
+      "text": "事情慢慢做下去，我才逐漸想清楚整體要怎麼安排。"
+    },
+    {
+      "seedId": "seed-organization-n19",
+      "text": "已經寫好的計畫，在我手上仍是隨時可以修改的草稿。"
+    },
+    {
+      "seedId": "seed-organization-n20",
+      "text": "有了原先沒想到的新發現，我就會調整接下來的步驟。"
+    },
+    {
+      "seedId": "seed-organization-n21",
+      "text": "事情做到後半段，我才決定要用什麼方式收尾。"
+    },
+    {
+      "seedId": "seed-organization-n22",
+      "text": "真正接觸過要做的事，我才決定這次要處理哪些部分。"
+    },
+    {
+      "seedId": "seed-organization-n23",
+      "text": "每次遇到的狀況不同，我就跟著改動處理流程。"
+    },
+    {
+      "seedId": "seed-organization-n24",
+      "text": "變動真的發生之後，我才重新安排應對的做法。"
+    },
+    {
+      "seedId": "seed-emotion-p01",
+      "text": "結果有了變化，我心裡的起伏仍然不大。"
+    },
+    {
+      "seedId": "seed-emotion-p02",
+      "text": "受到別人稱讚時，我會開心，但心情不會太激動。"
+    },
+    {
+      "seedId": "seed-emotion-p03",
+      "text": "沒料到的事情突然發生，我心裡不會特別驚訝。"
+    },
+    {
+      "seedId": "seed-emotion-p04",
+      "text": "結果沒有達到預期，我會失望，但感覺不強烈。"
+    },
+    {
+      "seedId": "seed-emotion-p05",
+      "text": "想到一直期待的好事，我心裡不會特別興奮。"
+    },
+    {
+      "seedId": "seed-emotion-p06",
+      "text": "事情有了新進展，我會有一點開心。"
+    },
+    {
+      "seedId": "seed-emotion-p07",
+      "text": "得知安排需要更改，我的心情依然平穩。"
+    },
+    {
+      "seedId": "seed-emotion-p08",
+      "text": "別人說出不同意見時，我心裡的起伏不大。"
+    },
+    {
+      "seedId": "seed-emotion-p09",
+      "text": "正在進行的事情遭到打斷，我的情緒波動很小。"
+    },
+    {
+      "seedId": "seed-emotion-p10",
+      "text": "一件在意的事終於完成，我會高興，但感覺不強烈。"
+    },
+    {
+      "seedId": "seed-emotion-p11",
+      "text": "想到未來的新機會，我有些期待，但感覺不強烈。"
+    },
+    {
+      "seedId": "seed-emotion-p12",
+      "text": "特別的往事浮上心頭，我的感受仍然平靜。"
+    },
+    {
+      "seedId": "seed-emotion-p13",
+      "text": "想到曾經留下的遺憾，我內心的起伏不大。"
+    },
+    {
+      "seedId": "seed-emotion-p14",
+      "text": "看到有趣的內容時，我會覺得有點開心。"
+    },
+    {
+      "seedId": "seed-emotion-p15",
+      "text": "聽到一個好消息，我會開心，但不會特別激動。"
+    },
+    {
+      "seedId": "seed-emotion-p16",
+      "text": "一段生活經歷走到尾聲，我的情緒起伏不大。"
+    },
+    {
+      "seedId": "seed-emotion-p17",
+      "text": "得到意外的收穫，我會驚喜，但感覺不強烈。"
+    },
+    {
+      "seedId": "seed-emotion-p18",
+      "text": "事情還沒有定案，我的心情依然平穩。"
+    },
+    {
+      "seedId": "seed-emotion-p19",
+      "text": "讀到打動自己的故事，我會感動，但感覺不會太強烈。"
+    },
+    {
+      "seedId": "seed-emotion-p20",
+      "text": "收到關於自己的回饋，我心裡的波動很小。"
+    },
+    {
+      "seedId": "seed-emotion-p21",
+      "text": "現實沒有原先想得那麼好，我的失落程度仍然很輕。"
+    },
+    {
+      "seedId": "seed-emotion-p22",
+      "text": "機會再次出現，我只感到些微興奮。"
+    },
+    {
+      "seedId": "seed-emotion-p23",
+      "text": "手上的進度暫時卡住，我的挫折感並不強烈。"
+    },
+    {
+      "seedId": "seed-emotion-p24",
+      "text": "事情往好或往壞發展，我心情的高低變化都不大。"
+    },
+    {
+      "seedId": "seed-emotion-n01",
+      "text": "最後的結果一改變，我的心情就跟著大幅起落。"
+    },
+    {
+      "seedId": "seed-emotion-n02",
+      "text": "自己的付出獲得肯定，我心裡會湧起強烈喜悅。"
+    },
+    {
+      "seedId": "seed-emotion-n03",
+      "text": "突然出現的新狀況，會讓我產生很強的驚訝感。"
+    },
+    {
+      "seedId": "seed-emotion-n04",
+      "text": "原本期待的事情沒發生，我會很失望。"
+    },
+    {
+      "seedId": "seed-emotion-n05",
+      "text": "等待盼望的事情發生，我內心的興奮十分強烈。"
+    },
+    {
+      "seedId": "seed-emotion-n06",
+      "text": "一看見新的進展，我就感到明顯的喜悅。"
+    },
+    {
+      "seedId": "seed-emotion-n07",
+      "text": "原來說好的安排改了，我的心情會出現明顯起伏。"
+    },
+    {
+      "seedId": "seed-emotion-n08",
+      "text": "聽見與自己不同的看法，我心裡的感受相當強烈。"
+    },
+    {
+      "seedId": "seed-emotion-n09",
+      "text": "手頭的事被打斷，我內心的波動很強。"
+    },
+    {
+      "seedId": "seed-emotion-n10",
+      "text": "重視的事情順利完成，會帶給我強烈的喜悅。"
+    },
+    {
+      "seedId": "seed-emotion-n11",
+      "text": "還沒開始的新嘗試，已經讓我非常期待。"
+    },
+    {
+      "seedId": "seed-emotion-n12",
+      "text": "難忘的經歷重新浮現，我內心的感受仍十分鮮明。"
+    },
+    {
+      "seedId": "seed-emotion-n13",
+      "text": "一件遺憾再次被想起，依然會帶來很強的感受。"
+    },
+    {
+      "seedId": "seed-emotion-n14",
+      "text": "遇到有趣的內容，我會覺得非常開心。"
+    },
+    {
+      "seedId": "seed-emotion-n15",
+      "text": "有人告訴我好消息，我會非常開心。"
+    },
+    {
+      "seedId": "seed-emotion-n16",
+      "text": "熟悉的生活告一段落時，我的心情會有很大的起伏。"
+    },
+    {
+      "seedId": "seed-emotion-n17",
+      "text": "沒有預期到的收穫，會在我心裡激起強烈驚喜。"
+    },
+    {
+      "seedId": "seed-emotion-n18",
+      "text": "等著尚未揭曉的結果，我的心情起伏十分明顯。"
+    },
+    {
+      "seedId": "seed-emotion-n19",
+      "text": "讀到觸動自己的故事，我的感動十分強烈。"
+    },
+    {
+      "seedId": "seed-emotion-n20",
+      "text": "聽到別人對我的評價，我心裡的感受會很強烈。"
+    },
+    {
+      "seedId": "seed-emotion-n21",
+      "text": "實際情況和原先想的不一樣，我的感受十分強烈。"
+    },
+    {
+      "seedId": "seed-emotion-n22",
+      "text": "機會重新來到眼前，我會產生很強的興奮感。"
+    },
+    {
+      "seedId": "seed-emotion-n23",
+      "text": "一件事停在原地沒有進展，我心裡的挫折感很強。"
+    },
+    {
+      "seedId": "seed-emotion-n24",
+      "text": "事情開始變好或變壞，我的心情都會有明顯起伏。"
+    },
+    {
+      "seedId": "seed-coordination-p01",
+      "text": "要拿出大綱討論，我會先獨自擬好一份。"
+    },
+    {
+      "seedId": "seed-coordination-p02",
+      "text": "可行的選項有哪些，我會先自己列過才找人交換意見。"
+    },
+    {
+      "seedId": "seed-coordination-p03",
+      "text": "共同討論開始以前，我已經想清楚自己的看法。"
+    },
+    {
+      "seedId": "seed-coordination-p04",
+      "text": "第一份草稿由我先寫好，再交給相關的人補充。"
+    },
+    {
+      "seedId": "seed-coordination-p05",
+      "text": "要用哪些條件來比較不同做法，我會先自己想好再問別人的意見。"
+    },
+    {
+      "seedId": "seed-coordination-p06",
+      "text": "要請別人給意見，我會先自己做出一個簡單的版本。"
+    },
+    {
+      "seedId": "seed-coordination-p07",
+      "text": "準備和夥伴討論做法，我會先自己列出要做的步驟。"
+    },
+    {
+      "seedId": "seed-coordination-p08",
+      "text": "和大家商量一件事時，我會先自己想好答案再加入討論。"
+    },
+    {
+      "seedId": "seed-coordination-p09",
+      "text": "要聽取大家的建議，我會先提出自己想好的一個版本。"
+    },
+    {
+      "seedId": "seed-coordination-p10",
+      "text": "想向別人說明怎麼做，我會先自己想出一套做法。"
+    },
+    {
+      "seedId": "seed-coordination-p11",
+      "text": "要和大家安排時間，我會先自己排一份再請大家調整。"
+    },
+    {
+      "seedId": "seed-coordination-p12",
+      "text": "一件事包含好幾個部分，我會先自己弄清它們如何配合再找人確認。"
+    },
+    {
+      "seedId": "seed-coordination-p13",
+      "text": "第一次接手不熟悉的事，我會先自己想做法再請教別人。"
+    },
+    {
+      "seedId": "seed-coordination-p14",
+      "text": "哪些事情排在前面，我會先自己排序再與大家協商。"
+    },
+    {
+      "seedId": "seed-coordination-p15",
+      "text": "進入方案討論時，我已經選好暫時支持的一案。"
+    },
+    {
+      "seedId": "seed-coordination-p16",
+      "text": "蒐集到的資訊，我會先獨自整合再帶進共同討論。"
+    },
+    {
+      "seedId": "seed-coordination-p17",
+      "text": "需要分配人手或物品時，我會先想好怎麼分再問大家的意見。"
+    },
+    {
+      "seedId": "seed-coordination-p18",
+      "text": "邀人比較替代做法之前，我會先自己想出幾種選擇。"
+    },
+    {
+      "seedId": "seed-coordination-p19",
+      "text": "要把大家的想法放在一起，我會先自己整理好想說的重點。"
+    },
+    {
+      "seedId": "seed-coordination-p20",
+      "text": "尚待決定的問題，我會先獨自想過再與大家定方向。"
+    },
+    {
+      "seedId": "seed-coordination-p21",
+      "text": "商議如何應付變動時，我會帶著自己擬好的做法。"
+    },
+    {
+      "seedId": "seed-coordination-p22",
+      "text": "最初的構想由我先整理出來，再邀人一起修改。"
+    },
+    {
+      "seedId": "seed-coordination-p23",
+      "text": "收集大家的回饋之前，我會先拿出已經做好的草案。"
+    },
+    {
+      "seedId": "seed-coordination-p24",
+      "text": "向夥伴確認想法時，我已有一個自己的處理方向。"
+    },
+    {
+      "seedId": "seed-coordination-n01",
+      "text": "大綱要怎麼寫，我喜歡先找大家談過再一起定下來。"
+    },
+    {
+      "seedId": "seed-coordination-n02",
+      "text": "選項還沒列出來，我會先聽聽彼此的想法。"
+    },
+    {
+      "seedId": "seed-coordination-n03",
+      "text": "各人的看法先聽一輪，我再形成自己的提案。"
+    },
+    {
+      "seedId": "seed-coordination-n04",
+      "text": "動筆寫第一份草稿前，我會邀相關的人先商量。"
+    },
+    {
+      "seedId": "seed-coordination-n05",
+      "text": "比較不同做法之前，我會先和大家談好要看哪些條件。"
+    },
+    {
+      "seedId": "seed-coordination-n06",
+      "text": "還沒開始做第一個版本，我會先和大家談談要放哪些內容。"
+    },
+    {
+      "seedId": "seed-coordination-n07",
+      "text": "要做的步驟怎麼排，我會先和夥伴討論做法。"
+    },
+    {
+      "seedId": "seed-coordination-n08",
+      "text": "答案尚未成形時，我喜歡在共同商量中把它想清楚。"
+    },
+    {
+      "seedId": "seed-coordination-n09",
+      "text": "彼此的建議交換過後，我再提出一個整合版本。"
+    },
+    {
+      "seedId": "seed-coordination-n10",
+      "text": "可以採用的做法，我會從與別人的對談中整理出來。"
+    },
+    {
+      "seedId": "seed-coordination-n11",
+      "text": "大家各自的時間先問清楚，我才和他們一起擬定時程。"
+    },
+    {
+      "seedId": "seed-coordination-n12",
+      "text": "幾個部分要如何搭配，我會先和大家談清楚，再想整件事怎麼做。"
+    },
+    {
+      "seedId": "seed-coordination-n13",
+      "text": "陌生的任務交到手上，我先請教相關的人再擬做法。"
+    },
+    {
+      "seedId": "seed-coordination-n14",
+      "text": "每個人在意的重點交換過後，我才決定優先順序。"
+    },
+    {
+      "seedId": "seed-coordination-n15",
+      "text": "要支持哪一個方案，我會先和大家比較選項再決定。"
+    },
+    {
+      "seedId": "seed-coordination-n16",
+      "text": "資訊在討論中先交換過，我再整理出整體的做法。"
+    },
+    {
+      "seedId": "seed-coordination-n17",
+      "text": "資源該如何分配，我會先問相關的人再提出初案。"
+    },
+    {
+      "seedId": "seed-coordination-n18",
+      "text": "替代方向有哪些，我喜歡先和人聊過再選出可試的方法。"
+    },
+    {
+      "seedId": "seed-coordination-n19",
+      "text": "要把想法整理成一份建議，我會先和大家聊過，再把內容寫下來。"
+    },
+    {
+      "seedId": "seed-coordination-n20",
+      "text": "下一步還不確定時，我先和夥伴談過問題再做決定。"
+    },
+    {
+      "seedId": "seed-coordination-n21",
+      "text": "變動帶來的新情況，我會先與人商量再擬應對方案。"
+    },
+    {
+      "seedId": "seed-coordination-n22",
+      "text": "最初的點子還沒定下來，我就會邀人一起發想。"
+    },
+    {
+      "seedId": "seed-coordination-n23",
+      "text": "第一版草案尚未動筆，我會先收集大家的回饋。"
+    },
+    {
+      "seedId": "seed-coordination-n24",
+      "text": "處理方向怎麼選，我喜歡先與夥伴交換目前的情況。"
+    }
   ]
 }

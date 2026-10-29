@@ -2,6 +2,7 @@
 (function (global) {
   'use strict';
   const VERSION = 'i18n-v2-auto1';
+  const CONTENT_VERSION = 'plain-questions-v2';
   const LOCALES = Object.freeze(['zh-Hant', 'zh-Hans', 'en', 'ja', 'ko', 'hi', 'th', 'id', 'de', 'fr', 'es']);
   const EXTRA_LOCALES = new Set(['ko', 'hi', 'th', 'id', 'de', 'fr', 'es']);
   const LATIN_LOCALES = new Set(['en', 'id', 'de', 'fr', 'es']);
@@ -254,7 +255,7 @@
   }
   async function load(code) {
     if (code === 'zh-Hant' || packs[code]) return;
-    const response = await global.fetch('./locales/' + code + '.json?v=' + VERSION, {credentials:'same-origin'});
+    const response = await global.fetch('./locales/' + code + '.json?v=' + CONTENT_VERSION, {credentials:'same-origin'});
     if (!response.ok) throw new Error('Language pack unavailable');
     register(code, await response.json());
   }

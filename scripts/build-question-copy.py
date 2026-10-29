@@ -18,7 +18,7 @@ for item in items:
     key=opening(text)
     assert key not in seen,('duplicate visible opening',key,seen.get(key),item['seedId'])
     seen[key]=item['seedId']
-value={'version':'direct-v1','coreItemCount':288,'historicalVariantCount':100000,'parameters':{'maxSameFamily':1,'maxSameSemanticCluster':1,'maxSameOpeningClause':1,'includeClarifications':True,'genericContextPreamble':False,'unchangedFivePointValues':[-2,-1,0,1,2]},'items':sorted(items,key=lambda x:x['seedId'])}
+value={'version':'direct-v1','editorialVersion':'plain-questions-v2','coreItemCount':288,'historicalVariantCount':100000,'parameters':{'maxSameFamily':1,'maxSameSemanticCluster':1,'maxSameOpeningClause':1,'includeClarifications':True,'genericContextPreamble':False,'unchangedFivePointValues':[-2,-1,0,1,2]},'items':sorted(items,key=lambda x:x['seedId'])}
 body='/* Original direct behavior wording; historical QB records remain unchanged. */\nwindow.GuaData ||= {};\nwindow.GuaData.questionCopy = '+json.dumps(value,ensure_ascii=False,separators=(',',':'))+';\n'
 (ROOT/'dist/data/question-copy.js').write_text(body,encoding='utf-8')
 print(json.dumps({'version':value['version'],'items':len(items),'uniqueVisibleOpeningClauses':len(seen),'sha256':hashlib.sha256(body.encode()).hexdigest()}))

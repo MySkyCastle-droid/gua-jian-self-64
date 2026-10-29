@@ -1,0 +1,1620 @@
+{
+  "version": "plain-questions-v2",
+  "reviewedCoreItems": 288,
+  "changedCoreItems": 71,
+  "unchangedCoreItems": 217,
+  "translationMethod": "ChatGPT editorial rewriting in this task; fixed local assets; no visitor answer submission or runtime model",
+  "translatedLocales": [
+    "zh-Hans",
+    "en",
+    "ja",
+    "ko",
+    "hi",
+    "th",
+    "id",
+    "de",
+    "fr",
+    "es"
+  ],
+  "translationPairs": 710,
+  "historicalVariantRowsAudited": 100000,
+  "originalSourceRows": 3370,
+  "countingNote": "100000 historical contextual variants come from 288 project-authored semantic families, not 100000 independent validated items. Original source language is English; current direct Chinese text is project-authored adaptation, not literal translation.",
+  "scoringAndSourceIdsUnchanged": true,
+  "changes": [
+    {
+      "seedId": "seed-coordination-n05",
+      "axis": "coordination",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H61",
+        "ipip-H1275"
+      ],
+      "before": "拿什麼來比較方案，我會先共同討論再定標準。",
+      "after": "比較不同做法之前，我會先和大家談好要看哪些條件。",
+      "translations": {
+        "zh-Hans": "比较不同做法之前，我会先和大家谈好要看哪些条件。",
+        "en": "Before comparing approaches, I discuss with everyone what we should look at.",
+        "ja": "いろいろなやり方を比べる前に、何を見て比べるかをみんなと話し合います。",
+        "ko": "여러 방법을 비교하기 전에 어떤 조건을 볼지 먼저 함께 의논한다.",
+        "hi": "अलग-अलग तरीकों की तुलना करने से पहले मैं सबके साथ चर्चा करता हूँ कि किन बातों को देखना है।",
+        "th": "ก่อนเปรียบเทียบวิธีต่าง ๆ ฉันจะคุยกับทุกคนก่อนว่าควรดูเงื่อนไขอะไรบ้าง",
+        "id": "Sebelum membandingkan berbagai cara, saya membahas bersama semua orang hal apa yang perlu dilihat.",
+        "de": "Bevor ich verschiedene Vorgehensweisen vergleiche, bespreche ich mit allen, worauf wir achten sollten.",
+        "fr": "Avant de comparer les façons de faire, je discute avec tout le monde des critères à examiner.",
+        "es": "Antes de comparar distintas formas de hacer algo, hablo con todos sobre en qué debemos fijarnos."
+      }
+    },
+    {
+      "seedId": "seed-coordination-n06",
+      "axis": "coordination",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H61",
+        "ipip-W45"
+      ],
+      "before": "雛形要呈現哪些東西，我喜歡先和人談過再製作。",
+      "after": "還沒開始做第一個版本，我會先和大家談談要放哪些內容。",
+      "translations": {
+        "zh-Hans": "还没开始做第一个版本，我会先和大家谈谈要放哪些内容。",
+        "en": "Before making a first version, I discuss with everyone what it should include.",
+        "ja": "最初のものを作る前に、何を入れるかをみんなと話し合います。",
+        "ko": "첫 버전을 만들기 전에 무엇을 넣을지 먼저 모두와 이야기한다.",
+        "hi": "पहला रूप तैयार करने से पहले मैं सबके साथ चर्चा करता हूँ कि उसमें क्या शामिल करना है।",
+        "th": "ก่อนเริ่มทำแบบแรก ฉันจะคุยกับทุกคนก่อนว่าควรใส่อะไรลงไปบ้าง",
+        "id": "Sebelum membuat versi pertama, saya membahas dengan semua orang apa saja yang perlu dimasukkan.",
+        "de": "Bevor ich eine erste Version erstelle, bespreche ich mit allen, was hineingehören soll.",
+        "fr": "Avant de préparer une première version, je discute avec tout le monde de ce qu’elle doit contenir.",
+        "es": "Antes de preparar una primera versión, hablo con todos sobre qué debe incluir."
+      }
+    },
+    {
+      "seedId": "seed-coordination-n12",
+      "axis": "coordination",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H61",
+        "ipip-W45"
+      ],
+      "before": "各部分的關係由大家一起理清，我再整理整體架構。",
+      "after": "幾個部分要如何搭配，我會先和大家談清楚，再想整件事怎麼做。",
+      "translations": {
+        "zh-Hans": "几个部分要如何搭配，我会先和大家谈清楚，再想整件事怎么做。",
+        "en": "I first discuss with everyone how the parts fit together, then work out how to do the whole thing.",
+        "ja": "各部分をどう組み合わせるかを先にみんなと話し合ってから、全体をどう進めるか考えます。",
+        "ko": "각 부분을 어떻게 맞출지 먼저 모두와 이야기한 뒤 전체 일을 어떻게 할지 생각한다.",
+        "hi": "पहले मैं सबके साथ समझता हूँ कि हिस्से आपस में कैसे जुड़ेंगे, फिर सोचता हूँ कि पूरा काम कैसे करना है।",
+        "th": "ฉันคุยกับทุกคนให้ชัดเจนก่อนว่าแต่ละส่วนจะประกอบกันอย่างไร แล้วจึงคิดว่าจะทำทั้งหมดอย่างไร",
+        "id": "Saya membahas bersama semua orang dulu bagaimana bagian-bagian saling cocok, lalu memikirkan cara mengerjakan keseluruhannya.",
+        "de": "Ich bespreche zuerst mit allen, wie die Teile zusammenpassen, und überlege dann, wie wir das Ganze angehen.",
+        "fr": "Je discute d’abord avec tout le monde de la façon d’articuler les parties, puis je réfléchis à la manière de réaliser l’ensemble.",
+        "es": "Primero hablo con todos sobre cómo encajan las partes y después pienso cómo hacer el conjunto."
+      }
+    },
+    {
+      "seedId": "seed-coordination-n19",
+      "axis": "coordination",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H61",
+        "ipip-X271"
+      ],
+      "before": "一份提案的架構，我會先共同交換構想再整理成形。",
+      "after": "要把想法整理成一份建議，我會先和大家聊過，再把內容寫下來。",
+      "translations": {
+        "zh-Hans": "要把想法整理成一份建议，我会先和大家聊过，再把内容写下来。",
+        "en": "To turn ideas into a written suggestion, I talk them over with everyone before putting them on paper.",
+        "ja": "考えを一つの提案にまとめるときは、まずみんなと話してから内容を書き出します。",
+        "ko": "생각을 하나의 제안으로 정리할 때 먼저 모두와 이야기한 뒤 내용을 글로 쓴다.",
+        "hi": "विचारों को लिखित सुझाव में बदलने के लिए मैं पहले सबके साथ बात करता हूँ, फिर उन्हें लिखता हूँ।",
+        "th": "เมื่อต้องเรียบเรียงความคิดเป็นข้อเสนอ ฉันจะคุยกับทุกคนก่อน แล้วจึงเขียนออกมา",
+        "id": "Untuk merangkai gagasan menjadi usulan tertulis, saya membicarakannya dengan semua orang dulu, lalu menuliskannya.",
+        "de": "Um Ideen als Vorschlag festzuhalten, spreche ich zuerst mit allen darüber und schreibe sie dann auf.",
+        "fr": "Pour transformer des idées en proposition écrite, j’en parle d’abord avec tout le monde, puis je les mets par écrit.",
+        "es": "Para convertir las ideas en una propuesta escrita, primero las hablo con todos y después las escribo."
+      }
+    },
+    {
+      "seedId": "seed-coordination-p05",
+      "axis": "coordination",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H784"
+      ],
+      "before": "採用什麼比較標準，我會先自己想好再請人核對。",
+      "after": "要用哪些條件來比較不同做法，我會先自己想好再問別人的意見。",
+      "translations": {
+        "zh-Hans": "要用哪些条件来比较不同做法，我会先自己想好再问别人的意见。",
+        "en": "I first decide for myself what to look at when comparing approaches, then ask others for their views.",
+        "ja": "やり方を比べるときに何を見るか、まず自分で考えてから人の意見を聞きます。",
+        "ko": "여러 방법을 비교할 때 무엇을 볼지 먼저 혼자 생각한 뒤 다른 사람의 의견을 묻는다.",
+        "hi": "अलग-अलग तरीकों की तुलना में किन बातों को देखना है, यह पहले खुद सोचता हूँ, फिर दूसरों की राय पूछता हूँ।",
+        "th": "ฉันคิดเองก่อนว่าจะใช้เงื่อนไขอะไรเปรียบเทียบวิธีต่าง ๆ แล้วจึงถามความเห็นคนอื่น",
+        "id": "Saya memikirkan sendiri dulu hal apa yang akan dipakai untuk membandingkan cara, lalu meminta pendapat orang lain.",
+        "de": "Ich überlege zuerst allein, worauf ich beim Vergleich verschiedener Vorgehensweisen achten will, und frage dann andere nach ihrer Meinung.",
+        "fr": "Je réfléchis d’abord seul aux critères pour comparer les façons de faire, puis je demande l’avis des autres.",
+        "es": "Primero pienso por mi cuenta en qué fijarme para comparar distintas formas de hacer algo y luego pido opiniones."
+      }
+    },
+    {
+      "seedId": "seed-coordination-p06",
+      "axis": "coordination",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H784",
+        "ipip-H406"
+      ],
+      "before": "徵詢意見以前，我喜歡先自行做出一個雛形。",
+      "after": "要請別人給意見，我會先自己做出一個簡單的版本。",
+      "translations": {
+        "zh-Hans": "要请别人给意见，我会先自己做出一个简单的版本。",
+        "en": "Before asking for opinions, I make a simple first version on my own.",
+        "ja": "人に意見を求める前に、まず自分で簡単なものを作ります。",
+        "ko": "다른 사람에게 의견을 묻기 전에 혼자 간단한 첫 버전을 만든다.",
+        "hi": "दूसरों की राय पूछने से पहले मैं खुद एक साधारण पहला रूप तैयार करता हूँ।",
+        "th": "ก่อนขอความเห็นคนอื่น ฉันจะทำแบบง่าย ๆ ขึ้นมาเองก่อน",
+        "id": "Sebelum meminta pendapat, saya membuat versi sederhana sendiri terlebih dahulu.",
+        "de": "Bevor ich andere nach ihrer Meinung frage, erstelle ich allein eine einfache erste Version.",
+        "fr": "Avant de demander des avis, je prépare seul une première version simple.",
+        "es": "Antes de pedir opiniones, preparo por mi cuenta una primera versión sencilla."
+      }
+    },
+    {
+      "seedId": "seed-coordination-p07",
+      "axis": "coordination",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H784"
+      ],
+      "before": "和夥伴同步做法之前，我會先自行整理要做的步驟。",
+      "after": "準備和夥伴討論做法，我會先自己列出要做的步驟。",
+      "translations": {
+        "zh-Hans": "准备和伙伴讨论做法，我会先自己列出要做的步骤。",
+        "en": "Before discussing how to proceed with others, I list the steps on my own.",
+        "ja": "仲間とやり方を話し合う前に、まず自分で手順を書き出します。",
+        "ko": "함께하는 사람들과 방법을 의논하기 전에 혼자 할 일을 순서대로 적는다.",
+        "hi": "साथियों से तरीका तय करने पर चर्चा करने से पहले मैं खुद चरण लिख लेता हूँ।",
+        "th": "ก่อนคุยกับเพื่อนร่วมงานว่าจะทำอย่างไร ฉันจะเขียนขั้นตอนด้วยตัวเองก่อน",
+        "id": "Sebelum membahas cara kerja dengan rekan, saya membuat daftar langkahnya sendiri.",
+        "de": "Bevor ich mit anderen das Vorgehen bespreche, schreibe ich die Schritte allein auf.",
+        "fr": "Avant de discuter de la marche à suivre avec les autres, je liste les étapes de mon côté.",
+        "es": "Antes de hablar con mis compañeros sobre cómo hacerlo, escribo los pasos por mi cuenta."
+      }
+    },
+    {
+      "seedId": "seed-coordination-p08",
+      "axis": "coordination",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H784",
+        "ipip-V132"
+      ],
+      "before": "帶進商量場合的答案，我會先一個人想過。",
+      "after": "和大家商量一件事時，我會先自己想好答案再加入討論。",
+      "translations": {
+        "zh-Hans": "和大家商量一件事时，我会先自己想好答案再加入讨论。",
+        "en": "I think of an answer on my own before joining a group discussion.",
+        "ja": "みんなで相談するときは、まず自分で答えを考えてから話し合いに加わります。",
+        "ko": "여럿이 의논할 때는 먼저 혼자 답을 생각한 뒤 토론에 참여한다.",
+        "hi": "समूह में चर्चा में शामिल होने से पहले मैं खुद एक जवाब सोच लेता हूँ।",
+        "th": "เวลาจะปรึกษากันเป็นกลุ่ม ฉันคิดคำตอบเองก่อนแล้วจึงเข้าร่วมการพูดคุย",
+        "id": "Saya memikirkan jawaban sendiri sebelum ikut berdiskusi dengan kelompok.",
+        "de": "Ich überlege mir allein eine Antwort, bevor ich an einer gemeinsamen Diskussion teilnehme.",
+        "fr": "Je réfléchis seul à une réponse avant de participer à une discussion de groupe.",
+        "es": "Pienso en una respuesta por mi cuenta antes de unirme a una conversación de grupo."
+      }
+    },
+    {
+      "seedId": "seed-coordination-p10",
+      "axis": "coordination",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H784",
+        "ipip-H406"
+      ],
+      "before": "怎樣做才合適，我會先在心裡組合好再向別人說明。",
+      "after": "想向別人說明怎麼做，我會先自己想出一套做法。",
+      "translations": {
+        "zh-Hans": "想向别人说明怎么做，我会先自己想出一套做法。",
+        "en": "Before explaining how to do something to others, I work out an approach on my own.",
+        "ja": "人にやり方を説明する前に、まず自分で方法を考えます。",
+        "ko": "다른 사람에게 방법을 설명하기 전에 먼저 혼자 어떻게 할지 생각한다.",
+        "hi": "दूसरों को तरीका समझाने से पहले मैं खुद सोच लेता हूँ कि कैसे करना है।",
+        "th": "ก่อนอธิบายวิธีทำให้คนอื่นฟัง ฉันจะคิดวิธีด้วยตัวเองก่อน",
+        "id": "Sebelum menjelaskan cara melakukannya kepada orang lain, saya memikirkan caranya sendiri.",
+        "de": "Bevor ich anderen erkläre, wie es gehen soll, überlege ich mir allein ein Vorgehen.",
+        "fr": "Avant d’expliquer aux autres comment faire, je réfléchis moi-même à une méthode.",
+        "es": "Antes de explicar a otros cómo hacerlo, pienso por mi cuenta en una forma de proceder."
+      }
+    },
+    {
+      "seedId": "seed-coordination-p11",
+      "axis": "coordination",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H784",
+        "ipip-H1342"
+      ],
+      "before": "一份由我先排好的時程，會是邀請大家修訂的起點。",
+      "after": "要和大家安排時間，我會先自己排一份再請大家調整。",
+      "translations": {
+        "zh-Hans": "要和大家安排时间，我会先自己排一份再请大家调整。",
+        "en": "For a shared schedule, I make a first plan myself and then ask everyone to adjust it.",
+        "ja": "みんなの予定を組むときは、まず自分で案を作ってから、みんなに調整してもらいます。",
+        "ko": "함께할 일정을 잡을 때 먼저 혼자 시간표를 만든 뒤 모두에게 조정을 부탁한다.",
+        "hi": "साझा समय-सारणी के लिए पहले मैं खुद एक योजना बनाता हूँ, फिर सबको उसमें बदलाव सुझाने को कहता हूँ।",
+        "th": "เมื่อต้องจัดเวลาร่วมกัน ฉันจะลองจัดเองก่อน แล้วขอให้ทุกคนช่วยปรับ",
+        "id": "Untuk jadwal bersama, saya menyusun rencana sendiri dulu, lalu meminta semua orang menyesuaikannya.",
+        "de": "Für einen gemeinsamen Zeitplan mache ich zuerst selbst einen Entwurf und bitte dann alle, ihn anzupassen.",
+        "fr": "Pour organiser un emploi du temps commun, je prépare d’abord un planning, puis je demande à chacun de l’ajuster.",
+        "es": "Para organizar un horario común, preparo primero una propuesta por mi cuenta y luego pido a todos que la ajusten."
+      }
+    },
+    {
+      "seedId": "seed-coordination-p12",
+      "axis": "coordination",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H784",
+        "ipip-V132"
+      ],
+      "before": "各部分有什麼關係，我會先獨自理清再找人核對。",
+      "after": "一件事包含好幾個部分，我會先自己弄清它們如何配合再找人確認。",
+      "translations": {
+        "zh-Hans": "一件事包含好几个部分，我会先自己弄清它们如何配合再找人确认。",
+        "en": "When a task has several parts, I first work out how they fit together, then check with someone else.",
+        "ja": "いくつかの部分がある作業では、まず自分でつながりを整理してから人に確認します。",
+        "ko": "여러 부분으로 된 일은 먼저 혼자 각 부분이 어떻게 맞물리는지 생각한 뒤 다른 사람에게 확인한다.",
+        "hi": "काम के कई हिस्से हों तो पहले मैं खुद समझता हूँ कि वे आपस में कैसे जुड़ेंगे, फिर किसी से पुष्टि करता हूँ।",
+        "th": "ถ้างานมีหลายส่วน ฉันจะคิดเองก่อนว่าแต่ละส่วนเชื่อมกันอย่างไร แล้วจึงถามคนอื่นเพื่อยืนยัน",
+        "id": "Jika suatu tugas terdiri dari beberapa bagian, saya memahami sendiri dulu bagaimana semuanya saling terhubung, lalu mengeceknya dengan orang lain.",
+        "de": "Wenn eine Aufgabe aus mehreren Teilen besteht, kläre ich zuerst allein, wie sie zusammenpassen, und prüfe das danach mit jemand anderem.",
+        "fr": "Quand une tâche comporte plusieurs parties, je cherche d’abord seul comment elles s’articulent, puis je vérifie avec quelqu’un.",
+        "es": "Cuando una tarea tiene varias partes, primero pienso cómo encajan y luego lo confirmo con otra persona."
+      }
+    },
+    {
+      "seedId": "seed-coordination-p13",
+      "axis": "coordination",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H784",
+        "ipip-H1275"
+      ],
+      "before": "接到不熟悉的事情，我先自擬做法再向人請教。",
+      "after": "第一次接手不熟悉的事，我會先自己想做法再請教別人。",
+      "translations": {
+        "zh-Hans": "第一次接手不熟悉的事，我会先自己想做法再请教别人。",
+        "en": "When taking on something unfamiliar for the first time, I think of a way to do it myself before asking for advice.",
+        "ja": "初めての不慣れなことを引き受けたら、まず自分でやり方を考えてから人に相談します。",
+        "ko": "처음 맡는 낯선 일은 먼저 혼자 방법을 생각한 뒤 다른 사람에게 조언을 구한다.",
+        "hi": "कोई अनजाना काम पहली बार मिलने पर, सलाह माँगने से पहले मैं खुद तरीका सोचता हूँ।",
+        "th": "เมื่อได้รับเรื่องที่ไม่คุ้นเคยเป็นครั้งแรก ฉันจะคิดวิธีเองก่อนแล้วจึงขอคำแนะนำ",
+        "id": "Saat pertama kali menangani hal yang belum saya kenal, saya memikirkan caranya sendiri sebelum meminta saran.",
+        "de": "Wenn ich erstmals etwas Ungewohntes übernehme, überlege ich zuerst selbst, wie es gehen könnte, und frage dann um Rat.",
+        "fr": "Quand je prends en charge quelque chose d’inconnu, je réfléchis d’abord seul à une façon de faire avant de demander conseil.",
+        "es": "Cuando me encargo por primera vez de algo que no conozco, pienso primero cómo hacerlo y después pido consejo."
+      }
+    },
+    {
+      "seedId": "seed-coordination-p17",
+      "axis": "coordination",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H784"
+      ],
+      "before": "資源分配的第一個版本，我會先擬好再問相關的人。",
+      "after": "需要分配人手或物品時，我會先想好怎麼分再問大家的意見。",
+      "translations": {
+        "zh-Hans": "需要分配人手或物品时，我会先想好怎么分再问大家的意见。",
+        "en": "When allocating people or supplies, I first think of a plan myself and then ask everyone for their views.",
+        "ja": "人手や物を振り分けるときは、まず自分で案を考えてからみんなの意見を聞きます。",
+        "ko": "인원이나 물품을 나눠야 할 때 먼저 혼자 배분안을 생각한 뒤 모두의 의견을 묻는다.",
+        "hi": "लोगों की जिम्मेदारी या सामान बाँटना हो तो पहले मैं खुद योजना बनाता हूँ, फिर सबकी राय पूछता हूँ।",
+        "th": "เมื่อต้องแบ่งคนหรือสิ่งของ ฉันจะคิดเองก่อนว่าจะแบ่งอย่างไร แล้วจึงถามความเห็นทุกคน",
+        "id": "Saat membagi tenaga orang atau perlengkapan, saya memikirkan rencananya sendiri dulu, lalu meminta pendapat semua orang.",
+        "de": "Wenn ich Personen oder Material einteile, überlege ich zuerst selbst einen Plan und frage dann alle nach ihrer Meinung.",
+        "fr": "Pour répartir les personnes ou le matériel, je réfléchis d’abord à une proposition, puis je demande l’avis de chacun.",
+        "es": "Al repartir personas o materiales, pienso primero en una propuesta y luego pido la opinión de todos."
+      }
+    },
+    {
+      "seedId": "seed-coordination-p19",
+      "axis": "coordination",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H784",
+        "ipip-H406"
+      ],
+      "before": "和別人的提案合併以前，我會先整理自己的架構。",
+      "after": "要把大家的想法放在一起，我會先自己整理好想說的重點。",
+      "translations": {
+        "zh-Hans": "要把大家的想法放在一起，我会先自己整理好想说的重点。",
+        "en": "Before combining everyone’s ideas, I organize the main points I want to put forward on my own.",
+        "ja": "みんなの考えをまとめる前に、まず自分が伝えたい要点を一人で整理します。",
+        "ko": "모두의 생각을 합치기 전에 먼저 혼자 내가 말할 핵심을 정리한다.",
+        "hi": "सबके विचार एक साथ रखने से पहले मैं अपने मुख्य बिंदु खुद व्यवस्थित कर लेता हूँ।",
+        "th": "ก่อนนำความคิดของทุกคนมารวมกัน ฉันจะจัดประเด็นหลักที่ตัวเองอยากเสนอให้เรียบร้อยก่อน",
+        "id": "Sebelum menggabungkan gagasan semua orang, saya merapikan sendiri poin utama yang ingin saya sampaikan.",
+        "de": "Bevor ich die Ideen aller zusammenführe, ordne ich allein die wichtigsten Punkte, die ich einbringen möchte.",
+        "fr": "Avant de réunir les idées de chacun, j’organise seul les points principaux que je veux proposer.",
+        "es": "Antes de reunir las ideas de todos, organizo por mi cuenta los puntos principales que quiero aportar."
+      }
+    },
+    {
+      "seedId": "seed-decision-n01",
+      "axis": "decision",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H159"
+      ],
+      "before": "面臨取捨的關頭，我先衡量這個選擇對當事人有多重要。",
+      "after": "遇到難選的事情，我先想這個選擇對當事人有多重要。",
+      "translations": {
+        "zh-Hans": "遇到难选的事情，我先想这个选择对当事人有多重要。",
+        "en": "When a choice is hard to make, I first think about how important it is to the person involved.",
+        "ja": "選ぶのが難しいときは、まずその選択が当事者にとってどれほど大切かを考えます。",
+        "ko": "선택하기 어려울 때는 먼저 그 선택이 당사자에게 얼마나 중요한지 생각합니다.",
+        "hi": "चुनाव करना मुश्किल हो तो मैं पहले सोचता हूँ कि यह चुनाव संबंधित व्यक्ति के लिए कितना अहम है।",
+        "th": "เมื่อเจอเรื่องที่เลือกยาก ฉันจะคิดก่อนว่าทางเลือกนี้สำคัญต่อคนที่เกี่ยวข้องแค่ไหน",
+        "id": "Saat sulit menentukan pilihan, saya lebih dulu memikirkan seberapa penting pilihan itu bagi orang yang bersangkutan.",
+        "de": "Wenn mir eine Wahl schwerfällt, denke ich zuerst darüber nach, wie wichtig sie für die betroffene Person ist.",
+        "fr": "Quand un choix est difficile, je pense d’abord à son importance pour la personne concernée.",
+        "es": "Cuando cuesta tomar una decisión, primero pienso en lo importante que es para la persona implicada."
+      }
+    },
+    {
+      "seedId": "seed-decision-n04",
+      "axis": "decision",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-W283"
+      ],
+      "before": "一個破例的請求送來，我先考慮當事人的特殊情況。",
+      "after": "有人請我破例時，我會先問他這次有什麼特殊情況。",
+      "translations": {
+        "zh-Hans": "有人请我破例时，我会先问他这次有什么特殊情况。",
+        "en": "When someone asks me to make an exception, I first ask what is different about their situation this time.",
+        "ja": "例外を認めてほしいと頼まれたら、まず今回はどんな特別な事情があるのかを尋ねます。",
+        "ko": "누군가 예외를 부탁하면 먼저 이번에는 어떤 특별한 사정이 있는지 묻습니다.",
+        "hi": "कोई नियम में छूट माँगे तो मैं पहले पूछता हूँ कि इस बार उसकी स्थिति में क्या अलग है।",
+        "th": "เมื่อมีคนขอให้ยกเว้น ฉันจะถามก่อนว่าครั้งนี้เขามีเหตุพิเศษอะไร",
+        "id": "Saat seseorang meminta pengecualian, saya lebih dulu menanyakan keadaan khusus yang ia hadapi kali ini.",
+        "de": "Wenn mich jemand um eine Ausnahme bittet, frage ich zuerst, welche besonderen Umstände diesmal vorliegen.",
+        "fr": "Quand quelqu’un me demande une exception, je lui demande d’abord ce que sa situation a de particulier cette fois-ci.",
+        "es": "Cuando alguien me pide una excepción, primero le pregunto qué circunstancia especial tiene esta vez."
+      }
+    },
+    {
+      "seedId": "seed-decision-n05",
+      "axis": "decision",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H159"
+      ],
+      "before": "各個方案列出來後，我先想相關的人會承受哪些影響。",
+      "after": "列出幾個做法之後，我先想每個做法會怎樣影響身邊的人。",
+      "translations": {
+        "zh-Hans": "列出几个做法之后，我先想每个做法会怎样影响身边的人。",
+        "en": "After listing several approaches, I first think about how each would affect the people around me.",
+        "ja": "いくつかのやり方を挙げたら、まずそれぞれが周りの人にどう影響するかを考えます。",
+        "ko": "몇 가지 방법을 나열한 뒤에는 먼저 각 방법이 주변 사람들에게 어떤 영향을 줄지 생각합니다.",
+        "hi": "कई तरीके सामने रखने के बाद मैं पहले सोचता हूँ कि हर तरीके का आसपास के लोगों पर क्या असर होगा।",
+        "th": "หลังจากลิสต์วิธีไว้หลายแบบ ฉันจะคิดก่อนว่าแต่ละวิธีจะส่งผลต่อคนรอบตัวอย่างไร",
+        "id": "Setelah membuat daftar beberapa cara, saya lebih dulu memikirkan dampak masing-masing bagi orang-orang di sekitar saya.",
+        "de": "Nachdem ich mehrere Vorgehensweisen aufgelistet habe, denke ich zuerst darüber nach, wie jede davon die Menschen um mich herum betreffen würde.",
+        "fr": "Après avoir énuméré plusieurs façons de faire, je pense d’abord aux effets de chacune sur les personnes qui m’entourent.",
+        "es": "Después de enumerar varias maneras de hacer algo, primero pienso en cómo afectaría cada una a las personas de mi entorno."
+      }
+    },
+    {
+      "seedId": "seed-decision-n07",
+      "axis": "decision",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-W283"
+      ],
+      "before": "聽到有人提出建議，我先問他想解決哪一種需要。",
+      "after": "聽到別人的建議時，我先問他現在最需要的是什麼。",
+      "translations": {
+        "zh-Hans": "听到别人的建议时，我先问他现在最需要的是什么。",
+        "en": "When someone makes a suggestion, I first ask what they need most right now.",
+        "ja": "誰かから提案を聞いたら、まず今何を一番必要としているのかを尋ねます。",
+        "ko": "누군가 제안하면 먼저 지금 가장 필요한 것이 무엇인지 묻습니다.",
+        "hi": "किसी का सुझाव सुनकर मैं पहले पूछता हूँ कि इस समय उसे सबसे ज़्यादा किस चीज़ की ज़रूरत है।",
+        "th": "เมื่อฟังข้อเสนอของใคร ฉันจะถามก่อนว่าตอนนี้เขาต้องการอะไรมากที่สุด",
+        "id": "Saat mendengar saran seseorang, saya lebih dulu bertanya apa yang paling ia butuhkan saat ini.",
+        "de": "Wenn jemand etwas vorschlägt, frage ich zuerst, was die Person gerade am dringendsten braucht.",
+        "fr": "Quand quelqu’un fait une suggestion, je lui demande d’abord ce dont il a le plus besoin en ce moment.",
+        "es": "Cuando escucho una sugerencia, primero pregunto qué necesita más esa persona en este momento."
+      }
+    },
+    {
+      "seedId": "seed-decision-n08",
+      "axis": "decision",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H1130"
+      ],
+      "before": "重大決定做下去之前，我先想相關的人會怎樣經歷它。",
+      "after": "做重要決定以前，我會先想受影響的人接下來會遇到什麼事。",
+      "translations": {
+        "zh-Hans": "做重要决定以前，我会先想受影响的人接下来会遇到什么事。",
+        "en": "Before making an important decision, I first think about what the people affected will experience afterward.",
+        "ja": "重要な決定をする前に、まず影響を受ける人たちにその後どんなことが起きるかを考えます。",
+        "ko": "중요한 결정을 내리기 전에 영향을 받을 사람들이 그 뒤에 어떤 일을 겪을지 먼저 생각합니다.",
+        "hi": "कोई बड़ा फैसला करने से पहले मैं सोचता हूँ कि उससे प्रभावित लोगों को आगे क्या अनुभव होगा।",
+        "th": "ก่อนตัดสินใจเรื่องสำคัญ ฉันจะคิดก่อนว่าคนที่ได้รับผลกระทบจะเจอกับอะไรต่อไป",
+        "id": "Sebelum mengambil keputusan penting, saya lebih dulu memikirkan apa yang akan dialami orang-orang yang terdampak sesudahnya.",
+        "de": "Bevor ich eine wichtige Entscheidung treffe, denke ich zuerst darüber nach, was die Betroffenen danach erleben werden.",
+        "fr": "Avant de prendre une décision importante, je pense d’abord à ce que vivront ensuite les personnes concernées.",
+        "es": "Antes de tomar una decisión importante, primero pienso en lo que vivirán después las personas afectadas."
+      }
+    },
+    {
+      "seedId": "seed-decision-n12",
+      "axis": "decision",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-E115"
+      ],
+      "before": "要不要採用例外安排，我先想誰正承受難以負擔的壓力。",
+      "after": "有人希望我通融一下，我會先了解他遇到了什麼困難。",
+      "translations": {
+        "zh-Hans": "有人希望我通融一下，我会先了解他遇到了什么困难。",
+        "en": "When someone asks me to make an exception, I first find out what difficulties they are facing.",
+        "ja": "融通を利かせてほしいと頼まれたら、まず相手がどんなことで困っているのかを確かめます。",
+        "ko": "누군가 사정을 봐 달라고 하면 먼저 어떤 어려움을 겪고 있는지 알아봅니다.",
+        "hi": "कोई मुझसे थोड़ी छूट माँगे तो मैं पहले समझता हूँ कि वह किस कठिनाई का सामना कर रहा है।",
+        "th": "เมื่อมีคนขอให้ฉันผ่อนปรน ฉันจะทำความเข้าใจก่อนว่าเขากำลังเจอปัญหาอะไร",
+        "id": "Saat seseorang meminta kelonggaran, saya lebih dulu mencari tahu kesulitan yang ia hadapi.",
+        "de": "Wenn mich jemand um Entgegenkommen bittet, möchte ich zuerst verstehen, welche Schwierigkeiten die Person hat.",
+        "fr": "Quand quelqu’un me demande un peu de souplesse, je cherche d’abord à comprendre les difficultés qu’il rencontre.",
+        "es": "Cuando alguien me pide cierta flexibilidad, primero intento entender qué dificultades está atravesando."
+      }
+    },
+    {
+      "seedId": "seed-decision-n14",
+      "axis": "decision",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H175"
+      ],
+      "before": "每個人都有自己的要求，我先問各自最難放下什麼。",
+      "after": "大家的要求不一樣時，我先問每個人最在意什麼。",
+      "translations": {
+        "zh-Hans": "大家的要求不一样时，我先问每个人最在意什么。",
+        "en": "When people want different things, I first ask what matters most to each person.",
+        "ja": "それぞれの要望が違うときは、まず一人ひとりが何を一番大切にしているかを尋ねます。",
+        "ko": "사람들이 원하는 것이 다를 때는 먼저 각자가 가장 중요하게 여기는 것이 무엇인지 묻습니다.",
+        "hi": "लोगों की माँगें अलग हों तो मैं पहले पूछता हूँ कि हर व्यक्ति के लिए सबसे अहम क्या है।",
+        "th": "เมื่อแต่ละคนต้องการไม่เหมือนกัน ฉันจะถามก่อนว่าแต่ละคนให้ความสำคัญกับอะไรมากที่สุด",
+        "id": "Saat keinginan orang-orang berbeda, saya lebih dulu bertanya apa yang paling penting bagi masing-masing orang.",
+        "de": "Wenn die Wünsche auseinandergehen, frage ich zuerst, was jeder Person am wichtigsten ist.",
+        "fr": "Quand les demandes diffèrent, je demande d’abord à chaque personne ce qui compte le plus pour elle.",
+        "es": "Cuando cada persona quiere algo distinto, primero pregunto qué es lo más importante para cada una."
+      }
+    },
+    {
+      "seedId": "seed-decision-n15",
+      "axis": "decision",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-W283"
+      ],
+      "before": "追究責任以前，我先了解各方當時能運用哪些條件。",
+      "after": "追究責任之前，我先問當時的人力和資源夠不夠。",
+      "translations": {
+        "zh-Hans": "追究责任之前，我先问当时的人力和资源够不够。",
+        "en": "Before assigning responsibility, I first ask whether there were enough people and resources at the time.",
+        "ja": "責任を問う前に、まず当時の人手や使えるものが十分だったかを尋ねます。",
+        "ko": "책임을 묻기 전에 당시 인력과 자원이 충분했는지 먼저 묻습니다.",
+        "hi": "ज़िम्मेदारी तय करने से पहले मैं पूछता हूँ कि उस समय पर्याप्त लोग और साधन उपलब्ध थे या नहीं।",
+        "th": "ก่อนหาว่าใครต้องรับผิดชอบ ฉันจะถามก่อนว่าตอนนั้นมีคนและทรัพยากรเพียงพอหรือไม่",
+        "id": "Sebelum menentukan tanggung jawab, saya lebih dulu bertanya apakah tenaga dan sumber daya saat itu cukup.",
+        "de": "Bevor ich jemanden verantwortlich mache, frage ich zuerst, ob damals genug Personal und Mittel vorhanden waren.",
+        "fr": "Avant de rechercher les responsabilités, je demande d’abord s’il y avait assez de personnes et de moyens à ce moment-là.",
+        "es": "Antes de pedir responsabilidades, primero pregunto si en ese momento había suficientes personas y recursos."
+      }
+    },
+    {
+      "seedId": "seed-decision-n21",
+      "axis": "decision",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H159"
+      ],
+      "before": "左右為難的時刻，我先想什麼需要對當事人最重要。",
+      "after": "碰到兩難的選擇，我先想對當事人來說最重要的是什麼。",
+      "translations": {
+        "zh-Hans": "碰到两难的选择，我先想对当事人来说最重要的是什么。",
+        "en": "When facing a difficult choice, I first think about what matters most to the person involved.",
+        "ja": "どちらを選ぶか迷う場面では、まず当事者にとって何が一番大切かを考えます。",
+        "ko": "어느 쪽을 골라도 어려운 선택에서는 먼저 당사자에게 가장 중요한 것이 무엇인지 생각합니다.",
+        "hi": "दुविधा वाले चुनाव में मैं पहले सोचता हूँ कि संबंधित व्यक्ति के लिए सबसे अहम क्या है।",
+        "th": "เมื่อเจอทางเลือกที่ตัดสินใจยาก ฉันจะคิดก่อนว่าอะไรสำคัญที่สุดสำหรับคนที่เกี่ยวข้อง",
+        "id": "Saat menghadapi pilihan yang sulit, saya lebih dulu memikirkan apa yang paling penting bagi orang yang bersangkutan.",
+        "de": "Bei einer schwierigen Wahl denke ich zuerst darüber nach, was für die betroffene Person am wichtigsten ist.",
+        "fr": "Face à un choix difficile, je pense d’abord à ce qui compte le plus pour la personne concernée.",
+        "es": "Ante una elección difícil, primero pienso en lo que más importa a la persona implicada."
+      }
+    },
+    {
+      "seedId": "seed-decision-n23",
+      "axis": "decision",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-W283"
+      ],
+      "before": "不同立場需要回應，我先理解各方怎樣形成目前的看法。",
+      "after": "意見不同的人來找我談時，我先了解他們經歷過什麼，才會有這樣的看法。",
+      "translations": {
+        "zh-Hans": "意见不同的人来找我谈时，我先了解他们经历过什么，才会有这样的看法。",
+        "en": "When people with different opinions talk to me, I first try to understand the experiences behind their views.",
+        "ja": "意見の異なる人と話すときは、まずどんな経験からその考えを持つようになったのかを理解しようとします。",
+        "ko": "의견이 다른 사람들이 나에게 이야기하러 오면 어떤 경험 때문에 그런 생각을 하게 되었는지 먼저 알아봅니다.",
+        "hi": "अलग राय वाले लोग मुझसे बात करने आएँ तो मैं पहले समझता हूँ कि किन अनुभवों से उनका यह नज़रिया बना।",
+        "th": "เมื่อคนที่เห็นต่างมาคุยกับฉัน ฉันจะทำความเข้าใจก่อนว่าเขาผ่านอะไรมา จึงมีมุมมองแบบนั้น",
+        "id": "Saat orang yang berbeda pendapat berbicara dengan saya, saya lebih dulu memahami pengalaman yang membentuk pandangan mereka.",
+        "de": "Wenn Menschen mit anderer Meinung mit mir sprechen, möchte ich zuerst verstehen, welche Erfahrungen hinter ihrer Sichtweise stehen.",
+        "fr": "Quand des personnes d’un autre avis viennent me parler, je cherche d’abord à comprendre les expériences qui ont formé leur point de vue.",
+        "es": "Cuando personas con opiniones distintas vienen a hablar conmigo, primero intento entender qué experiencias hay detrás de sus ideas."
+      }
+    },
+    {
+      "seedId": "seed-decision-p01",
+      "axis": "decision",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-A6"
+      ],
+      "before": "必須做出取捨，我先檢查每個選擇是否符合相同原則。",
+      "after": "必須做出選擇時，我先看每個選項是否都用同一套標準判斷。",
+      "translations": {
+        "zh-Hans": "必须做出选择时，我先看每个选项是否都用同一套标准判断。",
+        "en": "When I have to choose, I first check whether I am judging every option by the same standards.",
+        "ja": "選択が必要なときは、まずどの選択肢も同じ基準で判断しているかを確かめます。",
+        "ko": "선택해야 할 때는 먼저 모든 선택지를 같은 기준으로 판단하고 있는지 확인합니다.",
+        "hi": "चुनाव करना हो तो मैं पहले देखता हूँ कि हर विकल्प को एक ही मापदंड से परख रहा हूँ या नहीं।",
+        "th": "เมื่อต้องเลือก ฉันจะดูก่อนว่าตัวเลือกทุกข้อถูกตัดสินด้วยเกณฑ์เดียวกันหรือไม่",
+        "id": "Saat harus memilih, saya lebih dulu memeriksa apakah semua pilihan dinilai dengan standar yang sama.",
+        "de": "Wenn ich mich entscheiden muss, prüfe ich zuerst, ob ich alle Möglichkeiten nach denselben Maßstäben beurteile.",
+        "fr": "Quand je dois choisir, je vérifie d’abord si j’évalue toutes les options selon les mêmes critères.",
+        "es": "Cuando tengo que elegir, primero compruebo si estoy evaluando todas las opciones con los mismos criterios."
+      }
+    },
+    {
+      "seedId": "seed-decision-p05",
+      "axis": "decision",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H1223"
+      ],
+      "before": "要從方案中選一個，我先衡量各項理由是否前後一致。",
+      "after": "幾個做法需要比較時，我先看各自的理由有沒有前後矛盾。",
+      "translations": {
+        "zh-Hans": "几个做法需要比较时，我先看各自的理由有没有前后矛盾。",
+        "en": "When comparing several approaches, I first check whether the reasons for each one contradict themselves.",
+        "ja": "いくつかのやり方を比べるときは、まずそれぞれの理由に矛盾がないかを見ます。",
+        "ko": "여러 방법을 비교할 때는 먼저 각 방법을 뒷받침하는 이유에 앞뒤가 맞지 않는 부분이 있는지 봅니다.",
+        "hi": "कई तरीकों की तुलना करते समय मैं पहले देखता हूँ कि हर तरीके के पक्ष में दिए गए कारण आपस में टकराते तो नहीं हैं।",
+        "th": "เมื่อต้องเปรียบเทียบหลายวิธี ฉันจะดูก่อนว่าเหตุผลของแต่ละวิธีขัดแย้งกันเองหรือไม่",
+        "id": "Saat membandingkan beberapa cara, saya lebih dulu memeriksa apakah alasan di balik masing-masing cara saling bertentangan.",
+        "de": "Wenn ich mehrere Vorgehensweisen vergleiche, prüfe ich zuerst, ob die jeweiligen Begründungen in sich widersprüchlich sind.",
+        "fr": "Quand je compare plusieurs façons de faire, je vérifie d’abord si les raisons avancées pour chacune sont cohérentes entre elles.",
+        "es": "Al comparar varias maneras de hacer algo, primero reviso si las razones de cada una se contradicen entre sí."
+      }
+    },
+    {
+      "seedId": "seed-decision-p10",
+      "axis": "decision",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-A6"
+      ],
+      "before": "事先約定的評估準則，是我決定如何給回饋的依據。",
+      "after": "評價別人做得怎麼樣時，我會按事先說好的標準來說明。",
+      "translations": {
+        "zh-Hans": "评价别人做得怎么样时，我会按事先说好的标准来说明。",
+        "en": "When giving feedback on someone’s work, I explain it using the standards we agreed on beforehand.",
+        "ja": "人の取り組みを評価するときは、前もって決めた基準に沿って説明します。",
+        "ko": "다른 사람이 해낸 일을 평가할 때는 미리 정한 기준에 따라 설명합니다.",
+        "hi": "किसी के काम पर राय देते समय मैं पहले से तय मापदंडों के आधार पर समझाता हूँ।",
+        "th": "เวลาให้ความเห็นว่าคนอื่นทำได้ดีแค่ไหน ฉันจะอธิบายตามเกณฑ์ที่ตกลงกันไว้ก่อน",
+        "id": "Saat menilai hasil kerja seseorang, saya menjelaskannya berdasarkan standar yang sudah disepakati sebelumnya.",
+        "de": "Wenn ich die Arbeit einer Person beurteile, erläutere ich meine Einschätzung anhand der vorher vereinbarten Maßstäbe.",
+        "fr": "Quand je donne un avis sur le travail de quelqu’un, je l’explique à partir des critères convenus à l’avance.",
+        "es": "Cuando valoro el trabajo de alguien, explico mi opinión según los criterios acordados de antemano."
+      }
+    },
+    {
+      "seedId": "seed-decision-p11",
+      "axis": "decision",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H1223"
+      ],
+      "before": "發生衝突需要處理，我先找能讓各方共同檢查的依據。",
+      "after": "雙方起爭執時，我先找大家都能核對的事實。",
+      "translations": {
+        "zh-Hans": "双方起争执时，我先找大家都能核对的事实。",
+        "en": "When two sides argue, I first look for facts everyone can check.",
+        "ja": "双方が言い争っているときは、まず誰でも確かめられる事実を探します。",
+        "ko": "양쪽이 다툴 때는 먼저 모두가 확인할 수 있는 사실을 찾습니다.",
+        "hi": "दो पक्षों में बहस हो तो मैं पहले ऐसे तथ्य ढूँढ़ता हूँ जिन्हें हर कोई जाँच सके।",
+        "th": "เมื่อสองฝ่ายโต้เถียงกัน ฉันจะหาข้อเท็จจริงที่ทุกคนตรวจสอบได้ก่อน",
+        "id": "Saat dua pihak bertengkar, saya lebih dulu mencari fakta yang bisa diperiksa bersama.",
+        "de": "Wenn zwei Seiten streiten, suche ich zuerst nach Fakten, die alle überprüfen können.",
+        "fr": "Quand deux parties se disputent, je cherche d’abord des faits que tout le monde peut vérifier.",
+        "es": "Cuando dos partes discuten, primero busco hechos que todos puedan comprobar."
+      }
+    },
+    {
+      "seedId": "seed-decision-p12",
+      "axis": "decision",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-V202"
+      ],
+      "before": "考慮增設一個例外，我先看它會不會改變原有的公平標準。",
+      "after": "要為一個人破例時，我先想這樣對其他人是否公平。",
+      "translations": {
+        "zh-Hans": "要为一个人破例时，我先想这样对其他人是否公平。",
+        "en": "Before making an exception for one person, I first consider whether it would be fair to everyone else.",
+        "ja": "一人のために例外を認めるときは、まずほかの人にとって公平かを考えます。",
+        "ko": "한 사람에게 예외를 적용하려 할 때는 먼저 다른 사람들에게 공정한지 생각합니다.",
+        "hi": "किसी एक के लिए नियम में छूट देने से पहले मैं सोचता हूँ कि यह बाकी लोगों के लिए उचित होगा या नहीं।",
+        "th": "ก่อนยกเว้นให้คนหนึ่ง ฉันจะคิดก่อนว่าแบบนี้ยุติธรรมกับคนอื่นหรือไม่",
+        "id": "Sebelum membuat pengecualian untuk satu orang, saya lebih dulu memikirkan apakah itu adil bagi yang lain.",
+        "de": "Bevor ich für eine Person eine Ausnahme mache, überlege ich zuerst, ob das den anderen gegenüber fair wäre.",
+        "fr": "Avant de faire une exception pour une personne, je me demande d’abord si ce serait juste pour les autres.",
+        "es": "Antes de hacer una excepción para una persona, primero pienso si sería justo para las demás."
+      }
+    },
+    {
+      "seedId": "seed-decision-p16",
+      "axis": "decision",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-A6"
+      ],
+      "before": "答應一個人的求助以前，我先確認自己有沒有改變判準。",
+      "after": "答應幫忙之前，我先想換成別人來問，我會不會也用同樣的標準判斷。",
+      "translations": {
+        "zh-Hans": "答应帮忙之前，我先想换成别人来问，我会不会也用同样的标准判断。",
+        "en": "Before agreeing to help, I first ask myself whether I would use the same standards if someone else asked.",
+        "ja": "手助けを引き受ける前に、別の人からの頼みでも同じ基準で判断するかをまず考えます。",
+        "ko": "도와주겠다고 하기 전에 다른 사람이 부탁해도 같은 기준으로 판단할지 먼저 생각합니다.",
+        "hi": "मदद के लिए हाँ कहने से पहले मैं सोचता हूँ कि कोई और पूछता तो क्या मैं वही मापदंड अपनाता।",
+        "th": "ก่อนตกลงช่วย ฉันจะคิดก่อนว่าถ้าเป็นคนอื่นมาขอ ฉันจะใช้เกณฑ์เดียวกันตัดสินหรือไม่",
+        "id": "Sebelum menyanggupi bantuan, saya lebih dulu memikirkan apakah saya akan memakai standar yang sama jika orang lain yang meminta.",
+        "de": "Bevor ich Hilfe zusage, frage ich mich zuerst, ob ich bei der Bitte einer anderen Person dieselben Maßstäbe anlegen würde.",
+        "fr": "Avant d’accepter d’aider, je me demande d’abord si j’appliquerais les mêmes critères à la demande d’une autre personne.",
+        "es": "Antes de aceptar ayudar, primero me pregunto si usaría los mismos criterios si me lo pidiera otra persona."
+      }
+    },
+    {
+      "seedId": "seed-decision-p22",
+      "axis": "decision",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H1223"
+      ],
+      "before": "給別人的建議，我會先檢查推論能否支持結論。",
+      "after": "替人出主意以前，我會先確認自己的理由能不能支持這個建議。",
+      "translations": {
+        "zh-Hans": "替人出主意以前，我会先确认自己的理由能不能支持这个建议。",
+        "en": "Before giving someone advice, I first check whether my reasons support that advice.",
+        "ja": "人に助言する前に、まずその助言を自分の理由で裏づけられるかを確かめます。",
+        "ko": "누군가에게 조언하기 전에 내 이유가 그 조언을 뒷받침하는지 먼저 확인합니다.",
+        "hi": "किसी को सलाह देने से पहले मैं देखता हूँ कि मेरे कारण उस सलाह का समर्थन करते हैं या नहीं।",
+        "th": "ก่อนให้คำแนะนำใคร ฉันจะตรวจดูก่อนว่าเหตุผลของฉันรองรับคำแนะนำนั้นได้หรือไม่",
+        "id": "Sebelum memberi saran, saya lebih dulu memastikan apakah alasan saya mendukung saran itu.",
+        "de": "Bevor ich jemandem einen Rat gebe, prüfe ich zuerst, ob meine Gründe diesen Rat stützen.",
+        "fr": "Avant de conseiller quelqu’un, je vérifie d’abord si mes raisons soutiennent ce conseil.",
+        "es": "Antes de aconsejar a alguien, primero compruebo si mis razones respaldan ese consejo."
+      }
+    },
+    {
+      "seedId": "seed-decision-p23",
+      "axis": "decision",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-V154"
+      ],
+      "before": "回應立場不同的人，我會用相同問題檢查各方理由。",
+      "after": "面對不同意見時，我會用同一套問題檢查各自的理由。",
+      "translations": {
+        "zh-Hans": "面对不同意见时，我会用同一套问题检查各自的理由。",
+        "en": "When people disagree, I use the same set of questions to examine each side’s reasons.",
+        "ja": "意見が分かれたときは、同じ問いを使ってそれぞれの理由を確かめます。",
+        "ko": "의견이 다를 때는 같은 질문들을 적용해 각자의 이유를 살펴봅니다.",
+        "hi": "अलग-अलग राय सामने हों तो मैं एक जैसे सवालों से हर पक्ष के कारणों को परखता हूँ।",
+        "th": "เมื่อมีความเห็นต่างกัน ฉันจะใช้คำถามชุดเดียวกันตรวจดูเหตุผลของแต่ละฝ่าย",
+        "id": "Saat menghadapi perbedaan pendapat, saya memakai pertanyaan yang sama untuk memeriksa alasan masing-masing pihak.",
+        "de": "Bei unterschiedlichen Meinungen prüfe ich die jeweiligen Gründe anhand derselben Fragen.",
+        "fr": "Face à des avis différents, j’utilise les mêmes questions pour examiner les raisons de chaque côté.",
+        "es": "Ante opiniones distintas, uso las mismas preguntas para examinar las razones de cada parte."
+      }
+    },
+    {
+      "seedId": "seed-emotion-n04",
+      "axis": "emotion",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-X92"
+      ],
+      "before": "期待的事情落空，我心裡的失落十分鮮明。",
+      "after": "原本期待的事情沒發生，我會很失望。",
+      "translations": {
+        "zh-Hans": "原本期待的事情没发生，我会很失望。",
+        "en": "When something I was looking forward to does not happen, I feel very disappointed.",
+        "ja": "楽しみにしていたことが実現しないと、とてもがっかりします。",
+        "ko": "기대하던 일이 이루어지지 않으면 크게 실망한다.",
+        "hi": "जिस बात की उम्मीद थी वह न हो तो मुझे बहुत निराशा होती है।",
+        "th": "เมื่อสิ่งที่เฝ้ารอไม่เกิดขึ้น ฉันรู้สึกผิดหวังมาก",
+        "id": "Jika hal yang saya nantikan tidak terjadi, saya merasa sangat kecewa.",
+        "de": "Wenn etwas, auf das ich mich gefreut habe, nicht stattfindet, bin ich sehr enttäuscht.",
+        "fr": "Quand quelque chose que j’attendais avec plaisir ne se produit pas, je suis très déçu.",
+        "es": "Cuando algo que esperaba con ilusión no ocurre, me siento muy decepcionado."
+      }
+    },
+    {
+      "seedId": "seed-emotion-n11",
+      "axis": "emotion",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-W123",
+        "ipip-E19"
+      ],
+      "before": "尚未展開的新方向，已經讓我充滿鮮明的期待。",
+      "after": "還沒開始的新嘗試，已經讓我非常期待。",
+      "translations": {
+        "zh-Hans": "还没开始的新尝试，已经让我非常期待。",
+        "en": "I already feel very excited about a new experience that has not started yet.",
+        "ja": "まだ始まっていない新しい試みのことを考えると、すでにとても楽しみです。",
+        "ko": "아직 시작하지 않은 새로운 시도가 벌써 무척 기대된다.",
+        "hi": "जो नया अनुभव अभी शुरू भी नहीं हुआ, उसे लेकर मैं पहले से बहुत उत्साहित हूँ।",
+        "th": "สิ่งใหม่ที่ยังไม่ได้เริ่มลอง ทำให้ฉันรู้สึกตื่นเต้นและตั้งตารอมากแล้ว",
+        "id": "Saya sudah sangat menantikan pengalaman baru yang bahkan belum dimulai.",
+        "de": "Auf etwas Neues, das noch gar nicht begonnen hat, freue ich mich schon sehr.",
+        "fr": "Je suis déjà très enthousiaste à l’idée d’une nouvelle expérience qui n’a pas encore commencé.",
+        "es": "Ya siento mucha ilusión por una nueva experiencia que todavía no ha empezado."
+      }
+    },
+    {
+      "seedId": "seed-emotion-n14",
+      "axis": "emotion",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-E19",
+        "ipip-X92"
+      ],
+      "before": "碰到讓我覺得有趣的內容，心裡的愉快十分鮮明。",
+      "after": "遇到有趣的內容，我會覺得非常開心。",
+      "translations": {
+        "zh-Hans": "遇到有趣的内容，我会觉得非常开心。",
+        "en": "When I come across something entertaining, I feel very happy.",
+        "ja": "面白いものに出会うと、とても楽しい気持ちになります。",
+        "ko": "재미있는 내용을 접하면 무척 즐겁다.",
+        "hi": "कोई मज़ेदार चीज़ मिलने पर मुझे बहुत खुशी होती है।",
+        "th": "เมื่อเจอเนื้อหาที่สนุก ฉันรู้สึกดีใจมาก",
+        "id": "Saat menemukan sesuatu yang menghibur, saya merasa sangat senang.",
+        "de": "Wenn ich auf etwas Unterhaltsames stoße, freue ich mich sehr.",
+        "fr": "Quand je découvre quelque chose d’amusant, je ressens beaucoup de joie.",
+        "es": "Cuando encuentro algo entretenido, me siento muy feliz."
+      }
+    },
+    {
+      "seedId": "seed-emotion-n15",
+      "axis": "emotion",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-E19",
+        "ipip-X92"
+      ],
+      "before": "得知好消息，我心裡會湧出很強的高興。",
+      "after": "有人告訴我好消息，我會非常開心。",
+      "translations": {
+        "zh-Hans": "有人告诉我好消息，我会非常开心。",
+        "en": "When someone tells me good news, I feel very happy.",
+        "ja": "人から良い知らせを聞くと、とてもうれしくなります。",
+        "ko": "누군가 좋은 소식을 알려 주면 무척 기쁘다.",
+        "hi": "कोई मुझे अच्छी ख़बर देता है तो मुझे बहुत खुशी होती है।",
+        "th": "เมื่อมีคนบอกข่าวดี ฉันรู้สึกดีใจมาก",
+        "id": "Saat seseorang memberi tahu kabar baik, saya merasa sangat senang.",
+        "de": "Wenn mir jemand eine gute Nachricht erzählt, freue ich mich sehr.",
+        "fr": "Quand quelqu’un m’annonce une bonne nouvelle, je suis très content.",
+        "es": "Cuando alguien me da una buena noticia, me siento muy feliz."
+      }
+    },
+    {
+      "seedId": "seed-emotion-n16",
+      "axis": "emotion",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-X92",
+        "ipip-H802"
+      ],
+      "before": "熟悉的一段經歷結束了，我的情緒起伏很強。",
+      "after": "熟悉的生活告一段落時，我的心情會有很大的起伏。",
+      "translations": {
+        "zh-Hans": "熟悉的生活告一段落时，我的心情会有很大的起伏。",
+        "en": "When a familiar chapter of my life ends, my mood shifts a lot.",
+        "ja": "慣れ親しんだ生活の一区切りを迎えると、気持ちが大きく揺れ動きます。",
+        "ko": "익숙한 삶의 한 시기가 끝나면 감정의 변화가 크다.",
+        "hi": "ज़िंदगी का कोई जाना-पहचाना दौर खत्म होता है तो मेरे मन में बहुत उतार-चढ़ाव होते हैं।",
+        "th": "เมื่อช่วงชีวิตที่คุ้นเคยจบลง อารมณ์ของฉันเปลี่ยนแปลงอย่างมาก",
+        "id": "Saat suatu masa kehidupan yang sudah akrab berakhir, perasaan saya bergejolak kuat.",
+        "de": "Wenn ein vertrauter Lebensabschnitt endet, bewegen sich meine Gefühle sehr stark.",
+        "fr": "Quand un chapitre familier de ma vie se termine, mes émotions changent fortement.",
+        "es": "Cuando termina una etapa conocida de mi vida, mis emociones cambian mucho."
+      }
+    },
+    {
+      "seedId": "seed-emotion-n20",
+      "axis": "emotion",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H802",
+        "ipip-X92"
+      ],
+      "before": "別人對我的回饋，會引起心裡很鮮明的感受。",
+      "after": "聽到別人對我的評價，我心裡的感受會很強烈。",
+      "translations": {
+        "zh-Hans": "听到别人对我的评价，我心里的感受会很强烈。",
+        "en": "Hearing what other people think of me brings up strong feelings inside.",
+        "ja": "人から自分への評価を聞くと、心の中に強い感情が生まれます。",
+        "ko": "다른 사람이 나를 어떻게 평가하는지 들으면 마음속 감정이 강해진다.",
+        "hi": "दूसरे मेरे बारे में क्या सोचते हैं, यह सुनकर मेरे मन में गहरी भावनाएँ उठती हैं।",
+        "th": "เมื่อได้ยินว่าคนอื่นมองฉันอย่างไร ฉันจะรู้สึกในใจอย่างรุนแรง",
+        "id": "Mendengar penilaian orang lain tentang saya menimbulkan perasaan yang kuat di dalam hati.",
+        "de": "Wenn ich höre, wie andere mich beurteilen, löst das starke Gefühle in mir aus.",
+        "fr": "Entendre ce que les autres pensent de moi fait naître en moi des émotions fortes.",
+        "es": "Escuchar lo que otras personas piensan de mí me provoca emociones fuertes."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p02",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-X267",
+        "ipip-H572"
+      ],
+      "before": "別人稱讚我的表現，我感到的是溫和的高興。",
+      "after": "受到別人稱讚時，我會開心，但心情不會太激動。",
+      "translations": {
+        "zh-Hans": "受到别人称赞时，我会开心，但心情不会太激动。",
+        "en": "When someone praises me, I feel happy but not very excited inside.",
+        "ja": "人にほめられるとうれしいですが、気持ちが大きく高ぶることはありません。",
+        "ko": "칭찬을 받으면 기쁘지만 마음이 크게 들뜨지는 않는다.",
+        "hi": "तारीफ़ मिलने पर मुझे खुशी होती है, पर भीतर बहुत अधिक उत्साह नहीं होता।",
+        "th": "เมื่อมีคนชม ฉันรู้สึกดีใจ แต่ข้างในไม่ได้ตื่นเต้นมากนัก",
+        "id": "Saat dipuji, saya merasa senang tetapi tidak terlalu bergejolak di dalam hati.",
+        "de": "Wenn mich jemand lobt, freue ich mich, bin innerlich aber nicht besonders aufgeregt.",
+        "fr": "Quand on me félicite, je suis content, mais je ne ressens pas une grande excitation intérieure.",
+        "es": "Cuando alguien me elogia, me alegro, pero por dentro no me emociono demasiado."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p03",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H802",
+        "ipip-X267"
+      ],
+      "before": "意料之外的事情發生，我心裡的驚訝很輕。",
+      "after": "沒料到的事情突然發生，我心裡不會特別驚訝。",
+      "translations": {
+        "zh-Hans": "没料到的事情突然发生，我心里不会特别惊讶。",
+        "en": "When something unexpected happens, I do not feel very surprised inside.",
+        "ja": "予想外のことが起きても、心の中でそれほど強い驚きは感じません。",
+        "ko": "예상치 못한 일이 생겨도 마음속 놀라움은 그리 크지 않다.",
+        "hi": "अचानक कोई अनपेक्षित बात होने पर भी मुझे भीतर बहुत ज़्यादा हैरानी नहीं होती।",
+        "th": "เมื่อมีเรื่องไม่คาดคิดเกิดขึ้น ฉันไม่ได้รู้สึกประหลาดใจมากนัก",
+        "id": "Saat sesuatu yang tidak terduga terjadi, rasa terkejut di dalam hati saya tidak terlalu kuat.",
+        "de": "Wenn etwas Unerwartetes passiert, bin ich innerlich nicht besonders überrascht.",
+        "fr": "Quand quelque chose d’inattendu arrive, je ne ressens pas une très grande surprise.",
+        "es": "Cuando ocurre algo inesperado, no siento una sorpresa muy intensa."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p04",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-X92",
+        "ipip-X267"
+      ],
+      "before": "結果不如原先預期，我的失落程度仍然很輕。",
+      "after": "結果沒有達到預期，我會失望，但感覺不強烈。",
+      "translations": {
+        "zh-Hans": "结果没有达到预期，我会失望，但感觉不强烈。",
+        "en": "When the result falls short of my expectations, I feel disappointed, but not intensely.",
+        "ja": "結果が期待に届かないとがっかりしますが、その気持ちは強くありません。",
+        "ko": "결과가 기대에 못 미치면 실망하지만 그 감정은 강하지 않다.",
+        "hi": "नतीजा उम्मीद से कम हो तो निराशा होती है, लेकिन बहुत गहरी नहीं।",
+        "th": "เมื่อผลลัพธ์ไม่เป็นอย่างที่หวัง ฉันผิดหวัง แต่ความรู้สึกไม่รุนแรง",
+        "id": "Jika hasilnya tidak sesuai harapan, saya kecewa, tetapi perasaannya tidak kuat.",
+        "de": "Wenn ein Ergebnis hinter meinen Erwartungen zurückbleibt, bin ich enttäuscht, aber nicht sehr stark.",
+        "fr": "Quand le résultat n’est pas à la hauteur de mes attentes, je suis déçu, mais pas intensément.",
+        "es": "Cuando el resultado no cumple mis expectativas, me decepciono, pero no de forma intensa."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p05",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-E19",
+        "ipip-H572"
+      ],
+      "before": "盼望的好事即將到來，我心裡的興奮是輕柔的。",
+      "after": "想到一直期待的好事，我心裡不會特別興奮。",
+      "translations": {
+        "zh-Hans": "想到一直期待的好事，我心里不会特别兴奋。",
+        "en": "Thinking about something good I have been looking forward to does not make me feel especially excited inside.",
+        "ja": "楽しみにしていた良いことを思っても、心の中で特に強くわくわくはしません。",
+        "ko": "기다리던 좋은 일을 생각해도 마음속에서 특별히 크게 들뜨지는 않는다.",
+        "hi": "जिस अच्छी बात का इंतज़ार है, उसके बारे में सोचकर भी मुझे भीतर बहुत अधिक उत्साह नहीं होता।",
+        "th": "แม้จะคิดถึงเรื่องดี ๆ ที่เฝ้ารอ ฉันก็ไม่ได้รู้สึกตื่นเต้นมากเป็นพิเศษ",
+        "id": "Memikirkan hal baik yang saya nantikan tidak membuat perasaan saya terlalu meluap-luap.",
+        "de": "Wenn ich an etwas Schönes denke, auf das ich mich lange gefreut habe, bin ich innerlich nicht besonders aufgeregt.",
+        "fr": "Penser à quelque chose de bien que j’attends avec plaisir ne provoque pas en moi une excitation particulièrement forte.",
+        "es": "Pensar en algo bueno que llevo tiempo esperando no me produce una emoción especialmente intensa."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p06",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-W379",
+        "ipip-X267"
+      ],
+      "before": "眼前的事情往前推進，我只感到淡淡的喜悅。",
+      "after": "事情有了新進展，我會有一點開心。",
+      "translations": {
+        "zh-Hans": "事情有了新进展，我会有一点开心。",
+        "en": "When things make progress, I feel a little happy.",
+        "ja": "物事に進展があると、少しうれしくなります。",
+        "ko": "일이 진전되면 조금 기쁘다.",
+        "hi": "काम में प्रगति होने पर मुझे थोड़ी खुशी होती है।",
+        "th": "เมื่อเรื่องต่าง ๆ คืบหน้า ฉันจะรู้สึกดีใจเล็กน้อย",
+        "id": "Saat ada kemajuan, saya merasa sedikit senang.",
+        "de": "Wenn etwas vorangeht, freue ich mich ein wenig.",
+        "fr": "Quand les choses avancent, je ressens un peu de joie.",
+        "es": "Cuando las cosas avanzan, me siento un poco feliz."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p08",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-X92",
+        "ipip-H802"
+      ],
+      "before": "面前有人提出不同意見，我內心的反應仍然平緩。",
+      "after": "別人說出不同意見時，我心裡的起伏不大。",
+      "translations": {
+        "zh-Hans": "别人说出不同意见时，我心里的起伏不大。",
+        "en": "Hearing a different opinion does not stir up strong feelings in me.",
+        "ja": "人が違う意見を言っても、気持ちはあまり揺れません。",
+        "ko": "다른 사람이 다른 의견을 말해도 마음의 동요는 크지 않다.",
+        "hi": "किसी की अलग राय सुनकर मेरे मन में बहुत हलचल नहीं होती।",
+        "th": "เมื่อคนอื่นแสดงความเห็นต่าง ใจฉันไม่ค่อยหวั่นไหว",
+        "id": "Saat orang lain menyampaikan pendapat berbeda, perasaan saya tidak banyak bergejolak.",
+        "de": "Wenn jemand eine andere Meinung äußert, bewegt mich das innerlich nicht sehr stark.",
+        "fr": "Quand quelqu’un exprime un avis différent, cela me remue peu intérieurement.",
+        "es": "Cuando alguien expresa una opinión distinta, mis emociones no cambian mucho."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p10",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-X267",
+        "ipip-H572"
+      ],
+      "before": "在意的事情終於做完，我心裡是一份淡淡的高興。",
+      "after": "一件在意的事終於完成，我會高興，但感覺不強烈。",
+      "translations": {
+        "zh-Hans": "一件在意的事终于完成，我会高兴，但感觉不强烈。",
+        "en": "When I finally finish something that matters to me, I feel happy, but not intensely.",
+        "ja": "大切にしていたことを終えるとうれしいですが、その気持ちは強くありません。",
+        "ko": "중요하게 여긴 일을 끝내면 기쁘지만 그 감정은 강하지 않다.",
+        "hi": "अपने लिए अहम काम पूरा होने पर खुशी होती है, लेकिन बहुत तीव्र नहीं।",
+        "th": "เมื่อทำเรื่องที่ใส่ใจเสร็จ ฉันจะดีใจ แต่ความรู้สึกไม่รุนแรง",
+        "id": "Saat akhirnya menyelesaikan hal yang penting bagi saya, saya senang, tetapi perasaannya tidak kuat.",
+        "de": "Wenn ich etwas abschließe, das mir wichtig ist, freue ich mich, aber nicht sehr stark.",
+        "fr": "Quand je termine enfin quelque chose qui compte pour moi, je suis content, mais sans émotion intense.",
+        "es": "Cuando por fin termino algo que me importa, me alegro, pero no de manera intensa."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p11",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-W123",
+        "ipip-X267"
+      ],
+      "before": "想像未來的新發展，我的期待感是溫和的。",
+      "after": "想到未來的新機會，我有些期待，但感覺不強烈。",
+      "translations": {
+        "zh-Hans": "想到未来的新机会，我有些期待，但感觉不强烈。",
+        "en": "I feel some anticipation about new possibilities ahead, but the feeling is not strong.",
+        "ja": "これからの新しい可能性には少し期待しますが、その気持ちは強くありません。",
+        "ko": "앞으로의 새로운 가능성을 생각하면 조금 기대되지만 그 감정은 강하지 않다.",
+        "hi": "आगे की नई संभावनाओं को लेकर थोड़ी उत्सुकता होती है, लेकिन भावना बहुत तीव्र नहीं होती।",
+        "th": "ฉันรู้สึกคาดหวังอยู่บ้างกับโอกาสใหม่ข้างหน้า แต่ความรู้สึกไม่รุนแรง",
+        "id": "Saya sedikit menantikan kemungkinan baru di masa depan, tetapi perasaannya tidak kuat.",
+        "de": "Bei neuen Möglichkeiten in der Zukunft empfinde ich etwas Vorfreude, aber nicht sehr stark.",
+        "fr": "Je ressens un peu d’enthousiasme à l’idée de nouvelles possibilités à venir, mais sans grande intensité.",
+        "es": "Siento algo de ilusión por las nuevas posibilidades que vienen, pero no de forma intensa."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p14",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-X267",
+        "ipip-H572"
+      ],
+      "before": "看到一段有趣的內容，我感到輕輕的愉快。",
+      "after": "看到有趣的內容時，我會覺得有點開心。",
+      "translations": {
+        "zh-Hans": "看到有趣的内容时，我会觉得有点开心。",
+        "en": "When I see something entertaining, I feel a little happy.",
+        "ja": "面白いものを見ると、少し楽しい気持ちになります。",
+        "ko": "재미있는 내용을 보면 조금 즐겁다.",
+        "hi": "कोई मज़ेदार चीज़ देखकर मुझे थोड़ी खुशी होती है।",
+        "th": "เมื่อเห็นเนื้อหาที่สนุก ฉันรู้สึกดีใจเล็กน้อย",
+        "id": "Saat melihat sesuatu yang menghibur, saya merasa sedikit senang.",
+        "de": "Wenn ich etwas Unterhaltsames sehe, freue ich mich ein wenig.",
+        "fr": "Quand je vois quelque chose d’amusant, je ressens un peu de joie.",
+        "es": "Cuando veo algo entretenido, me siento un poco feliz."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p15",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-E19",
+        "ipip-X267"
+      ],
+      "before": "好消息傳到耳邊，我心裡的高興仍很溫和。",
+      "after": "聽到一個好消息，我會開心，但不會特別激動。",
+      "translations": {
+        "zh-Hans": "听到一个好消息，我会开心，但不会特别激动。",
+        "en": "Good news makes me happy, but I do not feel especially excited inside.",
+        "ja": "良い知らせを聞くとうれしいですが、気持ちが特に高ぶることはありません。",
+        "ko": "좋은 소식을 들으면 기쁘지만 마음이 특별히 크게 들뜨지는 않는다.",
+        "hi": "अच्छी ख़बर सुनकर खुशी होती है, लेकिन भीतर बहुत अधिक उत्साह नहीं होता।",
+        "th": "เมื่อได้ยินข่าวดี ฉันรู้สึกดีใจ แต่ไม่ได้ตื่นเต้นมากเป็นพิเศษ",
+        "id": "Mendengar kabar baik membuat saya senang, tetapi saya tidak merasa sangat bergejolak di dalam hati.",
+        "de": "Gute Nachrichten freuen mich, aber ich bin innerlich nicht besonders aufgeregt.",
+        "fr": "Une bonne nouvelle me fait plaisir, mais ne provoque pas en moi une grande excitation.",
+        "es": "Una buena noticia me alegra, pero no me emociona especialmente por dentro."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p17",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H802",
+        "ipip-H572"
+      ],
+      "before": "意外得到一份收穫，我感到的驚喜是柔和的。",
+      "after": "得到意外的收穫，我會驚喜，但感覺不強烈。",
+      "translations": {
+        "zh-Hans": "得到意外的收获，我会惊喜，但感觉不强烈。",
+        "en": "An unexpected gain gives me a pleasant surprise, but the feeling is not intense.",
+        "ja": "思いがけない収穫があるとうれしい驚きを感じますが、その気持ちは強くありません。",
+        "ko": "예상치 못한 좋은 결과를 얻으면 반갑고 놀랍지만 그 감정은 강하지 않다.",
+        "hi": "अचानक कोई लाभ मिलने पर सुखद आश्चर्य होता है, लेकिन भावना बहुत तीव्र नहीं होती।",
+        "th": "เมื่อได้สิ่งดี ๆ มาโดยไม่คาดคิด ฉันรู้สึกดีใจและประหลาดใจ แต่ความรู้สึกไม่รุนแรง",
+        "id": "Mendapatkan hasil baik yang tidak diduga membuat saya senang dan terkejut, tetapi perasaannya tidak kuat.",
+        "de": "Ein unerwarteter Gewinn überrascht mich angenehm, aber das Gefühl ist nicht sehr stark.",
+        "fr": "Un bénéfice inattendu me fait une agréable surprise, mais l’émotion n’est pas intense.",
+        "es": "Obtener algo bueno de forma inesperada me da una grata sorpresa, pero la emoción no es intensa."
+      }
+    },
+    {
+      "seedId": "seed-emotion-p19",
+      "axis": "emotion",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-X92",
+        "ipip-V102"
+      ],
+      "before": "讓我產生共鳴的故事，只在心裡帶來輕柔的感動。",
+      "after": "讀到打動自己的故事，我會感動，但感覺不會太強烈。",
+      "translations": {
+        "zh-Hans": "读到打动自己的故事，我会感动，但感觉不会太强烈。",
+        "en": "When I read a story that touches me, I feel moved, but not very strongly.",
+        "ja": "心に響く話を読むと感動しますが、その気持ちはそれほど強くありません。",
+        "ko": "마음에 와닿는 이야기를 읽으면 감동하지만 그 감정은 그리 강하지 않다.",
+        "hi": "दिल छूने वाली कहानी पढ़कर मैं भावुक होता हूँ, लेकिन बहुत ज़्यादा नहीं।",
+        "th": "เมื่ออ่านเรื่องที่กินใจ ฉันรู้สึกซาบซึ้ง แต่ความรู้สึกไม่รุนแรงนัก",
+        "id": "Saat membaca cerita yang menyentuh hati, saya terharu, tetapi tidak terlalu kuat.",
+        "de": "Wenn ich eine Geschichte lese, die mich berührt, bin ich bewegt, aber nicht sehr stark.",
+        "fr": "Quand je lis une histoire qui me touche, je suis ému, mais pas très fortement.",
+        "es": "Cuando leo una historia que me llega, me conmuevo, pero no con mucha intensidad."
+      }
+    },
+    {
+      "seedId": "seed-energy-p13",
+      "axis": "energy",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H78"
+      ],
+      "before": "假日安排共同活動，是我恢復下週精神的方式。",
+      "after": "假日和別人一起活動，能讓我恢復精神迎接下一週。",
+      "translations": {
+        "zh-Hans": "假日和别人一起活动，能让我恢复精神迎接下一周。",
+        "en": "Doing things with other people on my days off helps me recharge for the coming week.",
+        "ja": "休みの日に誰かと一緒に活動すると、次の週に向けて元気を取り戻せます。",
+        "ko": "쉬는 날 다른 사람들과 함께 활동하면 다음 주를 보낼 기운이 충전됩니다.",
+        "hi": "छुट्टी के दिन दूसरों के साथ कुछ करने से अगले हफ़्ते के लिए मेरी ऊर्जा लौट आती है।",
+        "th": "การทำกิจกรรมกับคนอื่นในวันหยุดช่วยให้ฉันมีแรงพร้อมสำหรับสัปดาห์ถัดไป",
+        "id": "Beraktivitas bersama orang lain saat libur membantu saya memulihkan energi untuk minggu berikutnya.",
+        "de": "An freien Tagen etwas mit anderen zu unternehmen gibt mir neue Energie für die nächste Woche.",
+        "fr": "Faire des activités avec d’autres pendant mes jours de repos me redonne de l’énergie pour la semaine suivante.",
+        "es": "Hacer actividades con otras personas en mis días libres me ayuda a recuperar energía para la semana siguiente."
+      }
+    },
+    {
+      "seedId": "seed-energy-p14",
+      "axis": "energy",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-E56"
+      ],
+      "before": "周圍有人輕鬆交談的地方，讓我休息得更有精神。",
+      "after": "在有人輕鬆聊天的地方休息，我比較快恢復精神。",
+      "translations": {
+        "zh-Hans": "在有人轻松聊天的地方休息，我比较快恢复精神。",
+        "en": "I recharge more quickly when I rest somewhere people are chatting casually.",
+        "ja": "人が気軽におしゃべりしている場所で休むと、早く元気を取り戻せます。",
+        "ko": "사람들이 편하게 이야기하는 곳에서 쉬면 기운이 더 빨리 돌아옵니다.",
+        "hi": "जहाँ लोग आराम से बातें कर रहे हों, वहाँ आराम करने से मेरी ऊर्जा जल्दी लौटती है।",
+        "th": "ฉันฟื้นพลังได้เร็วขึ้นเมื่อพักในที่ที่มีคนคุยกันสบาย ๆ",
+        "id": "Saya lebih cepat pulih saat beristirahat di tempat orang-orang mengobrol santai.",
+        "de": "Ich erhole mich schneller, wenn ich dort ausruhe, wo sich Menschen ungezwungen unterhalten.",
+        "fr": "Je retrouve plus vite mon énergie quand je me repose dans un endroit où les gens discutent tranquillement.",
+        "es": "Recupero energía más rápido al descansar donde la gente charla de manera relajada."
+      }
+    },
+    {
+      "seedId": "seed-energy-p18",
+      "axis": "energy",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H14"
+      ],
+      "before": "聽人分享最近的生活，會讓我的精神重新活絡。",
+      "after": "聽朋友聊最近的生活，會讓我重新有精神。",
+      "translations": {
+        "zh-Hans": "听朋友聊最近的生活，会让我重新有精神。",
+        "en": "Hearing friends talk about their recent lives gives me fresh energy.",
+        "ja": "友人の近況を聞くと、また元気が出てきます。",
+        "ko": "친구들의 요즘 사는 이야기를 들으면 다시 기운이 납니다.",
+        "hi": "दोस्तों की हाल की ज़िंदगी के बारे में सुनकर मुझमें फिर से ऊर्जा आ जाती है।",
+        "th": "การฟังเพื่อนเล่าชีวิตช่วงนี้ทำให้ฉันมีแรงขึ้นมาอีกครั้ง",
+        "id": "Mendengar teman bercerita tentang keseharian mereka belakangan ini membuat saya kembali bersemangat.",
+        "de": "Wenn Freunde von ihrem Alltag in letzter Zeit erzählen, bekomme ich neue Energie.",
+        "fr": "Écouter mes amis raconter leur vie récente me redonne de l’énergie.",
+        "es": "Escuchar a mis amigos contar cómo les ha ido últimamente me devuelve la energía."
+      }
+    },
+    {
+      "seedId": "seed-energy-p20",
+      "axis": "energy",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-E56"
+      ],
+      "before": "跟上大家互動的節奏，我會漸漸從疲倦中恢復。",
+      "after": "投入大家的聊天或活動後，我會漸漸恢復精神。",
+      "translations": {
+        "zh-Hans": "投入大家的聊天或活动后，我会渐渐恢复精神。",
+        "en": "After joining in a group conversation or activity, I gradually regain my energy.",
+        "ja": "みんなのおしゃべりや活動に加わると、少しずつ元気を取り戻せます。",
+        "ko": "여럿이 하는 대화나 활동에 참여하다 보면 서서히 기운이 돌아옵니다.",
+        "hi": "सबके साथ बातचीत या किसी गतिविधि में शामिल होने के बाद मेरी ऊर्जा धीरे-धीरे लौटती है।",
+        "th": "หลังจากเข้าร่วมวงสนทนาหรือกิจกรรมกับคนอื่น ฉันจะค่อย ๆ มีแรงกลับมา",
+        "id": "Setelah ikut mengobrol atau beraktivitas bersama, energi saya perlahan pulih.",
+        "de": "Wenn ich mich an einem Gespräch oder einer gemeinsamen Aktivität beteilige, kehrt meine Energie nach und nach zurück.",
+        "fr": "Après avoir rejoint une conversation ou une activité de groupe, je retrouve peu à peu mon énergie.",
+        "es": "Después de participar en una conversación o actividad de grupo, voy recuperando la energía."
+      }
+    },
+    {
+      "seedId": "seed-energy-p21",
+      "axis": "energy",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H14"
+      ],
+      "before": "輕鬆認識新朋友的過程，會增加我的精神。",
+      "after": "在輕鬆的場合認識新朋友，會讓我更有精神。",
+      "translations": {
+        "zh-Hans": "在轻松的场合认识新朋友，会让我更有精神。",
+        "en": "Meeting new people in a relaxed setting gives me more energy.",
+        "ja": "くつろいだ場で新しい人と知り合うと、元気が出ます。",
+        "ko": "편안한 자리에서 새로운 사람을 만나면 기운이 더 납니다.",
+        "hi": "सहज माहौल में नए लोगों से मिलने पर मुझमें और ऊर्जा आती है।",
+        "th": "การรู้จักคนใหม่ในบรรยากาศสบาย ๆ ทำให้ฉันมีแรงมากขึ้น",
+        "id": "Berkenalan dengan orang baru dalam suasana santai menambah energi saya.",
+        "de": "In entspannter Atmosphäre neue Leute kennenzulernen gibt mir mehr Energie.",
+        "fr": "Faire de nouvelles connaissances dans une ambiance détendue me donne de l’énergie.",
+        "es": "Conocer gente nueva en un ambiente relajado me da más energía."
+      }
+    },
+    {
+      "seedId": "seed-energy-p24",
+      "axis": "energy",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H965"
+      ],
+      "before": "一直沒和人說話的休息，讓我的精神恢復得較慢。",
+      "after": "休息時完全不和人交流，我反而比較慢恢復精神。",
+      "translations": {
+        "zh-Hans": "休息时完全不和人交流，我反而比较慢恢复精神。",
+        "en": "When I have no contact with anyone during a break, I actually take longer to recharge.",
+        "ja": "休んでいる間に誰ともやり取りしないと、かえって元気が戻るまで時間がかかります。",
+        "ko": "쉬는 동안 아무와도 소통하지 않으면 오히려 기운을 회복하는 데 더 오래 걸립니다.",
+        "hi": "आराम करते समय किसी से भी बात न हो, तो मेरी ऊर्जा लौटने में उलटे ज़्यादा समय लगता है।",
+        "th": "ถ้าไม่ได้พูดคุยกับใครเลยระหว่างพัก ฉันกลับใช้เวลาฟื้นพลังนานกว่าเดิม",
+        "id": "Jika sama sekali tidak berinteraksi dengan siapa pun saat istirahat, saya justru lebih lama memulihkan energi.",
+        "de": "Wenn ich während einer Pause mit niemandem Kontakt habe, brauche ich sogar länger, um mich zu erholen.",
+        "fr": "Quand je n’ai aucun échange avec personne pendant une pause, je mets au contraire plus de temps à récupérer.",
+        "es": "Cuando no tengo ningún contacto con otras personas durante un descanso, tardo más en recuperar energía."
+      }
+    },
+    {
+      "seedId": "seed-information-n02",
+      "axis": "information",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-W281"
+      ],
+      "before": "要理解眼前的事，我先把它放回整體脈絡裡看。",
+      "after": "想弄懂一件事時，我會先看它和前後發生的事有什麼關係。",
+      "translations": {
+        "zh-Hans": "想弄懂一件事时，我会先看它和前后发生的事有什么关系。",
+        "en": "To understand something, I first look at how it connects with what happened before and after it.",
+        "ja": "物事を理解したいときは、まず前後の出来事とどうつながっているかを考えます。",
+        "ko": "어떤 일을 이해하려고 할 때는 먼저 그 전후에 일어난 일들과 어떤 관계가 있는지 봅니다.",
+        "hi": "किसी बात को समझने के लिए मैं पहले देखता हूँ कि उसका पहले और बाद की घटनाओं से क्या संबंध है।",
+        "th": "เมื่อต้องการเข้าใจเรื่องหนึ่ง ฉันจะดูก่อนว่ามันเกี่ยวข้องกับสิ่งที่เกิดก่อนและหลังอย่างไร",
+        "id": "Untuk memahami sesuatu, saya lebih dulu melihat hubungannya dengan kejadian sebelum dan sesudahnya.",
+        "de": "Um etwas zu verstehen, schaue ich zuerst, wie es mit den Ereignissen davor und danach zusammenhängt.",
+        "fr": "Pour comprendre quelque chose, je regarde d’abord ses liens avec ce qui s’est passé avant et après.",
+        "es": "Para entender algo, primero veo cómo se relaciona con lo que ocurrió antes y después."
+      }
+    },
+    {
+      "seedId": "seed-information-n04",
+      "axis": "information",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-X239"
+      ],
+      "before": "學習不同做法，我先想清楚背後的整體概念。",
+      "after": "學一個新方法時，我想先弄懂它背後的道理。",
+      "translations": {
+        "zh-Hans": "学一个新方法时，我想先弄懂它背后的道理。",
+        "en": "When learning a new method, I want to understand the idea behind it first.",
+        "ja": "新しいやり方を学ぶときは、まずその背後にある考え方を理解したくなります。",
+        "ko": "새로운 방법을 배울 때는 그 바탕에 있는 원리부터 이해하고 싶습니다.",
+        "hi": "कोई नया तरीका सीखते समय मैं पहले उसके पीछे की सोच समझना चाहता हूँ।",
+        "th": "เวลาเรียนรู้วิธีใหม่ ฉันอยากเข้าใจหลักคิดเบื้องหลังก่อน",
+        "id": "Saat mempelajari cara baru, saya ingin memahami pemikiran di baliknya terlebih dahulu.",
+        "de": "Wenn ich eine neue Methode lerne, möchte ich zuerst die Idee dahinter verstehen.",
+        "fr": "Quand j’apprends une nouvelle méthode, je veux d’abord comprendre l’idée qui la sous-tend.",
+        "es": "Cuando aprendo un método nuevo, primero quiero entender la idea que hay detrás."
+      }
+    },
+    {
+      "seedId": "seed-information-n07",
+      "axis": "information",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-W281"
+      ],
+      "before": "一段話的整體意思，比逐字內容更先進入我腦中。",
+      "after": "對方話裡最想表達的意思，比個別字句更先引起我的注意。",
+      "translations": {
+        "zh-Hans": "对方话里最想表达的意思，比个别字句更先引起我的注意。",
+        "en": "What someone is trying to convey catches my attention before their individual words do.",
+        "ja": "相手の一つひとつの言葉よりも、何を伝えたいのかに先に意識が向きます。",
+        "ko": "상대가 쓴 개별 표현보다 그가 전하려는 뜻이 먼저 눈에 들어옵니다.",
+        "hi": "किसी के अलग-अलग शब्दों से पहले मेरा ध्यान इस पर जाता है कि वह असल में क्या कहना चाहता है।",
+        "th": "สิ่งที่อีกฝ่ายต้องการสื่อดึงความสนใจของฉันก่อนคำแต่ละคำที่เขาใช้",
+        "id": "Maksud yang ingin disampaikan seseorang lebih dulu menarik perhatian saya daripada kata-kata satu per satu.",
+        "de": "Was jemand vermitteln möchte, fällt mir eher auf als die einzelnen Formulierungen.",
+        "fr": "Ce que l’autre veut faire passer attire mon attention avant les mots précis qu’il emploie.",
+        "es": "Lo que una persona quiere transmitir me llama la atención antes que las palabras concretas que usa."
+      }
+    },
+    {
+      "seedId": "seed-information-n12",
+      "axis": "information",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-W281"
+      ],
+      "before": "別人提出一種說法，我先想它連著什麼整體觀點。",
+      "after": "聽見一種說法時，我先想它背後是在怎麼看待這件事。",
+      "translations": {
+        "zh-Hans": "听见一种说法时，我先想它背后是在怎么看待这件事。",
+        "en": "When I hear a viewpoint, I first think about the way of seeing things behind it.",
+        "ja": "ある意見を聞くと、まずその背後で物事をどう捉えているのかを考えます。",
+        "ko": "어떤 의견을 들으면 먼저 그 말 뒤에 어떤 시각이 있는지 생각합니다.",
+        "hi": "कोई राय सुनकर मैं पहले सोचता हूँ कि उसके पीछे चीज़ों को देखने का कौन-सा नज़रिया है।",
+        "th": "เมื่อได้ยินความเห็นหนึ่ง ฉันจะคิดก่อนว่าเบื้องหลังความเห็นนั้นมองเรื่องนี้อย่างไร",
+        "id": "Saat mendengar suatu pendapat, saya lebih dulu memikirkan cara pandang di baliknya.",
+        "de": "Wenn ich eine Ansicht höre, denke ich zuerst darüber nach, welche Sicht auf die Sache dahintersteht.",
+        "fr": "Quand j’entends un point de vue, je pense d’abord à la façon de voir les choses qui se trouve derrière.",
+        "es": "Cuando escucho una opinión, primero pienso en la forma de ver las cosas que hay detrás."
+      }
+    },
+    {
+      "seedId": "seed-information-n16",
+      "axis": "information",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-W281"
+      ],
+      "before": "聽完別人的經驗，我先思考它代表的更大意義。",
+      "after": "聽完別人的經驗，我先想這件事能讓人明白什麼道理。",
+      "translations": {
+        "zh-Hans": "听完别人的经验，我先想这件事能让人明白什么道理。",
+        "en": "After hearing about someone’s experience, I first think about the broader lesson it offers.",
+        "ja": "人の経験を聞くと、まずその出来事からどんなことが学べるかを考えます。",
+        "ko": "다른 사람의 경험을 들으면 먼저 그 일에서 어떤 깨달음을 얻을 수 있을지 생각합니다.",
+        "hi": "किसी का अनुभव सुनने के बाद मैं पहले सोचता हूँ कि उससे कौन-सी बड़ी बात समझी जा सकती है।",
+        "th": "หลังฟังประสบการณ์ของคนอื่น ฉันจะคิดก่อนว่าเรื่องนี้ให้ข้อคิดอะไรได้บ้าง",
+        "id": "Setelah mendengar pengalaman orang lain, saya lebih dulu memikirkan pelajaran yang bisa diambil darinya.",
+        "de": "Nachdem jemand von einer Erfahrung erzählt hat, denke ich zuerst darüber nach, welche übergreifende Erkenntnis darin steckt.",
+        "fr": "Après avoir écouté l’expérience de quelqu’un, je pense d’abord à la leçon plus générale qu’on peut en tirer.",
+        "es": "Después de escuchar la experiencia de alguien, primero pienso en la enseñanza general que deja."
+      }
+    },
+    {
+      "seedId": "seed-information-n18",
+      "axis": "information",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H60"
+      ],
+      "before": "看到一種新工具，我先想它能和哪些事重新組合。",
+      "after": "看到新工具的時候，我先想它能搭配哪些東西用出新做法。",
+      "translations": {
+        "zh-Hans": "看到新工具的时候，我先想它能搭配哪些东西用出新做法。",
+        "en": "When I see a new tool, I first think about what I could combine it with to do things in a new way.",
+        "ja": "新しい道具を見ると、まず何と組み合わせれば新しい使い方ができるかを考えます。",
+        "ko": "새 도구를 보면 먼저 무엇과 결합해서 새로운 방식으로 쓸 수 있을지 생각합니다.",
+        "hi": "कोई नया औज़ार देखकर मैं पहले सोचता हूँ कि उसे किस चीज़ के साथ मिलाकर नया तरीका अपनाया जा सकता है।",
+        "th": "เมื่อเห็นเครื่องมือใหม่ ฉันจะคิดก่อนว่านำไปใช้ร่วมกับอะไรเพื่อให้เกิดวิธีใหม่ได้บ้าง",
+        "id": "Saat melihat alat baru, saya lebih dulu memikirkan apa yang bisa dipadukan dengannya untuk menghasilkan cara baru.",
+        "de": "Wenn ich ein neues Werkzeug sehe, überlege ich zuerst, womit ich es kombinieren könnte, um etwas auf neue Weise zu machen.",
+        "fr": "Quand je vois un nouvel outil, je pense d’abord à ce que je pourrais lui associer pour faire les choses autrement.",
+        "es": "Cuando veo una herramienta nueva, primero pienso con qué podría combinarla para hacer las cosas de otra manera."
+      }
+    },
+    {
+      "seedId": "seed-information-n21",
+      "axis": "information",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-X239"
+      ],
+      "before": "一個具體事例讓我注意的，首先是它代表的普遍概念。",
+      "after": "聽到一個例子時，我先想它說明了什麼共同的道理。",
+      "translations": {
+        "zh-Hans": "听到一个例子时，我先想它说明了什么共同的道理。",
+        "en": "When I hear an example, I first think about the general idea it illustrates.",
+        "ja": "具体例を聞くと、まずそこにどんな共通する考え方が表れているかを考えます。",
+        "ko": "예시를 들으면 먼저 그 예시가 어떤 일반적인 원리를 보여 주는지 생각합니다.",
+        "hi": "कोई उदाहरण सुनकर मैं पहले सोचता हूँ कि वह कौन-सी सामान्य बात समझाता है।",
+        "th": "เมื่อได้ยินตัวอย่าง ฉันจะคิดก่อนว่ามันสื่อถึงแนวคิดทั่วไปเรื่องอะไร",
+        "id": "Saat mendengar sebuah contoh, saya lebih dulu memikirkan gagasan umum yang dijelaskannya.",
+        "de": "Wenn ich ein Beispiel höre, denke ich zuerst darüber nach, welchen allgemeinen Gedanken es veranschaulicht.",
+        "fr": "Quand j’entends un exemple, je pense d’abord à l’idée générale qu’il illustre.",
+        "es": "Cuando escucho un ejemplo, primero pienso en la idea general que ilustra."
+      }
+    },
+    {
+      "seedId": "seed-information-p03",
+      "axis": "information",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H1362"
+      ],
+      "before": "說明裡的具體數字，是我理解內容的第一個入口。",
+      "after": "閱讀一份說明時，我會先看裡面的具體數字。",
+      "translations": {
+        "zh-Hans": "阅读一份说明时，我会先看里面的具体数字。",
+        "en": "When reading an explanation, I look at the specific numbers first.",
+        "ja": "説明を読むときは、まず具体的な数字に目を向けます。",
+        "ko": "설명문을 읽을 때는 구체적인 숫자부터 살펴봅니다.",
+        "hi": "कोई विवरण पढ़ते समय मैं पहले उसमें दिए गए ठोस आँकड़े देखता हूँ।",
+        "th": "เวลาอ่านคำอธิบาย ฉันจะดูตัวเลขที่ระบุไว้ก่อน",
+        "id": "Saat membaca penjelasan, saya melihat angka-angka konkretnya terlebih dahulu.",
+        "de": "Wenn ich eine Erklärung lese, schaue ich zuerst auf die konkreten Zahlen.",
+        "fr": "Quand je lis une explication, je regarde d’abord les chiffres précis.",
+        "es": "Cuando leo una explicación, primero me fijo en las cifras concretas."
+      }
+    },
+    {
+      "seedId": "seed-organization-n12",
+      "axis": "organization",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H1279"
+      ],
+      "before": "材料拿到手裡實際使用後，我才逐步決定怎樣配置。",
+      "after": "一邊動手使用材料，我才一邊決定各種材料放在哪裡。",
+      "translations": {
+        "zh-Hans": "一边动手使用材料，我才一边决定各种材料放在哪里。",
+        "en": "I decide where to put each material as I start using it.",
+        "ja": "材料を実際に使いながら、それぞれをどこに置くか決めます。",
+        "ko": "재료를 직접 써 가면서 각각 어디에 놓을지 정한다.",
+        "hi": "सामग्री इस्तेमाल करते हुए ही मैं तय करता हूँ कि कौन-सी चीज़ कहाँ रखनी है।",
+        "th": "ฉันลงมือใช้วัสดุไป แล้วค่อยตัดสินใจว่าจะวางแต่ละอย่างไว้ตรงไหน",
+        "id": "Saya menentukan tempat tiap bahan sambil mulai menggunakannya.",
+        "de": "Erst beim Arbeiten mit dem Material entscheide ich, wo ich die einzelnen Teile hinlege.",
+        "fr": "Je décide où placer chaque matériau au fur et à mesure que je l’utilise.",
+        "es": "Decido dónde colocar cada material a medida que empiezo a usarlo."
+      }
+    },
+    {
+      "seedId": "seed-organization-n18",
+      "axis": "organization",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-E104"
+      ],
+      "before": "整件事的架構，我喜歡讓它隨著實際進行慢慢成形。",
+      "after": "事情慢慢做下去，我才逐漸想清楚整體要怎麼安排。",
+      "translations": {
+        "zh-Hans": "事情慢慢做下去，我才逐渐想清楚整体要怎么安排。",
+        "en": "I work out the overall arrangement as I go along.",
+        "ja": "進めていくうちに、全体をどう組み立てるか考えがまとまります。",
+        "ko": "일을 진행하면서 전체를 어떻게 꾸릴지 차츰 정한다.",
+        "hi": "काम आगे बढ़ने के साथ ही मैं तय करता हूँ कि उसे कुल मिलाकर कैसे व्यवस्थित करना है।",
+        "th": "ฉันค่อย ๆ คิดออกว่าจะจัดงานทั้งหมดอย่างไรระหว่างที่ลงมือทำ",
+        "id": "Saya baru menyusun pengaturan keseluruhan sambil menjalankannya.",
+        "de": "Wie ich das Ganze aufbaue, ergibt sich für mich erst während der Arbeit.",
+        "fr": "L’organisation d’ensemble se précise pour moi au fur et à mesure que j’avance.",
+        "es": "Voy definiendo cómo organizar el conjunto a medida que avanzo."
+      }
+    },
+    {
+      "seedId": "seed-organization-n20",
+      "axis": "organization",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-D58",
+        "ipip-H1279"
+      ],
+      "before": "當下有了新的發現，我就會改變原本前進的節點。",
+      "after": "有了原先沒想到的新發現，我就會調整接下來的步驟。",
+      "translations": {
+        "zh-Hans": "有了原先没想到的新发现，我就会调整接下来的步骤。",
+        "en": "When I discover something I had not expected, I adjust the next steps.",
+        "ja": "思いがけない発見があると、その先の手順を変えます。",
+        "ko": "예상하지 못한 것을 새로 알게 되면 다음 단계를 조정한다.",
+        "hi": "जब कोई ऐसी नई बात पता चलती है जिसका पहले ध्यान नहीं था, तो मैं आगे के चरण बदल देता हूँ।",
+        "th": "เมื่อพบสิ่งใหม่ที่ไม่ได้คิดไว้ ฉันจะปรับขั้นตอนต่อไป",
+        "id": "Saat menemukan hal baru yang tidak terpikir sebelumnya, saya menyesuaikan langkah berikutnya.",
+        "de": "Wenn ich etwas Unerwartetes entdecke, passe ich die nächsten Schritte an.",
+        "fr": "Quand je découvre quelque chose d’inattendu, j’adapte les étapes suivantes.",
+        "es": "Cuando descubro algo que no había previsto, ajusto los siguientes pasos."
+      }
+    },
+    {
+      "seedId": "seed-organization-n22",
+      "axis": "organization",
+      "direction": -1,
+      "sourceIds": [
+        "ipip-H848"
+      ],
+      "before": "接觸過實際內容，我才界定這次要處理的範圍。",
+      "after": "真正接觸過要做的事，我才決定這次要處理哪些部分。",
+      "translations": {
+        "zh-Hans": "真正接触过要做的事，我才决定这次要处理哪些部分。",
+        "en": "Only after getting into the task do I decide which parts to deal with this time.",
+        "ja": "実際に取りかかってから、今回はどの部分を扱うか決めます。",
+        "ko": "해야 할 일을 직접 접해 본 뒤에야 이번에 어느 부분을 할지 정한다.",
+        "hi": "काम को वास्तव में करके देखने के बाद ही मैं तय करता हूँ कि इस बार किन हिस्सों पर काम करना है।",
+        "th": "ฉันต้องได้ลองสัมผัสงานจริงก่อน จึงค่อยตัดสินใจว่าครั้งนี้จะทำส่วนไหนบ้าง",
+        "id": "Setelah benar-benar mengenal tugasnya, barulah saya menentukan bagian mana yang akan ditangani kali ini.",
+        "de": "Erst wenn ich mich praktisch mit der Aufgabe befasst habe, entscheide ich, welche Teile ich diesmal angehe.",
+        "fr": "C’est seulement après avoir abordé concrètement la tâche que je décide quelles parties traiter cette fois-ci.",
+        "es": "Solo después de conocer la tarea en la práctica decido qué partes abordar esta vez."
+      }
+    },
+    {
+      "seedId": "seed-organization-p18",
+      "axis": "organization",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-W126",
+        "ipip-W298"
+      ],
+      "before": "整體的安排架構，我習慣在動手之初就畫出來。",
+      "after": "整件事要怎麼安排，我會在開始前先畫出大致的步驟。",
+      "translations": {
+        "zh-Hans": "整件事要怎么安排，我会在开始前先画出大致的步骤。",
+        "en": "Before I start, I sketch the main steps for the whole task.",
+        "ja": "取りかかる前に、全体の大まかな手順を書き出します。",
+        "ko": "시작하기 전에 전체 일을 어떻게 할지 큰 순서를 그려 본다.",
+        "hi": "शुरू करने से पहले मैं पूरे काम के मुख्य चरणों का खाका बना लेता हूँ।",
+        "th": "ก่อนเริ่ม ฉันจะเขียนขั้นตอนคร่าว ๆ ของงานทั้งหมดไว้ก่อน",
+        "id": "Sebelum mulai, saya membuat gambaran langkah-langkah utama untuk seluruh pekerjaan.",
+        "de": "Bevor ich anfange, skizziere ich die wichtigsten Schritte für die gesamte Aufgabe.",
+        "fr": "Avant de commencer, je trace les grandes étapes de l’ensemble de la tâche.",
+        "es": "Antes de empezar, esbozo los pasos principales de toda la tarea."
+      }
+    },
+    {
+      "seedId": "seed-organization-p20",
+      "axis": "organization",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-X196",
+        "ipip-H258"
+      ],
+      "before": "預先排好的幾個節點，會帶著我逐段推進事情。",
+      "after": "事先排好的幾個步驟，我會一段一段照著完成。",
+      "translations": {
+        "zh-Hans": "事先排好的几个步骤，我会一段一段照着完成。",
+        "en": "I work through the steps I planned in advance, one stage at a time.",
+        "ja": "前もって決めた手順に沿って、一段階ずつ進めます。",
+        "ko": "미리 정해 둔 순서에 따라 한 단계씩 일을 마친다.",
+        "hi": "मैं पहले से तय किए गए चरणों के अनुसार एक-एक करके काम करता हूँ।",
+        "th": "ฉันทำตามขั้นตอนที่วางไว้ล่วงหน้าทีละขั้น",
+        "id": "Saya mengikuti langkah yang sudah direncanakan sebelumnya, tahap demi tahap.",
+        "de": "Ich arbeite die vorher geplanten Schritte nacheinander ab.",
+        "fr": "Je suis les étapes prévues à l’avance, l’une après l’autre.",
+        "es": "Sigo los pasos que planeé de antemano, uno por uno."
+      }
+    },
+    {
+      "seedId": "seed-organization-p22",
+      "axis": "organization",
+      "direction": 1,
+      "sourceIds": [
+        "ipip-H1161",
+        "ipip-V300"
+      ],
+      "before": "各個部分做到哪裡為止，我會先界定清楚再開始。",
+      "after": "哪些部分要做、要做到哪裡，我會在開始前先決定。",
+      "translations": {
+        "zh-Hans": "哪些部分要做、要做到哪里，我会在开始前先决定。",
+        "en": "Before starting, I decide which parts to do and how far to take each one.",
+        "ja": "始める前に、どの部分をどこまでやるか決めます。",
+        "ko": "어느 부분을 어디까지 할지 시작하기 전에 정한다.",
+        "hi": "शुरू करने से पहले मैं तय करता हूँ कि कौन-से हिस्से करने हैं और हर हिस्से को कहाँ तक करना है।",
+        "th": "ก่อนเริ่ม ฉันจะกำหนดว่าจะทำส่วนไหนและทำแต่ละส่วนถึงแค่ไหน",
+        "id": "Sebelum mulai, saya menentukan bagian mana yang dikerjakan dan sejauh apa tiap bagian dikerjakan.",
+        "de": "Bevor ich beginne, entscheide ich, welche Teile ich bearbeite und wie weit ich dabei gehe.",
+        "fr": "Avant de commencer, je décide quelles parties traiter et jusqu’où aller pour chacune.",
+        "es": "Antes de empezar, decido qué partes hacer y hasta dónde llegar en cada una."
+      }
+    }
+  ]
+}
